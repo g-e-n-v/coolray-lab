@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: LrgpcEGIhm8UC30hzSpUrjIltIQ=
+
+Name: META-INF/com/android/otacert
+SHA1-Digest: KfqiyPV6jBq+qNDKDoumXno8l64=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: yjUHJMFQWSTyfIvl9r/QLawX98k=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: hT4qnv97Lhi5xzvovdhTksZCrt8=
+
+Name: system/app/Stagelight/Stagelight.apk
+SHA1-Digest: rvmiPvdq4Pj8v/chy1tdWOAdBpI=
+

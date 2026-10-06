@@ -1,0 +1,2 @@
+projects/usb-upgrade/payload/system/app/VoiceAssistantVi/VoiceAssistantVi.apk filter=lfs diff=lfs merge=lfs -text
+projects/usb-upgrade/payload/system/app/GeelyAutoSettings/GeelyAutoSettings.apk filter=lfs diff=lfs merge=lfs -text

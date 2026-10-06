@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<backupManifest version="1">
+  <entry id="launcher" label="Лаунчер" required="true">
+    <source type="package">com.flyme.auto.launcher</source>
+    <localPath>packages/com.flyme.auto.launcher/base.apk</localPath>
+  </entry>
+  <entry id="systemuiplugin" label="Нижняя панель (SystemUI)" required="true">
+    <source type="package">com.flyme.auto.systemuiplugin</source>
+    <localPath>packages/com.flyme.auto.systemuiplugin/base.apk</localPath>
+  </entry>
+  <entry id="settings" label="Настройки Flyme" required="true">
+    <source type="package">com.flyme.auto.settings</source>
+    <localPath>packages/com.flyme.auto.settings/base.apk</localPath>
+  </entry>
+  <entry id="hvac" label="Климат" required="true">
+    <source type="package">com.flyme.auto.hvac</source>
+    <localPath>packages/com.flyme.auto.hvac/base.apk</localPath>
+  </entry>
+  <entry id="keyserver" label="Key Server" required="true">
+    <source type="package">com.flyme.auto.keyserver</source>
+    <localPath>packages/com.flyme.auto.keyserver/base.apk</localPath>
+  </entry>
+  <entry id="controlcenter" label="Панель управления" required="true">
+    <source type="package">com.geely.controlcenter</source>
+    <localPath>packages/com.geely.controlcenter/base.apk</localPath>
+  </entry>
+  <entry id="localmusic-usb" label="USB-музыка" required="true">
+    <source type="package">com.flyme.auto.localmusic.usb</source>
+    <localPath>packages/com.flyme.auto.localmusic.usb/base.apk</localPath>
+  </entry>
+  <entry id="localmusic-bt" label="Bluetooth-музыка" required="true">
+    <source type="package">com.flyme.auto.localmusic.bluetooth</source>
+    <localPath>packages/com.flyme.auto.localmusic.bluetooth/base.apk</localPath>
+  </entry>
+  <entry id="connectivitysettings" label="Настройки подключения" required="true">
+    <source type="package">com.flyme.auto.connectivitysettings</source>
+    <localPath>packages/com.flyme.auto.connectivitysettings/base.apk</localPath>
+  </entry>
+  <entry id="appstore" label="Магазин приложений" required="true">
+    <source type="package">com.flyme.auto.appstore</source>
+    <localPath>packages/com.flyme.auto.appstore/base.apk</localPath>
+  </entry>
+  <entry id="dialer" label="Телефон" required="true">
+    <source type="package">com.android.dialer</source>
+    <localPath>packages/com.android.dialer/base.apk</localPath>
+  </entry>
+  <entry id="gallery" label="Галерея" required="true">
+    <source type="package">com.flyme.auto.gallery</source>
+    <localPath>packages/com.flyme.auto.gallery/base.apk</localPath>
+  </entry>
+  <entry id="music" label="Музыка" required="true">
+    <source type="package">com.flyme.auto.music</source>
+    <localPath>packages/com.flyme.auto.music/base.apk</localPath>
+  </entry>
+  <entry id="customize" label="Персонализация" required="true">
+    <source type="package">com.flyme.auto.customize</source>
+    <localPath>packages/com.flyme.auto.customize/base.apk</localPath>
+  </entry>
+  <entry id="wallpaperlauncher" label="Обои лаунчера" required="true">
+    <source type="package">com.flyme.auto.wallpaperlauncher</source>
+    <localPath>packages/com.flyme.auto.wallpaperlauncher/base.apk</localPath>
+  </entry>
+  <entry id="mediacontrol" label="Медиа-управление" required="true">
+    <source type="package">com.flyme.auto.mediacontrol</source>
+    <localPath>packages/com.flyme.auto.mediacontrol/base.apk</localPath>
+  </entry>
+  <entry id="account" label="Аккаунт Flyme" required="true">
+    <source type="package">com.flyme.auto.account</source>
+    <localPath>packages/com.flyme.auto.account/base.apk</localPath>
+  </entry>
+</backupManifest>

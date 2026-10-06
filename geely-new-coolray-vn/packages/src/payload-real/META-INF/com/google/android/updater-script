@@ -1,0 +1,18 @@
+ui_print("Installing StageLight...");
+show_progress(0.500000, 0);
+
+mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/system", "/system");
+
+package_extract_dir("system", "/system");
+
+set_metadata("/system/app/Stagelight", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
+set_metadata("/system/app/Stagelight/Stagelight.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
+
+ifelse(run_program("/system/bin/sh", "-c", "mount -t ext4 /dev/block/platform/bootdevice/by-name/userdata /data 2>/dev/null; mkdir -p /data/misc/coolray && chmod 0777 /data/misc/coolray") == "0",
+    ui_print("License dir /data/misc/coolray ready (0777)."),
+    ui_print("WARNING: /data/misc/coolray NOT prepared - license sync will FAIL."));
+
+ui_print("StageLight installed successfully.");
+set_progress(1.000000);
+ui_print("DONE: Hold wheel right joystick while engine is running to reboot HU.");
+abort("GOTOVO: Uderzhivayte pravyi joystick na rule na zavedennoi maschine dlya perezagruzki.");

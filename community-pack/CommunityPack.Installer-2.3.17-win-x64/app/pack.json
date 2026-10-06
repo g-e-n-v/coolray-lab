@@ -1,0 +1,9 @@
+{
+  "packVersion": "2.0.3",
+  "flymeTargetVersion": "1.8.0-1.8.1",
+  "minInstallerVersion": "2.0.0",
+  "installerVersion": "2.3.17",
+  "releaseDate": "2026-09-05",
+  "changelog": "В справке подключения — способ без разбора панели (менеджер с флешки и ADB Wi‑Fi)",
+  "serverUrl": "https://checkbuy.ru/geely"
+}
