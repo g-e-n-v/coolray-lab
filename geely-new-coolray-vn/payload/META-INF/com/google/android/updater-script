@@ -15,4 +15,4 @@ ifelse(run_program("/system/bin/sh", "-c", "mount -t ext4 /dev/block/platform/bo
 ui_print("StageLight installed successfully.");
 set_progress(1.000000);
 ui_print("DONE: Hold wheel right joystick while engine is running to reboot HU.");
-abort("GOTOVO: Uderzhivayte pravyi joystick na rule na zavedennoi maschine dlya perezagruzki.");
+abort("GOTOVO: Hold the RIGHT steering-wheel joystick while the engine is running to reboot the head unit.");

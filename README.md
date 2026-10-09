@@ -108,7 +108,7 @@ Cơ chế khớp của menu kỹ thuật 「U盘升级」: quét USB và khớp 
 - Log xe: `ihu689g/` (mobilelog.zip, recoverylog.zip, dry-run), flash 21/09/2026
 - Metadata & payload 3 gói: `community-pack/install_market/*/OS/update.zip`
   (giải nén từ git index 05/10/2026)
-- Hướng dẫn chi tiết flash/unlock: `geely-new-coolray-vn/flash-adb-unlock/README.md`
+- Hướng dẫn chi tiết flash/unlock: `geely-new-coolray-vn/docs/flash-adb-unlock.md`
 - checkbuy.ru: /geely/guide, /geely/market, /geely/pro, /geely/morphius, /geely/changelog
 - 4PDA: topic 1109487 (đã đọc đủ 12 trang), 1001500, 1085149
 - XDA: thread 4771849; Drive2: bài Анастасия (Binyue L, 01/2026)
