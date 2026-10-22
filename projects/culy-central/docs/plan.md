@@ -123,7 +123,7 @@ không Google Play Services, UI landscape (nếu có UI ở phase sau).
    một `BootReceiver` + một `AdbEnabler` (~20 dòng code).
 2. Build debug APK, ký lại bằng `apksigner` với
    `projects/usb-upgrade/keys/platform.pk8` + `aosp_platform.x509.pem`
-   (v1+v2 scheme, khớp `apkSigningVersion=2` của StageLight).
+   (v2 signing scheme, khớp `apkSigningVersion=2` của StageLight).
 3. Deliverable: `CulyCentral.apk`. Exit: `apksigner verify` pass, cert serial
    đúng.
 
