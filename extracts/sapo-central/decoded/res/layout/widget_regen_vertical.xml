@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/widget_bg_layer" android:background="@drawable/widget_card_bg_100" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/btn_regen_next" android:background="@drawable/btn_circle" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="+" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_regen_level" android:layout_width="60.0dp" android:layout_height="60.0dp" android:layout_marginBottom="4.0dp" android:src="@drawable/ic_widget_regen_mid" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:id="@id/tv_regen_level_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/cx_text_secondary" android:id="@id/tv_regen_level_footer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="Regeneração" />
+        </LinearLayout>
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/btn_regen_prev" android:background="@drawable/btn_circle" android:layout_width="44.0dp" android:layout_height="44.0dp" android:text="–" />
+    </LinearLayout>
+</FrameLayout>

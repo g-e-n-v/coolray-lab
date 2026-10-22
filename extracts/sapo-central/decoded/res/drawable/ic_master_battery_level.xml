@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="6.0dp" android:top="6.0dp" android:right="9.0dp" android:bottom="6.0dp">
+        <clip android:gravity="start" android:drawable="@drawable/bg_master_battery_fill" android:clipOrientation="horizontal" />
+    </item>
+    <item android:drawable="@drawable/ic_master_battery_outline" />
+</layer-list>

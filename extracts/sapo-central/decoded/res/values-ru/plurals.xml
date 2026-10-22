@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="master_active_program_count">
+        <item quantity="one">Активно: %1$d</item>
+        <item quantity="few">Активно: %1$d</item>
+        <item quantity="many">Активно: %1$d</item>
+        <item quantity="other">Активно: %1$d</item>
+    </plurals>
+</resources>

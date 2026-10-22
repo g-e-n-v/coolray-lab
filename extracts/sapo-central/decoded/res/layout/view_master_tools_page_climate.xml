@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MasterToolsPageRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MasterToolsPageHeader">
+        <TextView android:text="@string/k_eyebrow_clima" style="@style/MasterToolsPageTitle" />
+        <ImageView android:id="@id/masterToolsClimateHelp" android:contentDescription="@string/master_help" style="@style/MasterToolsHelpIcon" />
+    </LinearLayout>
+    <TextView android:text="@string/master_air_programming" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsClimateProgramsRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/master_programs" style="@style/MasterToolsOptionText" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterToolsClimateProgramsCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_none_active" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_manage" android:layout_marginStart="24.0dp" />
+        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="" android:layout_marginStart="10.0dp" />
+    </LinearLayout>
+    <TextView android:text="@string/master_floating_panel" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsFloatingEnabledRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/xml_ativar" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsFloatingEnabledSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout style="@style/MasterToolsOptionRow">
+        <TextView android:text="@string/master_content" style="@style/MasterToolsOptionText" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_segment" android:padding="3.0dp" android:layout_width="390.0dp" android:layout_height="48.0dp">
+            <TextView android:id="@id/masterToolsFloatingModeTemp" android:text="@string/master_temperature_short" style="@style/MasterToolsSegmentButton" />
+            <TextView android:id="@id/masterToolsFloatingModeBattery" android:text="@string/k_battery_icon_title" style="@style/MasterToolsSegmentButton" />
+            <TextView android:id="@id/masterToolsFloatingModeBoth" android:text="@string/master_both" style="@style/MasterToolsSegmentButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout style="@style/MasterToolsOptionRow">
+        <TextView android:text="@string/master_text_color" style="@style/MasterToolsOptionText" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_segment" android:padding="3.0dp" android:layout_width="260.0dp" android:layout_height="48.0dp">
+            <TextView android:id="@id/masterToolsFloatingTextWhite" android:text="@string/xml_pill_branco" style="@style/MasterToolsSegmentButton" />
+            <TextView android:id="@id/masterToolsFloatingTextBlack" android:text="@string/xml_pill_preto" style="@style/MasterToolsSegmentButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout style="@style/MasterToolsOptionRow">
+        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="210.0dp" android:layout_height="wrap_content" android:text="@string/xml_pill_tamanho" />
+        <SeekBar android:id="@id/masterToolsFloatingSize" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:progressTint="@color/master_green" android:progressBackgroundTint="@color/master_divider" android:thumbTint="@color/master_green" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/master_text" android:gravity="end" android:id="@id/masterToolsFloatingSizeValue" android:layout_width="72.0dp" android:layout_height="wrap_content" android:text="100%" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout style="@style/MasterToolsOptionRow">
+        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="210.0dp" android:layout_height="wrap_content" android:text="@string/master_transparency" />
+        <SeekBar android:id="@id/masterToolsFloatingAlpha" android:layout_width="0.0dp" android:layout_height="wrap_content" android:max="100" android:progress="85" android:layout_weight="1.0" android:progressTint="@color/master_green" android:progressBackgroundTint="@color/master_divider" android:thumbTint="@color/master_green" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/master_text" android:gravity="end" android:id="@id/masterToolsFloatingAlphaValue" android:layout_width="72.0dp" android:layout_height="wrap_content" android:text="85%" />
+    </LinearLayout>
+    <TextView android:text="@string/master_air_intake" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsClimateRecircRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/master_avoid_external_air" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsClimateRecircSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <TextView android:text="@string/master_windows_doors" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsClimateWindowRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/k_info_window_door_title" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsClimateWindowSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout android:id="@id/masterToolsClimateOppositeWindowRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/k_window_opposite_switch" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsClimateOppositeWindowSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+</LinearLayout>

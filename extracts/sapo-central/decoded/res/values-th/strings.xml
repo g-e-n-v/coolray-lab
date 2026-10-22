@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">นำทางไปหน้าแรก</string>
+    <string name="abc_action_bar_up_description">กลับ</string>
+    <string name="abc_action_menu_overflow_description">ตัวเลือกอื่น</string>
+    <string name="abc_action_mode_done">เสร็จ</string>
+    <string name="abc_activity_chooser_view_see_all">ดูทั้งหมด</string>
+    <string name="abc_activitychooserview_choose_application">เลือกแอป</string>
+    <string name="abc_capital_off">ปิด</string>
+    <string name="abc_capital_on">เปิด</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">ลบ</string>
+    <string name="abc_menu_enter_shortcut_label">Enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">Space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">เมนู+</string>
+    <string name="abc_search_hint">ค้นหา…</string>
+    <string name="abc_searchview_description_clear">ล้างคำค้นหา</string>
+    <string name="abc_searchview_description_query">คำค้นหา</string>
+    <string name="abc_searchview_description_search">ค้นหา</string>
+    <string name="abc_searchview_description_submit">ส่งคำค้นหา</string>
+    <string name="abc_searchview_description_voice">ค้นหาด้วยเสียง</string>
+    <string name="abc_shareactionprovider_share_with">แชร์กับ</string>
+    <string name="abc_shareactionprovider_share_with_application">แชร์ทาง %s</string>
+    <string name="abc_toolbar_collapse_description">ยุบ</string>
+    <string name="app_name">EX Sapo Central</string>
+    <string name="blackout_floater_channel">หน้าจอดำ (ปุ่มลอย)</string>
+    <string name="blackout_floater_notif">ปุ่มลอยหน้าจอดำทำงานอยู่</string>
+    <string name="btn_search_central_update">ค้นหาอัปเดตของ Central Auto</string>
+    <string name="button_desc_off">เปิดโหมดหน้าจอดำ</string>
+    <string name="button_desc_on">ปิดโหมดหน้าจอดำ</string>
+    <string name="camera_on_drive_description">กล้องรถจะเปิดเมื่อเข้าเกียร์ D เพื่อช่วยในการขับเคลื่อนด้วยความเร็วต่ำ ปิดไว้เป็นค่าเริ่มต้น</string>
+    <string name="camera_on_drive_section">กล้อง</string>
+    <string name="camera_on_drive_title">เปิดแอปกล้องเมื่อเข้าเกียร์ D</string>
+    <string name="carplaymonitor_update_checking">กำลังตรวจสอบ CarplayMonitor…</string>
+    <string name="carplaymonitor_update_uptodate">CarplayMonitor เป็นเวอร์ชันล่าสุดแล้ว (MD5 ตรงกัน)</string>
+    <string name="carplaymonitor_updated_message">"อัปเดตไฟล์ไบนารีใน /data/local/tmp/fixes/CarplayMonitor แล้ว
+
+แตะ เปิดใช้ CarPlay เพื่อใช้ไบนารีใหม่"</string>
+    <string name="carplaymonitor_updated_title">อัปเดต CarplayMonitor แล้ว</string>
+    <string name="common_apply">ใช้งาน</string>
+    <string name="common_attention">โปรดทราบ</string>
+    <string name="common_cancel">ยกเลิก</string>
+    <string name="common_confirm">ยืนยัน</string>
+    <string name="common_continue">ดำเนินการต่อ</string>
+    <string name="common_install">ติดตั้ง</string>
+    <string name="common_no">ไม่</string>
+    <string name="common_not_now">ไว้ทีหลัง</string>
+    <string name="common_ok">ตกลง</string>
+    <string name="common_restart">รีสตาร์ท</string>
+    <string name="common_yes">ใช่</string>
+    <string name="connadaptor_rebind_message">"เปลี่ยนไฟล์ ConnAdaptor แล้ว นำ bind ออกแล้ว (ถ้ามี) และรีสตาร์ต AAutoMonitor แล้ว
+
+กลับไปที่ส่วน Android Auto Wi-Fi แล้วแตะ เปิดใช้ เพื่อใช้ bind อีกครั้ง"</string>
+    <string name="connadaptor_rebind_title">อัปเดต ConnAdaptor แล้ว</string>
+    <string name="connadaptor_update_cancel">ยกเลิก</string>
+    <string name="connadaptor_update_checking">กำลังตรวจสอบ ConnAdaptor…</string>
+    <string name="connadaptor_update_continue">ดำเนินการต่อ</string>
+    <string name="connadaptor_update_uptodate">ConnAdaptor เป็นเวอร์ชันล่าสุดแล้ว</string>
+    <string name="connadaptor_update_warning_message">อัปเดตนี้สำหรับแอปที่แก้ไขการทำงานของ Android Auto Wi-Fi ให้อัปเดตเฉพาะเมื่อพบปัญหา หรือเมื่อได้รับแจ้งให้อัปเดตเท่านั้น</string>
+    <string name="connadaptor_update_warning_title">คำเตือน — อัปเดต ConnAdaptor</string>
+    <string name="cover_full_screen_toggle">ครอบเต็มหน้าจอเมื่อเปิดใช้</string>
+    <string name="floater_label">ปุ่มลอย:</string>
+    <string name="floater_off">ปิด</string>
+    <string name="floater_on">เปิด</string>
+    <string name="hint_need_permission">อนุญาตการแสดงทับแอปอื่น เพื่อใช้ปุ่มลอย</string>
+    <string name="hint_ready">ปุ่มลอยเปิดอยู่: แตะที่ปุ่มเพื่อเปิดหรือปิด เมื่อเปิดตัวเลือกไว้จะครอบทั้งหน้าจอ เมื่อปิดตัวเลือกจะยังเห็นปุ่มควบคุม</string>
+    <string name="k_aa_wifi_detected_applying_routes">ตรวจพบ AA WiFi — กำลังตั้งเส้นทาง…</string>
+    <string name="k_aa_wifi_help_message">"หาก Android Auto ไร้สายเชื่อมต่อไม่ได้หรือไม่เสถียร ให้ทำตามลำดับนี้:
+
+1. ในโทรศัพท์ ออกจากโปรแกรมเบต้าของ Android Auto (ถ้าเข้าร่วมอยู่)
+2. ในโทรศัพท์ ล้างข้อมูลของแอป Android Auto
+3. ในการตั้งค่า Bluetooth ของโทรศัพท์ ให้ลืมเครื่องเสียงรถ
+4. ในการตั้งค่า Bluetooth ของเครื่องเสียงรถ ให้ลืมโทรศัพท์
+5. ที่ ตั้งค่า แตะ ค้นหาอัปเดต (ตรวจสอบ ConnAdaptor ไปด้วย)
+6. เมื่อเสร็จแล้ว กลับไปหน้าแรกแล้วแตะ เปิดใช้ ที่นี่
+7. เริ่มจับคู่จาก Bluetooth ของเครื่องเสียงรถ แล้วยอมรับการเชื่อมต่อในโทรศัพท์
+8. รีสตาร์ตเครื่องเสียงรถโดยกดปุ่ม ย้อนกลับ + เพลง บนพวงมาลัยค้างไว้ 15 วินาที
+9. แตะ เปิดใช้ อีกครั้ง
+
+หมายเหตุ: หากเมื่อสตาร์ตรถแล้วแตะ Android Auto บนหน้าจอ แต่ไม่เชื่อมต่อภายในราว 1 นาที ให้แตะ รีสตาร์ท"</string>
+    <string name="k_aa_wifi_help_title">Android Auto Wi-Fi — ความช่วยเหลือ</string>
+    <string name="k_aa_wireless_auto_off">ปิดการเชื่อมต่อ AA ไร้สายอัตโนมัติ</string>
+    <string name="k_aa_wireless_auto_on">เปิดการเชื่อมต่อ AA ไร้สายอัตโนมัติ (เริ่มเมื่อพบ BT)</string>
+    <string name="k_abrir">เปิด</string>
+    <string name="k_ac_edit_add_fan">+ ความแรงลม</string>
+    <string name="k_ac_edit_add_recirc">+ หมุนเวียนอากาศ</string>
+    <string name="k_ac_edit_add_step_label">เพิ่มขั้นตอน</string>
+    <string name="k_ac_edit_add_temp">+ อุณหภูมิ</string>
+    <string name="k_ac_edit_add_wait">+ เวลา</string>
+    <string name="k_ac_edit_confirm_delete">ลบกำหนดการนี้หรือไม่ การกระทำนี้ย้อนกลับไม่ได้</string>
+    <string name="k_ac_edit_delete">ลบ</string>
+    <string name="k_ac_edit_dialog_add">เพิ่ม</string>
+    <string name="k_ac_edit_dialog_fan_title">ความแรงลม (0–7)</string>
+    <string name="k_ac_edit_dialog_recirc_title">หมุนเวียนอากาศ</string>
+    <string name="k_ac_edit_dialog_temp_title">อุณหภูมิ (°C)</string>
+    <string name="k_ac_edit_dialog_wait_min">นาที</string>
+    <string name="k_ac_edit_dialog_wait_sec">วินาที</string>
+    <string name="k_ac_edit_dialog_wait_title">เวลารอ</string>
+    <string name="k_ac_edit_empty_hint">เพิ่มขั้นตอนด้วยปุ่มด้านล่าง</string>
+    <string name="k_ac_edit_need_step">เพิ่มอย่างน้อยหนึ่งขั้นตอนก่อนบันทึก</string>
+    <string name="k_ac_edit_recirc_external">🌬️ อากาศภายนอก (ดึงจากนอกรถ)</string>
+    <string name="k_ac_edit_recirc_external_short">อากาศภายนอก</string>
+    <string name="k_ac_edit_recirc_internal">🔄 อากาศภายใน (หมุนเวียน)</string>
+    <string name="k_ac_edit_recirc_internal_short">อากาศภายใน</string>
+    <string name="k_ac_edit_repeat">ทำซ้ำเมื่อจบ</string>
+    <string name="k_ac_edit_restore">กลับไปใช้ค่าก่อนหน้า</string>
+    <string name="k_ac_edit_save">บันทึก</string>
+    <string name="k_ac_edit_step_fan">ความแรงลม: %d</string>
+    <string name="k_ac_edit_step_recirc">หมุนเวียนอากาศ: %s</string>
+    <string name="k_ac_edit_step_temp">อุณหภูมิ: %d°C</string>
+    <string name="k_ac_edit_step_wait">รอ: %s</string>
+    <string name="k_ac_edit_title_edit">แก้ไขกำหนดการ</string>
+    <string name="k_ac_edit_title_new">กำหนดการใหม่</string>
+    <string name="k_ac_list_back">ย้อนกลับ</string>
+    <string name="k_ac_list_create">สร้าง</string>
+    <string name="k_ac_list_edit">แก้ไข</string>
+    <string name="k_ac_list_empty_slot">ว่าง — ยังไม่มีขั้นตอน</string>
+    <string name="k_ac_list_title">กำหนดการปรับอากาศ</string>
+    <string name="k_ac_program_count">บันทึกแล้ว %1$d จาก %2$d กำหนดการ</string>
+    <string name="k_ac_program_count_zero">ยังไม่มีกำหนดการที่บันทึกไว้</string>
+    <string name="k_ac_program_manage_btn">จัดการกำหนดการ</string>
+    <string name="k_ac_slot_label">กำหนดการ %d</string>
+    <string name="k_activate_side_menu">เปิดเมนูด้านข้าง</string>
+    <string name="k_activated_md5">เปิดใช้แล้ว (md5=%1$s…)</string>
+    <string name="k_activated_plain">เปิดใช้แล้ว</string>
+    <string name="k_activated_with_icon">เปิดใช้แล้ว</string>
+    <string name="k_activating">กำลังเปิดใช้</string>
+    <string name="k_activating_carplay">กำลังเปิดใช้ CarPlay...</string>
+    <string name="k_activating_carplay_toast">กำลังเปิดใช้ CarPlay</string>
+    <string name="k_activating_connadaptor_bind">กำลังเปิดใช้ ConnAdaptor (bind + force-stop)…</string>
+    <string name="k_activating_proxy">กำลังเปิดใช้พร็อกซี...</string>
+    <string name="k_adb_service_error">ผิดพลาด: ADB ไม่ตอบสนอง</string>
+    <string name="k_adb_service_started">เริ่มบริการ ADB แล้ว</string>
+    <string name="k_adb_usb_on">🔌 ADB ผ่าน USB: เปิด</string>
+    <string name="k_adjust_failed">ปรับค่าไม่สำเร็จ: %1$s</string>
+    <string name="k_aeb_explanation">AEB คือระบบเบรกฉุกเฉินอัตโนมัติของรถ</string>
+    <string name="k_aeb_function_desc">เปิดหรือปิด AEB (ระบบเบรกฉุกเฉินอัตโนมัติ) ในรถ ลูกศร ↺ ข้าง ๆ จะจำค่าที่คุณเลือกไว้ และตั้งค่าซ้ำทุกครั้งที่คุณดับและสตาร์ตรถใหม่</string>
+    <string name="k_aeb_function_title">ฟังก์ชัน AEB</string>
+    <string name="k_aeb_off_label">ปิด</string>
+    <string name="k_aeb_on_label">เปิด</string>
+    <string name="k_aeb_reapply_on_msg">AEB จะกลับไปเป็นสถานะที่คุณเลือก (เปิดหรือปิด) ทุกครั้งที่คุณดับและสตาร์ตรถใหม่ หรือรีสตาร์ตเครื่องเสียงรถ</string>
+    <string name="k_aeb_reapply_on_title">🔄 ตั้งค่า AEB ซ้ำเมื่อเปิดเครื่อง</string>
+    <string name="k_aeb_reapply_question">⚠️ เมื่อเปิดสิ่งนี้ AEB จะยังคงถูกปิดทุกครั้งที่คุณเปิดรถหรือรีสตาร์ตเครื่องเสียงรถ</string>
+    <string name="k_aeb_restore_persistent_desc">เมื่อเปิดปุ่มนี้ AEB จะถูกปิดทุกครั้งที่คุณเปิดรถหรือรีสตาร์ตเครื่องเสียงรถ โปรดใช้อย่างรับผิดชอบ — ผลที่ตามมาจากตัวเลือกนี้เป็นความรับผิดชอบของคุณทั้งหมด</string>
+    <string name="k_aeb_restore_title">🛑 ปิด AEB เมื่อเปิดเครื่อง</string>
+    <string name="k_aeb_restore_title_card">ปิด AEB เมื่อเปิดเครื่อง</string>
+    <string name="k_aeb_sent_unconfirmed">ส่งคำสั่ง AEB แล้ว แต่รถไม่ได้ยืนยัน (เป็นเรื่องปกติเมื่ออยู่นอกรถ)</string>
+    <string name="k_aeb_turned_off">ปิด AEB แล้ว</string>
+    <string name="k_aeb_turned_on">เปิด AEB แล้ว</string>
+    <string name="k_aeb_write_failed">เปลี่ยนค่า AEB ในรถไม่สำเร็จ</string>
+    <string name="k_already_latest_version">เป็นเวอร์ชันล่าสุดแล้ว (v%1$s)</string>
+    <string name="k_android_auto_deactivated">ปิดใช้ Android Auto แล้ว</string>
+    <string name="k_ap_aberto_desc">เปิดเครือข่ายของรถไว้ก่อนที่โทรศัพท์จะมาถึง — Android Auto จะเชื่อมต่อเร็วขึ้นราว 10 วินาที แลกกับการที่เครื่องเสียงรถจะใช้ WiFi เป็นไคลเอนต์ไม่ได้ขณะที่ AP เปิดอยู่ (เพราะมีวิทยุตัวเดียว): จึงไม่มีอินเทอร์เน็ตผ่าน WiFi และไม่มี ADB ผ่าน WiFi</string>
+    <string name="k_ap_aberto_switch">เปิดเมื่อเปิดเครื่องและทุกครั้งที่เชื่อมต่อ Bluetooth</string>
+    <string name="k_ap_aberto_titulo">เปิด AP ไว้ตลอด</string>
+    <string name="k_apkm_corrupted">"ไฟล์ .apkm เสียหายหรือไม่สมบูรณ์
+โปรดดาวน์โหลดหรือคัดลอกใหม่"</string>
+    <string name="k_app_abrindo_oficial">กำลังเปิดหน้าอย่างเป็นทางการของแอป…</string>
+    <string name="k_app_pip_disabled">ปิด PiP ของแอปแล้ว</string>
+    <string name="k_app_pip_enabled_hint">เปิด PiP ของแอปแล้ว — ไอคอน ▢ ในเมนูลัด</string>
+    <string name="k_app_pip_info_text">ไอคอน ▢ ในเมนูลัด: แตะครั้งแรกเปิดหน้าต่างลอย (แตะที่ PIP เพื่อเลือกแอป) ปุ่ม +/− ปรับขนาดทีละ 20% ปุ่ม ⟲ หมุน 16:9 ↔ 9:16 ปุ่ม ✕ ปิดแอป แตะ ▢ อีกครั้งเพื่อปิดทั้งหมด ระบบจะคอยตรวจทุก 2 วินาที เพื่อดึงหน้าต่างกลับมาหากแอปอื่นบัง ต้องเปิด freeform ในเครื่องก่อน (ค่าเดียวกับแบ่งหน้าจอ) — กำลังตรวจสอบ…</string>
+    <string name="k_app_remove_failed">ถอนการติดตั้งแอปไม่สำเร็จ</string>
+    <string name="k_app_removed_success">ถอนการติดตั้งแอปสำเร็จ</string>
+    <string name="k_app_sem_navegador">ไม่มีเบราว์เซอร์ที่จะเปิด: %1$s</string>
+    <string name="k_applied">ใช้งานแล้ว</string>
+    <string name="k_apply_failed_check_internet">ใช้งานไม่สำเร็จ (ตรวจสอบอินเทอร์เน็ต)</string>
+    <string name="k_applying">กำลังใช้งาน...</string>
+    <string name="k_applying_bind_named">กำลังใช้ bind: %1$s</string>
+    <string name="k_applying_persist_named">กำลังใช้เสียงแบบถาวร: %1$s…</string>
+    <string name="k_atalhos_menu_falhou">เปิดเมนูไม่สำเร็จ</string>
+    <string name="k_atalhos_menu_titulo">เปิด</string>
+    <string name="k_ativacao_carplay_desligado">CarPlay ไร้สายถูกปิดอยู่ หากต้องการใช้ ให้เปิดปุ่ม “CarPlay ไร้สาย” ในหน้าจอนี้ — ส่วน Android Auto ใช้งานได้อยู่แล้วโดยไม่ต้องเปิด</string>
+    <string name="k_ativacao_concluida">ติดตั้งเสร็จแล้ว บริการเชื่อมต่อเริ่มทำงานแล้ว ส่วน CarPlay ยังรอการยืนยันจากมอนิเตอร์</string>
+    <string name="k_ativar_precisa_reiniciar">ระบบจะติดตั้ง ConnAdaptor และเริ่มบริการเชื่อมต่อใหม่ การเชื่อมต่อกับโทรศัพท์อาจขาดชั่วคราวระหว่างการเปิดใช้งาน</string>
+    <string name="k_ativar_titulo">Android Auto + CarPlay Wi-Fi</string>
+    <string name="k_audio_delete_failed">ลบไฟล์เสียงไม่สำเร็จ</string>
+    <string name="k_audio_deleted">ลบไฟล์เสียงแล้ว</string>
+    <string name="k_auto_proxy_applied">ใช้พร็อกซีอัตโนมัติแล้ว: %1$s:%2$d</string>
+    <string name="k_auto_update_desc">ดาวน์โหลดและติดตั้งเองเมื่อพบเวอร์ชันใหม่ในช่องทางที่เลือก เมื่อปิดไว้ จะอัปเดตผ่านปุ่ม ตรวจสอบอัปเดต เท่านั้น</string>
+    <string name="k_auto_update_in_progress">มีการอัปเดตกำลังดำเนินอยู่แล้ว (%1$s) โปรดรอให้เสร็จสิ้น</string>
+    <string name="k_auto_update_title">อัปเดตอัตโนมัติ</string>
+    <string name="k_autoroute_applied_ok">AutoRota: ตั้งเส้นทางสำเร็จ</string>
+    <string name="k_autoroute_applied_sem_referencia">เส้นทางอัตโนมัติ: ใช้เส้นทางแล้ว (ไม่มี tbox0 ให้ตรวจสอบเครื่องหมาย)</string>
+    <string name="k_autoroute_apply_error">AutoRota: ตั้งเส้นทางไม่สำเร็จ</string>
+    <string name="k_autoroute_fwmark_diverged">AutoRota: fwmark ไม่ตรงกัน — โปรดสร้างเส้นทางด้วยตนเอง</string>
+    <string name="k_avas_sound_applied">ใช้เสียง AVAS แบบที่เลือกแล้ว</string>
+    <string name="k_avas_sound_rejected">รถคันนี้ไม่ยอมรับการเปลี่ยนเสียง AVAS</string>
+    <string name="k_avm_normal">บันทึกกล้อง 360 กลับสู่ปกติ</string>
+    <string name="k_avm_silenced">ปิดเสียงบันทึกกล้อง 360 แล้ว</string>
+    <string name="k_ban_blocked_message">การแจกจ่าย Sapo เป็นของฟรี และห้ามนำไปใช้ในการขายหรือโฆษณาบริการปลดล็อก การใช้งานของคุณถูกปิดแล้ว หากคุณจ่ายเงินค่าปลดล็อก ให้ขอเงินคืนจากผู้ที่หลอกคุณ และแสดงหลักฐานแก่ผู้พัฒนาเพื่อกลับมาใช้แอปพลิเคชันได้อีกครั้ง</string>
+    <string name="k_ban_lifted_toast">ปลดการบล็อกแล้ว — ยินดีต้อนรับกลับมา!</string>
+    <string name="k_battery_icon_off">ปิดการแสดง % แบตเตอรี่บนแถบสถานะ</string>
+    <string name="k_battery_icon_on">เปิดการแสดง % แบตเตอรี่บนแถบสถานะ</string>
+    <string name="k_battery_icon_text">แบตเตอรี่: %1$s %%</string>
+    <string name="k_battery_icon_title">แบตเตอรี่</string>
+    <string name="k_binary_not_found_locally">ไม่พบไฟล์ไบนารีในเครื่อง</string>
+    <string name="k_bind_apply_failed">"ใช้ bind ไม่สำเร็จ
+
+%1$s"</string>
+    <string name="k_bind_failed_silently">bind ล้มเหลวโดยไม่แจ้ง (ปลายทาง != ต้นทาง)</string>
+    <string name="k_brightness_icon_channel">ความสว่างหน้าจอ (แถบสถานะ)</string>
+    <string name="k_brightness_icon_off">ปิดไอคอนความสว่างบนแถบสถานะ</string>
+    <string name="k_brightness_icon_on">เปิดไอคอนความสว่างบนแถบสถานะ</string>
+    <string name="k_brightness_icon_text">แตะเพื่อใช้ความสว่างที่ตั้งไว้ในเครื่องมือ</string>
+    <string name="k_brightness_icon_title">ความสว่างหน้าจอ</string>
+    <string name="k_brightness_off_label">ปิดอยู่</string>
+    <string name="k_ca_estado_bind">bind ชั่วคราว ยังไม่ได้ติดตั้ง</string>
+    <string name="k_ca_estado_fabrica">ของโรงงาน</string>
+    <string name="k_ca_estado_hibrido">ติดตั้งแล้ว กำลังล้าง bind เก่า</string>
+    <string name="k_ca_estado_instalado">ติดตั้งแล้ว</string>
+    <string name="k_cafix_ausente">ยังไม่ได้ดาวน์โหลด ConnAdaptor — ใช้ ตรวจหาอัปเดต ก่อนเปิดใช้งาน</string>
+    <string name="k_cafix_pronto">พร้อมติดตั้ง: %1$s · %2$s</string>
+    <string name="k_cafix_updated_monitor_restarted">อัปเดต ConnAdaptor แล้ว รีสตาร์ต AAutoMonitor แล้ว %1$s</string>
+    <string name="k_car_command_unconfirmed">รถยังไม่ได้ยืนยันการเปลี่ยนแปลง โปรดตรวจสอบสถานะบนเครื่องเสียงรถ</string>
+    <string name="k_car_connected">🚗 เชื่อมต่อกับรถแล้ว</string>
+    <string name="k_car_connecting">🚗 กำลังเชื่อมต่อ…</string>
+    <string name="k_car_disconnected">🚗 ตัดการเชื่อมต่อกับรถแล้ว</string>
+    <string name="k_car_not_connected_short">เครื่องเสียงรถยังไม่ได้เชื่อมต่อกับรถ</string>
+    <string name="k_car_still_connecting">รถยังเชื่อมต่ออยู่ โปรดลองอีกครั้ง</string>
+    <string name="k_car_unavailable">🚗 ไม่พร้อมใช้งาน</string>
+    <string name="k_card_re_aeb_title">ถอยหลังและ AEB</string>
+    <string name="k_carlock_apply_persist">ใช้แบบถาวร</string>
+    <string name="k_carlock_apply_reboot">ใช้จนกว่าจะรีบูต</string>
+    <string name="k_carplay_activated">เปิดใช้ CarPlay แล้ว</string>
+    <string name="k_carplay_activated_service_not_up">เปิดใช้ CarPlay แล้ว แต่บริการยังไม่ทำงาน — โปรดตรวจสอบอุปกรณ์</string>
+    <string name="k_carplay_identity_off">ปิดการประกาศ CarPlay แล้ว</string>
+    <string name="k_carplay_identity_on">เปิดการประกาศ CarPlay แล้ว — เชื่อมต่อ iPhone อีกครั้งเพื่อให้มีผล</string>
+    <string name="k_carplay_patch_falhou">ใช้แพตช์ CarPlay ตอนนี้ไม่สำเร็จ หากมีสาย USB เสียบอยู่ ให้ถอดออกแล้วรีสตาร์ตเครื่องเสียงรถ — ระบบจะทำแพตช์ใหม่เองในการเปิดเครื่องครั้งถัดไป</string>
+    <string name="k_carplay_patch_ok">ใช้แพตช์ CarPlay แล้ว</string>
+    <string name="k_carplaymonitor_ativo">CarplayMonitor ทำงานอยู่</string>
+    <string name="k_carplaymonitor_error">CarplayMonitor: %1$s</string>
+    <string name="k_carplaymonitor_json_invalid_md5">carplaymonitor.json: md5 ไม่ถูกต้อง</string>
+    <string name="k_carplaymonitor_motivo_fabrica">ConnAdaptor ของโรงงาน — เปิดใช้การเชื่อมต่อไร้สายก่อน</string>
+    <string name="k_carplaymonitor_motivo_falhou">ยังไม่ได้ใช้แพตช์ในการเปิดเครื่องครั้งนี้</string>
+    <string name="k_carplaymonitor_motivo_modo">โหมด %1$s (CarPlay ปิดอยู่)</string>
+    <string name="k_carplaymonitor_motivo_toggle">CarPlay ไร้สายถูกปิดอยู่</string>
+    <string name="k_carplaymonitor_motivo_trava">หยุดการใช้งานอัตโนมัติไว้</string>
+    <string name="k_carplaymonitor_padrao">CarplayMonitor แบบมาตรฐาน</string>
+    <string name="k_carplaymonitor_update_message">"MD5 บนเซิร์ฟเวอร์: %1$s…
+%2$s
+
+ต้องการดาวน์โหลดและติดตั้งหรือไม่"</string>
+    <string name="k_carplaymonitor_updated_success">อัปเดต CarplayMonitor สำเร็จ</string>
+    <string name="k_carservice_unavailable">CarService ไม่พร้อมใช้งาน</string>
+    <string name="k_celular_preferido_bt_off">เปิด Bluetooth เพื่อดูอุปกรณ์ที่จับคู่ไว้</string>
+    <string name="k_celular_preferido_desc">รถจะลองเชื่อมต่อโทรศัพท์เครื่องใดก่อน — Android หรือ iPhone มีประโยชน์สำหรับผู้ที่ใช้มากกว่าหนึ่งเครื่อง</string>
+    <string name="k_celular_preferido_qualquer">เครื่องใดก็ได้ (เครื่องแรกที่พบ)</string>
+    <string name="k_celular_preferido_sem_pareado">ยังไม่มีโทรศัพท์ที่จับคู่ผ่าน Bluetooth โปรดจับคู่อุปกรณ์ก่อน</string>
+    <string name="k_celular_preferido_titulo">โทรศัพท์ที่ต้องการ</string>
+    <string name="k_celular_preferido_titulo_dialogo">เลือกโทรศัพท์ที่ต้องการ</string>
+    <string name="k_changing_adb_gpio">กำลังเปลี่ยน ADB ผ่าน GPIO 151...</string>
+    <string name="k_check_update_failed">ตรวจสอบอัปเดตไม่สำเร็จ: %1$s</string>
+    <string name="k_check_update_with_icon">🔄 ตรวจสอบอัปเดต</string>
+    <string name="k_checking_available_version">กำลังตรวจสอบเวอร์ชันที่มี…</string>
+    <string name="k_checking_version">กำลังตรวจสอบ v%1$s…</string>
+    <string name="k_close_apps_confirm">ปิด</string>
+    <string name="k_close_apps_done">ปิดแอปแล้ว %1$d รายการ</string>
+    <string name="k_close_apps_manage_whitelist">จัดการการป้องกัน</string>
+    <string name="k_close_apps_none_running">ตอนนี้ไม่มีแอปของผู้ใช้ทำงานอยู่</string>
+    <string name="k_close_apps_none_selected">ยังไม่ได้เลือกแอป</string>
+    <string name="k_close_apps_title">ปิดแอป (ยกเลิกการเลือกเพื่อให้เปิดค้างไว้)</string>
+    <string name="k_close_apps_whitelist_manage_subtitle">เลือกแอปที่ไม่ควรถูกปิดโดยฟังก์ชัน ปิดแอป — แอปเหล่านี้จะไม่ถูกเลือกไว้ในรายการอยู่แล้ว แต่ยังปิดด้วยตนเองได้หากคุณเลือกมัน</string>
+    <string name="k_close_apps_whitelist_manage_title">แอปที่ได้รับการป้องกัน</string>
+    <string name="k_close_btn">ปิด</string>
+    <string name="k_cm_estado_ativo">ทำงานอยู่</string>
+    <string name="k_cm_estado_padrao">ไม่ได้เมาต์ในการเปิดเครื่องครั้งนี้</string>
+    <string name="k_cm_montado">เมาต์แล้ว</string>
+    <string name="k_cm_nao_montado">ยังไม่ได้เมาต์</string>
+    <string name="k_command_sent_no_output">"ส่งคำสั่งแล้วแต่ไม่มีผลลัพธ์
+%1$s"</string>
+    <string name="k_completed">เสร็จสิ้น</string>
+    <string name="k_confirm_network_routes_message">การทำเช่นนี้จะเปิดให้ Android Auto ใช้อินเทอร์เน็ตจากโทรศัพท์ (มีประโยชน์เมื่อแอปโหลดข้อมูลไม่ได้) ต้องเปิดสิทธิ์ root/ADB ภายในไว้ ต้องการดำเนินการต่อหรือไม่</string>
+    <string name="k_confirm_network_routes_title">ยืนยันการตั้งเส้นทางเครือข่าย</string>
+    <string name="k_connadaptor_arquivo_outra_versao">ดาวน์โหลดแล้ว: %1$s ตัวที่ถูกต้องสำหรับเครื่องนี้คือ %2$s</string>
+    <string name="k_connadaptor_arquivo_outro_modo">ConnAdaptor ที่ดาวน์โหลดไว้เป็นของ %1$s แต่โหมดที่เลือกคือ %2$s</string>
+    <string name="k_connadaptor_available_message">ยังไม่ได้ดาวน์โหลด ConnAdaptor ของ %1$s (ประมาณ 19 MB) ดาวน์โหลดตอนนี้หรือไม่</string>
+    <string name="k_connadaptor_build_ausente">ยังไม่ได้ติดตั้ง</string>
+    <string name="k_connadaptor_build_base">รวมแล้วแต่ไม่มีการแก้ไข AP</string>
+    <string name="k_connadaptor_build_corrigido_para">แก้ไขแล้ว · %1$s</string>
+    <string name="k_connadaptor_build_desconhecida">ไม่รู้จักบิลด์นี้</string>
+    <string name="k_connadaptor_build_fabrica">ของโรงงาน</string>
+    <string name="k_connadaptor_build_so_aa">เฉพาะ Android Auto · %1$s</string>
+    <string name="k_connadaptor_build_so_carplay">เฉพาะ CarPlay (เลิกใช้แล้ว)</string>
+    <string name="k_connadaptor_confirm_install_msg">"ติดตั้ง ConnAdaptor ที่แก้ไขแล้วเป็นอัปเดตของแอประบบ เพื่อเปิดใช้ Android Auto และ CarPlay ไร้สาย
+
+ที่ใช้อยู่ตอนนี้:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_install_title">เปิดใช้ ConnAdaptor หรือไม่</string>
+    <string name="k_connadaptor_confirm_uninstall_msg">"นำอัปเดตออกและกลับไปใช้ ConnAdaptor จากโรงงาน Android Auto และ CarPlay ไร้สายจะหยุดทำงาน
+
+ที่ใช้อยู่ตอนนี้:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_uninstall_title">ปิดใช้ ConnAdaptor หรือไม่</string>
+    <string name="k_connadaptor_do_cache">ดาวน์โหลด ConnAdaptor ไว้แล้ว — เปลี่ยนได้โดยไม่ต้องใช้อินเทอร์เน็ต</string>
+    <string name="k_connadaptor_errado_msg">"โหมดที่เลือกคือ %1$s แต่ ConnAdaptor ที่ติดตั้งเป็นของอีกโหมดหนึ่ง
+
+ระบบสามารถดาวน์โหลดแพ็กเกจที่ถูกต้องและติดตั้งให้ได้ และต้องรีสตาร์ตเครื่องเสียงรถหลังติดตั้ง"</string>
+    <string name="k_connadaptor_errado_titulo">ConnAdaptor ไม่ตรงกับโหมด</string>
+    <string name="k_connadaptor_error">ConnAdaptor: %1$s</string>
+    <string name="k_connadaptor_install_downgrade">ConnAdaptor ที่ติดตั้งอยู่ใหม่กว่าไฟล์ของ %1$s — ระบบจึงปฏิเสธการติดตั้ง เป็นไปได้ว่าเครื่องเสียงรถของคุณไม่ใช่ %1$s โปรดตรวจสอบตัวเลือกอีกครั้ง</string>
+    <string name="k_connadaptor_install_failure">ระบบปฏิเสธการติดตั้ง (%1$s) ไม่มีอะไรใน ConnAdaptor ถูกเปลี่ยนแปลง</string>
+    <string name="k_connadaptor_json_invalid_md5">connadaptor.json: md5 ไม่ถูกต้อง (ต้องเป็นเลขฐานสิบหก 32 ตัว)</string>
+    <string name="k_connadaptor_modo_bind">มี bind แบบเดิมเมาต์อยู่ แต่ยังไม่ได้ติดตั้ง — แตะ เปิดใช้ เพื่อแก้ไข</string>
+    <string name="k_connadaptor_modo_fabrica">ของโรงงาน — Android Auto และ CarPlay ไร้สายถูกปิดอยู่</string>
+    <string name="k_connadaptor_modo_hibrido">ติดตั้งแล้ว (กำลังนำ bind เก่าที่ค้างทับอยู่ออก)</string>
+    <string name="k_connadaptor_modo_instalado">ทำงานอยู่ — ติดตั้งแล้ว (คงอยู่หลังรีบูต)</string>
+    <string name="k_connadaptor_modo_titulo_master">โหมด</string>
+    <string name="k_connadaptor_modo_verificando">กำลังตรวจสอบว่าทำงานอยู่อย่างไร…</string>
+    <string name="k_connadaptor_nao_deu_para_conferir">ตรวจสอบเวอร์ชัน ConnAdaptor ไม่ได้ — อ่านทั้งไฟล์ที่ใช้งานอยู่และไฟล์แคชไม่ได้</string>
+    <string name="k_connadaptor_newer_message">มี ConnAdaptor ของ %1$s เวอร์ชันใหม่กว่าบนเซิร์ฟเวอร์ ดาวน์โหลดตอนนี้หรือไม่</string>
+    <string name="k_connadaptor_pm_error">pm install/uninstall ล้มเหลว — ดูบันทึก</string>
+    <string name="k_connadaptor_pm_installed">ติดตั้ง ConnAdaptor เป็นแอปแล้ว (pm install)</string>
+    <string name="k_connadaptor_pm_installing">กำลังติดตั้ง ConnAdaptor (pm install)…</string>
+    <string name="k_connadaptor_pm_is_stock">ไฟล์ที่ดาวน์โหลดเหมือนกับ ConnAdaptor จากโรงงาน — ไม่ใช่แพตช์ ยกเลิกการติดตั้ง</string>
+    <string name="k_connadaptor_pm_md5_mismatch">ไฟล์ ConnAdaptor ไม่ตรงกัน (คาดว่า %1$s… พบ %2$s…) — ยกเลิกการติดตั้ง</string>
+    <string name="k_connadaptor_pm_missing">ยังไม่ได้ดาวน์โหลด ConnAdaptor — กรุณาดาวน์โหลดก่อน</string>
+    <string name="k_connadaptor_pm_sem_canal">ช่องทางภายในไม่ตอบสนอง — ไม่มีอะไรถูกเปลี่ยนแปลง โปรดลองอีกครั้ง</string>
+    <string name="k_connadaptor_pm_sem_efeito">คำสั่งทำงานแล้วแต่สถานะไม่เปลี่ยน</string>
+    <string name="k_connadaptor_pm_uninstalled">ConnAdaptor กลับเป็นเวอร์ชันโรงงานแล้ว</string>
+    <string name="k_connadaptor_pm_uninstalling">กำลังถอนการอัปเดตของ ConnAdaptor…</string>
+    <string name="k_connadaptor_update_title">อัปเดต ConnAdaptor</string>
+    <string name="k_connadaptor_versao_1111">เครื่องเสียงรถ 1111</string>
+    <string name="k_connadaptor_versao_1114">เครื่องเสียงรถ 1114</string>
+    <string name="k_connadaptor_versao_baixando">กำลังดาวน์โหลด %1$s…</string>
+    <string name="k_connadaptor_versao_confirm_msg">"คุณเลือก %1$s
+
+ไฟล์นี้สำหรับเครื่องเสียงรถเวอร์ชัน %1$s หากเลือกเวอร์ชันผิด ระบบมักจะปฏิเสธการติดตั้ง — แต่ยืนยันได้เลย เพราะมีเพียงเวอร์ชันที่ถูกต้องเท่านั้นที่จะทำให้ Android Auto และ CarPlay ไร้สายทำงาน
+
+โปรดยืนยันว่าเครื่องเสียงรถของคุณคือ %1$s"</string>
+    <string name="k_connadaptor_versao_confirm_ok">ใช่ เป็น %1$s</string>
+    <string name="k_connadaptor_versao_confirm_title">ยืนยันเวอร์ชันของเครื่องเสียงรถ</string>
+    <string name="k_connadaptor_versao_nao_baixada">ยังไม่ได้ดาวน์โหลด %1$s — แตะ ค้นหาอัปเดต ใน ตั้งค่า</string>
+    <string name="k_connadaptor_versao_nao_publicada">%1$s ยังไม่ได้เผยแพร่บนเซิร์ฟเวอร์</string>
+    <string name="k_connadaptor_versao_selecionada">เวอร์ชันที่เลือก: %1$s</string>
+    <string name="k_connadaptor_versao_sem_internet">ไม่มีอินเทอร์เน็ต — ต้องดาวน์โหลด %1$s ก่อน เชื่อมต่อแล้วลองใหม่</string>
+    <string name="k_connadaptor_versao_titulo">เวอร์ชันของเครื่องเสียงรถ</string>
+    <string name="k_connecting_to_car">กำลังเชื่อมต่อกับรถ โปรดลองอีกครั้งในอีกสักครู่…</string>
+    <string name="k_continue_btn">ดำเนินการต่อ</string>
+    <string name="k_continue_question">ดำเนินการต่อหรือไม่</string>
+    <string name="k_copy_audios_message">คัดลอกไฟล์เสียงจากแฟลชไดรฟ์ไปยังเครื่องเสียงรถหรือไม่</string>
+    <string name="k_copy_audios_title">คัดลอกไฟล์เสียง</string>
+    <string name="k_copy_btn">คัดลอก</string>
+    <string name="k_copy_to_device_failed">"คัดลอกไฟล์ไปยังอุปกรณ์ไม่สำเร็จ
+ตรวจสอบพื้นที่ว่างใน /data/local/tmp แล้วลองอีกครั้ง"</string>
+    <string name="k_copy_to_path_failed">"%1$s: คัดลอกไปยัง %2$s ไม่สำเร็จ (staging=%3$d dest=%4$d)
+%5$s"</string>
+    <string name="k_copying_apks_pendrive">กำลังคัดลอก APK จากแฟลชไดรฟ์...</string>
+    <string name="k_copying_audios_pendrive">กำลังคัดลอกไฟล์เสียงจากแฟลชไดรฟ์...</string>
+    <string name="k_could_not_check_updates">ตรวจสอบอัปเดตไม่ได้ โปรดตรวจสอบการเชื่อมต่อ</string>
+    <string name="k_create_routes_short">สร้างเส้นทาง</string>
+    <string name="k_creating_network_routes">กำลังสร้างเส้นทางเครือข่าย...</string>
+    <string name="k_creating_routes_toast">กำลังสร้างเส้นทาง</string>
+    <string name="k_deactivating_android_auto">กำลังปิดใช้ Android Auto…</string>
+    <string name="k_default_none">ค่าเริ่มต้น (ไม่มี)</string>
+    <string name="k_delete_audio_message">ลบ \"%1$s\" หรือไม่ การกระทำนี้ย้อนกลับไม่ได้</string>
+    <string name="k_delete_audio_title">ลบไฟล์เสียง</string>
+    <string name="k_delete_btn">ลบ</string>
+    <string name="k_deleting_audio_named">กำลังลบไฟล์เสียง: %1$s</string>
+    <string name="k_deleting_named">กำลังลบ %1$s...</string>
+    <string name="k_dep_connadaptor">ConnAdaptor (Android Auto ไร้สาย): มีเวอร์ชันใหม่กว่า</string>
+    <string name="k_dep_connadaptor_curto">ConnAdaptor</string>
+    <string name="k_dep_dualdashcam">DualDashcam (PiP กล้องหลัง): ติดตั้ง %1$s มีให้ %2$s</string>
+    <string name="k_dep_falhou_msg">"อัปเดต %1$s ไม่สำเร็จ
+
+สาเหตุ: %2$s
+
+คำเตือนนี้จะกลับมาอีกในการเปิดครั้งถัดไปจนกว่าจะสำเร็จ"</string>
+    <string name="k_dep_gestures">ตัวเรียกใช้งานพร้อมท่าทาง: มีแพตช์เวอร์ชันใหม่กว่า</string>
+    <string name="k_dep_gestures_update_failed">อัปเดตตัวเรียกใช้งานพร้อมท่าทางไม่สำเร็จ — ดูบันทึก</string>
+    <string name="k_dep_gestures_updated">อัปเดตตัวเรียกใช้งานพร้อมท่าทางแล้ว</string>
+    <string name="k_dep_keyserver">แพตช์ปุ่มควบคุมบนพวงมาลัย: มีเวอร์ชันใหม่กว่า (%1$s)</string>
+    <string name="k_dep_update_go">อัปเดตตอนนี้</string>
+    <string name="k_dep_update_message">"คุณสมบัติของเครื่องเสียงรถต้องพึ่งแอปเหล่านี้ หากไม่อัปเดตอาจทำงานไม่ได้:
+
+%1$s
+
+เราแนะนำให้อัปเดต"</string>
+    <string name="k_dep_update_running">กำลังอัปเดต %1$d รายการ — ติดตามได้จากสถานะของแต่ละการ์ด</string>
+    <string name="k_dep_update_title">แนะนำให้อัปเดต</string>
+    <string name="k_diagnosing_routes">กำลังวินิจฉัยเส้นทาง...</string>
+    <string name="k_disable_all_btn">ปิดทั้งหมด</string>
+    <string name="k_disable_avas_message">ลำโพงภายนอกใช้เตือนคนเดินเท้าเมื่อรถวิ่งช้า เมื่อดำเนินการต่อ คุณรับทราบว่าการปิด AVAS เป็นความรับผิดชอบของผู้ขับขี่ทั้งหมด</string>
+    <string name="k_disable_avas_title">ปิดลำโพงภายนอก</string>
+    <string name="k_download_connadaptor_btn">ดาวน์โหลด ConnAdaptor</string>
+    <string name="k_download_empty">ดาวน์โหลดได้ไฟล์ว่าง — การเชื่อมต่อหลุดก่อนจะได้รับข้อมูลใด ๆ</string>
+    <string name="k_download_failed_after_attempts">ดาวน์โหลดล้มเหลวทั้ง %1$d ครั้ง หากอินเทอร์เน็ตของเครื่องเสียงรถมาจากโทรศัพท์ ไฟล์ขนาดใหญ่มักผ่านไม่ได้ — ให้อัปเดตผ่านแอปในโทรศัพท์แทน</string>
+    <string name="k_download_folder_inaccessible">เข้าถึงโฟลเดอร์ Download ไม่ได้</string>
+    <string name="k_download_retry_progress">ล้มเหลว (%1$d/%2$d) กำลังลองใหม่…</string>
+    <string name="k_download_truncated">ดาวน์โหลดไม่ครบ (%1$d จาก %2$d ไบต์) — การเชื่อมต่อหลุดกลางคัน</string>
+    <string name="k_downloading_cafix">กำลังดาวน์โหลด ConnAdaptor…</string>
+    <string name="k_downloading_carplaymonitor">กำลังดาวน์โหลด CarplayMonitor…</string>
+    <string name="k_downloading_manifest">กำลังดาวน์โหลดไฟล์ประกาศ…</string>
+    <string name="k_downloading_named">กำลังดาวน์โหลด %1$s</string>
+    <string name="k_downloading_plain">กำลังดาวน์โหลด</string>
+    <string name="k_drag_to_see_qa_resize_hint">ลากเพื่อดูเมนูลัดเปลี่ยนขนาดทันที ต้องเปิดเมนูด้านข้าง (ด้านล่าง) ก่อนจึงจะทำงาน</string>
+    <string name="k_drive_mode_toast">การขับขี่: %1$s</string>
+    <string name="k_drive_recusado_pelo_carro">รถไม่รับโหมดการขับขี่ที่เลือก</string>
+    <string name="k_error_activating">เปิดใช้ไม่สำเร็จ</string>
+    <string name="k_error_activating_carplay">เปิดใช้ CarPlay ไม่สำเร็จ</string>
+    <string name="k_error_adb_unavailable">ต้องใช้ ADB root ภายใน — ไม่พร้อมใช้งาน</string>
+    <string name="k_error_deactivating">ปิดใช้ไม่สำเร็จ</string>
+    <string name="k_error_installing_named">ติดตั้ง %1$s ไม่สำเร็จ</string>
+    <string name="k_error_no_foreground_app">ไม่พบแอปที่อยู่เบื้องหน้า: %1$s</string>
+    <string name="k_error_occurred_title">เกิดข้อผิดพลาด</string>
+    <string name="k_error_open_app">ไม่พบวิธีเปิดแอปนี้</string>
+    <string name="k_error_open_other_app_first">เปิดแอปอื่นก่อนแบ่งหน้าจอ (ใช้แอป Central เองไม่ได้)</string>
+    <string name="k_error_open_pip">เปิดใน PiP ไม่สำเร็จ: %1$s</string>
+    <string name="k_error_prepare_left">เตรียมฝั่งซ้ายไม่สำเร็จ: %1$s</string>
+    <string name="k_error_read_resolution">อ่านความละเอียดหน้าจอไม่ได้: %1$s</string>
+    <string name="k_error_report_no_internet">ไม่มีอินเทอร์เน็ต — ระบบจะส่งรายงานอัตโนมัติเมื่อเชื่อมต่อได้</string>
+    <string name="k_error_report_prompt">"%1$s
+
+ต้องการส่งรายงานข้อผิดพลาดทางอีเมลถึงฝ่ายสนับสนุนหรือไม่"</string>
+    <string name="k_error_report_queued">ส่งตอนนี้ไม่ได้ — ระบบจะส่งอัตโนมัติเมื่อมีอินเทอร์เน็ต</string>
+    <string name="k_error_report_sent">ส่งรายงานข้อผิดพลาดแล้ว ขอบคุณ!</string>
+    <string name="k_error_restarting">รีสตาร์ทไม่สำเร็จ</string>
+    <string name="k_error_split_with_app">แบ่งหน้าจอกับแอปนี้ไม่สำเร็จ: %1$s</string>
+    <string name="k_escolher_app">เลือกแอปพลิเคชัน</string>
+    <string name="k_eyebrow_atalhos_gestos">ท่าทาง</string>
+    <string name="k_eyebrow_atalhos_icones">ไอคอน</string>
+    <string name="k_eyebrow_automacao">ระบบอัตโนมัติ</string>
+    <string name="k_eyebrow_avas">AVAS</string>
+    <string name="k_eyebrow_barra_carro">แถบของรถ</string>
+    <string name="k_eyebrow_camera">กล้องและความปลอดภัย</string>
+    <string name="k_eyebrow_catalogo">แค็ตตาล็อก</string>
+    <string name="k_eyebrow_clima">ปรับอากาศ</string>
+    <string name="k_eyebrow_clima_seguranca">ปรับอากาศและความปลอดภัย</string>
+    <string name="k_eyebrow_conectividade">การเชื่อมต่อ</string>
+    <string name="k_eyebrow_conexao">การเชื่อมต่อ</string>
+    <string name="k_eyebrow_instalador">ตัวติดตั้ง</string>
+    <string name="k_eyebrow_internet_aa">อินเทอร์เน็ตสำหรับ Android Auto</string>
+    <string name="k_eyebrow_midia">สื่อ</string>
+    <string name="k_eyebrow_preferencias">การตั้งค่าส่วนตัว</string>
+    <string name="k_eyebrow_seguranca">ความปลอดภัย</string>
+    <string name="k_eyebrow_sistema">ระบบ</string>
+    <string name="k_eyebrow_som_travamento">เสียงล็อกรถ</string>
+    <string name="k_eyebrow_tela">หน้าจอ</string>
+    <string name="k_eyebrow_volante">พวงมาลัย</string>
+    <string name="k_fan_speed_toast">พัดลม: %1$d</string>
+    <string name="k_favorite_apps_manage_subtitle">เลือกแอปที่ต้องการให้แสดงในรายการของท่าทาง 5 นิ้ว</string>
+    <string name="k_favorite_apps_manage_title">แอปโปรด</string>
+    <string name="k_favorite_apps_title">รายการโปรด</string>
+    <string name="k_favorites_empty">ยังไม่มีการ์ดโปรด แตะที่ดาว (☆) ตรงมุมของการ์ดเพื่อเพิ่มมาที่นี่</string>
+    <string name="k_favorites_empty_hint">คุณยังไม่ได้เลือกแอปโปรด แตะ \"⭐ จัดการรายการโปรด\" ด้านบนเพื่อเพิ่มรายการแรก — แอปเหล่านี้จะปรากฏที่นี่ทุกครั้งที่คุณแตะหน้าจอด้วย 5 นิ้ว</string>
+    <string name="k_feature_enabled_title">เปิดใช้คุณสมบัติแล้ว</string>
+    <string name="k_file_corrupted_invalid">"ไฟล์เสียหายหรือไม่ถูกต้อง
+โปรดดาวน์โหลดใหม่แล้วลองอีกครั้ง"</string>
+    <string name="k_file_received">ได้รับแล้ว: %1$s (%2$d ไบต์)</string>
+    <string name="k_file_transfer_failed">"ถ่ายโอนไฟล์ไม่สำเร็จ
+ตรวจสอบพื้นที่ว่างแล้วลองอีกครั้ง"</string>
+    <string name="k_floating_side_menu_desc">แสดงแถบจับที่ขอบหน้าจอ พร้อมทางลัดไปยังคุณสมบัติหลักของรถ</string>
+    <string name="k_floating_side_menu_header">🎛️ เมนูด้านข้างแบบลอย</string>
+    <string name="k_forced_restart_message">"ระบบรีสตาร์ตโดยไม่คาดคิดในการเปิดเครื่องครั้งล่าสุด
+
+เพื่อป้องกันการวนซ้ำ ทุกอย่างที่แอปตั้งค่าซ้ำเองถูกหยุดไว้ ได้แก่ CarPlay ไร้สาย Android Auto ไร้สาย ระบบปรับอากาศดิจิทัล AVAS AEB ท่าทางบนพวงมาลัย และโหมดการขับขี่
+
+ระหว่างที่หยุดไว้ คุณสมบัติเหล่านี้จะไม่กลับมาเมื่อสตาร์ตรถ
+
+ต้องการให้ตั้งค่าซ้ำเมื่อเปิดเครื่องอีกครั้งหรือไม่"</string>
+    <string name="k_forced_restart_title">ตรวจพบการรีสตาร์ตแบบบังคับ</string>
+    <string name="k_freeform_setup_message">เพื่อให้การตั้งค่าเสร็จสมบูรณ์ ต้องรีสตาร์ตเครื่องเสียงรถหนึ่งครั้ง โดยกดปุ่ม ย้อนกลับ และ เพลง บนพวงมาลัยค้างไว้ 15 วินาที</string>
+    <string name="k_generic_error">ผิดพลาด: %1$s</string>
+    <string name="k_gerenciar">จัดการ</string>
+    <string name="k_got_it">เข้าใจแล้ว</string>
+    <string name="k_handle_dim_hint">ปรับความสูงและความกว้างของปุ่ม (แถบจับ \"›\") ที่เปิดเมนูลัด — ไม่ใช่ขนาดของไอคอน</string>
+    <string name="k_handle_height_label">↕️ ความสูงของแถบจับ</string>
+    <string name="k_handle_transparency_label">👁️ ความโปร่งใสของแถบจับ (เมื่อย่อเก็บ): %1$d%%</string>
+    <string name="k_handle_transparency_short_label">👁️ ความโปร่งใส</string>
+    <string name="k_handle_width_label">↔️ ความกว้างของแถบจับ</string>
+    <string name="k_help_question_mark">?</string>
+    <string name="k_hold_to_restore_adb">กดค้างเพื่อคืนค่า ADB (%1$d)</string>
+    <string name="k_hvac_baixando_msg">ขนาดราว 18 MB หากการเชื่อมต่อช้าอาจใช้เวลาหลายนาที เปิดหน้าจอนี้ค้างไว้ได้</string>
+    <string name="k_hvac_baixando_titulo">กำลังดาวน์โหลดระบบปรับอากาศดิจิทัล</string>
+    <string name="k_hvac_digital_batt_title">% แบตเตอรี่บนแถบสถานะ</string>
+    <string name="k_hvac_digital_common_desc">ทำ bind mount ชั่วคราว (ไม่แก้ไข /system) แล้วรีสตาร์ตแถบของระบบ ควรทำขณะรถจอดอยู่กับที่</string>
+    <string name="k_hvac_digital_needs_download">ครั้งแรกต้องดาวน์โหลดแอปพลิเคชันหนึ่งตัว — โปรดเปิดอินเทอร์เน็ตไว้ ดำเนินการต่อหรือไม่</string>
+    <string name="k_hvac_digital_temp_desc">เปลี่ยนแถบเลื่อนอุณหภูมิบนแถบของระบบให้เป็นตัวเลข</string>
+    <string name="k_hvac_digital_temp_title">อุณหภูมิแอร์แบบตัวเลข</string>
+    <string name="k_hvac_temp_toast">อุณหภูมิ: %1$.0f°</string>
+    <string name="k_icon_desc_aa_activate">เปิดการเชื่อมต่อไร้สายของ Android Auto/CarPlay</string>
+    <string name="k_icon_desc_aa_reset">รีสตาร์ตการเชื่อมต่อ Android Auto/CarPlay เมื่อค้าง</string>
+    <string name="k_icon_desc_app_pip">เปิดแอปในหน้าต่างลอย (PiP) ปุ่ม +/−/⟲ ปรับได้ ปุ่ม ✕ ปิด</string>
+    <string name="k_icon_desc_avas">เปิดหรือปิดเสียงเตือนคนเดินเท้าของรถ</string>
+    <string name="k_icon_desc_close_apps">ปิดแอปของผู้ใช้ที่กำลังทำงาน เพื่อคืนหน่วยความจำและแก้ปัญหา PiP ค้าง จะไม่แตะต้องแอปของระบบ</string>
+    <string name="k_icon_desc_drive_regen">เปลี่ยนโหมดการขับขี่ (Eco/Comfort/Sport) และความแรงของการคืนพลังงาน</string>
+    <string name="k_icon_desc_power_off">ดับเครื่องยนต์ทั้งหมด ต้องเข้าเกียร์ P ก่อน</string>
+    <string name="k_icon_desc_screen_rest">ลดความสว่างและแสดงนาฬิกาแบบเรียบง่ายบนหน้าจอทันที ต่างจาก ดับหน้าจอ (ที่ดับสนิท) ตรงที่ไม่แสดงคำเตือนในครั้งแรก</string>
+    <string name="k_icon_desc_split_screen">เปิดการแบ่งหน้าจอเป็นหน้าต่างลอย แตะอีกครั้งเพื่อปิด</string>
+    <string name="k_icon_desc_telemetry">ส่งข้อมูลของรถ (แบตเตอรี่ ความเร็ว ฯลฯ) ไปยังแอปอื่น</string>
+    <string name="k_icon_hidden">ซ่อนอยู่</string>
+    <string name="k_icon_reorder_hint">↑↓ ย้ายไอคอนในรายการ · สวิตช์แสดงหรือซ่อนในเมนู</string>
+    <string name="k_icon_size_label">🔍 ขนาดไอคอน: %1$d%%</string>
+    <string name="k_icon_size_short_label">🔍 ไอคอน</string>
+    <string name="k_icon_visible">แสดงอยู่</string>
+    <string name="k_icons_visibility_order_header">🔀 ไอคอน — การแสดงผลและลำดับ</string>
+    <string name="k_info_hvac_digital_batt_message">แสดง % แบตเตอรี่บนแถบของรถ แยกอิสระจากอุณหภูมิแบบตัวเลข (เปิดอย่างใดอย่างหนึ่ง หรือทั้งสองอย่างก็ได้) ใช้งานผ่าน bind mount (ชั่วคราว: ไม่แก้ไข /system และตั้งค่าซ้ำเมื่อเปิดเครื่อง) และจะรีสตาร์ตแถบเมื่อใช้งาน ครั้งแรกต้องดาวน์โหลดแอปพลิเคชัน จึงต้องใช้อินเทอร์เน็ต</string>
+    <string name="k_info_hvac_digital_temp_message">แสดงอุณหภูมิบนแถบของระบบเป็นตัวเลขแทนแถบเลื่อน แยกอิสระจาก % แบตเตอรี่บนแถบ (เปิดอย่างใดอย่างหนึ่ง หรือทั้งสองอย่างก็ได้) ใช้งานผ่าน bind mount (ชั่วคราว: ไม่แก้ไข /system และตั้งค่าซ้ำเมื่อเปิดเครื่อง) และจะรีสตาร์ตแถบเมื่อใช้งาน ครั้งแรกต้องดาวน์โหลดแอปพลิเคชัน จึงต้องใช้อินเทอร์เน็ต</string>
+    <string name="k_info_pill_message">แสดงอุณหภูมิภายนอกและ/หรือ % แบตเตอรี่ในฟองลอยที่อยู่เหนือทุกหน้าจอ รวมถึง Android Auto/CarPlay เลือกได้ว่าจะแสดงอะไร ความโปร่งใสของพื้นหลัง ขนาดและสีของตัวอักษร กดค้างแล้วลากเพื่อย้ายตำแหน่ง — เครื่องเสียงรถจะจำตำแหน่งที่คุณวางไว้ แตะเร็ว ๆ (โดยไม่ลาก) จะเปิดรายการกำหนดการปรับอากาศที่บันทึกไว้ แตะรายการหนึ่งเพื่อเริ่มทำงาน (ตัวอักษรจะเป็นสีเขียว) และแตะที่ฟองอีกครั้งเพื่อหยุด</string>
+    <string name="k_info_pill_title">ฟองอุณหภูมิ/แบตเตอรี่</string>
+    <string name="k_info_remember_brightness_message">เก็บความสว่างสองค่า — ปิดไฟหน้า (กลางวัน) และเปิดไฟหน้า (กลางคืน) — และสลับเองเมื่อไฟหน้าเปลี่ยน โดยจดจำค่าที่คุณตั้งไว้ในแต่ละสถานการณ์ ไม่ว่าจะปรับจากแอปหรือจากแผงควบคุมของรถ และจะไม่จำตอนหน้าจอดับ</string>
+    <string name="k_info_remember_brightness_title">จำความสว่างหน้าจอ</string>
+    <string name="k_info_rvc_black_bg_message">ทำให้พื้นหลังของกล้องถอยหลังเป็นสีดำผ่าน bind mount (ชั่วคราว: ไม่แก้ไข /system หายไปเมื่อรีบูต และตั้งค่าซ้ำอัตโนมัติเมื่อเปิดเครื่อง) เป็นคุณสมบัติของรุ่น Pro</string>
+    <string name="k_info_rvc_black_bg_title">พื้นหลังกล้องถอยหลังสีดำ</string>
+    <string name="k_info_status_temp_message" formatted="false">ไอคอนอิสระสองตัวบนแถบการแจ้งเตือน (SystemUI ของ Geely แบบไม่รุกล้ำ) — เปิดตัวใดตัวหนึ่ง หรือทั้งสองตัวก็ได้ แบตเตอรี่: สีเขียวเมื่อเกิน 80% สีขาวระหว่าง 20% ถึง 80% และสีส้มเมื่อต่ำกว่า 20% อัปเดตทุก 15 วินาที แตะที่ % เพื่อเปิดแอปพลังงาน</string>
+    <string name="k_info_status_temp_title">อุณหภูมิและ % แบตเตอรี่บนแถบสถานะ</string>
+    <string name="k_info_window_door_message">แต่ละประตูจะเลื่อนกระจกของตัวเองขึ้นลงเท่านั้น: เปิดประตูหลังกระจกหลังจะเลื่อนลง เปิดประตูผู้โดยสารกระจกฝั่งนั้นก็เลื่อนลงด้วย (แยกอิสระจากกัน) และเมื่อปิดแต่ละบานกระจกของบานนั้นจะเลื่อนขึ้น ทำงานกับรถโดยตรงผ่าน CarPropertyManager โดยไม่ใช้ bind mount</string>
+    <string name="k_info_window_door_title">กระจกทำงานตามประตู</string>
+    <string name="k_install_cancelled_by_system">ระบบยกเลิกการติดตั้ง</string>
+    <string name="k_install_error_title">ติดตั้งไม่สำเร็จ</string>
+    <string name="k_install_failed_try_again">ติดตั้งไม่สำเร็จ โปรดลองอีกครั้ง</string>
+    <string name="k_install_failure_detail">"ติดตั้งไม่สำเร็จ
+%1$s"</string>
+    <string name="k_install_success_named">"ติดตั้งสำเร็จ:
+%1$s"</string>
+    <string name="k_install_with_icon">⬇️ ติดตั้ง</string>
+    <string name="k_installation_complete">ติดตั้งเสร็จสิ้น</string>
+    <string name="k_installed_version">✅ ติดตั้งแล้ว v%1$s</string>
+    <string name="k_installed_version_newer">"เวอร์ชันที่ติดตั้งอยู่ใหม่กว่า
+ถอนการติดตั้งก่อนจึงจะลดเวอร์ชันได้"</string>
+    <string name="k_installed_version_plain">ติดตั้งแล้ว v%1$s</string>
+    <string name="k_installer_already_running">มีการติดตั้งกำลังดำเนินอยู่แล้ว โปรดรอให้เสร็จสิ้น</string>
+    <string name="k_installer_cancelled">ยกเลิกการติดตั้งแล้ว</string>
+    <string name="k_installer_confirm_install">ติดตั้ง</string>
+    <string name="k_installer_confirm_msg">"%1$s
+แพ็กเกจ: %2$s
+เวอร์ชัน: %3$s
+
+%4$s"</string>
+    <string name="k_installer_confirm_new">ยังไม่ได้ติดตั้งแอปพลิเคชันนี้</string>
+    <string name="k_installer_confirm_title">ติดตั้งแอปพลิเคชันหรือไม่</string>
+    <string name="k_installer_confirm_update">การทำเช่นนี้จะแทนที่เวอร์ชันที่ติดตั้งอยู่ (%1$s)</string>
+    <string name="k_installer_copying">กำลังคัดลอก APK…</string>
+    <string name="k_installer_done_title">ติดตั้งเสร็จสิ้น</string>
+    <string name="k_installer_error_title">ผิดพลาด</string>
+    <string name="k_installer_failure">"ติดตั้งไม่สำเร็จ:
+%1$s"</string>
+    <string name="k_installer_installing">กำลังติดตั้ง %1$s…</string>
+    <string name="k_installer_invalid_apk">ไฟล์นี้ไม่ใช่ APK ที่ถูกต้อง</string>
+    <string name="k_installer_preparing">กำลังเตรียม…</string>
+    <string name="k_installer_success">ติดตั้งสำเร็จ!</string>
+    <string name="k_installer_title">ตัวติดตั้ง</string>
+    <string name="k_installer_unknown_error">ข้อผิดพลาดที่ไม่รู้จัก</string>
+    <string name="k_installing_cafix">กำลังติดตั้ง ConnAdaptor… (โปรดรอ)</string>
+    <string name="k_installing_carplaymonitor">กำลังติดตั้ง CarplayMonitor… (โปรดรอ)</string>
+    <string name="k_installing_named">กำลังติดตั้ง %1$s…</string>
+    <string name="k_installing_version">กำลังติดตั้ง %1$s…</string>
+    <string name="k_installing_version_wait">กำลังติดตั้ง v%1$s… (โปรดรอ)</string>
+    <string name="k_installing_xapk_named">กำลังติดตั้ง XAPK %1$s…</string>
+    <string name="k_insufficient_storage">พื้นที่จัดเก็บในอุปกรณ์ไม่เพียงพอ</string>
+    <string name="k_internet_com_root">อินเทอร์เน็ตผ่านเส้นทาง (ต้องมี root)</string>
+    <string name="k_internet_com_root_desc">ส่งอินเทอร์เน็ตจากโทรศัพท์ไปยังรถ (แผนที่และเพลงของ Android Auto จะโหลดได้) ต้องใช้โทรศัพท์ที่มี root ปุ่ม สร้างเส้นทาง ทำทันที ส่วน อัตโนมัติ จะทำซ้ำเองเมื่อเชื่อมต่อ</string>
+    <string name="k_internet_sem_root">อินเทอร์เน็ตผ่านพร็อกซี (ไม่ต้องมี root)</string>
+    <string name="k_internet_sem_root_desc">ใช้พร็อกซีของแอป Central EX Celular — ไม่ต้องมี root ในโทรศัพท์ ต้องติดตั้งแอปและเปิดตัวเลือกพร็อกซีในแอปนั้น</string>
+    <string name="k_keepalive_manage_subtitle">เลือกแอปที่ควรทำงานอยู่เบื้องหลังต่อไปโดยไม่ถูกระบบปิด</string>
+    <string name="k_keepalive_manage_title">แอปที่ทำงานตลอด</string>
+    <string name="k_keyserver_activated">เปิดใช้ปุ่มควบคุมบนพวงมาลัยแล้ว!</string>
+    <string name="k_keyserver_activated_service_down">เปลี่ยนไฟล์และเมาต์แล้ว แต่บริการ KeyServer ยังไม่กลับมาทำงาน ปุ่มควบคุมอาจยังไม่ทำงานจนกว่าจะสตาร์ตรถใหม่ (บริการจะกลับมาเองเมื่อเปิดเครื่อง พร้อมแพตช์แล้ว)</string>
+    <string name="k_keyserver_checking">กำลังตรวจสอบแพตช์...</string>
+    <string name="k_keyserver_deactivated">ปิดใช้ปุ่มควบคุมบนพวงมาลัยแล้ว — คืนค่า KeyServer เดิมแล้ว</string>
+    <string name="k_keyserver_deactivating">กำลังปิดใช้ปุ่มควบคุมบนพวงมาลัย...</string>
+    <string name="k_keyserver_download_failed">ดาวน์โหลดหรือใช้แพตช์ไม่สำเร็จ: %1$s</string>
+    <string name="k_keyserver_error_activating">เปิดใช้ไม่สำเร็จ — ดูบันทึก</string>
+    <string name="k_keyserver_file_missing_after_download">ไม่พบไฟล์แพตช์หลังดาวน์โหลด — ยกเลิกการเปิดใช้</string>
+    <string name="k_keyserver_first_activate_message">การเปิดใช้ครั้งแรกจะดาวน์โหลดโมดูลหนึ่ง (~10 MB) ผ่านอินเทอร์เน็ต โปรดตรวจสอบว่าเชื่อมต่ออยู่ก่อนดำเนินการต่อ</string>
+    <string name="k_keyserver_first_activate_title">ต้องเชื่อมต่ออินเทอร์เน็ต</string>
+    <string name="k_keyserver_mounting">กำลังใช้งาน...</string>
+    <string name="k_keyserver_no_internet_first_download">ไม่มีการเชื่อมต่ออินเทอร์เน็ต — การเปิดใช้ครั้งแรกต้องดาวน์โหลดโมดูล (~10 MB)</string>
+    <string name="k_keyserver_swapping">กำลังดาวน์โหลดและแทนที่แพตช์...</string>
+    <string name="k_lado_direito">ขวา</string>
+    <string name="k_lado_esquerdo">ซ้าย</string>
+    <string name="k_language_desc">เลือกภาษาของแอปพลิเคชัน ต้องเปิดหน้าจอปัจจุบันใหม่เพื่อให้มีผล</string>
+    <string name="k_language_en">English</string>
+    <string name="k_language_es_cl">Español (Chile)</string>
+    <string name="k_language_header">🌐 ภาษา</string>
+    <string name="k_language_pt_br">Português (Brasil)</string>
+    <string name="k_language_ru">Русский</string>
+    <string name="k_language_vi">Tiếng Việt</string>
+    <string name="k_linha_carplaymonitor">CarplayMonitor — %1$s</string>
+    <string name="k_linha_connadaptor">ConnAdaptor — %1$s</string>
+    <string name="k_linha_versao_central">ตรวจพบเวอร์ชัน %1$s</string>
+    <string name="k_linha_versao_central_desconhecida">ไม่สามารถระบุเวอร์ชันของเครื่องเสียงรถ</string>
+    <string name="k_local_md5">MD5 ในเครื่อง: %1$s…</string>
+    <string name="k_log_cleared">ล้างบันทึกแล้ว</string>
+    <string name="k_lyrics_config_btn">⚙ ปรับรูปลักษณ์ (ขนาด สี ความโปร่งใส)</string>
+    <string name="k_lyrics_floater_desc">แสดงเนื้อเพลงที่ซิงค์กับเพลงที่กำลังเล่น (Spotify/YT Music) เป็นบรรทัดเหนือแถบ แตะที่บรรทัดเพื่อเปิดแผงคาราโอเกะ ระบบจะค้นหาเนื้อเพลงจากอินเทอร์เน็ต</string>
+    <string name="k_lyrics_floater_title">เนื้อเพลงบนหน้าจอ (คาราโอเกะ)</string>
+    <string name="k_mbh_back">กลับ</string>
+    <string name="k_mbh_connecting">กำลังเชื่อมต่อ…</string>
+    <string name="k_mbh_empty">ไม่มีอะไรที่นี่</string>
+    <string name="k_mbh_load_error">โหลดรายการนี้ไม่ได้ (แอปอาจต้องให้เข้าสู่ระบบ)</string>
+    <string name="k_mbh_login">เข้าสู่ระบบ</string>
+    <string name="k_mbh_no_sources">ไม่มีแอปเพลงที่รองรับติดตั้งอยู่</string>
+    <string name="k_mbh_nothing_playing">ไม่มีเพลงกำลังเล่น</string>
+    <string name="k_mbh_open">เปิด</string>
+    <string name="k_mbh_pick_source">เลือกแหล่งที่มาทางซ้าย</string>
+    <string name="k_mbh_refused">แอปนี้ปฏิเสธการเชื่อมต่อ</string>
+    <string name="k_mbh_title">เครื่องเล่นเพลง</string>
+    <string name="k_md5_mismatch">md5 ไม่ตรง (คาดว่า %1$s… ได้ %2$s…)</string>
+    <string name="k_md5_mismatch_manifest">MD5 ของไฟล์ที่ดาวน์โหลดไม่ตรงกับไฟล์ประกาศ (คาดว่า %1$s… ได้ %2$s…)</string>
+    <string name="k_media_bar_floater_desc">แสดงปกอัลบั้ม ชื่อเพลง และปุ่มเล่น/หยุดของ Spotify หรือ YouTube Music บนแถบด้านล่าง ข้างปุ่มหน้าแรก เหมือน Android Auto</string>
+    <string name="k_media_bar_floater_title">Spotify และ YT Music บนแถบ</string>
+    <string name="k_missing_connadaptor_offline">หากต้องการใช้ %1$s เครื่องเสียงต้องมี ConnAdaptor ซึ่งยังไม่ได้ดาวน์โหลด เชื่อมต่ออินเทอร์เน็ตแล้วแตะ “เปิดใช้งาน” อีกครั้ง การดาวน์โหลดจะเกิดขึ้นระหว่างการเปิดใช้งาน</string>
+    <string name="k_missing_connadaptor_online">หากต้องการใช้ %1$s เครื่องเสียงต้องดาวน์โหลด ConnAdaptor (ประมาณ 19 MB) ดาวน์โหลดและเปิดใช้งานตอนนี้หรือไม่</string>
+    <string name="k_missing_connadaptor_title">ไม่มี ConnAdaptor</string>
+    <string name="k_mode_comfort">สบาย</string>
+    <string name="k_mode_comfort_abbr">สบ.</string>
+    <string name="k_mode_eco">ประหยัด</string>
+    <string name="k_mode_eco_abbr">ปย.</string>
+    <string name="k_mode_medium">ปานกลาง</string>
+    <string name="k_mode_medium_abbr">กลาง</string>
+    <string name="k_mode_sport">สปอร์ต</string>
+    <string name="k_mode_sport_abbr">สป.</string>
+    <string name="k_mode_strong">แรง</string>
+    <string name="k_mode_strong_abbr">แรง</string>
+    <string name="k_mode_weak">อ่อน</string>
+    <string name="k_mode_weak_abbr">อ่อน</string>
+    <string name="k_modo_aa">Android Auto</string>
+    <string name="k_modo_aa_msg">"แอปจะเปิดใช้เฉพาะ Android Auto ไร้สาย ส่วน CarPlay ไร้สายจะปิดอยู่: จะไม่ใช้แพตช์ CarplayMonitor และปิดการประกาศไปยัง iPhone
+
+ConnAdaptor ที่ติดตั้งยังเป็นตัวเดิม — เปลี่ยนกลับเป็น ทั้งสองอย่าง ได้ทุกเมื่อ"</string>
+    <string name="k_modo_ambos">Android Auto + CarPlay</string>
+    <string name="k_modo_ambos_msg">แอปจะเปิดใช้ทั้ง Android Auto และ CarPlay ไร้สาย เป็นตัวเลือกที่แนะนำและผ่านการทดสอบมากที่สุด</string>
+    <string name="k_modo_aplicado">โหมด: %1$s</string>
+    <string name="k_modo_aplicando">กำลังใช้โหมด %1$s…</string>
+    <string name="k_modo_carplay">CarPlay</string>
+    <string name="k_modo_carplay_msg">"แอปจะเปิดใช้เฉพาะ CarPlay ไร้สาย: เปิดแพตช์ CarplayMonitor และการประกาศไปยัง iPhone ส่วนการเชื่อมต่ออัตโนมัติของ Android Auto จะปิดอยู่
+
+ConnAdaptor ที่ติดตั้งยังเป็นตัวเดิม — เปลี่ยนกลับเป็น ทั้งสองอย่าง ได้ทุกเมื่อ"</string>
+    <string name="k_modo_confirm_title">ใช้เฉพาะ %1$s หรือไม่</string>
+    <string name="k_modo_oficina_ajuda_msg">"แอปที่ติดตั้งไว้หายไปจากหน้าจอหลัก พร้อมกับวิดเจ็ตและตัวแอป Central เอง และ Android Auto ไร้สายกลับเป็นของเดิมแล้ว
+
+หากต้องการนำทุกอย่างกลับคืน ใช้วิธีใดวิธีหนึ่งต่อไปนี้:
+
+• แตะเร็ว 5 ครั้งที่มุมล่างซ้ายของหน้าจอ เหนือแถบด้านล่างเล็กน้อย
+• ปุ่มใน EX Sapo Móvel บนโทรศัพท์"</string>
+    <string name="k_modo_oficina_ajuda_titulo">โหมดเข้าศูนย์บริการทำงานอยู่</string>
+    <string name="k_modo_oficina_ativar">เตรียมสำหรับเข้าศูนย์</string>
+    <string name="k_modo_oficina_ativo_status">ทำงานอยู่ วิธีกลับคืน: แตะ 5 ครั้งที่มุมล่างซ้าย ปุ่มในโทรศัพท์ หรือรอให้ครบกำหนด</string>
+    <string name="k_modo_oficina_confirmar_msg">"ทุกอย่างที่ไม่ใช่ของโรงงานจะออกจากหน้าจอหลัก วิดเจ็ตจะหายไป และ Android Auto ไร้สายจะกลับเป็นของเดิม
+
+วิธีกลับคืน: แตะ 5 ครั้งที่มุมล่างซ้ายของหน้าจอ เหนือแถบด้านล่างเล็กน้อย หรือใช้ปุ่มในโทรศัพท์"</string>
+    <string name="k_modo_oficina_confirmar_titulo">เตรียมสำหรับเข้าศูนย์หรือไม่</string>
+    <string name="k_modo_oficina_desativar">ออกจากโหมดเข้าศูนย์บริการ</string>
+    <string name="k_modo_oficina_encerrado_msg">คืนค่าแอป วิดเจ็ต และการปรับแต่งแถบแล้ว ระบบพร้อมใช้งาน</string>
+    <string name="k_modo_oficina_encerrado_titulo">ปิดโหมดศูนย์บริการแล้ว</string>
+    <string name="k_modo_oficina_erro">ไม่สำเร็จ — ดูบันทึกของแอป</string>
+    <string name="k_modo_oficina_ocultou">เสร็จแล้ว: ซ่อนแอป %1$d รายการ วิธีกลับคืน แตะ 5 ครั้งที่มุมล่างซ้าย</string>
+    <string name="k_modo_oficina_restaurando">กำลังคืนค่าเครื่องเสียงรถ…</string>
+    <string name="k_modo_oficina_restaurou">คืนค่าเครื่องเสียงรถแล้ว (%1$d แอป)</string>
+    <string name="k_modo_oficina_restaurou_parcial">กู้คืนแอปแล้ว %1$d จาก %2$d รายการ ตรวจสอบรายการที่เหลือ</string>
+    <string name="k_modo_oficina_sem_snapshot">ไม่พบบันทึกสิ่งที่ถูกซ่อนไว้ — ต้องเปิดแอปกลับเองทีละตัว</string>
+    <string name="k_modo_oficina_trabalhando">กำลังเตรียม…</string>
+    <string name="k_modo_trocar_msg">"แพ็กเกจของ ConnAdaptor ต่างกันในแต่ละโหมด การเปลี่ยนไปเป็น %1$s จะดาวน์โหลดแพ็กเกจที่ถูกต้องและติดตั้งใหม่
+
+ต้องรีสตาร์ตเครื่องเสียงรถหลังติดตั้งเพื่อให้โหมดใหม่มีผล"</string>
+    <string name="k_modo_trocar_ok">เปลี่ยนและดาวน์โหลด</string>
+    <string name="k_modo_trocar_titulo">เปลี่ยนโหมดหรือไม่</string>
+    <string name="k_monitor_bind_erro_msg">"รีสตาร์ต Android Auto แล้ว แต่เปิดใช้ CarplayMonitor ไม่ได้ — CarPlay ไร้สายจะยังไม่ทำงานจนกว่าจะแก้ไขเรื่องนี้
+
+สาเหตุ: %1$s"</string>
+    <string name="k_monitor_bind_erro_titulo">เปิดใช้ CarplayMonitor ไม่สำเร็จ</string>
+    <string name="k_monitor_erro_bind">ระบบปฏิเสธการ bind ทับ /system/bin/CarplayMonitor</string>
+    <string name="k_monitor_erro_md5_firmware">CarplayMonitor จากโรงงานไม่ตรงกับที่คาดไว้ (เฟิร์มแวร์ใหม่หรือไม่) — จึงไม่มีการเปลี่ยนแปลงใด ๆ เพื่อความปลอดภัย</string>
+    <string name="k_monitor_erro_patch">ไฟล์ที่แก้ไขแล้วออกมาไม่ถูกต้อง จึงไม่ได้ถูกนำไปใช้</string>
+    <string name="k_monitor_erro_selinux">ใส่ป้ายความปลอดภัย (SELinux) ให้ไฟล์ไม่สำเร็จ</string>
+    <string name="k_monitor_erro_sem_binario">ไม่มีไฟล์ CarplayMonitor ในเครื่องเสียงรถนี้</string>
+    <string name="k_monitor_erro_sem_resposta">ช่องทางภายในไม่ตอบสนอง — โปรดลองอีกครั้ง</string>
+    <string name="k_nav_applications">แอปพลิเคชัน</string>
+    <string name="k_nav_favorites">รายการโปรด</string>
+    <string name="k_nav_network_connection">เครือข่ายและ Auto</string>
+    <string name="k_nav_settings">การตั้งค่า</string>
+    <string name="k_nav_widgets">วิดเจ็ต</string>
+    <string name="k_nenhum">ไม่มี</string>
+    <string name="k_new_version_available">มีเวอร์ชันใหม่: v%1$s (ที่ติดตั้ง: v%2$s)</string>
+    <string name="k_new_version_available_generic">มีเวอร์ชันใหม่ %1$s</string>
+    <string name="k_no_apk_files">— ไม่มี APK/XAPK/APKM —</string>
+    <string name="k_no_app_found">ไม่พบแอป</string>
+    <string name="k_no_favorite_apps_toast">ยังไม่ได้เลือกแอปโปรด แตะ จัดการรายการโปรด (แท็บแอปพลิเคชัน) เพื่อตั้งค่า</string>
+    <string name="k_no_internet_message">คุณสมบัตินี้ต้องดาวน์โหลดแอปพลิเคชันในครั้งแรก โปรดเปิดอินเทอร์เน็ตแล้วลองอีกครั้ง</string>
+    <string name="k_no_internet_or_check_failed">ไม่มีอินเทอร์เน็ตหรือตรวจสอบไม่สำเร็จ โปรดเปิดอินเทอร์เน็ตแล้วลองอีกครั้ง</string>
+    <string name="k_no_internet_title">ไม่มีอินเทอร์เน็ต</string>
+    <string name="k_no_overlay_permission">ไม่มีสิทธิ์แสดงทับแอปอื่น</string>
+    <string name="k_no_recent_app_toast">ไม่พบแอปที่ใช้ล่าสุด</string>
+    <string name="k_no_sound_selected">ยังไม่ได้เลือกเสียง</string>
+    <string name="k_no_user_apps">— ไม่มีแอปของผู้ใช้ —</string>
+    <string name="k_no_wav_loaded">— ยังไม่ได้โหลดไฟล์ WAV —</string>
+    <string name="k_not_completed_see_log">ยังไม่เสร็จสมบูรณ์ — แตะ \"แสดงบันทึก\" เพื่อดูรายละเอียด</string>
+    <string name="k_not_installed">ยังไม่ได้ติดตั้ง</string>
+    <string name="k_notice_default_title">ประกาศ</string>
+    <string name="k_open_in_pip">เปิดใน PiP</string>
+    <string name="k_open_on_right">เปิดทางขวา</string>
+    <string name="k_opening">กำลังเปิด…</string>
+    <string name="k_overlay_failure">การแสดงทับล้มเหลว: %1$s</string>
+    <string name="k_overlay_granted">อนุญาตการแสดงทับแล้ว</string>
+    <string name="k_overlay_pending">รอการอนุญาตแสดงทับ</string>
+    <string name="k_pacotes_contagem">แพ็กเกจ %1$d/%2$d</string>
+    <string name="k_pacotes_vazio">แพ็กเกจ — ยังไม่ได้ซิงค์</string>
+    <string name="k_pause_audio_on_door_desc">หยุดเพลงหรือสื่ออัตโนมัติเมื่อเปิดประตูคนขับ และจะไม่เล่นต่อเองเมื่อปิดประตู</string>
+    <string name="k_pause_audio_on_door_title">หยุดเล่นเมื่อเปิดประตู</string>
+    <string name="k_percent_label">%1$s: %2$d%%</string>
+    <string name="k_phone_receiver_accept_failed">ตัวรับจากโทรศัพท์: accept ล้มเหลว</string>
+    <string name="k_phone_receiver_active">ตัวรับจากโทรศัพท์ทำงานที่ 0.0.0.0:%1$d</string>
+    <string name="k_phone_receiver_start_failed">เริ่มตัวรับไม่สำเร็จ: %1$s</string>
+    <string name="k_phone_receiver_stopped">หยุดตัวรับจากโทรศัพท์แล้ว</string>
+    <string name="k_phone_sync_off">ปิดการซิงค์กับโทรศัพท์แล้ว</string>
+    <string name="k_phone_sync_on">เปิดการซิงค์กับโทรศัพท์แล้ว (พอร์ต %1$d + BT)</string>
+    <string name="k_phonesync_channel">ซิงค์โทรศัพท์</string>
+    <string name="k_phonesync_notif_text">การซิงค์กับโทรศัพท์ทำงานอยู่ (พอร์ต %1$d + BT)</string>
+    <string name="k_phonesync_notif_title">Central EX · ซิงค์โทรศัพท์</string>
+    <string name="k_pill_ac_no_programs">ยังไม่มีกำหนดการที่บันทึกไว้ สร้างได้ที่ เครื่องมือ › กำหนดการปรับอากาศ</string>
+    <string name="k_pill_ac_picker_title">เลือกกำหนดการ</string>
+    <string name="k_pill_ac_program_stopped">หยุดกำหนดการแล้ว</string>
+    <string name="k_pill_channel_active">ฟองอุณหภูมิ/แบตเตอรี่ทำงานอยู่</string>
+    <string name="k_pill_channel_name">ฟองอุณหภูมิ/แบตเตอรี่</string>
+    <string name="k_pip_active_hint">PiP ทำงานอยู่ — ใช้ ✕ เพื่อปิด หรือ +/−/⟲ เพื่อปรับ</string>
+    <string name="k_pip_app_closed_itself">แอปใน PiP ปิดตัวเอง</string>
+    <string name="k_pip_apps_desc">สูงสุด 5 แอปในเมนูลัดของ PiP ลูกศรใช้เปลี่ยนลำดับ</string>
+    <string name="k_pip_apps_titulo">แอปพลิเคชันของ PiP</string>
+    <string name="k_pip_channel_active">PiP ของแอปทำงานอยู่</string>
+    <string name="k_pip_channel_name">PiP ของแอป</string>
+    <string name="k_pip_close_failed">ปิด PiP ไม่สำเร็จ</string>
+    <string name="k_pip_closed">ปิด PiP แล้ว</string>
+    <string name="k_pip_falhou_outra">ใช้งานไม่ได้ ADB และอินเทอร์เน็ตปกติ — เป็นปัญหาอื่น ดูบันทึก</string>
+    <string name="k_pip_falhou_sem_adb">ดำเนินการไม่สำเร็จ เกิดข้อผิดพลาดที่ช่อง ADB โปรดลองอีกครั้งในอีกสักครู่ หรือลองหลังจากรีสตาร์ตเครื่อง</string>
+    <string name="k_pip_fixado_aberto">PiP ปักหมุด: อยู่บนสุดเสมอ</string>
+    <string name="k_pip_incompativel">เครื่องนี้ไม่ใช่เครื่องที่ผ่านการตรวจสอบสำหรับ PiP ดั้งเดิม</string>
+    <string name="k_pip_notif_text">แตะที่ PIP เพื่อเลือกแอป</string>
+    <string name="k_pip_opened_hint">เปิด PiP แล้ว — +/− ปรับขนาด ⟲ หมุน ✕ ปิด</string>
+    <string name="k_pip_opening">กำลังเปิดใน PiP…</string>
+    <string name="k_pip_sem_suporte_fixado">แอปนี้ไม่รองรับ PiP ดั้งเดิม จึงเปิดแบบลอย</string>
+    <string name="k_power_off_confirm">ดับเครื่อง</string>
+    <string name="k_power_off_message">เครื่องเสียงรถจะดับจริง ๆ และยกเลิกไม่ได้หลังจากยืนยันแล้ว</string>
+    <string name="k_power_off_needs_park">เข้าเกียร์ P (จอด) ก่อนจึงจะดับเครื่องยนต์ได้</string>
+    <string name="k_power_off_title">ดับเครื่องยนต์หรือไม่</string>
+    <string name="k_prepare_receive_files">เตรียมรับไฟล์</string>
+    <string name="k_preview_failed">เล่นตัวอย่างไม่สำเร็จ: %1$s</string>
+    <string name="k_preview_file_not_found">ไม่พบเสียงประเภทนี้ในระบบ</string>
+    <string name="k_pronto_pode_conectar">เปิดเครื่องเสร็จแล้ว เชื่อมต่อโทรศัพท์ได้เลย</string>
+    <string name="k_proxy_active">พร็อกซีทำงานอยู่: %1$s:8080</string>
+    <string name="k_proxy_auto_activated">เปิดพร็อกซีอัตโนมัติแล้ว: %1$s:8080</string>
+    <string name="k_qa_activate_aa">เปิดใช้ AA/CarPlay</string>
+    <string name="k_qa_channel_active">Central EX — เมนูลัด</string>
+    <string name="k_qa_close_apps">ปิดแอป</string>
+    <string name="k_qa_close_apps_chip">ล้าง</string>
+    <string name="k_qa_cronometro">จับเวลา</string>
+    <string name="k_qa_driving_label">การขับขี่</string>
+    <string name="k_qa_fullscreen">เต็มหน้าจอ</string>
+    <string name="k_qa_fullscreen_sem_adb">ADB ภายในไม่พร้อมใช้งาน — สลับโหมดเต็มหน้าจอไม่ได้</string>
+    <string name="k_qa_manage_favorites">แอปโปรด</string>
+    <string name="k_qa_notif_text">เมนูด้านข้างทำงานอยู่</string>
+    <string name="k_qa_pip_app">PiP ของแอป</string>
+    <string name="k_qa_power_off">ดับเครื่องยนต์</string>
+    <string name="k_qa_preview_header">👁️ ตัวอย่างแถบเมนู</string>
+    <string name="k_qa_preview_hint">ลากไอคอนเพื่อจัดลำดับใหม่ สีจางหมายถึงซ่อนอยู่ในเมนู</string>
+    <string name="k_qa_regen_label">การคืนพลังงาน</string>
+    <string name="k_qa_regressiva">นับถอยหลัง</string>
+    <string name="k_qa_restart_aa">รีสตาร์ท AA/CarPlay</string>
+    <string name="k_qa_screen_chip">หน้าจอ</string>
+    <string name="k_qa_screen_off">ดับหน้าจอ</string>
+    <string name="k_qa_screen_rest">พักหน้าจอ</string>
+    <string name="k_qa_split_screen">แบ่งหน้าจอ</string>
+    <string name="k_qa_telemetry">ข้อมูลจากรถ</string>
+    <string name="k_rear_cam_pip_desc">เมื่อเปิดไฟเลี้ยว (ซ้ายหรือขวา) จะเปิด PiP กล้องหลังในตำแหน่งที่คุณวางไว้ครั้งล่าสุด และปิดเองเมื่อไฟเลี้ยวดับ (หรือกดปุ่ม X บน PiP) ต้องติดตั้งแอป DualDashcam ไอคอน \"5s\" ที่มุม: ให้ PiP เปิดค้างต่ออีก 5 วินาทีหลังไฟเลี้ยวดับ</string>
+    <string name="k_rear_cam_pip_hold_5s_off">PiP จะปิดทันทีที่ไฟเลี้ยวดับ</string>
+    <string name="k_rear_cam_pip_hold_5s_on">PiP จะเปิดค้างต่ออีก 5 วินาทีหลังไฟเลี้ยวดับ</string>
+    <string name="k_rear_cam_pip_no_dualdashcam">ยังไม่ได้ติดตั้ง DualDashcam — โปรดติดตั้งเพื่อให้คุณสมบัตินี้ทำงาน</string>
+    <string name="k_rear_cam_pip_outdated_dualdashcam">DualDashcam เวอร์ชันของคุณเก่าเกินไปสำหรับ PiP กล้องหลัง — โปรดอัปเดต DualDashcam (ในแท็บแอป) เพื่อให้คุณสมบัตินี้ทำงาน</string>
+    <string name="k_rear_cam_pip_title">PiP กล้องหลังเมื่อเปิดไฟเลี้ยว</string>
+    <string name="k_reboot_message">การทำเช่นนี้จะรีบูตเครื่องเสียงรถ ลำโพงจะมีเสียงดัง ซึ่งเป็นเรื่องปกติ ต้องการดำเนินการต่อหรือไม่</string>
+    <string name="k_reboot_title">รีบูต</string>
+    <string name="k_recent_apps_title">กลับไปยัง…</string>
+    <string name="k_recent_close_failed">ปิด %1$s ไม่สำเร็จ</string>
+    <string name="k_recirc_guard_desc">เมื่อปิดแอร์หรือเปิดที่ไล่ฝ้ากระจก รถจะปิดการหมุนเวียนอากาศเอง (เปิดรับอากาศภายนอก) หากเปิดตัวเลือกนี้ไว้ และการหมุนเวียนเคยเปิดอยู่ ระบบจะเปิดกลับให้เอง</string>
+    <string name="k_recirc_guard_icon_desc">การหมุนเวียนอากาศจะเปิดกลับเอง หากถูกปิดตอนปิดแอร์หรือเปิดที่ไล่ฝ้ากระจก</string>
+    <string name="k_recirc_guard_title">🌀 ป้องกันการเปิดอากาศภายนอก</string>
+    <string name="k_recirc_guard_title_card">ป้องกันการเปิดอากาศภายนอก</string>
+    <string name="k_refresh_list_choose_audio">รีเฟรชรายการแล้วเลือกไฟล์เสียง</string>
+    <string name="k_refresh_list_choose_wav">รีเฟรชรายการแล้วเลือกไฟล์ WAV</string>
+    <string name="k_regen_recusado_pelo_carro">รถไม่รับระดับการคืนพลังงานที่เลือก</string>
+    <string name="k_regen_toast">การคืนพลังงาน: %1$s</string>
+    <string name="k_reiniciar_ap0_em_uso">มีเซสชันการฉายภาพกำลังทำงานอยู่ — การรีสตาร์ตตอนนี้จะตัด CarPlay/Android Auto ที่กำลังใช้งาน แตะอีกครั้งเพื่อรีสตาร์ตต่อไป</string>
+    <string name="k_reiniciar_sem_canal">ช่องทาง ADB ภายในไม่ตอบสนอง จึงไม่มีอะไรถูกเปลี่ยนแปลง เปิด ADB ด้วยปุ่มในแอปแล้วลองอีกครั้ง</string>
+    <string name="k_reiniciar_sem_canal_titulo">ADB ภายในไม่ตอบสนอง</string>
+    <string name="k_remember_brightness_howto_msg">"เครื่องเสียงจะเก็บความสว่างสองค่า: ค่าหนึ่งเมื่อปิดไฟหน้า และอีกค่าเมื่อเปิดไฟหน้า
+
+วิธีตั้งทั้งสองค่า:
+1. เมื่อ ปิด ไฟหน้า ให้ปรับความสว่างที่ต้องการตอนกลางวัน
+2. เปิด ไฟหน้า แล้วปรับความสว่างที่ต้องการตอนกลางคืน
+
+จากนั้นความสว่างจะเปลี่ยนเองทุกครั้งที่เปิดหรือปิดไฟหน้า ปรับได้ทั้งในแอปนี้และในแผงควบคุมของรถ นับทั้งสองทาง"</string>
+    <string name="k_remember_brightness_howto_title">จำความสว่างตามไฟหน้า</string>
+    <string name="k_remove_phone_internet">🚫 นำอินเทอร์เน็ตจากโทรศัพท์ออก</string>
+    <string name="k_remove_routes">ลบเส้นทาง</string>
+    <string name="k_removed">นำออกแล้ว</string>
+    <string name="k_removing">กำลังนำออก...</string>
+    <string name="k_removing_proxy">กำลังนำพร็อกซีออก...</string>
+    <string name="k_removing_routes">กำลังลบเส้นทาง...</string>
+    <string name="k_removing_sound_bind">กำลังนำ bind ของเสียงออก...</string>
+    <string name="k_restart_car_for_oem">สตาร์ตรถใหม่เพื่อกลับไปใช้ของโรงงาน</string>
+    <string name="k_restarted">รีสตาร์ทแล้ว</string>
+    <string name="k_restarting">กำลังรีสตาร์ท</string>
+    <string name="k_restarting_aa_carplay">กำลังรีสตาร์ท AA/CarPlay...</string>
+    <string name="k_route_auto_label">อัตโนมัติ</string>
+    <string name="k_routes_created">สร้างเส้นทางอินเทอร์เน็ตแล้ว</string>
+    <string name="k_routes_creation_failed">สร้างเส้นทางไม่สำเร็จ</string>
+    <string name="k_routes_not_confirmed">ยังไม่ยืนยัน — แตะ สร้างเส้นทาง อีกครั้ง</string>
+    <string name="k_rvc_back_to_normal">พื้นหลังกล้องถอยหลังกลับเป็นปกติแล้ว</string>
+    <string name="k_rvc_black_bg_applied">ใช้พื้นหลังสีดำในกล้องถอยหลังแล้ว</string>
+    <string name="k_rvc_black_bg_applying">กำลังใช้พื้นหลังสีดำในกล้องถอยหลัง...</string>
+    <string name="k_rvc_black_bg_disabling">กำลังปิดพื้นหลังสีดำในกล้องถอยหลัง...</string>
+    <string name="k_rvc_black_bg_message">"โปรดทราบ: คุณสมบัตินี้ใช้ได้กับรุ่น Pro เท่านั้น
+
+ระบบจะทำ mount --bind ชั่วคราว (ไม่แก้ไข /system) ของพื้นหลังสีดำทับภาพจากกล้องถอยหลัง ดำเนินการต่อหรือไม่"</string>
+    <string name="k_rvc_black_bg_title">พื้นหลังสีดำในกล้องถอยหลัง</string>
+    <string name="k_rvc_disabled_restart_if_needed">ปิดแล้ว — สตาร์ตรถใหม่หากพื้นหลังไม่กลับคืน</string>
+    <string name="k_same_version_already_installed">ติดตั้งเวอร์ชันเดียวกันนี้ไว้แล้ว</string>
+    <string name="k_save_error">บันทึกไม่สำเร็จ: %1$s</string>
+    <string name="k_saved_as">บันทึกแล้ว: %1$s</string>
+    <string name="k_screen_off_message">ความสว่างหน้าจอจะกลับมาเมื่อกดปุ่มระดับเสียงบนพวงมาลัย</string>
+    <string name="k_screen_off_title">💡 ดับหน้าจอ</string>
+    <string name="k_screen_rest_10s">10 วิ</string>
+    <string name="k_screen_rest_1m">1 นาที</string>
+    <string name="k_screen_rest_2m">2 นาที</string>
+    <string name="k_screen_rest_30s">30 วิ</string>
+    <string name="k_screen_rest_desc">ดับหน้าจออัตโนมัติหลังไม่มีการสัมผัสเป็นระยะเวลาหนึ่ง โดยแสดงนาฬิกาแบบเรียบง่าย การแตะใดก็ตามจะปลุกหน้าจอ ระบบจะเปิดเมนูลัดให้หากยังปิดอยู่ (กลไกอยู่ที่นั่น)</string>
+    <string name="k_screen_rest_enabled_quick_access">เปิดเมนูลัดแล้ว — การพักหน้าจอต้องใช้เมนูลัด</string>
+    <string name="k_screen_rest_header">พักหน้าจอ</string>
+    <string name="k_screen_rest_off">ปิดอยู่</string>
+    <string name="k_second_line_in_cycle">บรรทัดที่ 2 อยู่ในรอบของไอคอน</string>
+    <string name="k_second_line_out_cycle">บรรทัดที่ 2 อยู่นอกรอบ (แตะครั้งแรกเท่านั้น)</string>
+    <string name="k_select_type_to_preview">เลือกประเภทเพื่อฟังตัวอย่าง</string>
+    <string name="k_sem_canal_adb">"ช่องทางคำสั่งภายในไม่ตอบสนอง จึงยังไม่มีอะไรถูกดำเนินการ
+
+เปิด ADB ของเครื่องเสียงรถ (ปุ่ม ADB ในหน้าจอนี้) แล้วลองอีกครั้ง หากไม่มีช่องทางนี้ จะติดตั้ง ConnAdaptor หรือใช้แพตช์ CarPlay ไม่ได้"</string>
+    <string name="k_send_btn">ส่ง</string>
+    <string name="k_sending_error_report">กำลังส่งรายงานข้อผิดพลาด…</string>
+    <string name="k_server_started_on_port">เริ่มเซิร์ฟเวอร์ที่พอร์ต %1$d</string>
+    <string name="k_server_stopped">หยุดเซิร์ฟเวอร์แล้ว</string>
+    <string name="k_sha256_mismatch">sha256 ไม่ตรง (คาดว่า %1$s… ได้ %2$s…)</string>
+    <string name="k_signal_icon_channel">สัญญาณบนแถบสถานะ</string>
+    <string name="k_signal_icon_no_service">ไม่มีสัญญาณ / ไม่มีซิม</string>
+    <string name="k_signal_icon_off">ปิดไอคอนสัญญาณบนแถบสถานะ</string>
+    <string name="k_signal_icon_on">เปิดไอคอนสัญญาณบนแถบสถานะ</string>
+    <string name="k_signal_icon_text">สัญญาณ: %1$d/4</string>
+    <string name="k_signal_icon_title">สัญญาณโทรศัพท์</string>
+    <string name="k_signature_incompatible">"ลายเซ็นไม่เข้ากัน
+ถอนการติดตั้งเวอร์ชันปัจจุบันก่อนติดตั้ง"</string>
+    <string name="k_silence_avm_title">ปิดเสียงบันทึกของกล้อง 360</string>
+    <string name="k_silence_tbox_title">ปิดเสียงบันทึกของ TBox</string>
+    <string name="k_sound_applied_message">ใช้เสียงล็อกรถแล้ว — จะกลับเป็นเสียงเดิมเมื่อเครื่องเสียงรถรีสตาร์ต</string>
+    <string name="k_sound_applied_persist_message">เปลี่ยนเสียงล็อกรถแล้ว — จะคงอยู่จนกว่าคุณจะแตะ คืนค่าเสียงเดิม หรือรีเซ็ตรถเป็นค่าจากโรงงาน</string>
+    <string name="k_sound_applied_title">ใช้เสียงแล้ว</string>
+    <string name="k_sound_apply_error_title">ใช้เสียงไม่สำเร็จ</string>
+    <string name="k_speed_lock_desc">ล็อกประตูอัตโนมัติเมื่อรถเริ่มเคลื่อนที่ เปิดไว้เป็นค่าเริ่มต้น</string>
+    <string name="k_speed_lock_disable_confirm">ประตูของคุณจะไม่ถูกล็อกตามความเร็วอีกต่อไป และคุณต้องล็อกด้วยตนเอง แน่ใจหรือไม่ว่าต้องการปิดฟังก์ชันนี้</string>
+    <string name="k_speed_lock_err">เปลี่ยนการล็อกตามความเร็วไม่สำเร็จ</string>
+    <string name="k_speed_lock_off">ปิดการล็อกตามความเร็วแล้ว</string>
+    <string name="k_speed_lock_on">เปิดการล็อกตามความเร็วแล้ว</string>
+    <string name="k_speed_lock_title">ล็อกประตูตามความเร็ว</string>
+    <string name="k_split_adjust_failed">ปรับไม่สำเร็จ (%1$s) — แตะ ⧉ เพื่อปิดแล้วลองแบ่งหน้าจอใหม่</string>
+    <string name="k_split_app_crashed">แอปนี้ทำให้การแบ่งหน้าจอล้มทั้งหมด (น่าจะไม่รองรับหน้าต่าง) — ยกเลิกทั้งหมดแล้ว ลองแอปอื่น</string>
+    <string name="k_split_channel_active">การแบ่งหน้าจอทำงานอยู่</string>
+    <string name="k_split_channel_name">แบ่งหน้าจอ</string>
+    <string name="k_split_closed">ปิดการแบ่งหน้าจอแล้ว</string>
+    <string name="k_split_done_hint">แบ่งแล้ว — ◀/▶ ปรับขนาด ⧉ ปิด</string>
+    <string name="k_split_grupos_desc">สูงสุด 5 คู่ สำหรับเปิดเคียงข้างกันผ่านเมนูลัด</string>
+    <string name="k_split_grupos_titulo">กลุ่มการแบ่งหน้าจอ</string>
+    <string name="k_split_notif_text">แตะที่ ⧉ เพื่อแบ่งหน้าจอ</string>
+    <string name="k_split_preparing">กำลังเตรียมแบ่งหน้าจอ (แอปปัจจุบันจะรีสตาร์ต)…</string>
+    <string name="k_split_screen_disabled">ปิดการแบ่งหน้าจอแล้ว</string>
+    <string name="k_split_screen_enabled_hint">เปิดการแบ่งหน้าจอแล้ว — ไอคอน ◫ ในเมนูลัด</string>
+    <string name="k_split_screen_info_text">ไอคอน ◫ ในเมนูลัด: แตะครั้งแรกเปิดหน้าต่างลอย (แตะ ⧉ บนหน้าจอเพื่อแบ่ง) แตะ ◫ อีกครั้งเพื่อปิดทั้งหมด ต้องเปิด freeform ในเครื่องก่อน (ตั้งค่าครั้งเดียว: development_settings_enabled + enable_freeform_support + force_resizable_activities แล้วรีสตาร์ต) — กำลังตรวจสอบ…</string>
+    <string name="k_status_brightness_info" formatted="false">ไอคอนบนแถบสถานะจะวนค่าทุกครั้งที่แตะ: แตะครั้งที่ 1 ใช้ค่าบรรทัด \"ที่ 1\" แตะครั้งที่ 2 ใช้ค่าบรรทัด \"ที่ 2\" (เฉพาะเมื่อเปิดไว้) และแตะครั้งถัดไปกลับสู่ความสว่างเริ่มต้น (เท่ากับก่อนแตะไอคอน) 0% = หน้าจอดับ ปุ่มระดับเสียงบนพวงมาลัยจะคืนค่าอัตโนมัติเฉพาะเมื่อหน้าจอดับหรือต่ำกว่า 2% เท่านั้น — ที่ความสว่างปกติ การปรับระดับเสียงจะไม่ยกเลิกการตั้งค่า</string>
+    <string name="k_status_km_desc">แสดงระยะทางของทริปและ/หรือระยะทางรวมของรถ (เลขไมล์) บนแถบสถานะ</string>
+    <string name="k_status_km_diag_lendo">กำลังอ่านจากรถ…</string>
+    <string name="k_status_km_info">ทริปเริ่มนับจากครั้งล่าสุดที่คุณ รีเซ็ตทริป (หรือจากตอนที่คุณเปิดใช้) ส่วนระยะทางรวมคือเลขไมล์ของรถ ไอคอนจะแสดงบนแถบสถานะและอัปเดตทุก ~15 วินาที</string>
+    <string name="k_status_km_reset">รีเซ็ตทริป</string>
+    <string name="k_status_km_reset_done">รีเซ็ตทริปแล้ว</string>
+    <string name="k_status_km_reset_falhou">รีเซ็ตไม่สำเร็จ — ไม่พบข้อมูลเลขไมล์</string>
+    <string name="k_status_km_title">ระยะทางบนแถบสถานะ</string>
+    <string name="k_status_km_total">รวม</string>
+    <string name="k_status_km_total_off">ปิดระยะทางรวมบนแถบสถานะ</string>
+    <string name="k_status_km_total_on">เปิดระยะทางรวมบนแถบสถานะ</string>
+    <string name="k_status_km_trip">ทริป</string>
+    <string name="k_status_km_trip_off">ปิดระยะทางทริปบนแถบสถานะ</string>
+    <string name="k_status_km_trip_on">เปิดระยะทางทริปบนแถบสถานะ</string>
+    <string name="k_status_unavailable">ไม่พร้อมใช้งาน</string>
+    <string name="k_stop_receiving">หยุดรับ</string>
+    <string name="k_subtab_aa_carplay">AA และ CarPlay</string>
+    <string name="k_swc_media_control_desc">ทำให้ปุ่มสื่อบนพวงมาลัยและแถบของระบบควบคุมแอปเพลงได้ (Spotify, YouTube Music ฯลฯ): ข้ามเพลง เล่น/หยุด และแสดงเพลงที่กำลังเล่น (ชื่อเพลง ศิลปิน และปก) บนแถบดั้งเดิม</string>
+    <string name="k_swc_media_control_title">🎵 ควบคุมสื่อจากพวงมาลัย</string>
+    <string name="k_swc_mode_ac">โหมดปรับอากาศ</string>
+    <string name="k_swc_mode_driving">โหมดการขับขี่</string>
+    <string name="k_swc_mode_music">โหมดเสียง</string>
+    <string name="k_swc_modes_desc">เปลี่ยนความหมายของกลุ่มปุ่มด้านขวาบนพวงมาลัยตามโหมด แตะไมโครโฟน 2 ครั้ง = โหมดลม (10 วินาที) กดไมโครโฟนค้าง 3 วินาที = โหมดการขับขี่ และจะกลับสู่โหมดเสียงเอง</string>
+    <string name="k_swc_modes_info">"เปลี่ยนโหมดด้วยปุ่มไมโครโฟน: แตะเร็ว 2 ครั้ง (ภายใน 1 วินาที) = โหมดลม 10 วินาที กดค้าง 3 วินาที = โหมดการขับขี่ 10 วินาที หากไม่ใช้งาน 10 วินาทีจะกลับสู่โหมดเสียง
+
+โหมดลม: ข้าม/ย้อนเพลง = พัดลม +/− ขึ้น/ลง = อุณหภูมิ +/−
+โหมดการขับขี่: เสียง +/− = การคืนพลังงาน ข้าม/ย้อนเพลง = โปรไฟล์ (ประหยัด→สบาย→สปอร์ต)
+
+หมายเหตุ: พวงมาลัยจะทำงานตามฟังก์ชันดั้งเดิมไปพร้อมกันด้วย (ระดับเสียงจะเปลี่ยนด้วย และไมโครโฟนอาจเปิดผู้ช่วยเสียง) ซึ่งปิดไม่ได้หากไม่แก้ไขระบบ"</string>
+    <string name="k_swc_modes_title">โหมดของพวงมาลัย</string>
+    <string name="k_tap_list_to_read_pendrive">แตะ \"🔍 แสดงรายการ\" เพื่ออ่านแฟลชไดรฟ์</string>
+    <string name="k_tbox_apply_failed">เปลี่ยนการบันทึกของ TBox ไม่สำเร็จ ระบบคงค่าเดิมไว้</string>
+    <string name="k_tbox_normal">บันทึกของ TBox เป็นปกติ</string>
+    <string name="k_tbox_silenced">ปิดเสียงบันทึกของ TBox แล้ว</string>
+    <string name="k_temp_icon_channel">อุณหภูมิภายนอก (แถบสถานะ)</string>
+    <string name="k_temp_icon_text">ภายนอก: %1$d °C</string>
+    <string name="k_temp_icon_title">อุณหภูมิภายนอก</string>
+    <string name="k_timer_h">ชม.</string>
+    <string name="k_timer_iniciar">เริ่ม</string>
+    <string name="k_timer_m">นาที</string>
+    <string name="k_timer_pausar">หยุดชั่วคราว</string>
+    <string name="k_timer_reiniciar">เริ่มใหม่</string>
+    <string name="k_timer_s">วิ</string>
+    <string name="k_timer_terminou">นับเวลาเสร็จแล้ว</string>
+    <string name="k_tmp_content_mismatch">เนื้อหาใน tmp ไม่ตรงกับ APK ที่ดาวน์โหลดหลัง cp (sha staging=%1$s… tmp=%2$s…)</string>
+    <string name="k_toast_wait_processing">โปรดรอ กำลังประมวลผล…</string>
+    <string name="k_toggle_on">● เปิด</string>
+    <string name="k_total_km_icon_text">รวม: %1$d กม.</string>
+    <string name="k_total_km_icon_title">ระยะทางรวม</string>
+    <string name="k_trip_km_icon_text">ทริป: %1$s กม.</string>
+    <string name="k_trip_km_icon_title">ระยะทางของทริป</string>
+    <string name="k_ttl65_desc">กำหนด TTL ขาออกเป็น 65 เมื่อผ่านโทรศัพท์แล้ว แพ็กเกตจะถึงผู้ให้บริการด้วยค่า 64 เสมือนเกิดขึ้นในตัวเครื่องเอง ใช้ได้ทั้ง IPv4 และ IPv6</string>
+    <string name="k_ttl65_falhou">เปลี่ยน TTL ไม่สำเร็จ — ดูบันทึก</string>
+    <string name="k_ttl65_off">ปิด TTL 65 แล้ว — กลับสู่ค่าเริ่มต้น</string>
+    <string name="k_ttl65_on">เปิด TTL 65 แล้ว</string>
+    <string name="k_ttl65_titulo">TTL 65</string>
+    <string name="k_turn_off_avas">🔇 ปิด AVAS</string>
+    <string name="k_turn_on_avas">🔊 เปิด AVAS</string>
+    <string name="k_type_n">ประเภท %1$d</string>
+    <string name="k_unavailable_bug_investigation">ไม่พร้อมใช้งาน (กำลังตรวจสอบข้อบกพร่อง)</string>
+    <string name="k_unavailable_freezes_central">ไม่พร้อมใช้งาน (ทำให้เครื่องเสียงรถค้าง)</string>
+    <string name="k_uninstall_app_message">"ต้องการถอนการติดตั้ง \"%1$s\" หรือไม่
+
+%2$s"</string>
+    <string name="k_uninstall_app_title">ถอนการติดตั้งแอป</string>
+    <string name="k_uninstall_btn">ถอนการติดตั้ง</string>
+    <string name="k_uninstall_with_icon">🗑️ ถอนการติดตั้ง</string>
+    <string name="k_update_apk_unreadable">APK ที่ดาวน์โหลดอ่านไม่ได้หรือลายเซ็นไม่ถูกต้อง — ปฏิเสธการติดตั้ง</string>
+    <string name="k_update_apk_wrong_cert">APK ที่ดาวน์โหลดไม่ได้เซ็นด้วยกุญแจของเรา — ปฏิเสธการติดตั้ง</string>
+    <string name="k_update_apk_wrong_pkg">APK ที่ดาวน์โหลดเป็นของแอปอื่น (%1$s) — ปฏิเสธการติดตั้ง</string>
+    <string name="k_update_apk_wrong_vc">APK ที่ดาวน์โหลดไม่ใช่เวอร์ชันที่ระบุไว้ (คาดว่า %1$d ได้ %2$d) — ปฏิเสธการติดตั้ง</string>
+    <string name="k_update_available_carplaymonitor_title">มีอัปเดต — CarplayMonitor</string>
+    <string name="k_update_available_message">"เวอร์ชันใหม่: v%1$s
+ที่ติดตั้ง: v%2$s
+
+ต้องการติดตั้งหรือไม่"</string>
+    <string name="k_update_available_title">มีอัปเดต</string>
+    <string name="k_update_channel_desc">เสถียร: ได้รับอัปเดตน้อยกว่าและผ่านการทดสอบแล้ว ทดลอง: ได้รับของใหม่ก่อนและบ่อยกว่า</string>
+    <string name="k_update_channel_experimental">ทดลอง</string>
+    <string name="k_update_channel_stable">เสถียร</string>
+    <string name="k_update_channel_title">ช่องทางการอัปเดต</string>
+    <string name="k_update_failed">อัปเดตไม่สำเร็จ: %1$s</string>
+    <string name="k_update_http_403">อุปกรณ์นี้ไม่ได้รับอนุญาตให้รับอัปเดต</string>
+    <string name="k_update_http_429">ถึงขีดจำกัดการดาวน์โหลดประจำวันแล้ว โปรดลองใหม่พรุ่งนี้</string>
+    <string name="k_update_http_outro">เซิร์ฟเวอร์อัปเดตไม่ตอบสนอง (ข้อผิดพลาด %1$d)</string>
+    <string name="k_update_json_no_sha256">update.json ไม่มี sha256 — ไม่ปลอดภัยที่จะติดตั้งโดยไม่ตรวจสอบ APK</string>
+    <string name="k_update_now_btn">อัปเดตตอนนี้</string>
+    <string name="k_update_required_message">แอปพลิเคชันเวอร์ชันนี้หมดอายุแล้ว โปรดอัปเดตเพื่อใช้งานต่อ</string>
+    <string name="k_update_required_title">จำเป็นต้องอัปเดต</string>
+    <string name="k_update_result_summary">"อัปเดต %1$s (vc=%2$d, tmp sha256 %3$s…, %4$d B)
+%5$s"</string>
+    <string name="k_usb_auto_fixed">แก้ไข USB อัตโนมัติแล้ว</string>
+    <string name="k_use_responsibly_message">โปรดใช้อย่างรับผิดชอบ ผลที่ตามมาจากตัวเลือกนี้เป็นความรับผิดชอบของคุณทั้งหมด</string>
+    <string name="k_version_footer">เวอร์ชัน %1$s (%2$d)</string>
+    <string name="k_watchdog_active">Watchdog ทำงานอยู่</string>
+    <string name="k_watchdog_channel">Central Watchdog</string>
+    <string name="k_whats_new_title">มีอะไรใหม่ — v%1$s</string>
+    <string name="k_widget_alpha_short_label">👁 โปร่งใส</string>
+    <string name="k_widget_apps_choose">เลือกแอป</string>
+    <string name="k_widget_apps_cols">คอลัมน์</string>
+    <string name="k_widget_apps_desc">ตารางลอยที่มีแอปตามที่คุณเลือก แตะที่แม่กุญแจ (🔒) เพื่อให้อยู่เหนือทุกสิ่ง หากไม่ล็อกจะแสดงเฉพาะบนหน้าจอหลัก</string>
+    <string name="k_widget_apps_empty">เลือกแอปได้ในเมนูวิดเจ็ต</string>
+    <string name="k_widget_apps_rows">แถว</string>
+    <string name="k_widget_apps_title">แอปโปรด</string>
+    <string name="k_widget_bg_opacity_desc">ความทึบของพื้นหลัง (การ์ด) ของวิดเจ็ตบนหน้าจอหลัก (การขับขี่ พัดลม อุณหภูมิ ทิศทางลม) ไอคอนและข้อความยังคงมองเห็นได้เต็มที่แม้พื้นหลังจะโปร่งใสมาก</string>
+    <string name="k_widget_bg_opacity_label">🏠 พื้นหลังของวิดเจ็ต</string>
+    <string name="k_widget_drive_mode_vertical_desc">EX Sapo — โหมดการขับขี่ (แนวตั้ง): สลับระหว่างประหยัด/สบาย/สปอร์ต ด้วย + และ − เรียงซ้อนกันในพื้นที่แคบ</string>
+    <string name="k_widget_drive_regen_desc">EX Sapo — การขับขี่และการคืนพลังงาน: เปลี่ยนโหมดการขับขี่และระดับการคืนพลังงานได้จากหน้าจอหลักโดยตรง</string>
+    <string name="k_widget_fan_desc">EX Sapo — พัดลม: ปรับความแรงลมได้จากหน้าจอหลักโดยตรง</string>
+    <string name="k_widget_fan_vertical_desc">EX Sapo — พัดลม (แนวตั้ง): เหมือนวิดเจ็ตพัดลม แต่เรียงซ้อนกัน (+ ด้านบน − ด้านล่าง) เพื่อให้พอดีกับพื้นที่แคบ</string>
+    <string name="k_widget_float_drive_regen_desc">โหมดการขับขี่ (ประหยัด/สบาย/สปอร์ต) และระดับการคืนพลังงาน</string>
+    <string name="k_widget_float_drive_regen_title">การขับขี่ + การคืนพลังงาน</string>
+    <string name="k_widget_float_fan_desc">ความแรงพัดลมของแอร์ (0-7)</string>
+    <string name="k_widget_float_fan_title">พัดลม</string>
+    <string name="k_widget_float_heating_desc">พวงมาลัย กระจกหลัง กระจกหน้า และเบาะ (คนขับ/ผู้โดยสาร)</string>
+    <string name="k_widget_float_heating_title">ระบบทำความร้อน</string>
+    <string name="k_widget_float_sysinfo_desc">วิดเจ็ตลอยที่แสดงอุณหภูมิ CPU (°C) และการใช้งาน CPU (%) ของเครื่องเสียงรถ อัปเดตทุก 2 วินาที</string>
+    <string name="k_widget_float_sysinfo_title">ระบบ (CPU)</string>
+    <string name="k_widget_float_temp_desc">อุณหภูมิเป้าหมายของแอร์</string>
+    <string name="k_widget_float_temp_title">อุณหภูมิ</string>
+    <string name="k_widget_float_vent_desc">ทิศทางที่ลมเป่า (หน้า/เท้า/กระจก) และการหมุนเวียนอากาศ (ใช้อากาศภายในเท่านั้น)</string>
+    <string name="k_widget_float_vent_fan_desc">เหมือนด้านบน แต่มีความแรงพัดลม (0 ถึง 3) อยู่ด้านล่าง — การเลือกความแรงจะเปิดหรือปิดแอร์ด้วย</string>
+    <string name="k_widget_float_vent_fan_title">ทิศทางลม + พัดลม</string>
+    <string name="k_widget_float_vent_title">ทิศทางลม + หมุนเวียนอากาศ</string>
+    <string name="k_widget_heating_pick_need_one">เลือกอย่างน้อยหนึ่งไอคอน</string>
+    <string name="k_widget_heating_pick_title">ไอคอนระบบทำความร้อน</string>
+    <string name="k_widget_heating_test_desc">EX Sapo — ระบบทำความร้อน: พวงมาลัย กระจกหน้า (สูงสุดและกระจกบังลม) กระจกหลัง และเบาะ (คนขับ/ผู้โดยสาร) ได้จากหน้าจอหลักโดยตรง</string>
+    <string name="k_widget_hvac_direction_desc">EX Sapo — ทิศทางลม: เลือกหน้า/เท้า/กระจก (และแบบผสม) และเปิดหรือปิดที่ไล่ฝ้ากระจกหลัง ได้จากหน้าจอหลักโดยตรง</string>
+    <string name="k_widget_hvac_direction_fan_desc">EX Sapo — ทิศทางลม + พัดลม: เลือกหน้า/เท้า/กระจก และความแรงพัดลม (0 ถึง 3) การเลือกความแรงจะเปิดหรือปิดแอร์ด้วย</string>
+    <string name="k_widget_hvac_direction_vertical_desc">EX Sapo — ทิศทางลม (แนวตั้ง): สลับโหมดลมด้วย + และ − เรียงซ้อนกัน พร้อมปุ่มไล่ฝ้ากระจกหลังอยู่ด้านล่าง</string>
+    <string name="k_widget_lbl_drive_comfort">สบาย</string>
+    <string name="k_widget_lbl_drive_eco">ประหยัด</string>
+    <string name="k_widget_lbl_drive_header">โหมดการขับขี่</string>
+    <string name="k_widget_lbl_drive_sport">สปอร์ต</string>
+    <string name="k_widget_lbl_fan">พัดลม</string>
+    <string name="k_widget_lbl_heat_auto">อัตโนมัติ</string>
+    <string name="k_widget_lbl_heat_front_max">กระจกสูงสุด</string>
+    <string name="k_widget_lbl_heat_header">ทำความร้อน</string>
+    <string name="k_widget_lbl_heat_seat_driver">เบาะคนขับ</string>
+    <string name="k_widget_lbl_heat_seat_passenger">เบาะผู้โดยสาร</string>
+    <string name="k_widget_lbl_heat_wheel">พวงมาลัย</string>
+    <string name="k_widget_lbl_heat_windshield">กระจกบังลม</string>
+    <string name="k_widget_lbl_rear_defrost">กระจกหลัง</string>
+    <string name="k_widget_lbl_recirc">หมุนเวียน</string>
+    <string name="k_widget_lbl_regen_header">การคืนพลังงาน</string>
+    <string name="k_widget_lbl_regen_high">แรง</string>
+    <string name="k_widget_lbl_regen_low">อ่อน</string>
+    <string name="k_widget_lbl_regen_mid">ปานกลาง</string>
+    <string name="k_widget_lbl_temp">อุณหภูมิ</string>
+    <string name="k_widget_lbl_vent_face">หน้า</string>
+    <string name="k_widget_lbl_vent_face_floor">หน้า+เท้า</string>
+    <string name="k_widget_lbl_vent_floor">เท้า</string>
+    <string name="k_widget_lbl_vent_floor_windshield">เท้า+กระจก</string>
+    <string name="k_widget_lbl_vent_header">ลม</string>
+    <string name="k_widget_lbl_vent_short">ทิศทางลม</string>
+    <string name="k_widget_lbl_vent_windshield">กระจก</string>
+    <string name="k_widget_regen_vertical_desc">EX Sapo — การคืนพลังงาน (แนวตั้ง): สลับระหว่างอ่อน/ปานกลาง/แรง ด้วย + และ − เรียงซ้อนกันในพื้นที่แคบ</string>
+    <string name="k_widget_size_short_label">🔍 ขนาด</string>
+    <string name="k_widget_temp_desc">EX Sapo — อุณหภูมิ: ปรับอุณหภูมิแอร์ได้จากหน้าจอหลักโดยตรง</string>
+    <string name="k_widget_temp_vertical_desc">EX Sapo — อุณหภูมิ (แนวตั้ง): เหมือนวิดเจ็ตอุณหภูมิ แต่เรียงซ้อนกัน (+ ด้านบน − ด้านล่าง) เพื่อให้พอดีกับพื้นที่แคบ</string>
+    <string name="k_widget_volume_desc">แถบระดับเสียงของสื่อแบบลอย เลือกได้ทั้งแนวนอนและแนวตั้ง แม่กุญแจ (🔒) = อยู่เหนือทุกสิ่ง</string>
+    <string name="k_widget_volume_horizontal">แนวนอน</string>
+    <string name="k_widget_volume_signs">ปุ่ม + −</string>
+    <string name="k_widget_volume_slider">แถบเลื่อน</string>
+    <string name="k_widget_volume_title">ระดับเสียง</string>
+    <string name="k_widget_volume_vertical">แนวตั้ง</string>
+    <string name="k_widgets_desc">เนื่องจาก Flyme Auto ไม่รองรับวิดเจ็ตจริงบนหน้าจอหลัก วิดเจ็ตเหล่านี้จึงเป็นแบบลอย — ลากได้และอยู่เหนือทุกสิ่ง แต่จะหายไปเมื่อเปิดแอปใด ๆ และกลับมาเองเมื่อคุณกลับสู่หน้าจอหลัก เปิดเฉพาะตัวที่ต้องการใช้</string>
+    <string name="k_widgets_float_active">วิดเจ็ตลอยทำงานอยู่</string>
+    <string name="k_widgets_float_channel">วิดเจ็ตลอย</string>
+    <string name="k_widgets_header">🧩 วิดเจ็ตลอย</string>
+    <string name="k_widgets_poslock_all_label">🔒 ล็อกตำแหน่งวิดเจ็ต</string>
+    <string name="k_widgets_poslock_all_off">🔓 ล็อกตำแหน่งวิดเจ็ต</string>
+    <string name="k_widgets_poslock_all_on">🔒 ล็อกตำแหน่งวิดเจ็ตแล้ว</string>
+    <string name="k_wifi_ap0_em_uso">มีโทรศัพท์เชื่อมต่ออยู่กับฮอตสปอตของรถ — การเปิด Wi-Fi ตอนนี้อาจทำให้เซสชัน CarPlay/Android Auto หลุด แตะอีกครั้งหากต้องการเปิดอยู่ดี</string>
+    <string name="k_wifi_auto_enable_off">ปิดการเปิด WiFi อัตโนมัติแล้ว</string>
+    <string name="k_wifi_auto_enable_on">WiFi จะเปิดเองเมื่อคุณเปิดรถ</string>
+    <string name="k_wifi_floater_channel">ปุ่มลอย WiFi</string>
+    <string name="k_wifi_icon_channel">WiFi (แถบสถานะ)</string>
+    <string name="k_wifi_icon_info">ไอคอน WiFi บนแถบสถานะ: แตะเพื่อเปิด WiFi (หากปิดอยู่) และเปิดเมนู WiFi</string>
+    <string name="k_wifi_icon_off">ปิดไอคอน WiFi บนแถบสถานะ</string>
+    <string name="k_wifi_icon_on">เปิดไอคอน WiFi บนแถบสถานะ</string>
+    <string name="k_wifi_icon_text_off">ปิดอยู่ — แตะเพื่อเปิดและเปิดเมนู</string>
+    <string name="k_wifi_icon_text_on">เปิดอยู่ — แตะเพื่อเปิดเมนู</string>
+    <string name="k_wifi_icon_text_searching">เปิดอยู่ แต่ยังไม่เชื่อมต่อ — แตะเพื่อเปิดเมนู</string>
+    <string name="k_wifi_icon_title">WiFi</string>
+    <string name="k_will_remember_brightness">จะจำความสว่าง (ไฟหน้าเปิด/ปิด)</string>
+    <string name="k_window_driver_switch">ทำงานตามประตู</string>
+    <string name="k_window_follows_door_off">กระจกไม่ทำงานตามประตูแล้ว</string>
+    <string name="k_window_follows_door_on">กระจกแต่ละบานจะเปิดหรือปิดตามประตูของตัวเอง</string>
+    <string name="k_window_opposite">ฝั่งตรงข้าม</string>
+    <string name="k_window_opposite_off">กลับไปเปิดกระจกของประตูนั้นเองแล้ว</string>
+    <string name="k_window_opposite_on">ตอนนี้จะเปิดกระจกฝั่งตรงข้าม (กระจกของประตูนั้นเองจะไม่ขยับ)</string>
+    <string name="k_window_opposite_switch">กระจกฝั่งตรงข้าม</string>
+    <string name="k_wont_remember_brightness">ไม่จำความสว่างแล้ว</string>
+    <string name="k_xapk_decompress_failed">แตกไฟล์ XAPK ไม่สำเร็จ ไฟล์อาจเสียหาย</string>
+    <string name="k_xapk_no_apk_found">XAPK: ไม่พบ APK ภายในไฟล์</string>
+    <string name="master_aa_carplay">Android Auto และ CarPlay</string>
+    <string name="master_aa_na_rede">อยู่ในเครือข่าย แต่ยังไม่มีเซสชัน</string>
+    <string name="master_aa_off_msg">CarPlay ทำงานได้ก็ต่อเมื่อ Android Auto เปิดอยู่ หากปิด Android Auto ทั้งสองอย่างจะถูกปิด ต้องการดำเนินการต่อหรือไม่</string>
+    <string name="master_aa_off_title">ปิดใช้ Android Auto หรือไม่</string>
+    <string name="master_aa_so_bt">บลูทูธเท่านั้น</string>
+    <string name="master_about_app_development">การพัฒนาแอปพลิเคชัน</string>
+    <string name="master_about_description">ทำความรู้จักผู้ที่ทำให้โครงการนี้เกิดขึ้นได้</string>
+    <string name="master_about_interface_design">การออกแบบส่วนติดต่อผู้ใช้</string>
+    <string name="master_about_nav">เกี่ยวกับ</string>
+    <string name="master_about_project_credits">เครดิตของโครงการ</string>
+    <string name="master_about_responsibility_body">"การติดตั้ง การตั้งค่า และการใช้งาน SapoCentral เป็นการตัดสินใจที่อยู่ในความรับผิดชอบของผู้ใช้แต่เพียงผู้เดียว การใช้แอปพลิเคชันนี้ถือว่าผู้ใช้รับทราบความเสี่ยงที่อาจเกิดขึ้น และยอมรับผลที่ตามมาจากการเลือกและการกระทำของตน
+
+ผู้รับผิดชอบโครงการไม่รับผิดชอบต่อความเสียหาย ความขัดข้อง การสูญเสีย หรือการละเมิดใด ๆ อันเกิดจากการติดตั้งที่ไม่ถูกต้อง การดัดแปลงโดยไม่ได้รับอนุญาต การใช้งานที่ไม่เหมาะสม หรือการใช้งานที่ขัดต่อคำแนะนำด้านความปลอดภัยและกฎหมายที่เกี่ยวข้อง
+
+โปรดใช้แอปพลิเคชันอย่างรับผิดชอบ และอย่าใช้คุณสมบัติต่าง ๆ ขณะขับขี่หากอาจทำให้เสียสมาธิ"</string>
+    <string name="master_about_responsibility_title">ความรับผิดชอบในการใช้งาน</string>
+    <string name="master_about_special_thanks">ขอขอบคุณเป็นพิเศษ</string>
+    <string name="master_about_thanks_body">"Marco Antônio ผู้ลองปลดล็อกเป็นคนแรก และเป็นผู้ให้ความกล้าที่จะทดลอง
+
+Duda สำหรับการร่วมทดสอบแอปพลิเคชันในช่วงแรก
+
+Giulio สำหรับการบริจาค iPhone ที่ใช้ระหว่างการทดสอบ
+
+Guilherme สำหรับการแบ่งปันโค้ดที่ช่วยให้เกิดการรองรับ CarPlay ผ่าน Wi‑Fi
+
+ขอขอบคุณทุกท่านที่สนับสนุนด้านการเงิน ร่วมทดสอบ และช่วยให้โครงการนี้พัฒนาต่อไป"</string>
+    <string name="master_about_title">เกี่ยวกับ SapoCentral</string>
+    <string name="master_ac_single_step">ท่าทางด่วน: เปลี่ยนหนึ่งขั้นต่อการเลื่อน</string>
+    <string name="master_actions">การกระทำ</string>
+    <string name="master_active_safety">ความปลอดภัยเชิงรุก</string>
+    <string name="master_adb_contagem_desligar">กำลังปิด ADB ใน %d…</string>
+    <string name="master_adb_contagem_ligar">กำลังเปิด ADB ใน %d…</string>
+    <string name="master_adb_desligando">กำลังปิด ADB…</string>
+    <string name="master_adb_ligando">กำลังเปิด ADB…</string>
+    <string name="master_aeb_active">AEB ทำงานอยู่</string>
+    <string name="master_aeb_emergency_braking">ระบบเบรกฉุกเฉินอัตโนมัติ (AEB)</string>
+    <string name="master_aeb_inactive">AEB ปิดอยู่</string>
+    <string name="master_aeb_reapply_on_start">ตั้งค่าสถานะ AEB ซ้ำเมื่อสตาร์ต</string>
+    <string name="master_air_direction">ทิศทางลม</string>
+    <string name="master_air_intake">ช่องรับอากาศ</string>
+    <string name="master_air_programming">กำหนดการปรับอากาศ</string>
+    <string name="master_air_ventilation">ลม + การระบายอากาศ</string>
+    <string name="master_any_phone">โทรศัพท์เครื่องใดก็ได้</string>
+    <string name="master_app_catalog">แค็ตตาล็อกแอป</string>
+    <string name="master_appearance">รูปลักษณ์</string>
+    <string name="master_application_mode">การใช้งาน</string>
+    <string name="master_apps_description">ติดตั้งและจัดการแอปพลิเคชัน</string>
+    <string name="master_audio_description">ปรับแต่งเสียงต่าง ๆ ของรถ</string>
+    <string name="master_available">มีให้ใช้</string>
+    <string name="master_available_widgets">วิดเจ็ตที่มี</string>
+    <string name="master_avoid_external_air">หลีกเลี่ยงอากาศภายนอก</string>
+    <string name="master_bar_shortcuts">ทางลัดบนแถบ</string>
+    <string name="master_battery_percentage">เปอร์เซ็นต์แบตเตอรี่</string>
+    <string name="master_both">ทั้งสองอย่าง</string>
+    <string name="master_brightness">ความสว่าง</string>
+    <string name="master_brightness_control">การควบคุมความสว่าง</string>
+    <string name="master_brightness_levels">ระดับความสว่าง</string>
+    <string name="master_car">รถ</string>
+    <string name="master_car_battery">แบตเตอรี่ของรถ</string>
+    <string name="master_car_color_gray">เทา</string>
+    <string name="master_car_color_green">เขียว</string>
+    <string name="master_car_color_silver">เงิน</string>
+    <string name="master_car_color_white">ขาว</string>
+    <string name="master_catalog_desc_chromium">เบราว์เซอร์ขนาดเบาที่ใช้ Chromium เป็นฐาน</string>
+    <string name="master_catalog_desc_disney">ภาพยนตร์และซีรีส์จาก Disney+ บนเครื่องเสียงรถ</string>
+    <string name="master_catalog_desc_dual_dashcam">ดูและควบคุมกล้องหน้าและกล้องหลังของรถ</string>
+    <string name="master_catalog_desc_ei_sapo">ผู้ช่วยที่ทำให้การสั่งงานและดูข้อมูลของเครื่องเสียงรถง่ายขึ้น พูดว่า “Ei Sapo” เพื่อเริ่ม</string>
+    <string name="master_catalog_desc_equalizer">ปรับเสียงด้วยอีควอไลเซอร์และเอฟเฟกต์เสียง</string>
+    <string name="master_catalog_desc_file_manager">สำรวจ คัดลอก และจัดระเบียบไฟล์ของเครื่องเสียงรถและแฟลชไดรฟ์</string>
+    <string name="master_catalog_desc_firefox">เบราว์เซอร์เต็มรูปแบบสำหรับเข้าอินเทอร์เน็ตจากเครื่องเสียงรถ</string>
+    <string name="master_catalog_desc_geely_battery">ติดตามแบตเตอรี่ ระยะทางที่วิ่งได้ และข้อมูลพลังงานของรถ</string>
+    <string name="master_catalog_desc_logger">บันทึกข้อมูลการเชื่อมต่อเพื่อการวินิจฉัยและการสนับสนุน</string>
+    <string name="master_catalog_desc_microg">บริการความเข้ากันได้ที่จำเป็นสำหรับบางแอปพลิเคชัน</string>
+    <string name="master_catalog_desc_prime_video">ภาพยนตร์และซีรีส์ การติดตั้งถูกระงับไว้เพื่อรักษาเสถียรภาพ</string>
+    <string name="master_catalog_desc_vlc">เครื่องเล่นเสียงและวิดีโอที่รองรับหลายรูปแบบ</string>
+    <string name="master_catalog_desc_waze">นำทางด้วย GPS พร้อมข้อมูลจราจร การแจ้งเตือน และเส้นทางแบบเรียลไทม์</string>
+    <string name="master_catalog_remove">นำออก</string>
+    <string name="master_check_new_version">ตรวจสอบว่ามีเวอร์ชันใหม่หรือไม่</string>
+    <string name="master_classic">คลาสสิก</string>
+    <string name="master_close_apps">ปิดแอป</string>
+    <string name="master_conexao_wifi">การเชื่อมต่อ Wi‑Fi</string>
+    <string name="master_config_description">ปรับระบบและการตั้งค่าส่วนตัวของคุณ</string>
+    <string name="master_configure">ตั้งค่า</string>
+    <string name="master_connect_phone">เชื่อมต่อโทรศัพท์</string>
+    <string name="master_connected">เชื่อมต่อแล้ว</string>
+    <string name="master_connected_car">เชื่อมต่อกับรถแล้ว</string>
+    <string name="master_content">เนื้อหา</string>
+    <string name="master_copy_apps_usb">คัดลอกแอปจากแฟลชไดรฟ์ไปยังหน่วยความจำ</string>
+    <string name="master_copy_audio_usb">คัดลอกไฟล์เสียงจากแฟลชไดรฟ์</string>
+    <string name="master_custom_sound">กำหนดเอง</string>
+    <string name="master_dark">มืด</string>
+    <string name="master_digital_ac">แอร์แบบดิจิทัล</string>
+    <string name="master_digital_external_temperature">อุณหภูมิภายนอกแบบดิจิทัล</string>
+    <string name="master_disable_external_speaker">ปิดลำโพงภายนอก</string>
+    <string name="master_disconnected">ตัดการเชื่อมต่อแล้ว</string>
+    <string name="master_disconnected_car">ตัดการเชื่อมต่อกับรถแล้ว</string>
+    <string name="master_drive">การขับขี่</string>
+    <string name="master_drive_comfort">Comfort</string>
+    <string name="master_drive_regeneration">การขับขี่และการคืนพลังงาน</string>
+    <string name="master_drive_sport">Sport</string>
+    <string name="master_enable_quick_bar">เปิดใช้แถบด่วน</string>
+    <string name="master_enable_widgets">เปิดใช้วิดเจ็ต</string>
+    <string name="master_equalizer">อีควอไลเซอร์</string>
+    <string name="master_external_speaker">ลำโพงภายนอก</string>
+    <string name="master_file">ไฟล์</string>
+    <string name="master_file_manager">ตัวจัดการไฟล์</string>
+    <string name="master_first_tap">แตะครั้งแรก</string>
+    <string name="master_floating_app">แอปลอย</string>
+    <string name="master_floating_panel">แผงลอย</string>
+    <string name="master_handle_height">ความสูงของแถบจับ</string>
+    <string name="master_handle_width">ความกว้างของแถบจับ</string>
+    <string name="master_heating">ระบบทำความร้อน</string>
+    <string name="master_help">ความช่วยเหลือ</string>
+    <string name="master_help_android_items">"Android Auto Wi‑Fi|เปิดใช้การเชื่อมต่อไร้สาย
+ConnAdaptor|จัดการส่วนประกอบของการเชื่อมต่อ
+โทรศัพท์ที่ต้องการ|เลือกอุปกรณ์ที่จะใช้ก่อน
+เปิด Android Auto ค้างไว้|พยายามเปิดใหม่หลังถูกขัดจังหวะ
+อินเทอร์เน็ตผ่านเส้นทาง|แบ่งปันอินเทอร์เน็ตด้วยการปรับเส้นทาง
+อินเทอร์เน็ตผ่านพร็อกซี|แบ่งปันอินเทอร์เน็ตโดยใช้พร็อกซี"</string>
+    <string name="master_help_android_title">เกี่ยวกับ Android Auto</string>
+    <string name="master_help_avas_items">"ลำโพงภายนอก|เปิดใช้ลำโพงเตือนภายนอก
+เสียงของ AVAS|เลือกเสียงสำหรับความเร็วต่ำ
+ฟังตัวอย่าง|เล่นเสียงก่อนนำไปใช้
+ใช้งาน|ส่งเสียงที่เลือกไปยังรถ"</string>
+    <string name="master_help_avas_title">เกี่ยวกับ AVAS</string>
+    <string name="master_help_car_items">"ปุ่มควบคุมบนพวงมาลัย|เปิดใช้คำสั่งจากปุ่มจริงบนพวงมาลัย
+ควบคุมสื่อจากพวงมาลัย|ใช้พวงมาลัยควบคุมการเล่นและระดับเสียง"</string>
+    <string name="master_help_car_title">เกี่ยวกับรถ</string>
+    <string name="master_help_carplay_items">"CarPlay Wi‑Fi|เปิดใช้การเชื่อมต่อไร้สาย
+CarPlay Monitor|เฝ้าดูและกู้คืนการเชื่อมต่อ
+โทรศัพท์ที่ต้องการ|เลือก iPhone ที่จะใช้ก่อน
+เปิด CarPlay ค้างไว้|พยายามเปิดใหม่หลังถูกขัดจังหวะ
+อินเทอร์เน็ตผ่านเส้นทาง|แบ่งปันอินเทอร์เน็ตด้วยการปรับเส้นทาง
+อินเทอร์เน็ตผ่านพร็อกซี|แบ่งปันอินเทอร์เน็ตโดยใช้พร็อกซี"</string>
+    <string name="master_help_carplay_title">เกี่ยวกับ CarPlay</string>
+    <string name="master_help_catalog_items">"สถานะของแอปพลิเคชัน|บอกว่าแอปติดตั้งแล้วและเป็นเวอร์ชันล่าสุดหรือไม่
+ติดตั้ง|ดาวน์โหลดและติดตั้งแอป
+อัปเดต|ติดตั้งเวอร์ชันล่าสุด
+นำออก|ถอนการติดตั้งแอปออกจากเครื่องเสียงรถ"</string>
+    <string name="master_help_catalog_title">เกี่ยวกับแค็ตตาล็อก</string>
+    <string name="master_help_climate_items">"กำหนดการปรับอากาศ|สร้างรูทีนอัตโนมัติของแอร์
+หลีกเลี่ยงอากาศภายนอก|กลับไปหมุนเวียนอากาศภายในอัตโนมัติ
+กระจกทำงานตามประตู|เลื่อนกระจกเมื่อเปิดหรือปิดประตู
+กระจกฝั่งตรงข้าม|ใช้การเลื่อนกับฝั่งตรงข้ามด้วย
+เปิดใช้|แสดงแผงเหนือแอปอื่น
+เนื้อหา|เลือกอุณหภูมิ แบตเตอรี่ หรือทั้งสองอย่าง
+สีข้อความ|เลือกข้อความสีอ่อนหรือสีเข้ม
+ขนาด|ปรับขนาดของแผง
+ความโปร่งใส|ปรับการมองเห็นของพื้นหลัง"</string>
+    <string name="master_help_climate_title">เกี่ยวกับระบบปรับอากาศ</string>
+    <string name="master_help_floating_items">"เปิดใช้|แสดงแผงเหนือแอปอื่น
+เนื้อหา|เลือกอุณหภูมิ แบตเตอรี่ หรือทั้งสองอย่าง
+สีข้อความ|เลือกข้อความสีอ่อนหรือสีเข้ม
+ขนาด|ปรับขนาดของแผง
+ความโปร่งใส|ปรับการมองเห็นของพื้นหลัง"</string>
+    <string name="master_help_floating_title">เกี่ยวกับแผงลอย</string>
+    <string name="master_help_installer_items">"แหล่งที่มาของไฟล์|เลือกว่าจะค้นหาแพ็กเกจจากที่ใด
+ไฟล์ที่เลือก|แสดงแพ็กเกจที่จะใช้
+ติดตั้งหรือนำออก|ติดตั้งแพ็กเกจหรือถอนแอปออก
+คัดลอกจากแฟลชไดรฟ์|คัดลอกแพ็กเกจมายังเครื่องเสียงรถ
+แอปที่ทำงานตลอด|ป้องกันไม่ให้แอปที่เลือกถูกปิด"</string>
+    <string name="master_help_installer_title">เกี่ยวกับตัวติดตั้ง</string>
+    <string name="master_help_keepalive_items">จัดการ|เลือกแอปที่ไม่ควรถูกปิด</string>
+    <string name="master_help_keepalive_title">เกี่ยวกับแอปที่ทำงานตลอด</string>
+    <string name="master_help_lock_sound_items">"ไฟล์เสียงที่เลือก|เลือกและฟังไฟล์ได้
+จนกว่าจะรีสตาร์ต|มีผลจนถึงการรีสตาร์ตครั้งถัดไปเท่านั้น
+ถาวร|คงเสียงไว้หลังรีสตาร์ต
+คัดลอกไฟล์เสียงจากแฟลชไดรฟ์|คัดลอกไฟล์เสียงที่รองรับมายังเครื่องเสียงรถ
+คืนค่าเดิม|กลับไปใช้เสียงจากโรงงาน
+ลบ|นำไฟล์ที่เลือกออก"</string>
+    <string name="master_help_lock_sound_title">เกี่ยวกับเสียงล็อกรถ</string>
+    <string name="master_help_media_items">หยุดเล่นเมื่อเปิดประตู|หยุดการเล่นเมื่อมีการเปิดประตู</string>
+    <string name="master_help_media_title">เกี่ยวกับสื่อ</string>
+    <string name="master_help_notifications_items">"แบตเตอรี่ของรถ|แสดงประจุของแบตเตอรี่ขับเคลื่อน
+อุณหภูมิภายนอก|แสดงอุณหภูมิที่รถวัดได้
+Wi‑Fi|แสดงสถานะการเชื่อมต่อ Wi‑Fi"</string>
+    <string name="master_help_notifications_title">เกี่ยวกับแถบการแจ้งเตือน</string>
+    <string name="master_help_perf_items">"การปรับวิดีโอ|สลับตัวถอดรหัสวิดีโอเป็นตัวที่เทียบเท่าซึ่งไม่ติดอยู่ที่ 15 เฟรม ไม่มีการเขียนลงระบบ มีผลจนกว่าจะรีบูตครั้งถัดไปและกลับมาเองตอนบูต
+เรียนรู้การใช้งานและปรับให้เองอัตโนมัติ|เครื่องจะเรียนรู้ว่าคุณใช้แอปอย่างไร และอีกไม่กี่นาทีหลังการสตาร์ตแต่ละครั้ง จะปรับแอปที่ไม่ได้ใช้งานให้เอง โดยไม่ยุ่งกับแอปที่คุณกำลังใช้ การเปิดจะรีสตาร์ตอินเทอร์เฟซ และต้องเปิดใหม่ทุกครั้งที่เครื่องรีบูต
+ไปถึงสถานะที่ดีที่สุดอย่างไร|เปิดการเรียนรู้ ใช้แอปสักสองสามครั้ง แล้วกลับมาที่นี่และกดปรับให้เร็ว แอปจะถูกปรับตามการใช้งานของคุณ ซึ่งเป็นสถานะที่ดีที่สุด เมื่อแอปนั้นได้รับการอัปเดต เครื่องจะลบสิ่งที่เรียนรู้ไว้และการปรับจะหายไป เพียงทำซ้ำ คือใช้อีกสองสามครั้งแล้วกดปรับใหม่
+ปรับแล้ว — คอมไพล์ตามการใช้งานของคุณ|สถานะที่ดีที่สุด เครื่องคอมไพล์เฉพาะส่วนที่คุณใช้ เปิดเร็วกว่าและใช้พื้นที่น้อยกว่าการคอมไพล์ทั้งแอปมาก
+ปรับแล้ว — คอมไพล์ทั้งแอป|เครื่องคอมไพล์ทั้งแอปโดยไม่รู้ว่าคุณใช้ส่วนใด เกิดขึ้นเมื่อยังไม่มีข้อมูลการใช้งาน เปิดเร็วแต่ใช้พื้นที่มากกว่ามาก
+ยังไม่ได้ปรับ|แอปทำงานแบบตีความตามค่าจากโรงงานและเปิดช้ากว่า
+ปรับให้เร็ว|คอมไพล์แอปทันที ใช้เวลาไม่กี่วินาที
+ลบ|ถอนการติดตั้งแอปออกจากเครื่อง
+ขอบคุณ|เส้นทางสู่สองสิ่งนี้มาจากชุมชนในเบลารุส การวัดผลและวิธีนำมาใช้ที่นี่เป็นของเรา แต่จุดเริ่มต้นเป็นของพวกเขา ขอบคุณที่แบ่งปันและช่วยให้การพัฒนาของเราดีขึ้น ขอบคุณครับ"</string>
+    <string name="master_help_perf_title">เกี่ยวกับประสิทธิภาพ</string>
+    <string name="master_help_preferences_items">"รูปลักษณ์|เลือกธีมสว่าง มืด หรืออัตโนมัติ
+ภาษา|กำหนดภาษาของแอปพลิเคชัน
+พักหน้าจอ|กำหนดว่าหน้าจอจะเข้าสู่โหมดพักเมื่อใด"</string>
+    <string name="master_help_preferences_title">เกี่ยวกับการตั้งค่าส่วนตัว</string>
+    <string name="master_help_quickbar_items">"เปิดใช้แถบด่วน|แสดงแถบจับที่เปิดทางลัด
+ตัวอย่าง|แสดงและจัดลำดับไอคอนได้
+ทางลัดบนแถบ|เลือกฟังก์ชันบนแถบ
+ขนาดไอคอน|ปรับขนาดของทางลัด
+ความกว้างของแถบจับ|ปรับความกว้างของพื้นที่เปิด
+ความสูงของแถบจับ|ปรับความสูงของพื้นที่เปิด
+ความโปร่งใส|ปรับการมองเห็นของแถบจับ"</string>
+    <string name="master_help_quickbar_title">เกี่ยวกับแถบด่วน</string>
+    <string name="master_help_screen_items">"ท่าทางลัด|เปิดใช้ท่าทางที่ทำบนหน้าจอโดยตรง
+รายการโปรดของท่าทางลัด|เลือกแอปสำหรับท่าทางห้านิ้ว
+ความสว่าง|ปรับความสว่างของหน้าจอ
+จำความสว่างตามไฟหน้า|เก็บความสว่างหนึ่งค่าเมื่อปิดไฟหน้า และอีกค่าเมื่อเปิดไฟหน้า แล้วคืนค่าที่ถูกต้องเมื่อเปิดเครื่อง
+พักหน้าจอ|กำหนดว่าหน้าจอจะเข้าสู่โหมดพักเมื่อใด
+แบ่งหน้าจอ|ให้ใช้สองแอปพร้อมกันได้
+แอปลอย|เปิดแอปในหน้าต่างที่อยู่เหนือหน้าจอ"</string>
+    <string name="master_help_screen_title">เกี่ยวกับหน้าจอ</string>
+    <string name="master_help_security_items">"พื้นหลังสีดำในกล้องถอยหลัง|ทำให้พื้นหลังเข้มเพื่อเน้นภาพจากกล้อง
+แสดงเมื่อเปิดไฟเลี้ยว|เปิดกล้องด้านข้างเมื่อเปิดไฟเลี้ยว
+เปิดค้างต่ออีก 5 วินาที|ให้กล้องค้างไว้หลังไฟเลี้ยวดับ
+ระบบเบรกฉุกเฉินอัตโนมัติ (AEB)|เปิดหรือปิด AEB
+ตั้งค่าสถานะ AEB ซ้ำเมื่อสตาร์ต|คืนค่าที่เลือกไว้เมื่อเริ่มต้น
+ล็อกประตูตามความเร็ว|ล็อกประตูเมื่อรถเคลื่อนที่"</string>
+    <string name="master_help_security_title">เกี่ยวกับความปลอดภัย</string>
+    <string name="master_help_status_items">"เปอร์เซ็นต์แบตเตอรี่|แสดงประจุเป็นเปอร์เซ็นต์
+แอร์แบบดิจิทัล|ปรับแอร์ได้จากแถบด้านล่าง
+อุณหภูมิภายนอกแบบดิจิทัล|แสดงอุณหภูมิภายนอกบนแถบด้านล่าง
+การควบคุมความสว่าง|ปรับความสว่างได้จากแถบด้านล่าง
+ระดับความสว่าง|กำหนดระดับของการควบคุมด่วน
+ระยะทาง|เลือกระหว่างทริปกับระยะทางรวม"</string>
+    <string name="master_help_status_title">เกี่ยวกับแถบสถานะ</string>
+    <string name="master_help_system_items">"โหมดเข้าศูนย์บริการ|เปิดเครื่องมือสำหรับการบำรุงรักษา
+บันทึกของเซสชัน|บันทึกข้อมูลเพื่อการวินิจฉัย
+เวอร์ชันที่ติดตั้ง|แสดงเวอร์ชันปัจจุบันของแอป
+รีสตาร์ทเครื่องเสียงรถ|รีสตาร์ตระบบมัลติมีเดีย ระหว่างนั้นลำโพงอาจมีเสียงสั้น ๆ ซึ่งเป็นเรื่องปกติ"</string>
+    <string name="master_help_system_title">เกี่ยวกับระบบ</string>
+    <string name="master_help_updates_items">"ประเภทของอัปเดต|เลือกเวอร์ชันเสถียรหรือทดลอง
+อัปเดตอัตโนมัติ|ให้ติดตั้งเวอร์ชันใหม่ได้อัตโนมัติ
+ค้นหาอัปเดต|ตรวจสอบว่ามีเวอร์ชันใหม่กว่าหรือไม่"</string>
+    <string name="master_help_updates_title">เกี่ยวกับอัปเดต</string>
+    <string name="master_help_widgets_items">"เปิดใช้วิดเจ็ต|ให้แสดงวิดเจ็ตแบบลอยได้
+พื้นหลังของวิดเจ็ต|แสดงหรือซ่อนพื้นหลัง
+ขนาด|ปรับแต่ละวิดเจ็ตแยกกัน
+ความโปร่งใส|ปรับแต่ละวิดเจ็ตแยกกัน"</string>
+    <string name="master_help_widgets_title">เกี่ยวกับวิดเจ็ต</string>
+    <string name="master_help_wifi_items">"เปิด Wi‑Fi เมื่อเปิดรถ|เปิด Wi‑Fi อัตโนมัติ
+ส่งข้อมูลจากรถเมื่อสตาร์ต|เริ่มส่งข้อมูลของรถ
+ซิงค์กับโทรศัพท์|ซิงค์เครื่องเสียงรถกับโทรศัพท์"</string>
+    <string name="master_help_wifi_title">เกี่ยวกับ Wi‑Fi</string>
+    <string name="master_home_description">ทุกอย่างพร้อมสำหรับการขับขี่</string>
+    <string name="master_icon_size">ขนาดไอคอน</string>
+    <string name="master_indicators">ตัวบ่งชี้</string>
+    <string name="master_installed">ติดตั้งแล้ว</string>
+    <string name="master_installed_version">เวอร์ชันที่ติดตั้ง</string>
+    <string name="master_interface">ส่วนติดต่อผู้ใช้</string>
+    <string name="master_internet">อินเทอร์เน็ต</string>
+    <string name="master_keep_android_auto_open">เปิด Android Auto ค้างไว้</string>
+    <string name="master_keep_apps_active">แอปที่ทำงานตลอด</string>
+    <string name="master_keep_apps_active_description">เลือกแอปที่ไม่ควรถูกระบบปิด</string>
+    <string name="master_keep_apps_description">เลือกแอปพลิเคชันที่ควรทำงานอยู่ต่อไป</string>
+    <string name="master_keep_apps_title">แอปที่ทำงานตลอด</string>
+    <string name="master_keep_carplay_open">เปิด CarPlay ค้างไว้</string>
+    <string name="master_keep_open_five_seconds">เปิดค้างต่ออีก 5 วินาที</string>
+    <string name="master_language">ภาษา</string>
+    <string name="master_language_english">English</string>
+    <string name="master_language_portuguese">Português (Brasil)</string>
+    <string name="master_language_russian">Русский</string>
+    <string name="master_language_spanish">Español (Chile)</string>
+    <string name="master_language_thai">ไทย</string>
+    <string name="master_language_vietnamese">Tiếng Việt</string>
+    <string name="master_light">สว่าง</string>
+    <string name="master_list">แสดงรายการ</string>
+    <string name="master_manage">จัดการ</string>
+    <string name="master_media_browser_row">เครื่องเล่นเพลง (Spotify, Deezer, JOOX…)</string>
+    <string name="master_mileage">ระยะทาง</string>
+    <string name="master_mode_off">ปิดอยู่ในโหมดนี้</string>
+    <string name="master_network_description">การเชื่อมต่อของรถ รวมไว้ในที่เดียว</string>
+    <string name="master_no_apps_available">ไม่มีแอปพลิเคชันให้เลือก</string>
+    <string name="master_no_ip">ไม่มี IP</string>
+    <string name="master_none_active">ไม่มีรายการที่ทำงานอยู่</string>
+    <string name="master_notification_bar">แถบการแจ้งเตือน</string>
+    <string name="master_origin">แหล่งที่มา</string>
+    <string name="master_original_sound">เสียงต้นฉบับ</string>
+    <string name="master_perf_already">%1$s ถูกปรับไว้แล้ว</string>
+    <string name="master_perf_busy_msg">"กำลังปรับ %1$s
+
+อาจใช้เวลาถึงหนึ่งนาที โปรดรอและอย่าดับรถ"</string>
+    <string name="master_perf_busy_title">กำลังปรับให้เร็ว</string>
+    <string name="master_perf_det_apk">ทำงานจากไฟล์ APK โดยตรง</string>
+    <string name="master_perf_det_discarded">ระบบทิ้งโค้ดที่คอมไพล์ไว้</string>
+    <string name="master_perf_det_empty">ทำงานแบบตีความ ยังไม่เคยคอมไพล์</string>
+    <string name="master_perf_det_full">คอมไพล์ทั้งแอปแล้ว</string>
+    <string name="master_perf_det_none">ไม่มีข้อมูล</string>
+    <string name="master_perf_det_profile">คอมไพล์ตามการใช้งานของคุณ</string>
+    <string name="master_perf_det_verified">ตรวจสอบเท่านั้น ไม่ได้คอมไพล์</string>
+    <string name="master_perf_done">ปรับ %1$s เรียบร้อย</string>
+    <string name="master_perf_empty">ยังไม่มีแอปที่คุณติดตั้งไว้</string>
+    <string name="master_perf_failed">ปรับ %1$s ไม่สำเร็จ</string>
+    <string name="master_perf_jit_confirm_msg">"อินเทอร์เฟซจะรีสตาร์ตทันทีและหน้าจอจะดับประมาณ 40 วินาที ไม่ใช่การรีบูตเครื่อง
+
+การดับและสตาร์ตรถไม่ทำให้ปิด มีเพียงการรีบูตเครื่องเท่านั้นที่ปิดการเรียนรู้ และเพียงเปิดใหม่ที่นี่ ส่วนที่ปรับไปแล้วในแอปยังคงอยู่
+
+จากนี้เครื่องจะเรียนรู้จากการใช้งานของคุณ และอีกไม่กี่นาทีหลังการสตาร์ตแต่ละครั้ง จะปรับแอปที่ไม่ได้ใช้งานให้เอง"</string>
+    <string name="master_perf_jit_confirm_title">เปิดการเรียนรู้ไหม</string>
+    <string name="master_perf_jit_desc">เครื่องจะเรียนรู้ว่าคุณใช้แอปอย่างไร และอีกไม่กี่นาทีหลังการสตาร์ตแต่ละครั้ง จะปรับแอปที่ไม่ได้ใช้งานให้เอง ต้องเปิดใหม่หลังจากเครื่องรีบูต ส่วนการปรับที่ทำไปแล้วในแอปจะไม่หายไป</string>
+    <string name="master_perf_jit_not_applied">เปิดการเรียนรู้ไม่สำเร็จ — อินเทอร์เฟซไม่ได้รีสตาร์ต โปรดลองอีกครั้ง</string>
+    <string name="master_perf_jit_off">ปิดอยู่ (ค่าจากโรงงาน)</string>
+    <string name="master_perf_jit_off_msg">การปิดก็ทำให้อินเทอร์เฟซรีสตาร์ตเช่นกัน ประมาณ 40 วินาทีที่ไม่มีหน้าจอ สิ่งที่เรียนรู้ไปแล้วจะไม่หาย</string>
+    <string name="master_perf_jit_off_title">ปิดการเรียนรู้ไหม</string>
+    <string name="master_perf_jit_on">เปิดอยู่ — เปิดใหม่หลังเครื่องรีบูต</string>
+    <string name="master_perf_jit_title">เรียนรู้การใช้งานและปรับให้เองอัตโนมัติ</string>
+    <string name="master_perf_nav">ประสิทธิภาพ</string>
+    <string name="master_perf_need_use_msg">"%1$s ถูกคอมไพล์ทั้งแอปแล้ว จึงเปิดได้เร็ว แต่ยังไม่รู้ว่าคุณใช้ส่วนใดข้างใน
+
+ขณะเปิดการเรียนรู้ไว้ ให้เปิดแอปอีกสักสองสามครั้งแล้วกลับมาที่นี่ จากนั้นจะคอมไพล์เฉพาะส่วนที่คุณใช้ ซึ่งใช้พื้นที่น้อยกว่ามาก"</string>
+    <string name="master_perf_need_use_title">ต้องใช้อีกสักหน่อยจึงจะปรับตามการใช้งานได้</string>
+    <string name="master_perf_no_profile_msg">"จะคอมไพล์ %1$s ทั้งแอป ซึ่งทำให้เร็วขึ้นแล้ว แต่ใช้พื้นที่มากกว่า
+
+หลังจากเปิดแอปสักสองสามครั้งโดยเปิดการเรียนรู้ไว้ ให้กดปรับอีกครั้ง แล้วแอปจะถูกคอมไพล์เฉพาะตามการใช้งานของคุณ"</string>
+    <string name="master_perf_no_profile_title">ยังไม่รู้ว่าคุณใช้แอปนี้อย่างไร</string>
+    <string name="master_perf_note_update">กดปรับให้เร็วหลังจากใช้แอปไปสักสองสามครั้ง แล้วแอปจะถูกปรับตามการใช้งานของคุณ เมื่อแอปได้รับการอัปเดต การปรับจะหายไป เพียงใช้อีกสองสามครั้งแล้วกดปรับใหม่</string>
+    <string name="master_perf_optimize">ปรับให้เร็ว</string>
+    <string name="master_perf_refresh">ตรวจ</string>
+    <string name="master_perf_refuse_disk">พื้นที่ในเครื่องไม่พอสำหรับการปรับ</string>
+    <string name="master_perf_refuse_memory">หน่วยความจำไม่พอในตอนนี้ ลองใหม่อีกสักครู่</string>
+    <string name="master_perf_restarting">กำลังรีสตาร์ตอินเทอร์เฟซ โปรดรอ…</string>
+    <string name="master_perf_scanning">กำลังตรวจแอป โปรดรอ…</string>
+    <string name="master_perf_state_bad">ยังไม่ได้ปรับ</string>
+    <string name="master_perf_state_ok">ปรับให้เร็วแล้ว</string>
+    <string name="master_perf_state_unknown">ตรวจไม่ได้</string>
+    <string name="master_perf_title">ประสิทธิภาพของแอป</string>
+    <string name="master_perf_video_applying">กำลังสลับตัวถอดรหัสวิดีโอ</string>
+    <string name="master_perf_video_confirm_msg">"การสลับเป็นเพียงชั่วคราวและไม่เขียนอะไรลงระบบ มีผลจนกว่าจะรีบูตเครื่องครั้งถัดไป และแอปจะใส่กลับให้เองตอนบูตตราบที่ตัวเลือกนี้เปิดอยู่
+
+ตัวถอดรหัสจะรีสตาร์ตทันที หากมีการฉาย CarPlay อยู่ จะกลับไปหน้าแรกและเชื่อมต่อใหม่เอง"</string>
+    <string name="master_perf_video_confirm_title">เปิดการปรับวิดีโอไหม</string>
+    <string name="master_perf_video_desc">สลับตัวถอดรหัสวิดีโอจนถึงการรีบูตครั้งถัดไป และกลับมาเองหลังบูต ช่วยให้วิดีโอ YouTube ที่ 1080p 60fps ดีขึ้นอย่างเห็นได้ชัด</string>
+    <string name="master_perf_video_done">เปิดวิดีโอ 60 เฟรมแล้ว</string>
+    <string name="master_perf_video_failed">สลับตัวถอดรหัสวิดีโอไม่สำเร็จ</string>
+    <string name="master_perf_video_off">ปิดอยู่ (ตัวถอดรหัสจากโรงงาน)</string>
+    <string name="master_perf_video_off_msg">ตัวถอดรหัสจะรีสตาร์ตทันทีและวิดีโอจะกลับไปเป็นแบบเดิม ไม่ต้องถอนการติดตั้งอะไร เพราะการสลับไม่เคยถาวร</string>
+    <string name="master_perf_video_off_title">กลับไปใช้ตัวถอดรหัสจากโรงงานไหม</string>
+    <string name="master_perf_video_on">เปิดอยู่</string>
+    <string name="master_perf_video_removed">กลับมาใช้ตัวถอดรหัสจากโรงงานแล้ว</string>
+    <string name="master_perf_video_title">การปรับวิดีโอ</string>
+    <string name="master_perf_video_wait">ใช้เวลาไม่กี่วินาที โปรดรอและอย่าดับรถ</string>
+    <string name="master_persistent">ถาวร</string>
+    <string name="master_pip_nativo">PiP ดั้งเดิม (หน้าต่างลอย)</string>
+    <string name="master_placeholder">—</string>
+    <string name="master_power_off_vehicle">ดับเครื่องยนต์</string>
+    <string name="master_preview">ตัวอย่าง</string>
+    <string name="master_programs">กำหนดการ</string>
+    <string name="master_quick_bar">แถบด่วน</string>
+    <string name="master_quick_gesture_favorites">รายการโปรดของท่าทางลัด</string>
+    <string name="master_quick_gestures">ท่าทางลัด</string>
+    <string name="master_rear_camera">กล้องถอยหลัง</string>
+    <string name="master_regen_high">สูง</string>
+    <string name="master_regen_low">ต่ำ</string>
+    <string name="master_reiniciando">กำลังรีสตาร์ท…</string>
+    <string name="master_remember_brightness">จำความสว่างตามไฟหน้า</string>
+    <string name="master_reset">รีเซ็ต</string>
+    <string name="master_reset_trip_mileage">รีเซ็ตระยะทางของทริป</string>
+    <string name="master_rest_disabled">ปิดอยู่</string>
+    <string name="master_restart_central">รีสตาร์ทเครื่องเสียงรถ</string>
+    <string name="master_restart_connection">รีสตาร์ทการเชื่อมต่อ</string>
+    <string name="master_restore_original">คืนค่าเดิม</string>
+    <string name="master_reverse_volume">ระดับเสียงตอนถอยหลัง</string>
+    <string name="master_screen_off">ดับหน้าจอ</string>
+    <string name="master_screen_rest">พักหน้าจอ</string>
+    <string name="master_search_update">ค้นหาอัปเดต</string>
+    <string name="master_second_tap">แตะครั้งที่สอง</string>
+    <string name="master_select_apk">เลือกไฟล์ APK</string>
+    <string name="master_select_color">เลือกสี</string>
+    <string name="master_selected_audio">ไฟล์เสียงที่เลือก</string>
+    <string name="master_selected_file">ไฟล์ที่เลือก</string>
+    <string name="master_session_log">บันทึกของเซสชัน</string>
+    <string name="master_shortcuts_description">จัดระเบียบทางลัดของเครื่องเสียงรถ</string>
+    <string name="master_show_log">แสดงบันทึก</string>
+    <string name="master_show_on_turn">แสดงเมื่อเปิดไฟเลี้ยว</string>
+    <string name="master_size">ขนาด</string>
+    <string name="master_soft">นุ่มนวล</string>
+    <string name="master_sound">เสียง</string>
+    <string name="master_split_screen">แบ่งหน้าจอ</string>
+    <string name="master_standard">มาตรฐาน</string>
+    <string name="master_status_bar">แถบสถานะ</string>
+    <string name="master_sync_with_phone">ซิงค์กับโทรศัพท์</string>
+    <string name="master_technological">ล้ำสมัย</string>
+    <string name="master_telemetry">ข้อมูลจากรถ</string>
+    <string name="master_telemetry_on_car_start">ส่งข้อมูลจากรถเมื่อสตาร์ต</string>
+    <string name="master_temperature">อุณหภูมิ</string>
+    <string name="master_temperature_short">อุณหภูมิ</string>
+    <string name="master_text_color">สีข้อความ</string>
+    <string name="master_tools_description">ปรับแต่งเครื่องเสียงรถในแบบของคุณ</string>
+    <string name="master_transparency">ความโปร่งใส</string>
+    <string name="master_turn_camera">กล้องเมื่อเปิดไฟเลี้ยว</string>
+    <string name="master_until_restart">จนกว่าจะรีสตาร์ต</string>
+    <string name="master_update_type">ประเภทของอัปเดต</string>
+    <string name="master_updates">อัปเดต</string>
+    <string name="master_ventilation">การระบายอากาศ</string>
+    <string name="master_wheel_controls">ปุ่มควบคุมบนพวงมาลัย</string>
+    <string name="master_wheel_media">ควบคุมสื่อจากพวงมาลัย</string>
+    <string name="master_widget_background">พื้นหลังของวิดเจ็ต</string>
+    <string name="master_widget_lock_positions">ล็อกตำแหน่งวิดเจ็ต</string>
+    <string name="master_widget_manage">จัดการ</string>
+    <string name="master_widget_pin">ปักหมุด</string>
+    <string name="master_widget_rows_columns">ตาราง</string>
+    <string name="master_wifi_on_car_open">เปิด Wi‑Fi เมื่อเปิดรถ</string>
+    <string name="master_windows_doors">กระจกและประตู</string>
+    <string name="oficina_ativar">เปิดใช้งาน</string>
+    <string name="oficina_recuperacao_explicacao">หากไม่มีข้อมูลเดิม จะระบุไม่ได้ว่าโหมดศูนย์บริการซ่อนแอปใดไว้ เลือกแอปที่ต้องการเปิดใช้งานอีกครั้ง แอปที่คุณปิดเองอาจปรากฏด้วย</string>
+    <string name="oficina_recuperacao_falhas">เปิดใช้งานไม่ได้:</string>
+    <string name="oficina_recuperacao_resultado">เปิดใช้งานแล้ว %1$d จาก %2$d แอป</string>
+    <string name="oficina_restaurar">คืนค่า</string>
+    <string name="oficina_selecionar_todos">เลือกทั้งหมด</string>
+    <string name="oficina_sem_apps_desativados">ไม่มีแอปภายนอกที่ปิดใช้งานให้คืนค่า</string>
+    <string name="open_overlay_permission">เปิดการอนุญาตแสดงทับ</string>
+    <string name="permission_label">สิทธิ์แสดงทับแอปอื่น:</string>
+    <string name="permission_missing">ไม่มี</string>
+    <string name="permission_ok">ตกลง</string>
+    <string name="search_menu_title">ค้นหา</string>
+    <string name="start_floater">เปิดปุ่มลอย</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_floater">ปิดปุ่มลอย</string>
+    <string name="subtitle_control">ใช้แอปนี้เพื่อเปิดหรือปิดปุ่มลอย หน้าจอดำจะปรากฏเมื่อคุณแตะที่ปุ่มเท่านั้น</string>
+    <string name="title_control">การควบคุมปุ่มลอย</string>
+    <string name="update_checking">กำลังค้นหาอัปเดต…</string>
+    <string name="update_declined">ไม่ได้ติดตั้งอัปเดต</string>
+    <string name="update_dialog_message">พบอัปเดตจากเวอร์ชัน %1$s เป็น %2$s ต้องการอัปเดตตอนนี้หรือไม่</string>
+    <string name="update_dialog_title">มีอัปเดต</string>
+    <string name="update_downloading">กำลังถ่ายโอนและติดตั้ง…</string>
+    <string name="update_no">ไม่</string>
+    <string name="update_none_available">ขณะนี้ไม่มีอัปเดต</string>
+    <string name="update_yes">ใช่</string>
+    <string name="xml_a_opcao_ativa_usa_o_mesmo_azul_de_destaq">ตัวเลือกที่ใช้งานอยู่ใช้สีน้ำเงินเน้นเดียวกับระบบ โดยไม่มีสีแยกตามโหมด</string>
+    <string name="xml_a_verificar">กำลังตรวจสอบ…</string>
+    <string name="xml_ac_program_desc">สร้างลำดับอัตโนมัติของอุณหภูมิและการระบายอากาศ — ฟองจะทำงานเมื่อคุณแตะกำหนดการที่บันทึกไว้</string>
+    <string name="xml_ac_program_titulo">กำหนดการปรับอากาศ</string>
+    <string name="xml_acesso">การเข้าถึง</string>
+    <string name="xml_acesso_rapido">เมนูลัด</string>
+    <string name="xml_adb_por_usb_off">🔌 ADB ผ่าน USB: ปิด</string>
+    <string name="xml_android_auto">Android Auto</string>
+    <string name="xml_android_auto_carplay">Android Auto + CarPlay Wi-Fi</string>
+    <string name="xml_android_auto_carplay_2">Android Auto + CarPlay Wi-Fi</string>
+    <string name="xml_android_auto_sem_fio_automatico">Android Auto ไร้สายอัตโนมัติ</string>
+    <string name="xml_anunciar_carplay_ao_iphone">CarPlay ไร้สาย</string>
+    <string name="xml_ao_conectar_o_celular_por_bluetooth_liga">เมื่อเชื่อมต่อโทรศัพท์ผ่าน Bluetooth ระบบจะเปิด Android Auto เอง โดยไม่ต้องแตะไอคอน</string>
+    <string name="xml_apagar">🗑️ ลบ</string>
+    <string name="xml_apagar_2">🗑️ ลบ</string>
+    <string name="xml_apagar_3">ลบ</string>
+    <string name="xml_aparencia">🌗 รูปลักษณ์</string>
+    <string name="xml_aplicar">✅ ใช้งาน</string>
+    <string name="xml_aplicativos">📦 แอปพลิเคชัน</string>
+    <string name="xml_apps">แอป</string>
+    <string name="xml_ar">💨 ลม</string>
+    <string name="xml_atalhos">ทางลัด</string>
+    <string name="xml_atalhos_desc">ไอคอนลอย วิดเจ็ต ท่าทาง และพวงมาลัย — แตะที่นี่เพื่อเปิดใช้และปรับแต่ง</string>
+    <string name="xml_ativa_o_wifi_automaticamente_sempre_que">เปิด WiFi อัตโนมัติทุกครั้งที่รถตื่นขึ้น (เช่น ปลดล็อกหรือสตาร์ต) แม้คุณจะเคยปิดด้วยตนเองมาก่อน</string>
+    <string name="xml_ativar">เปิดใช้</string>
+    <string name="xml_ativar_2">เปิดใช้</string>
+    <string name="xml_ativar_automaticamente_ao_conectar">เปิดใช้อัตโนมัติเมื่อเชื่อมต่อ</string>
+    <string name="xml_ativar_gestos_rapidos">เปิดใช้ท่าทางลัด</string>
+    <string name="xml_atualizacoes">🔄 อัปเดต</string>
+    <string name="xml_atualizar_rede">🔄 รีเฟรชเครือข่าย</string>
+    <string name="xml_audio">เสียง</string>
+    <string name="xml_audio_do_sistema">🔊 เสียงของระบบ</string>
+    <string name="xml_aumentar_temperatura">เพิ่มอุณหภูมิ</string>
+    <string name="xml_auto">อัตโนมัติ</string>
+    <string name="xml_auto_2">อัตโนมัติ</string>
+    <string name="xml_avas_alto_falante_externo">AVAS / ลำโพงภายนอก</string>
+    <string name="xml_bateria_12v">🔋 แบตเตอรี่ของรถ</string>
+    <string name="xml_bateria_na_barra">% แบตเตอรี่บนแถบสถานะ</string>
+    <string name="xml_brilho_na_barra_0_desliga_volume_religa">ความสว่างบนแถบสถานะ (0% ดับหน้าจอ ปุ่มเสียงเปิดกลับ)</string>
+    <string name="xml_cada_porta_desce_sobe_so_a_sua_janela_ao">แต่ละประตูจะเลื่อนกระจกของตัวเองลง/ขึ้นเมื่อเปิด/ปิด เมื่อเลือก \"ฝั่งตรงข้าม\" จะเลื่อนกระจกอีกฝั่งของแถวเดียวกันแทน หากมีกระจกบานใดเปิดอยู่แล้ว จะไม่เปิดอีกบาน เพราะแรงดันระบายออกทางนั้นแล้ว</string>
+    <string name="xml_camera_dupla_frontal_traseira">กล้องคู่ หน้าและหลัง</string>
+    <string name="xml_captura_e_envia_logs_do_connadaptor">บันทึกและส่งล็อกของ ConnAdaptor</string>
+    <string name="xml_car_api_iniciando">Car API: กำลังเริ่มต้น</string>
+    <string name="xml_carplay">CarPlay</string>
+    <string name="xml_carplaymonitor">CarplayMonitor</string>
+    <string name="xml_chromium">🌐 Chromium</string>
+    <string name="xml_climatizacao">❄️ ระบบปรับอากาศ</string>
+    <string name="xml_com_gestos_ativados_use_5_dedos_para_ace">เมื่อเปิดท่าทางแล้ว ใช้ 5 นิ้วเพื่อเข้าถึงรายการโปรด</string>
+    <string name="xml_comfort">🚗 สบาย</string>
+    <string name="xml_config">ตั้งค่า</string>
+    <string name="xml_configuracoes">⚙️ การตั้งค่า</string>
+    <string name="xml_confort">สบาย</string>
+    <string name="xml_connadaptor_ca_fix">ConnAdaptor</string>
+    <string name="xml_controles_rapidos">ปุ่มควบคุมด่วน</string>
+    <string name="xml_copiar_apps_do_pen_drive_p_a_memoria">📥 คัดลอกแอปจากแฟลชไดรฟ์ไปยังหน่วยความจำ</string>
+    <string name="xml_copiar_audios_do_pen_drive">📥 คัดลอกไฟล์เสียงจากแฟลชไดรฟ์</string>
+    <string name="xml_criar_rotas_automaticamente">สร้างเส้นทางอัตโนมัติ</string>
+    <string name="xml_criar_rotas_de_internet">สร้างเส้นทางอินเทอร์เน็ต</string>
+    <string name="xml_da_bateria">% แบตเตอรี่</string>
+    <string name="xml_deixa_o_fundo_da_camera_de_re_preto_pro">ทำให้พื้นหลังกล้องถอยหลังเป็นสีดำ (Pro)</string>
+    <string name="xml_desativar">ปิดใช้</string>
+    <string name="xml_desligar_avas">🔇 ปิด AVAS</string>
+    <string name="xml_desligar_o_avas_silencia_o_alto_falante">การปิด AVAS จะทำให้ลำโพงภายนอกของรถเงียบลง ระบบจะจำสถานะไว้และตั้งค่าซ้ำเองเมื่อสตาร์ตรถ</string>
+    <string name="xml_detecta_o_celular_conectado_e_libera_a_i">ตรวจจับโทรศัพท์ที่เชื่อมต่อและเปิดอินเทอร์เน็ตให้เอง โดยไม่ต้องแตะอะไร</string>
+    <string name="xml_detecta_quando_o_android_auto_conecta_po">ตรวจจับเมื่อ Android Auto เชื่อมต่อผ่าน WiFi แล้วสร้างเส้นทางเอง (ต้องมี root) คำเตือน: ใช้ได้กับโทรศัพท์ที่มี root เท่านั้น</string>
+    <string name="xml_diagnostico">🩺 การวินิจฉัย</string>
+    <string name="xml_diminuir_temperatura">ลดอุณหภูมิ</string>
+    <string name="xml_disney">🏰 Disney+</string>
+    <string name="xml_dividir_tela">◫ แบ่งหน้าจอ</string>
+    <string name="xml_drive_confort">การขับขี่: สบาย</string>
+    <string name="xml_dualdashcam">🎥 DualDashcam</string>
+    <string name="xml_eco">🌿 ประหยัด</string>
+    <string name="xml_eco_2">ประหยัด</string>
+    <string name="xml_eisapo">🐸 Ei Sapo</string>
+    <string name="xml_eisapo_desc">ผู้ช่วยเสียงในรถ — เรียกว่า \"Ei Sapo\" เพื่อสั่งงานโดยไม่ต้องแตะหน้าจอ</string>
+    <string name="xml_endereco_p_conectar_o_app_do_celular_por">ที่อยู่สำหรับเชื่อมต่อแอปในโทรศัพท์ผ่าน WiFi</string>
+    <string name="xml_envia_os_dados_do_carro_bateria_velocida">ส่งข้อมูลของรถ (แบตเตอรี่ ความเร็ว ฯลฯ) ไปยังแอปอื่นอัตโนมัติเมื่อสตาร์ต เมื่อเปิดใช้ ระบบจะเริ่มทำงานทันที</string>
+    <string name="xml_equalizador">🎚️ อีควอไลเซอร์</string>
+    <string name="xml_experimental_depende_do_veiculo_pode_nao">ทดลอง: ขึ้นอยู่กับตัวรถ อาจไม่มีผลในทุกคัน</string>
+    <string name="xml_explicacao_usar_internet_do_celular">ทำงานร่วมกับแอป Central EX Celular ในโทรศัพท์ของคุณ — ใช้การเชื่อมต่อ WiFi เดียวกับ Android Auto เพื่อให้อินเทอร์เน็ตแก่รถ ต้องติดตั้งแอปและเปิดตัวเลือกพร็อกซีในแอปนั้น</string>
+    <string name="xml_favoritos_card_titulo">⭐ รายการโปรด</string>
+    <string name="xml_ferramentas">เครื่องมือ</string>
+    <string name="xml_firefox">🦊 Firefox</string>
+    <string name="xml_forte">▆ แรง</string>
+    <string name="xml_forte_2">แรง</string>
+    <string name="xml_fraca">อ่อน</string>
+    <string name="xml_fraco">▂ อ่อน</string>
+    <string name="xml_fundo_preto_na_re">พื้นหลังสีดำในกล้องถอยหลัง</string>
+    <string name="xml_geely_battery">🔋 Capy (Battery)</string>
+    <string name="xml_geely_battery_desc">ข้อมูลแบตเตอรี่และการชาร์จสำหรับรถ Geely (แอปจากผู้พัฒนาภายนอก Timoteohss)</string>
+    <string name="xml_gerenciador_de_arquivos">📁 ตัวจัดการไฟล์</string>
+    <string name="xml_gerenciamento_de_conexao_e_servicos">การจัดการการเชื่อมต่อและบริการ</string>
+    <string name="xml_gerenciar_apps_ativos">จัดการแอปที่ทำงานตลอด</string>
+    <string name="xml_gerenciar_favoritos">จัดการรายการโปรด</string>
+    <string name="xml_gestos_download_grande">การเปิดใช้ครั้งแรกต้องดาวน์โหลดแพ็กเกจขนาดประมาณ 100 เมกะไบต์ ต้องการดำเนินการต่อหรือไม่</string>
+    <string name="xml_gestos_explanation">ท่าทางหลายนิ้ว (พัดลม อุณหภูมิ แอปล่าสุด กล้อง รายการโปรด) ผ่านแพตช์ในตัวเรียกใช้งานของระบบ</string>
+    <string name="xml_gestos_help_texto">"เลื่อน 2 นิ้วในแนวนอนเพื่อเปลี่ยนความแรงลม
+เลื่อน 2 นิ้วในแนวตั้งเพื่อเปลี่ยนอุณหภูมิ
+แตะด้วย 3 นิ้วเพื่อเปิดแอปล่าสุด
+แตะด้วย 4 นิ้วเพื่อเปิดกล้อง
+แตะด้วย 5 นิ้วเพื่อเปิดแอปโปรด
+เพิ่มแอปโปรดได้โดยแตะ จัดการรายการโปรด"</string>
+    <string name="xml_gestos_rapidos_desc">ท่าทางหลายนิ้วบนทุกหน้าจอ: พัดลม อุณหภูมิ แอปล่าสุด กล้อง และรายการโปรด</string>
+    <string name="xml_gestos_rapidos_titulo">✋ ท่าทางลัด</string>
+    <string name="xml_gestos_rapidos_titulo_curto">ท่าทางลัด</string>
+    <string name="xml_gestos_reapply_question">⚠️ ใช้แพตช์ท่าทางซ้ำเมื่อสตาร์ตรถใหม่หรือไม่</string>
+    <string name="xml_gestos_restore_title">🔄 เปิดท่าทางซ้ำเมื่อเปิดเครื่อง</string>
+    <string name="xml_gestos_status_aplicando">กำลังใช้งานทับตัวเรียกใช้งาน…</string>
+    <string name="xml_gestos_status_baixando">กำลังดาวน์โหลดแพ็กเกจท่าทาง… %1$d%%</string>
+    <string name="xml_gestos_status_concluido">✅ เสร็จสิ้น! แตะด้วย 5 นิ้วเพื่อทดสอบรายการโปรด</string>
+    <string name="xml_gestos_status_copiando">กำลังคัดลอกไปยังระบบ…</string>
+    <string name="xml_gestos_status_falha">❌ ใช้งานไม่สำเร็จ ตรวจสอบอินเทอร์เน็ตแล้วลองอีกครั้ง</string>
+    <string name="xml_gestos_status_verificando">กำลังตรวจสอบความสมบูรณ์ของไฟล์…</string>
+    <string name="xml_guardar">บันทึก</string>
+    <string name="xml_hvac_batt_temp_desc">แสดง % แบตเตอรี่บนแถบของรถ อุณหภูมิภายนอกจะแสดงคู่กันหากคุณเปิดทั้งสองอย่าง</string>
+    <string name="xml_hvac_exttemp_desc" formatted="false">แสดงอุณหภูมิภายนอกไว้เหนือ % แบตเตอรี่ ในตำแหน่งเดียวกัน (ตัวอักษรเล็กลงเล็กน้อยเพื่อให้พอดีทั้งสองค่า) การเปิดตัวเลือกนี้จะเปิด % แบตเตอรี่บนแถบสถานะให้อัตโนมัติ หากยังไม่ได้เปิด</string>
+    <string name="xml_hvac_exttemp_titulo">พร้อมอุณหภูมิภายนอก</string>
+    <string name="xml_hvac_rotulo_bateria">% แบตเตอรี่</string>
+    <string name="xml_hvac_rotulo_temp">อุณหภูมิ</string>
+    <string name="xml_i">ⓘ</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_aj">ไอคอน ▢ ในเมนูลัดเปิดหน้าต่างลอย ปุ่ม +/−/⟲ ปรับได้ ปุ่ม ✕ ปิด</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_to">ไอคอน ◫ ในเมนูลัดเปิดหน้าต่างลอย แตะอีกครั้งเพื่อปิดทั้งหมด</string>
+    <string name="xml_icones_independentes_na_barra_de_notific">ไอคอนอิสระบนแถบการแจ้งเตือน</string>
+    <string name="xml_implementacao_do_youtube_com_interface_a">YouTube เวอร์ชันที่ปรับหน้าตาให้เหมาะกับรถยนต์</string>
+    <string name="xml_inicio">หน้าแรก</string>
+    <string name="xml_instagram_credit">@appsdecarro</string>
+    <string name="xml_instalados">ติดตั้งแล้ว</string>
+    <string name="xml_instalar">⬇️ ติดตั้ง</string>
+    <string name="xml_instalar_2">ติดตั้ง</string>
+    <string name="xml_instalar_ou_remover_apps_do_veiculo">ติดตั้งหรือถอนแอปออกจากรถ</string>
+    <string name="xml_instalar_um_arquivo_apk_xapk_apkm">ติดตั้งจากไฟล์ (APK / XAPK / APKM)</string>
+    <string name="xml_instrucoes">คำแนะนำ</string>
+    <string name="xml_internet_do_android_auto_via_celular">🌐 อินเทอร์เน็ตของ Android Auto ผ่านโทรศัพท์</string>
+    <string name="xml_ip_da_central">IP ของเครื่องเสียงรถ</string>
+    <string name="xml_janela_acompanha_a_porta">กระจกทำงานตามประตู</string>
+    <string name="xml_keep_alive_desc">ทำให้แอปที่เลือกไว้ทำงานอยู่เบื้องหลังต่อไป โดยไม่ถูกเครื่องเสียงรถปิดเมื่อออกจากหน้าจอ (เช่น Spotify ที่กำลังเล่นเพลง)</string>
+    <string name="xml_keep_alive_titulo">📌 แอปที่ทำงานตลอด</string>
+    <string name="xml_keyserver_gestos_volante">ปุ่มควบคุมบนพวงมาลัย</string>
+    <string name="xml_keyserver_status_default">แตะไมโครโฟนเร็ว 2 ครั้ง = ระบบปรับอากาศ (ขึ้น/ลง = อุณหภูมิ ซ้าย/ขวา = พัดลม) โดยใช้ปุ่มควบคุมสื่อ กดค้าง 2 วินาที = การขับขี่/การคืนพลังงาน (ขึ้น/ลง = การคืนพลังงาน ซ้าย/ขวา = โหมด)</string>
+    <string name="xml_lembrar_brilho_da_tela">🔆 จำความสว่างหน้าจอ</string>
+    <string name="xml_ligar">เปิด</string>
+    <string name="xml_ligar_wifi_ao_abrir_o_carro">เปิด WiFi เมื่อเปิดรถ</string>
+    <string name="xml_limpar">🗑️ ล้าง</string>
+    <string name="xml_listar">🔍 แสดงรายการ</string>
+    <string name="xml_log_tecnico_da_sessao">📋 บันทึกทางเทคนิคของเซสชัน</string>
+    <string name="xml_logger">📝 ตัวบันทึก</string>
+    <string name="xml_media">ปานกลาง</string>
+    <string name="xml_medio">▄ ปานกลาง</string>
+    <string name="xml_memoria_interna">หน่วยความจำภายใน</string>
+    <string name="xml_menu_lateral_flutuante_toque_aqui_p_ativ">เมนูด้านข้างแบบลอย — แตะที่นี่เพื่อเปิดใช้และปรับแต่ง</string>
+    <string name="xml_microg">🔧 microG</string>
+    <string name="xml_minutos">นาที</string>
+    <string name="xml_modo_automatico_ventoinha">โหมดพัดลมอัตโนมัติ</string>
+    <string name="xml_modo_claro_cores_claras_mais_facil_de_ve">โหมดสว่าง: สีอ่อน มองเห็นง่ายกว่าในเวลากลางวัน</string>
+    <string name="xml_modo_de_direcao_e_regeneracao">โหมดการขับขี่และการคืนพลังงาน</string>
+    <string name="xml_modo_oficina">โหมดเข้าศูนย์บริการ</string>
+    <string name="xml_modo_oficina_desc">ทำให้เครื่องเสียงรถดูเหมือนของโรงงาน ก่อนส่งรถเข้ารับบริการ</string>
+    <string name="xml_mostra_o_de_bateria_na_barra_do_carro">แสดง % แบตเตอรี่บนแถบของรถ</string>
+    <string name="xml_mostrar_log">📋 แสดงบันทึก</string>
+    <string name="xml_n_0">0</string>
+    <string name="xml_n_1o">ที่ 1</string>
+    <string name="xml_n_50">50%</string>
+    <string name="xml_navegacao_com_transito_em_tempo_real_ver">นำทางพร้อมข้อมูลจราจรแบบเรียลไทม์ (เวอร์ชัน Android Automotive)</string>
+    <string name="xml_navegacao_e_gerenciamento_de_arquivos">การเรียกดูและจัดการไฟล์</string>
+    <string name="xml_navegador_oficial_da_mozilla_arm64">เบราว์เซอร์อย่างเป็นทางการของ Mozilla (arm64)</string>
+    <string name="xml_navegador_web_baseado_em_chromium">เว็บเบราว์เซอร์ที่ใช้ Chromium เป็นฐาน</string>
+    <string name="xml_numero_no_lugar_da_roleta_na_barra_do_ca">แสดงเป็นตัวเลขแทนแถบเลื่อน บนแถบของรถ</string>
+    <string name="xml_o_app_le_os_audios_da_pasta_data_local_t">แอปจะอ่านไฟล์เสียงจากโฟลเดอร์ /data/local/tmp/sons ในเครื่อง หากคุณคัดลอกจากแฟลชไดรฟ์ ให้วางไฟล์เสียงไว้ที่รากของแฟลชไดรฟ์ (ไม่อยู่ในโฟลเดอร์ย่อย) เพื่อให้ระบบพบไฟล์แน่นอน</string>
+    <string name="xml_o_iphone_nao_anuncia_o_carplay_sozinho">เปิดทุกอย่างของ CarPlay ไร้สาย: การประกาศไปยัง iPhone การเชื่อมต่ออัตโนมัติ และแพตช์เมื่อเปิดเครื่อง เมื่อปิดไว้ จะไม่มีการพยายามใช้ CarPlay เลย</string>
+    <string name="xml_o_som_selecionado_substituira_temporaria">เสียงที่เลือกจะแทนที่เสียงล็อกรถเสียงแรกชั่วคราว</string>
+    <string name="xml_off">ปิด</string>
+    <string name="xml_online">ออนไลน์</string>
+    <string name="xml_origem_da_lista">แหล่งที่มาของรายการ:</string>
+    <string name="xml_painel_separado_por_funcao">แผงควบคุมแยกตามฟังก์ชัน</string>
+    <string name="xml_pen_drive">แฟลชไดรฟ์</string>
+    <string name="xml_permite_controlar_a_central_remotamente">ให้ควบคุมเครื่องเสียงรถจากระยะไกลผ่านแอป CentralPhoneApp ทาง WiFi หรือ Bluetooth</string>
+    <string name="xml_pill_branco">ขาว</string>
+    <string name="xml_pill_cor_letra">สีตัวอักษร</string>
+    <string name="xml_pill_desc">ฟองลอยที่แสดงอุณหภูมิภายนอกและ/หรือ % แบตเตอรี่ — กดค้างแล้วลากเพื่อย้ายไปตำแหน่งใดก็ได้บนหน้าจอ (รวมถึงเหนือ Android Auto)</string>
+    <string name="xml_pill_hint">กดค้างแล้วลากฟองเพื่อย้าย แตะเร็ว ๆ เพื่อเปิดกำหนดการปรับอากาศที่บันทึกไว้ (ในเครื่องมือ) แตะรายการหนึ่งเพื่อเริ่มทำงาน ตัวอักษรจะเป็นสีเขียวขณะทำงาน แตะที่ฟองอีกครั้งเพื่อหยุด</string>
+    <string name="xml_pill_mostrar">แสดง</string>
+    <string name="xml_pill_os_dois">ทั้งสองอย่าง</string>
+    <string name="xml_pill_preto">ดำ</string>
+    <string name="xml_pill_so_bateria">แบตเตอรี่เท่านั้น</string>
+    <string name="xml_pill_so_temp">อุณหภูมิเท่านั้น</string>
+    <string name="xml_pill_tamanho">ขนาด</string>
+    <string name="xml_pill_titulo">ฟองอุณหภูมิ/แบตเตอรี่</string>
+    <string name="xml_pill_transparencia">ความโปร่งใสของพื้นหลัง</string>
+    <string name="xml_pip_de_app">▢ PiP ของแอป</string>
+    <string name="xml_pip_nativo_help">"เปิดใช้งาน Picture-in-Picture ดั้งเดิมของเครื่อง ซึ่งถูกปิดมาจากโรงงาน: SystemUI มีคลาสอยู่แล้ว แต่คอมโพเนนต์ที่ลงทะเบียนการสัมผัสไม่เคยเริ่มทำงาน จึงทำให้หน้าต่างเล็กปรากฏแต่ไม่ตอบสนองต่อนิ้ว
+
+เมื่อเปิดแล้ว วิดีโอจากแอปที่รองรับจะเปิดในหน้าต่างที่ลากและแตะได้ ไม่ได้เพิ่ม PiP ให้กับแอปที่ไม่รองรับ
+
+ไม่มีการเขียนลง /system: เป็นโอเวอร์เลย์ทรัพยากรที่ติดตั้งใน /data และการปิดที่นี่จะคืนค่าทุกอย่าง แถบสถานะจะรีสตาร์ทสองสามวินาที
+
+ฟีเจอร์นี้เป็นผลงานต้นฉบับของ Magno Lima (geely-ex2-pip-overlay) ใช้โดยได้รับอนุญาตจากเขา"</string>
+    <string name="xml_player_de_video_audio_universal_toca_qua">เครื่องเล่นวิดีโอและเสียงอเนกประสงค์ เล่นได้เกือบทุกรูปแบบ</string>
+    <string name="xml_poweramp_equalizer_eq_e_efeitos_de_audio">Poweramp Equalizer — อีควอไลเซอร์และเอฟเฟกต์เสียง</string>
+    <string name="xml_prime_video">🎥 Prime Video</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_carplaym">ค้นหา CarplayMonitor เวอร์ชันใหม่กว่าและอัปเดตหากจำเป็น</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_connadap">ค้นหา ConnAdaptor เวอร์ชันใหม่กว่าและถามว่าต้องการติดตั้งหรือไม่</string>
+    <string name="xml_receber_arquivos_do_celular">📂 รับไฟล์จากโทรศัพท์</string>
+    <string name="xml_recursos">คุณสมบัติ</string>
+    <string name="xml_rede">เครือข่ายและ Auto</string>
+    <string name="xml_rede_conexao">📶 เครือข่ายและการเชื่อมต่อ</string>
+    <string name="xml_regen_media">การคืนพลังงาน: ปานกลาง</string>
+    <string name="xml_registro_detalhado_do_que_o_app_fez_desd">บันทึกโดยละเอียดของสิ่งที่แอปทำตั้งแต่เปิดขึ้นมา — มีประโยชน์ในการวินิจฉัยปัญหาร่วมกับฝ่ายสนับสนุน</string>
+    <string name="xml_reinicia_a_central_por_completo">รีสตาร์ตเครื่องเสียงรถทั้งหมด (ผลเหมือนปิดแล้วเปิดใหม่)</string>
+    <string name="xml_reinicia_o_android_auto_carplay_poucos_s">รีสตาร์ต Android Auto ไม่กี่วินาทีหลังสตาร์ตรถ เพื่อป้องกันอาการค้าง</string>
+    <string name="xml_reiniciar">รีสตาร์ท</string>
+    <string name="xml_reiniciar_2">🔁 รีสตาร์ท</string>
+    <string name="xml_reiniciar_3">รีสตาร์ท</string>
+    <string name="xml_reiniciar_ao_ligar_o_carro">รีสตาร์ทเมื่อสตาร์ตรถ</string>
+    <string name="xml_reiniciar_central">🔁 รีสตาร์ทเครื่องเสียงรถ</string>
+    <string name="xml_remover">🗑️ นำออก</string>
+    <string name="xml_restaura_o_brilho_ao_acordar_dia_noite">คืนค่าความสว่างเมื่อตื่นขึ้น (กลางวัน/กลางคืน)</string>
+    <string name="xml_restaurar_original">↩️ คืนค่าเดิม</string>
+    <string name="xml_salvar_em_downloads">💾 บันทึกลงใน Downloads</string>
+    <string name="xml_segundos">วินาที</string>
+    <string name="xml_segurar_e_arrastar_para_mover_o_floater">กดค้างแล้วลากเพื่อย้ายปุ่มลอย</string>
+    <string name="xml_servicos_do_google_versao_livre_necessar">บริการของ Google (เวอร์ชันเสรี) จำเป็นสำหรับบางแอป</string>
+    <string name="xml_sinal_na_barra">สัญญาณบนแถบสถานะ</string>
+    <string name="xml_sinal_na_barra_desc">แสดงสัญญาณของซิมในเครื่องเสียงรถบนแถบสถานะ (เป็นขีด)</string>
+    <string name="xml_sincronizar_com_o_celular">📱 ซิงค์กับโทรศัพท์</string>
+    <string name="xml_smarttube">📺 SmartTube</string>
+    <string name="xml_som_de_travamento">🔒 เสียงล็อกรถ</string>
+    <string name="xml_som_de_travamento_e_volumes_do_carro">เสียงล็อกรถและระดับเสียงต่าง ๆ ของรถ</string>
+    <string name="xml_sport">🏁 สปอร์ต</string>
+    <string name="xml_sport_2">สปอร์ต</string>
+    <string name="xml_status_de_rede_e_depuracao_adb">สถานะเครือข่ายและการดีบักผ่าน ADB</string>
+    <string name="xml_status_do_carro_e_atalhos_principais_da">สถานะของรถและทางลัดหลักของ CentralEXAuto</string>
+    <string name="xml_str">—</string>
+    <string name="xml_str_2">🎛️</string>
+    <string name="xml_str_3">›</string>
+    <string name="xml_str_4">−</string>
+    <string name="xml_str_5">--°</string>
+    <string name="xml_str_6">+</string>
+    <string name="xml_str_7">--</string>
+    <string name="xml_str_8">...</string>
+    <string name="xml_str_9">⋮</string>
+    <string name="xml_streaming_amazon_prime_video_versao_andr">สตรีมมิง Amazon Prime Video (เวอร์ชัน Android Automotive)</string>
+    <string name="xml_streaming_disney_pixar_marvel_star_wars">สตรีมมิง Disney/Pixar/Marvel/Star Wars (เวอร์ชัน Android Automotive)</string>
+    <string name="xml_telemetria_ao_ligar_o_carro">📊 ส่งข้อมูลจากรถเมื่อสตาร์ต</string>
+    <string name="xml_temp">🌡️ อุณหภูมิ</string>
+    <string name="xml_temp_bateria_hv">💾 พื้นที่ว่าง</string>
+    <string name="xml_temp_e_bateria_na_barra">อุณหภูมิและแบตเตอรี่บนแถบสถานะ</string>
+    <string name="xml_temp_externa">อุณหภูมิภายนอก</string>
+    <string name="xml_temperatura_da_bateria_de_tracao_alta_vo">พื้นที่จัดเก็บว่างในเครื่องเสียงรถ</string>
+    <string name="xml_temperatura_digital">อุณหภูมิแอร์แบบตัวเลข</string>
+    <string name="xml_temperatura_toque_abre_programas_de_vent">อุณหภูมิ แตะเพื่อเปิดกำหนดการของพัดลม</string>
+    <string name="xml_tensao_da_bateria_comum_do_carro">แรงดันแบตเตอรี่สำรอง 12V</string>
+    <string name="xml_tipo_de_som">🎵 ประเภทของเสียง</string>
+    <string name="xml_toque_no_icone_liga_o_wifi_e_abre_o_menu">แตะไอคอนเพื่อเปิด WiFi และเปิดเมนู</string>
+    <string name="xml_usar_internet_do_celular">ใช้อินเทอร์เน็ตจากโทรศัพท์</string>
+    <string name="xml_use_quando_o_android_auto_conectar_mas_o">ใช้เมื่อ Android Auto เชื่อมต่อได้แต่แอป (แผนที่ เพลง) โหลดข้อมูลไม่ขึ้น — เพื่อเปิดอินเทอร์เน็ตจากโทรศัพท์ให้แอปทำงานได้</string>
+    <string name="xml_vent_final">ลมสุดท้าย</string>
+    <string name="xml_vent_inicial">ลมเริ่มต้น</string>
+    <string name="xml_verifica_se_ha_uma_nova_versao_da_centra">ตรวจสอบว่ามี CentralEXAuto เวอร์ชันใหม่ให้ติดตั้งหรือไม่</string>
+    <string name="xml_versao_centralexauto">เวอร์ชัน — · CentralEXAuto</string>
+    <string name="xml_visao_geral">ภาพรวม</string>
+    <string name="xml_vlc">🎬 VLC</string>
+    <string name="xml_waze">🧭 Waze</string>
+    <string name="xml_wifi">WiFi</string>
+    <string name="xml_wifi_na_barra">WiFi บนแถบสถานะ</string>
+    <string name="xml_wireless">ไร้สาย</string>
+    <string name="xml_x2">x2</string>
+    <string name="xml_x4">x4</string>
+</resources>

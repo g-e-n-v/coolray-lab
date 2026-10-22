@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MasterToolsPageRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MasterToolsPageHeader">
+        <TextView android:text="@string/master_status_bar" style="@style/MasterToolsPageTitle" />
+        <ImageView android:id="@id/masterToolsStatusHelp" android:contentDescription="@string/master_help" style="@style/MasterToolsHelpIcon" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="8.0dp">
+            <TextView android:text="@string/master_indicators" style="@style/MasterToolsSectionHeader" />
+            <LinearLayout android:id="@id/masterToolsStatusBatteryRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_battery_percentage" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusBatterySwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterToolsStatusExternalTempRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_digital_external_temperature" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusExternalTempSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsStatusHvacRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_digital_ac" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusHvacSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsStatusBrightnessRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_brightness_control" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusBrightnessSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <TextView android:text="@string/master_brightness_levels" style="@style/MasterToolsSectionHeader" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/master_first_tap" />
+                <SeekBar android:id="@id/masterToolsStatusBrightness1" android:layout_width="0.0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:layout_weight="1.0" android:progressTint="@color/master_green" android:progressBackgroundTint="@color/master_divider" android:thumbTint="@color/master_green" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/master_text" android:gravity="end" android:id="@id/masterToolsStatusBrightness1Value" android:layout_width="64.0dp" android:layout_height="wrap_content" android:text="@string/xml_n_50" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsStatusBrightness2EnabledRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="170.0dp" android:layout_height="wrap_content" android:text="@string/master_second_tap" />
+                <SeekBar android:id="@id/masterToolsStatusBrightness2" android:layout_width="0.0dp" android:layout_height="wrap_content" android:max="100" android:progress="50" android:layout_weight="1.0" android:progressTint="@color/master_green" android:progressBackgroundTint="@color/master_divider" android:thumbTint="@color/master_green" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/master_text" android:gravity="end" android:id="@id/masterToolsStatusBrightness2Value" android:layout_width="64.0dp" android:layout_height="wrap_content" android:text="@string/xml_n_50" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusBrightness2Switch" android:layout_width="56.0dp" android:layout_height="32.0dp" android:layout_marginStart="18.0dp" />
+            </LinearLayout>
+            <TextView android:text="@string/master_mileage" style="@style/MasterToolsSectionHeader" />
+            <LinearLayout android:id="@id/masterToolsStatusTripRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_status_km_trip" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusTripSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsStatusTotalRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_status_km_total" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsStatusTotalSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsStatusResetTripRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_reset_trip_mileage" style="@style/MasterToolsOptionText" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_reset" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

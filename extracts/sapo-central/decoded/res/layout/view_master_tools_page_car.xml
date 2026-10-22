@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MasterToolsPageRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MasterToolsPageHeader">
+        <TextView android:text="@string/master_car" style="@style/MasterToolsPageTitle" />
+        <ImageView android:id="@id/masterToolsCarHelp" android:contentDescription="@string/master_help" style="@style/MasterToolsHelpIcon" />
+    </LinearLayout>
+    <TextView android:text="@string/k_widget_lbl_heat_wheel" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsCarWheelControlsRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/master_wheel_controls" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsCarWheelControlsSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout android:id="@id/masterToolsCarWheelMediaRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/master_wheel_media" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsCarWheelMediaSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <TextView android:text="@string/camera_on_drive_section" style="@style/MasterToolsSectionHeader" />
+    <LinearLayout android:id="@id/masterToolsCarCameraDriveRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/camera_on_drive_title" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsCarCameraDriveSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+</LinearLayout>

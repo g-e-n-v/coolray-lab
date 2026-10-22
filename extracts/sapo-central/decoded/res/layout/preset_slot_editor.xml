@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_preset_slot_inner" android:padding="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:id="@id/preset_title" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/cx_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/xml_minutos" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_min_minus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_4" android:backgroundTint="@color/cx_surface_alt" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/preset_min_val" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xml_n_0" android:layout_weight="1.0" />
+        <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_min_plus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_6" android:backgroundTint="@color/cx_surface_alt" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/cx_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/xml_segundos" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_sec_minus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_4" android:backgroundTint="@color/cx_surface_alt" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/preset_sec_val" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xml_n_0" android:layout_weight="1.0" />
+        <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_sec_plus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_6" android:backgroundTint="@color/cx_surface_alt" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/cx_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xml_vent_inicial" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_fan0_minus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_4" android:backgroundTint="@color/cx_surface_alt" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/preset_fan0_val" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xml_x4" android:layout_weight="1.0" />
+                <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_fan0_plus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_6" android:backgroundTint="@color/cx_surface_alt" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dp">
+            <TextView android:textSize="13.0sp" android:textColor="@color/cx_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/xml_vent_final" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_fan1_minus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_4" android:backgroundTint="@color/cx_surface_alt" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/preset_fan1_val" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/xml_x2" android:layout_weight="1.0" />
+                <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_fan1_plus" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="@string/xml_str_6" android:backgroundTint="@color/cx_surface_alt" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <Button android:textColor="@color/cx_on_accent" android:id="@id/preset_save" android:layout_width="0.0dp" android:layout_height="48.0dp" android:text="@string/xml_guardar" android:layout_weight="1.0" android:textAllCaps="false" android:backgroundTint="@color/cx_accent" />
+        <Button android:textColor="@color/cx_text_primary" android:id="@id/preset_delete" android:layout_width="0.0dp" android:layout_height="48.0dp" android:text="@string/xml_apagar_3" android:layout_weight="1.0" android:textAllCaps="false" android:layout_marginStart="10.0dp" android:backgroundTint="@color/cx_surface_alt" />
+    </LinearLayout>
+</LinearLayout>

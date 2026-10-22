@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_master_shell" android:padding="38.0dp" android:layout_width="1320.0dp" android:layout_height="800.0dp" android:elevation="18.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54.0dp">
+            <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:id="@id/tvAcEditTitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/k_ac_edit_title_new" android:layout_weight="1.0" />
+            <TextView android:textSize="30.0sp" android:textColor="@color/master_text" android:gravity="center" android:id="@id/btnAcEditBack" android:background="@drawable/bg_master_restart" android:focusable="true" android:clickable="true" android:layout_width="48.0dp" android:layout_height="48.0dp" android:foreground="?android:selectableItemBackground" android:text="×" android:includeFontPadding="false" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/master_text_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/xml_ac_program_desc" />
+        <ScrollView android:background="@drawable/bg_master_card" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="24.0dp" android:fillViewport="true" android:layout_weight="1.0" android:paddingStart="22.0dp" android:paddingEnd="22.0dp">
+            <LinearLayout android:orientation="vertical" android:paddingTop="12.0dp" android:paddingBottom="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:gravity="center_vertical" android:id="@id/tvAcEditEmptyHint" android:layout_width="match_parent" android:layout_height="60.0dp" android:text="@string/k_ac_edit_empty_hint" />
+                <LinearLayout android:orientation="vertical" android:id="@id/containerAcSteps" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="23.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:gravity="bottom" android:paddingBottom="10.0dp" android:layout_width="match_parent" android:layout_height="54.0dp" android:text="@string/k_ac_edit_add_step_label" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54.0dp">
+                    <TextView android:id="@id/btnAcAddTemp" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_add_temp" android:layout_weight="1.0" android:layout_marginEnd="6.0dp" style="@style/MasterActionButton.Primary" />
+                    <TextView android:id="@id/btnAcAddFan" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_add_fan" android:layout_weight="1.0" android:layout_marginStart="6.0dp" style="@style/MasterActionButton" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54.0dp" android:layout_marginTop="12.0dp">
+                    <TextView android:id="@id/btnAcAddWait" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_add_wait" android:layout_weight="1.0" android:layout_marginEnd="6.0dp" style="@style/MasterActionButton" />
+                    <TextView android:id="@id/btnAcAddRecirc" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_add_recirc" android:layout_weight="1.0" android:layout_marginStart="6.0dp" style="@style/MasterActionButton" />
+                </LinearLayout>
+                <View android:layout_marginTop="16.0dp" style="@style/MasterToolsDivider" />
+                <LinearLayout android:id="@id/rowAcRepeat" style="@style/MasterToolsOptionRow.Clickable">
+                    <TextView android:text="@string/k_ac_edit_repeat" style="@style/MasterToolsOptionText" />
+                    <com.ex.auto.MasterToggleView android:id="@id/switchAcRepeat" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/rowAcRestore" style="@style/MasterToolsOptionRow.Clickable">
+                    <TextView android:text="@string/k_ac_edit_restore" style="@style/MasterToolsOptionText" />
+                    <com.ex.auto.MasterToggleView android:id="@id/switchAcRestore" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="22.0dp">
+            <TextView android:textColor="@color/cx_danger" android:id="@id/btnAcEditDelete" android:visibility="gone" android:layout_width="190.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_delete" style="@style/MasterActionButton" />
+            <TextView android:textStyle="bold" android:id="@id/btnAcEditSave" android:layout_width="210.0dp" android:layout_height="match_parent" android:text="@string/k_ac_edit_save" android:layout_marginStart="14.0dp" style="@style/MasterActionButton.Primary" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

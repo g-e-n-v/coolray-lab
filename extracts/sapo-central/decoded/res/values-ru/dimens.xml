@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dr_card_margin_top_1">6.0dp</dimen>
+    <dimen name="dr_card_margin_top_2">6.0dp</dimen>
+    <dimen name="dr_card_padding">10.0dp</dimen>
+    <dimen name="dr_card_title_size">14.0sp</dimen>
+    <dimen name="dr_drive_button_text_size">12.0sp</dimen>
+    <dimen name="dr_drive_row_margin_top_1">6.0dp</dimen>
+    <dimen name="dr_drive_row_margin_top_2">4.0dp</dimen>
+    <dimen name="dr_drive_title_size">16.0sp</dimen>
+    <dimen name="dr_panel_subtitle_margin_top">4.0dp</dimen>
+    <dimen name="dr_panel_subtitle_size">12.0sp</dimen>
+    <dimen name="dr_panel_title_size">21.0sp</dimen>
+    <dimen name="dr_row_height_lg">52.0dp</dimen>
+    <dimen name="dr_row_height_sm">44.0dp</dimen>
+    <dimen name="dr_wifi_button_text_size">13.0sp</dimen>
+</resources>

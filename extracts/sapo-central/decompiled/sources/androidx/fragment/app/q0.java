@@ -1,0 +1,42 @@
+package androidx.fragment.app;
+
+import android.util.Log;
+import java.io.Writer;
+
+/* JADX INFO: loaded from: classes.dex */
+public final class q0 extends Writer {
+    public final StringBuilder b = new StringBuilder(128);
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public final String f500a = "FragmentManager";
+
+    public final void a() {
+        StringBuilder sb = this.b;
+        if (sb.length() > 0) {
+            Log.d(this.f500a, sb.toString());
+            sb.delete(0, sb.length());
+        }
+    }
+
+    @Override // java.io.Writer, java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+        a();
+    }
+
+    @Override // java.io.Writer, java.io.Flushable
+    public final void flush() {
+        a();
+    }
+
+    @Override // java.io.Writer
+    public final void write(char[] cArr, int i3, int i4) {
+        for (int i5 = 0; i5 < i4; i5++) {
+            char c3 = cArr[i3 + i5];
+            if (c3 == '\n') {
+                a();
+            } else {
+                this.b.append(c3);
+            }
+        }
+    }
+}

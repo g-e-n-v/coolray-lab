@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/masterConfigContent" style="@style/MasterContentRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/xml_config" style="@style/MasterContentTitle" />
+    <TextView android:text="@string/master_config_description" style="@style/MasterContentDescription" />
+    <ScrollView android:scrollbars="vertical" android:fillViewport="true" style="@style/MasterContentPanel">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="14.0dp">
+            <LinearLayout style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/k_eyebrow_preferencias" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterConfigPreferencesHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_appearance" style="@style/MasterToolsOptionText" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_inner_card" android:padding="3.0dp" android:layout_width="430.0dp" android:layout_height="48.0dp">
+                    <TextView android:id="@id/masterConfigThemeLight" android:text="@string/master_light" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigThemeDark" android:text="@string/master_dark" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigThemeAuto" android:text="@string/k_widget_lbl_heat_auto" style="@style/MasterToolsSegmentButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigLanguageRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_language" style="@style/MasterToolsOptionText" />
+                <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/masterConfigLanguageSelector" android:layout_width="430.0dp" android:layout_height="48.0dp">
+                    <TextView android:gravity="end|center" android:id="@id/masterConfigLanguageValue" android:layout_width="0.0dp" android:text="@string/k_language_pt_br" android:layout_weight="1.0" style="@style/MasterValueText" />
+                    <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" android:rotation="90.0" android:layout_marginStart="16.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_screen_rest" style="@style/MasterToolsOptionText" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_inner_card" android:padding="3.0dp" android:layout_width="560.0dp" android:layout_height="48.0dp">
+                    <TextView android:id="@id/masterConfigRestOff" android:text="@string/master_rest_disabled" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigRest10" android:text="10 s" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigRest30" android:text="30 s" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigRest60" android:text="1 min" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterConfigRest120" android:text="2 min" style="@style/MasterToolsSegmentButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="14.0dp" style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/master_updates" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterConfigUpdatesHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_update_type" style="@style/MasterToolsOptionText" />
+                <TextView android:gravity="end" android:id="@id/masterConfigChannelValue" android:layout_width="430.0dp" android:text="@string/k_update_channel_stable" android:alpha="0.75" style="@style/MasterToolsOptionText" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigAutoUpdateRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_auto_update_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterConfigAutoUpdateSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:id="@id/masterConfigUpdateStatus" android:text="@string/master_check_new_version" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigCheckUpdates" android:minWidth="210.0dp" android:text="@string/master_search_update" style="@style/MasterActionButton.Primary" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="14.0dp" style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/k_eyebrow_sistema" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterConfigSystemHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/xml_modo_oficina" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigWorkshop" android:text="@string/oficina_ativar" style="@style/MasterActionButton" />
+                <TextView android:id="@id/masterConfigWorkshopRestore" android:text="@string/oficina_restaurar" android:layout_marginStart="8.0dp" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_session_log" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigShowLog" android:text="@string/master_show_log" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigTtl65Row" android:visibility="gone" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_ttl65_titulo" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterConfigTtl65Switch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View android:id="@id/masterConfigTtl65Divider" android:visibility="gone" style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigOverlayRow" android:visibility="gone" style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/permission_label" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigOverlayOpen" android:text="@string/open_overlay_permission" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View android:id="@id/masterConfigOverlayDivider" android:visibility="gone" style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigSilenceTboxRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_silence_tbox_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterConfigSilenceTboxSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterConfigSilenceAvmRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_silence_avm_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterConfigSilenceAvmSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_installed_version" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigVersion" android:text="@string/xml_str" style="@style/MasterValueText" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_restart_central" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterConfigRestart" android:text="@string/common_restart" style="@style/MasterActionButton.Danger" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

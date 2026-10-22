@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/masterAudioContent" style="@style/MasterContentRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/xml_audio" style="@style/MasterContentTitle" />
+    <TextView android:text="@string/master_audio_description" style="@style/MasterContentDescription" />
+    <ScrollView android:scrollbars="vertical" android:fillViewport="true" style="@style/MasterContentPanel">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="14.0dp">
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_media_browser_row" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterAudioMediaBrowser" android:text="@string/k_mbh_open" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/k_eyebrow_som_travamento" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterAudioLockHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_selected_audio" style="@style/MasterToolsOptionText" />
+                <Spinner android:id="@id/masterAudioLockSpinner" android:background="@drawable/bg_master_inner_card" android:layout_width="390.0dp" android:layout_height="48.0dp" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+                <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                <TextView android:id="@id/masterAudioLockPreview" android:minWidth="72.0dp" android:text="▶" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_application_mode" style="@style/MasterToolsOptionText" />
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_inner_card" android:padding="3.0dp" android:layout_width="430.0dp" android:layout_height="48.0dp">
+                    <TextView android:id="@id/masterAudioLockApplyReboot" android:text="@string/master_until_restart" style="@style/MasterToolsSegmentButton" />
+                    <TextView android:id="@id/masterAudioLockApplyPersistent" android:text="@string/master_persistent" style="@style/MasterToolsSegmentButton" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_copy_audio_usb" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterAudioCopyUsb" android:text="@string/k_copy_btn" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_selected_file" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterAudioLockRestore" android:minWidth="190.0dp" android:text="@string/master_restore_original" style="@style/MasterActionButton" />
+                <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                <TextView android:id="@id/masterAudioLockDelete" android:text="@string/k_delete_btn" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="12.0dp" style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/k_eyebrow_avas" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterAudioAvasHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterAudioAvasRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_disable_external_speaker" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterAudioAvasSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/master_sound" style="@style/MasterToolsOptionText" />
+                <Spinner android:id="@id/masterAudioAvasSpinner" android:background="@drawable/bg_master_inner_card" android:layout_width="390.0dp" android:layout_height="48.0dp" android:paddingStart="18.0dp" android:paddingEnd="18.0dp" />
+                <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                <TextView android:id="@id/masterAudioAvasPreview" android:minWidth="72.0dp" android:text="▶" style="@style/MasterActionButton" />
+                <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                <TextView android:id="@id/masterAudioAvasApply" android:text="@string/common_apply" style="@style/MasterActionButton.Primary" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="12.0dp" style="@style/MasterToolsPageHeader">
+                <TextView android:text="@string/k_eyebrow_midia" style="@style/MasterToolsPageTitle" />
+                <ImageView android:id="@id/masterAudioMediaHelp" style="@style/MasterToolsHelpIcon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterAudioMediaBarRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_media_bar_floater_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterAudioMediaBarSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterAudioLyricsRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_lyrics_floater_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterAudioLyricsSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout style="@style/MasterToolsOptionRow">
+                <TextView android:text="@string/k_lyrics_config_btn" style="@style/MasterToolsOptionText" />
+                <TextView android:id="@id/masterAudioLyricsConfig" android:text="@string/master_configure" style="@style/MasterActionButton" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterAudioPauseDoorRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_pause_audio_on_door_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterAudioPauseDoorSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

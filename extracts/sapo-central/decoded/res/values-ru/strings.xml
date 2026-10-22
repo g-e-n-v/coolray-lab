@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Ещё</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_activitychooserview_choose_application">Выберите приложение</string>
+    <string name="abc_capital_off">ВЫКЛ</string>
+    <string name="abc_capital_on">ВКЛ</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
+    <string name="abc_menu_delete_shortcut_label">Delete</string>
+    <string name="abc_menu_enter_shortcut_label">Ввод</string>
+    <string name="abc_menu_function_shortcut_label">Fn +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta +</string>
+    <string name="abc_menu_shift_shortcut_label">Shift +</string>
+    <string name="abc_menu_space_shortcut_label">Пробел</string>
+    <string name="abc_menu_sym_shortcut_label">Sym +</string>
+    <string name="abc_prepend_shortcut_label">Меню +</string>
+    <string name="abc_search_hint">Введите запрос</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_shareactionprovider_share_with">Поделиться с помощью</string>
+    <string name="abc_shareactionprovider_share_with_application">Поделиться с помощью %s</string>
+    <string name="abc_toolbar_collapse_description">Свернуть</string>
+    <string name="app_name">EX Sapo Central</string>
+    <string name="blackout_floater_channel">Чёрный экран (floater)</string>
+    <string name="blackout_floater_notif">Кружок чёрного экрана активен</string>
+    <string name="btn_search_central_update">Проверить обновление Central Auto</string>
+    <string name="button_desc_off">Включить режим чёрного экрана</string>
+    <string name="button_desc_on">Выключить режим чёрного экрана</string>
+    <string name="camera_on_drive_description">Камера автомобиля откроется при включении D, чтобы помочь при маневрировании на низкой скорости. По умолчанию выключено.</string>
+    <string name="camera_on_drive_section">Камера</string>
+    <string name="camera_on_drive_title">Открывать приложение камеры при включении D</string>
+    <string name="carplaymonitor_update_checking">Проверка CarplayMonitor…</string>
+    <string name="carplaymonitor_update_uptodate">CarplayMonitor уже обновлён (MD5 совпадает).</string>
+    <string name="carplaymonitor_updated_message">"Бинарный файл обновлён в /data/local/tmp/fixes/CarplayMonitor.
+
+Нажмите Активировать CarPlay, чтобы применить новый файл."</string>
+    <string name="carplaymonitor_updated_title">CarplayMonitor обновлён</string>
+    <string name="common_apply">Применить</string>
+    <string name="common_attention">Внимание</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="common_confirm">Подтвердить</string>
+    <string name="common_continue">Продолжить</string>
+    <string name="common_install">Установить</string>
+    <string name="common_no">Нет</string>
+    <string name="common_not_now">Не сейчас</string>
+    <string name="common_ok">OK</string>
+    <string name="common_restart">Перезапустить</string>
+    <string name="common_yes">Да</string>
+    <string name="connadaptor_rebind_message">"Файл ConnAdaptor был заменён, bind удалён (если был) и AAutoMonitor перезапущен.
+
+Вернитесь в раздел Android Auto Wi-Fi и нажмите Активировать, чтобы снова применить bind."</string>
+    <string name="connadaptor_rebind_title">ConnAdaptor обновлён</string>
+    <string name="connadaptor_update_cancel">Отмена</string>
+    <string name="connadaptor_update_checking">Проверка ConnAdaptor…</string>
+    <string name="connadaptor_update_continue">Продолжить</string>
+    <string name="connadaptor_update_uptodate">ConnAdaptor уже обновлён.</string>
+    <string name="connadaptor_update_warning_message">Это обновление для приложения, которое исправляет работу Android Auto по Wi-Fi; обновляйте только при проблемах или если вас об этом попросили.</string>
+    <string name="connadaptor_update_warning_title">Внимание — обновление ConnAdaptor</string>
+    <string name="cover_full_screen_toggle">Закрывать весь экран при активации</string>
+    <string name="floater_label">Floater:</string>
+    <string name="floater_off">ВЫКЛЮЧЕНО</string>
+    <string name="floater_on">ВКЛЮЧЕНО</string>
+    <string name="hint_need_permission">Предоставьте разрешение на наложение, чтобы использовать плавающий кружок.</string>
+    <string name="hint_ready">Floater включён: коснитесь кружка, чтобы включить/выключить. При активной опции закрывает весь экран; при отключённой — элементы управления остаются видимыми.</string>
+    <string name="k_aa_wifi_detected_applying_routes">Обнаружен AA WiFi — применение маршрутов…</string>
+    <string name="k_aa_wifi_help_message">"Если беспроводной Android Auto перестаёт подключаться или работает нестабильно, выполните по порядку:
+
+1. На телефоне выйдите из бета-программы Android Auto (если вы в ней участвуете).
+2. На телефоне очистите данные приложения Android Auto.
+3. В настройках Bluetooth телефона забудьте центральную систему.
+4. В настройках Bluetooth центральной системы забудьте телефон.
+5. В «Настройки» нажмите «Проверить обновление» (ConnAdaptor проверяется вместе).
+6. По завершении вернитесь на главный экран и нажмите здесь «Активировать».
+7. Начните сопряжение через Bluetooth центральной системы и примите подключение на телефоне.
+8. Перезапустите центральную систему, удерживая кнопки «Назад» + «Музыка» на руле 15 секунд.
+9. Снова нажмите «Активировать».
+
+Примечание: если после запуска автомобиля и нажатия Android Auto на экране подключение не происходит примерно за минуту, нажмите «Перезапустить»."</string>
+    <string name="k_aa_wifi_help_title">Android Auto Wi-Fi — помощь</string>
+    <string name="k_aa_wireless_auto_off">Автоматический беспроводной AA выключен</string>
+    <string name="k_aa_wireless_auto_on">Автоматический беспроводной AA включён (срабатывает по BT)</string>
+    <string name="k_abrir">Открыть</string>
+    <string name="k_ac_edit_add_fan">+ Скорость вентилятора</string>
+    <string name="k_ac_edit_add_recirc">+ Рециркуляция воздуха</string>
+    <string name="k_ac_edit_add_step_label">Добавить шаг</string>
+    <string name="k_ac_edit_add_temp">+ Температура</string>
+    <string name="k_ac_edit_add_wait">+ Время</string>
+    <string name="k_ac_edit_confirm_delete">Удалить это расписание? Это действие нельзя отменить.</string>
+    <string name="k_ac_edit_delete">Удалить</string>
+    <string name="k_ac_edit_dialog_add">Добавить</string>
+    <string name="k_ac_edit_dialog_fan_title">Скорость вентилятора (0–7)</string>
+    <string name="k_ac_edit_dialog_recirc_title">Рециркуляция воздуха</string>
+    <string name="k_ac_edit_dialog_temp_title">Температура (°C)</string>
+    <string name="k_ac_edit_dialog_wait_min">Минуты</string>
+    <string name="k_ac_edit_dialog_wait_sec">Секунды</string>
+    <string name="k_ac_edit_dialog_wait_title">Время ожидания</string>
+    <string name="k_ac_edit_empty_hint">Добавьте шаги с помощью кнопок ниже.</string>
+    <string name="k_ac_edit_need_step">Добавьте хотя бы один шаг перед сохранением.</string>
+    <string name="k_ac_edit_recirc_external">🌬️ Наружный воздух (забор снаружи)</string>
+    <string name="k_ac_edit_recirc_external_short">Наружный воздух</string>
+    <string name="k_ac_edit_recirc_internal">🔄 Внутренний воздух (рециркуляция)</string>
+    <string name="k_ac_edit_recirc_internal_short">Внутренний воздух</string>
+    <string name="k_ac_edit_repeat">Повторять в конце</string>
+    <string name="k_ac_edit_restore">Возвращать прежние значения</string>
+    <string name="k_ac_edit_save">Сохранить</string>
+    <string name="k_ac_edit_step_fan">Скорость вентилятора: %d</string>
+    <string name="k_ac_edit_step_recirc">Рециркуляция: %s</string>
+    <string name="k_ac_edit_step_temp">Температура: %d°C</string>
+    <string name="k_ac_edit_step_wait">Ждать: %s</string>
+    <string name="k_ac_edit_title_edit">Изменить расписание</string>
+    <string name="k_ac_edit_title_new">Новое расписание</string>
+    <string name="k_ac_list_back">Назад</string>
+    <string name="k_ac_list_create">Создать</string>
+    <string name="k_ac_list_edit">Изменить</string>
+    <string name="k_ac_list_empty_slot">Пусто — шаги не заданы</string>
+    <string name="k_ac_list_title">Расписания кондиционера</string>
+    <string name="k_ac_program_count">%1$d из %2$d расписаний сохранено</string>
+    <string name="k_ac_program_count_zero">Нет сохранённых расписаний</string>
+    <string name="k_ac_program_manage_btn">Управление расписаниями</string>
+    <string name="k_ac_slot_label">Расписание %d</string>
+    <string name="k_activate_side_menu">Активировать боковое меню</string>
+    <string name="k_activated_md5">Активировано (md5=%1$s…)</string>
+    <string name="k_activated_plain">Активировано</string>
+    <string name="k_activated_with_icon">Активировано</string>
+    <string name="k_activating">Активация</string>
+    <string name="k_activating_carplay">Активация CarPlay...</string>
+    <string name="k_activating_carplay_toast">Активация CarPlay</string>
+    <string name="k_activating_connadaptor_bind">Активация ConnAdaptor (bind + force-stop)…</string>
+    <string name="k_activating_proxy">Активация прокси...</string>
+    <string name="k_adb_service_error">Ошибка: ADB не ответил</string>
+    <string name="k_adb_service_started">Служба ADB запущена</string>
+    <string name="k_adb_usb_on">🔌 ADB по USB: ON</string>
+    <string name="k_adjust_failed">Ошибка настройки: %1$s</string>
+    <string name="k_aeb_explanation">AEB = автоматическое экстренное торможение автомобиля.</string>
+    <string name="k_aeb_function_desc">Включает или выключает автоматическое экстренное торможение автомобиля.</string>
+    <string name="k_aeb_function_title">AEB (автоматическое экстренное торможение)</string>
+    <string name="k_aeb_off_label">Выкл.</string>
+    <string name="k_aeb_on_label">Вкл.</string>
+    <string name="k_aeb_reapply_on_msg">Автомобиль забывает эту настройку при выключении. С этой опцией она применяется при каждом запуске.</string>
+    <string name="k_aeb_reapply_on_title">Применять AEB при запуске?</string>
+    <string name="k_aeb_reapply_question">⚠️ Повторно применить настройку AEB при следующем запуске авто?</string>
+    <string name="k_aeb_restore_persistent_desc">Если включить эту кнопку, AEB будет отключаться каждый раз, когда вы открываете машину или магнитола перезагружается. Используйте ответственно — любые последствия этой опции полностью на вашей ответственности.</string>
+    <string name="k_aeb_restore_title">🛑 Восстановить AEB при загрузке</string>
+    <string name="k_aeb_restore_title_card">Восстановить AEB при загрузке</string>
+    <string name="k_aeb_sent_unconfirmed">Команда отправлена, но автомобиль не подтвердил новое состояние.</string>
+    <string name="k_aeb_turned_off">AEB выключен.</string>
+    <string name="k_aeb_turned_on">AEB включён.</string>
+    <string name="k_aeb_write_failed">Не удалось изменить настройку AEB.</string>
+    <string name="k_already_latest_version">Уже установлена последняя версия (v%1$s)</string>
+    <string name="k_android_auto_deactivated">Android Auto деактивирован</string>
+    <string name="k_ap_aberto_desc">Сеть автомобиля поднимается до подключения телефона — Android Auto соединяется примерно на 10 с быстрее. Взамен магнитола не может использовать WiFi как клиент, пока точка доступа включена (радиомодуль один): без интернета по WiFi и без ADB по WiFi.</string>
+    <string name="k_ap_aberto_switch">Включать при загрузке и при каждом подключении Bluetooth</string>
+    <string name="k_ap_aberto_titulo">Точка доступа всегда включена</string>
+    <string name="k_apkm_corrupted">"Файл .apkm повреждён или неполный.
+Скачайте или скопируйте заново."</string>
+    <string name="k_app_abrindo_oficial">Открываю официальную страницу приложения…</string>
+    <string name="k_app_pip_disabled">PiP приложения выключен</string>
+    <string name="k_app_pip_enabled_hint">PiP приложения включён — значок ▢ в Быстром доступе</string>
+    <string name="k_app_pip_info_text">Значок ▢ в Быстром доступе: 1-е нажатие открывает floater (нажмите PIP, чтобы выбрать приложение); +/− настраивает размер на 20%, ⟲ поворачивает 16:9 ↔ 9:16, ✕ закрывает приложение. Повторное нажатие ▢ закрывает всё. Проверяет каждые 2с, чтобы вернуть окно, если его закроет другое приложение. Требуется включённый freeform на устройстве (та же настройка, что и Разделение экрана) — проверка…</string>
+    <string name="k_app_remove_failed">Не удалось удалить приложение.</string>
+    <string name="k_app_removed_success">Приложение успешно удалено.</string>
+    <string name="k_app_sem_navegador">Нет браузера, чтобы открыть: %1$s</string>
+    <string name="k_applied">Применено.</string>
+    <string name="k_apply_failed_check_internet">Ошибка применения (проверьте интернет).</string>
+    <string name="k_applying">Применение...</string>
+    <string name="k_applying_bind_named">Применение bind: %1$s</string>
+    <string name="k_applying_persist_named">Применение постоянного звука: %1$s…</string>
+    <string name="k_atalhos_menu_falhou">Не удалось открыть меню</string>
+    <string name="k_atalhos_menu_titulo">Открыть</string>
+    <string name="k_ativacao_carplay_desligado">CarPlay без проводов ВЫКЛЮЧЕН. Чтобы включить, нажмите «CarPlay без проводов» на этом экране — Android Auto работает и без него.</string>
+    <string name="k_ativacao_concluida">Установка завершена. Службы подключения запущены; CarPlay ожидает подтверждения монитора.</string>
+    <string name="k_ativar_precisa_reiniciar">ConnAdaptor будет установлен, а службы подключения перезапущены. Во время активации связь с телефоном может прерваться.</string>
+    <string name="k_ativar_titulo">Android Auto + CarPlay Wi-Fi</string>
+    <string name="k_audio_delete_failed">Не удалось удалить аудио.</string>
+    <string name="k_audio_deleted">Аудио удалено.</string>
+    <string name="k_auto_proxy_applied">Прокси применён автоматически: %1$s:%2$d</string>
+    <string name="k_auto_update_desc">Сам скачивает и устанавливает новые версии выбранного канала. Выкл. = обновление только кнопкой \"Проверить обновление\".</string>
+    <string name="k_auto_update_in_progress">Обновление уже выполняется (%1$s). Дождитесь его завершения.</string>
+    <string name="k_auto_update_title">Обновлять автоматически</string>
+    <string name="k_autoroute_applied_ok">АвтоМаршрут: маршруты применены OK</string>
+    <string name="k_autoroute_applied_sem_referencia">Автомаршрут: маршруты применены (без tbox0 для проверки метки)</string>
+    <string name="k_autoroute_apply_error">АвтоМаршрут: ошибка применения маршрутов</string>
+    <string name="k_autoroute_fwmark_diverged">АвтоМаршрут: fwmark разошёлся — выполните Создать маршруты вручную</string>
+    <string name="k_avas_sound_applied">Тип звука AVAS применён.</string>
+    <string name="k_avas_sound_rejected">Этот автомобиль не принял смену звука AVAS.</string>
+    <string name="k_avm_normal">Лог камеры 360 в обычном режиме.</string>
+    <string name="k_avm_silenced">Лог камеры 360 заглушён.</string>
+    <string name="k_ban_blocked_message">Распространение Sapo бесплатно и не может использоваться для продажи или рекламы услуг разблокировки. Использование приложения отключено. Если вы заплатили за разблокировку, потребуйте возврат денег у того, кто вас обманул, и покажите разработчику подтверждение оплаты, чтобы снова пользоваться приложением.</string>
+    <string name="k_ban_lifted_toast">Блокировка снята — с возвращением!</string>
+    <string name="k_battery_icon_off">% батареи на панели выключен</string>
+    <string name="k_battery_icon_on">% батареи на панели включён</string>
+    <string name="k_battery_icon_text">Батарея: %1$s %%</string>
+    <string name="k_battery_icon_title">Батарея</string>
+    <string name="k_binary_not_found_locally">Бинарный файл не найден локально.</string>
+    <string name="k_bind_apply_failed">"Ошибка применения bind.
+
+%1$s"</string>
+    <string name="k_bind_failed_silently">Bind НЕ УДАЛСЯ незаметно (цель != источник)</string>
+    <string name="k_brightness_icon_channel">Яркость экрана (панель)</string>
+    <string name="k_brightness_icon_off">Значок яркости на панели выключен</string>
+    <string name="k_brightness_icon_on">Значок яркости на панели включён</string>
+    <string name="k_brightness_icon_text">Нажмите, чтобы применить яркость, заданную в Инструментах</string>
+    <string name="k_brightness_icon_title">Яркость экрана</string>
+    <string name="k_brightness_off_label">Выключена</string>
+    <string name="k_ca_estado_bind">временный bind, без установки</string>
+    <string name="k_ca_estado_fabrica">заводской</string>
+    <string name="k_ca_estado_hibrido">установлен, удаляем старый bind</string>
+    <string name="k_ca_estado_instalado">установлен</string>
+    <string name="k_cafix_ausente">ConnAdaptor ещё не загружен — нажмите «Проверить обновления» перед «Включить».</string>
+    <string name="k_cafix_pronto">Готово к установке: %1$s · %2$s</string>
+    <string name="k_cafix_updated_monitor_restarted">ConnAdaptor обновлён. AAutoMonitor перезапущен. %1$s</string>
+    <string name="k_car_command_unconfirmed">Автомобиль пока не подтвердил изменение. Проверьте состояние на головном устройстве.</string>
+    <string name="k_car_connected">🚗 Подключено к автомобилю</string>
+    <string name="k_car_connecting">🚗 Подключение…</string>
+    <string name="k_car_disconnected">🚗 Отключено от автомобиля</string>
+    <string name="k_car_not_connected_short">Магнитола не подключена к авто</string>
+    <string name="k_car_still_connecting">Автомобиль ещё подключается, повторите попытку.</string>
+    <string name="k_car_unavailable">🚗 Недоступно</string>
+    <string name="k_card_re_aeb_title">Задний ход &amp; AEB</string>
+    <string name="k_carlock_apply_persist">Применить постоянно</string>
+    <string name="k_carlock_apply_reboot">До перезагрузки</string>
+    <string name="k_carplay_activated">CarPlay активирован</string>
+    <string name="k_carplay_activated_service_not_up">CarPlay активирован, но служба не запустилась — проверьте устройство</string>
+    <string name="k_carplay_identity_off">CarPlay без проводов выключен.</string>
+    <string name="k_carplay_identity_on">CarPlay без проводов включён — переподключите iPhone.</string>
+    <string name="k_carplay_patch_falhou">Сейчас не удалось применить патч CarPlay. Он повторится при следующем запуске.</string>
+    <string name="k_carplay_patch_ok">Патч CarPlay применён.</string>
+    <string name="k_carplaymonitor_ativo">CarplayMonitor активен</string>
+    <string name="k_carplaymonitor_error">CarplayMonitor: %1$s</string>
+    <string name="k_carplaymonitor_json_invalid_md5">carplaymonitor.json: недействительный md5</string>
+    <string name="k_carplaymonitor_motivo_fabrica">заводской ConnAdaptor — сначала включите беспроводную проекцию</string>
+    <string name="k_carplaymonitor_motivo_falhou">патч не применён при этой загрузке</string>
+    <string name="k_carplaymonitor_motivo_modo">режим %1$s (CarPlay выключен)</string>
+    <string name="k_carplaymonitor_motivo_toggle">беспроводной CarPlay выключен</string>
+    <string name="k_carplaymonitor_motivo_trava">автоприменение приостановлено</string>
+    <string name="k_carplaymonitor_padrao">CarplayMonitor заводской</string>
+    <string name="k_carplaymonitor_update_message">"Удалённый MD5: %1$s…
+%2$s
+
+Скачать и установить?"</string>
+    <string name="k_carplaymonitor_updated_success">CarplayMonitor успешно обновлён.</string>
+    <string name="k_carservice_unavailable">CarService недоступен</string>
+    <string name="k_celular_preferido_bt_off">Включите Bluetooth, чтобы увидеть сопряжённые устройства.</string>
+    <string name="k_celular_preferido_desc">Какой телефон машина пробует первым — Android или iPhone. Полезно, если у вас их несколько.</string>
+    <string name="k_celular_preferido_qualquer">Любой (кто появится первым)</string>
+    <string name="k_celular_preferido_sem_pareado">Пока нет телефонов, сопряжённых по Bluetooth. Сначала выполните сопряжение.</string>
+    <string name="k_celular_preferido_titulo">Предпочитаемый телефон</string>
+    <string name="k_celular_preferido_titulo_dialogo">Выберите предпочитаемый телефон</string>
+    <string name="k_changing_adb_gpio">Изменение ADB через GPIO 151...</string>
+    <string name="k_check_update_failed">Ошибка проверки обновления: %1$s</string>
+    <string name="k_check_update_with_icon">🔄 Проверить обновление</string>
+    <string name="k_checking_available_version">Проверка доступной версии…</string>
+    <string name="k_checking_version">Проверка v%1$s…</string>
+    <string name="k_close_apps_confirm">Закрыть</string>
+    <string name="k_close_apps_done">Закрыто приложений: %1$d</string>
+    <string name="k_close_apps_manage_whitelist">Управление защитой</string>
+    <string name="k_close_apps_none_running">Сейчас не запущено ни одного пользовательского приложения.</string>
+    <string name="k_close_apps_none_selected">Приложение не выбрано.</string>
+    <string name="k_close_apps_title">Закрыть приложения (снимите отметку, чтобы оставить открытым)</string>
+    <string name="k_close_apps_whitelist_manage_subtitle">Отметьте приложения, которые никогда не должны закрываться функцией «Закрыть приложения» — они уже показаны без отметки в списке, но их всё равно можно закрыть вручную, если отметить.</string>
+    <string name="k_close_apps_whitelist_manage_title">Защищённые приложения</string>
+    <string name="k_close_btn">Закрыть</string>
+    <string name="k_cm_estado_ativo">активен</string>
+    <string name="k_cm_estado_padrao">не смонтирован при этой загрузке</string>
+    <string name="k_cm_montado">смонтирован</string>
+    <string name="k_cm_nao_montado">не смонтирован</string>
+    <string name="k_command_sent_no_output">"Команда отправлена без вывода.
+%1$s"</string>
+    <string name="k_completed">Завершено.</string>
+    <string name="k_confirm_network_routes_message">Это освобождает интернет телефона для использования Android Auto (полезно, когда приложение не загружает данные). Требуется активный root/внутренний ADB доступ. Продолжить?</string>
+    <string name="k_confirm_network_routes_title">Подтвердить сетевые маршруты</string>
+    <string name="k_connadaptor_arquivo_outra_versao">Загружено: %1$s. Для этой магнитолы нужен %2$s.</string>
+    <string name="k_connadaptor_arquivo_outro_modo">Загруженный ConnAdaptor — для %1$s, но выбран режим %2$s.</string>
+    <string name="k_connadaptor_available_message">ConnAdaptor для %1$s ещё не загружен (около 19 МБ). Загрузить сейчас?</string>
+    <string name="k_connadaptor_build_ausente">не установлен</string>
+    <string name="k_connadaptor_build_base">объединённая, без исправления AP</string>
+    <string name="k_connadaptor_build_corrigido_para">исправлено · %1$s</string>
+    <string name="k_connadaptor_build_desconhecida">неизвестная сборка</string>
+    <string name="k_connadaptor_build_fabrica">заводская</string>
+    <string name="k_connadaptor_build_so_aa">только Android Auto · %1$s</string>
+    <string name="k_connadaptor_build_so_carplay">только CarPlay (снят с использования)</string>
+    <string name="k_connadaptor_confirm_install_msg">"Устанавливает исправленный ConnAdaptor как обновление системного приложения. Включает Android Auto и CarPlay без проводов.
+
+Сейчас используется:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_install_title">Активировать ConnAdaptor?</string>
+    <string name="k_connadaptor_confirm_uninstall_msg">"Удаляет обновление и возвращает заводской ConnAdaptor. Android Auto и CarPlay без проводов перестанут работать.
+
+Сейчас используется:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_uninstall_title">Отключить ConnAdaptor?</string>
+    <string name="k_connadaptor_do_cache">ConnAdaptor уже был загружен — переключено без интернета.</string>
+    <string name="k_connadaptor_errado_msg">Выбран режим %1$s, но установленный ConnAdaptor от другого режима. Могу загрузить правильный пакет и установить. После этого нужна перезагрузка.</string>
+    <string name="k_connadaptor_errado_titulo">ConnAdaptor не соответствует режиму</string>
+    <string name="k_connadaptor_error">ConnAdaptor: %1$s</string>
+    <string name="k_connadaptor_install_downgrade">Установленный ConnAdaptor новее файла %1$s — система отклонила установку. Вероятно, ваша магнитола не %1$s: проверьте выбор.</string>
+    <string name="k_connadaptor_install_failure">Система отклонила установку (%1$s). В ConnAdaptor ничего не изменено.</string>
+    <string name="k_connadaptor_json_invalid_md5">connadaptor.json: недействительный md5 (ожидалось 32 hex)</string>
+    <string name="k_connadaptor_modo_bind">Смонтирован устаревший bind, НЕ установлен — нажмите «Активировать»</string>
+    <string name="k_connadaptor_modo_fabrica">Заводской — Android Auto и CarPlay без проводов выключены</string>
+    <string name="k_connadaptor_modo_hibrido">Установлено (удаляем старый bind, оставшийся сверху)</string>
+    <string name="k_connadaptor_modo_instalado">Активен — установлен (переживает перезагрузку)</string>
+    <string name="k_connadaptor_modo_titulo_master">Режим</string>
+    <string name="k_connadaptor_modo_verificando">Проверяем, как он активен…</string>
+    <string name="k_connadaptor_nao_deu_para_conferir">Не удалось проверить версию ConnAdaptor — не читается ни активный файл, ни файл из кэша.</string>
+    <string name="k_connadaptor_newer_message">На сервере есть более новый ConnAdaptor для %1$s. Загрузить сейчас?</string>
+    <string name="k_connadaptor_pm_error">Ошибка pm install/uninstall — смотрите журнал</string>
+    <string name="k_connadaptor_pm_installed">ConnAdaptor установлен как приложение (pm install)</string>
+    <string name="k_connadaptor_pm_installing">Установка ConnAdaptor (pm install)…</string>
+    <string name="k_connadaptor_pm_is_stock">Загруженный файл совпадает со штатным ConnAdaptor — это не патч. Установка отменена</string>
+    <string name="k_connadaptor_pm_md5_mismatch">Файл ConnAdaptor не совпадает (ожидался %1$s…, найден %2$s…) — установка отменена</string>
+    <string name="k_connadaptor_pm_missing">ConnAdaptor ещё не загружен — сначала загрузите его</string>
+    <string name="k_connadaptor_pm_sem_canal">Локальный канал команд не ответил — ничего не изменено. Повторите.</string>
+    <string name="k_connadaptor_pm_sem_efeito">Команда выполнена, но состояние не изменилось.</string>
+    <string name="k_connadaptor_pm_uninstalled">ConnAdaptor вернулся к заводскому</string>
+    <string name="k_connadaptor_pm_uninstalling">Удаление обновления ConnAdaptor…</string>
+    <string name="k_connadaptor_update_title">Обновление ConnAdaptor</string>
+    <string name="k_connadaptor_versao_1111">Магнитола 1111</string>
+    <string name="k_connadaptor_versao_1114">Магнитола 1114</string>
+    <string name="k_connadaptor_versao_baixando">Загружаю %1$s…</string>
+    <string name="k_connadaptor_versao_confirm_msg">"Вы выбрали %1$s.
+
+Этот файл предназначен для магнитолы версии %1$s. Если версия неверна, установка обычно отклоняется — но всё же подтвердите, потому что только правильная версия обеспечивает беспроводные Android Auto и CarPlay.
+
+Подтвердите, что у вас %1$s."</string>
+    <string name="k_connadaptor_versao_confirm_ok">Да, это %1$s</string>
+    <string name="k_connadaptor_versao_confirm_title">Подтвердите версию магнитолы</string>
+    <string name="k_connadaptor_versao_nao_baixada">%1$s ещё не загружена — нажмите «Проверить обновление» в «Настройки».</string>
+    <string name="k_connadaptor_versao_nao_publicada">%1$s ещё не опубликована на сервере.</string>
+    <string name="k_connadaptor_versao_selecionada">Выбранная версия: %1$s.</string>
+    <string name="k_connadaptor_versao_sem_internet">Нет интернета — %1$s нужно загрузить. Подключитесь и повторите.</string>
+    <string name="k_connadaptor_versao_titulo">Версия головного устройства</string>
+    <string name="k_connecting_to_car">Подключение к автомобилю, повторите попытку через мгновение…</string>
+    <string name="k_continue_btn">Продолжить</string>
+    <string name="k_continue_question">Продолжить?</string>
+    <string name="k_copy_audios_message">Скопировать аудиофайлы с флешки в центральный блок?</string>
+    <string name="k_copy_audios_title">Скопировать аудио</string>
+    <string name="k_copy_btn">Скопировать</string>
+    <string name="k_copy_to_device_failed">"Ошибка копирования файла на устройство.
+Проверьте место в /data/local/tmp и попробуйте снова."</string>
+    <string name="k_copy_to_path_failed">"%1$s: копирование в %2$s не удалось (staging=%3$d dest=%4$d).
+%5$s"</string>
+    <string name="k_copying_apks_pendrive">Копирование APK с флешки...</string>
+    <string name="k_copying_audios_pendrive">Копирование аудио с флешки...</string>
+    <string name="k_could_not_check_updates">Не удалось проверить обновления. Проверьте соединение.</string>
+    <string name="k_create_routes_short">Маршруты</string>
+    <string name="k_creating_network_routes">Создание сетевых маршрутов...</string>
+    <string name="k_creating_routes_toast">Создание маршрутов</string>
+    <string name="k_deactivating_android_auto">Деактивация Android Auto…</string>
+    <string name="k_default_none">По умолчанию (нет)</string>
+    <string name="k_delete_audio_message">Удалить \"%1$s\"? Это действие нельзя отменить.</string>
+    <string name="k_delete_audio_title">Удалить аудио</string>
+    <string name="k_delete_btn">Удалить</string>
+    <string name="k_deleting_audio_named">Удаление аудио: %1$s</string>
+    <string name="k_deleting_named">Удаление %1$s...</string>
+    <string name="k_dep_connadaptor">ConnAdaptor (беспроводной Android Auto): доступна более новая версия</string>
+    <string name="k_dep_connadaptor_curto">ConnAdaptor</string>
+    <string name="k_dep_dualdashcam">DualDashcam (PiP задней камеры): установлено %1$s, доступно %2$s</string>
+    <string name="k_dep_falhou_msg">"Не удалось обновить %1$s.
+
+Причина: %2$s
+
+Уведомление будет появляться при каждом запуске, пока не получится."</string>
+    <string name="k_dep_gestures">Лаунчер с жестами: доступна более новая версия патча</string>
+    <string name="k_dep_gestures_update_failed">Не удалось обновить лаунчер с жестами — смотрите журнал.</string>
+    <string name="k_dep_gestures_updated">Лаунчер с жестами обновлён.</string>
+    <string name="k_dep_keyserver">Патч управления с руля: доступна более новая версия (%1$s)</string>
+    <string name="k_dep_update_go">Обновить сейчас</string>
+    <string name="k_dep_update_message">"Функции магнитолы зависят от этих приложений — устаревшие, они могут не работать:
+
+%1$s
+
+Рекомендуем обновить."</string>
+    <string name="k_dep_update_running">Обновление: %1$d шт. — следите за статусом на карточках.</string>
+    <string name="k_dep_update_title">Рекомендуется обновление</string>
+    <string name="k_diagnosing_routes">Диагностика маршрутов...</string>
+    <string name="k_disable_all_btn">Отключить всё</string>
+    <string name="k_disable_avas_message">Внешний динамик предупреждает пешеходов на низкой скорости. Продолжая, вы подтверждаете, что ответственность за отключение AVAS полностью несёт водитель.</string>
+    <string name="k_disable_avas_title">Отключить внешний динамик</string>
+    <string name="k_download_connadaptor_btn">Скачать ConnAdaptor</string>
+    <string name="k_download_empty">загрузка пришла пустой — соединение оборвалось до первого байта</string>
+    <string name="k_download_failed_after_attempts">загрузка не удалась за %1$d попыток. Если интернет магнитолы идёт от телефона, большие файлы часто не проходят — обновите через приложение на телефоне</string>
+    <string name="k_download_folder_inaccessible">Папка Загрузки недоступна.</string>
+    <string name="k_download_retry_progress">Ошибка (%1$d/%2$d), повтор попытки…</string>
+    <string name="k_download_truncated">неполная загрузка (%1$d из %2$d байт) — соединение оборвалось на середине</string>
+    <string name="k_downloading_cafix">Загрузка ConnAdaptor…</string>
+    <string name="k_downloading_carplaymonitor">Скачивание CarplayMonitor…</string>
+    <string name="k_downloading_manifest">Скачивание манифеста…</string>
+    <string name="k_downloading_named">Загрузка %1$s</string>
+    <string name="k_downloading_plain">Загрузка</string>
+    <string name="k_drag_to_see_qa_resize_hint">Перетащите, чтобы увидеть изменение размера Быстрого доступа сразу. Требуется включённое боковое меню (ниже), чтобы работать.</string>
+    <string name="k_drive_mode_toast">Режим движения: %1$s</string>
+    <string name="k_drive_recusado_pelo_carro">Машина не приняла выбранный режим движения.</string>
+    <string name="k_error_activating">Ошибка активации</string>
+    <string name="k_error_activating_carplay">Ошибка активации CarPlay</string>
+    <string name="k_error_adb_unavailable">Требуется локальный ADB root — недоступен</string>
+    <string name="k_error_deactivating">Ошибка деактивации</string>
+    <string name="k_error_installing_named">Ошибка установки %1$s.</string>
+    <string name="k_error_no_foreground_app">Не удалось найти приложение на переднем плане: %1$s</string>
+    <string name="k_error_occurred_title">Произошла ошибка</string>
+    <string name="k_error_open_app">Не удалось открыть это приложение</string>
+    <string name="k_error_open_other_app_first">Откройте другое приложение перед разделением (это не может быть сам Central)</string>
+    <string name="k_error_open_pip">Ошибка открытия в PiP: %1$s</string>
+    <string name="k_error_prepare_left">Ошибка подготовки левой части: %1$s</string>
+    <string name="k_error_read_resolution">Не удалось узнать разрешение: %1$s</string>
+    <string name="k_error_report_no_internet">Нет интернета — отчёт будет отправлен автоматически при появлении соединения.</string>
+    <string name="k_error_report_prompt">"%1$s.
+
+Отправить отчёт об ошибке по email в поддержку?"</string>
+    <string name="k_error_report_queued">Не удалось отправить сейчас — будет отправлено автоматически при наличии интернета.</string>
+    <string name="k_error_report_sent">Отчёт об ошибке отправлен. Спасибо!</string>
+    <string name="k_error_restarting">Ошибка перезапуска</string>
+    <string name="k_error_split_with_app">Не удалось разделить с этим приложением: %1$s</string>
+    <string name="k_escolher_app">Выбрать приложение</string>
+    <string name="k_eyebrow_atalhos_gestos">Жесты</string>
+    <string name="k_eyebrow_atalhos_icones">Значки</string>
+    <string name="k_eyebrow_automacao">Автоматизация</string>
+    <string name="k_eyebrow_avas">AVAS</string>
+    <string name="k_eyebrow_barra_carro">Панель авто</string>
+    <string name="k_eyebrow_camera">Камера и безопасность</string>
+    <string name="k_eyebrow_catalogo">Каталог</string>
+    <string name="k_eyebrow_clima">Климат</string>
+    <string name="k_eyebrow_clima_seguranca">Климат и безопасность</string>
+    <string name="k_eyebrow_conectividade">Связь</string>
+    <string name="k_eyebrow_conexao">Подключение</string>
+    <string name="k_eyebrow_instalador">Установщик</string>
+    <string name="k_eyebrow_internet_aa">Интернет для Android Auto</string>
+    <string name="k_eyebrow_midia">Медиа</string>
+    <string name="k_eyebrow_preferencias">Настройки</string>
+    <string name="k_eyebrow_seguranca">Безопасность</string>
+    <string name="k_eyebrow_sistema">Система</string>
+    <string name="k_eyebrow_som_travamento">Звук блокировки</string>
+    <string name="k_eyebrow_tela">Экран</string>
+    <string name="k_eyebrow_volante">Руль</string>
+    <string name="k_fan_speed_toast">Вентилятор: %1$d</string>
+    <string name="k_favorite_apps_manage_subtitle">Отметьте приложения, которые должны появляться в списке жеста 5 пальцами.</string>
+    <string name="k_favorite_apps_manage_title">Избранные приложения</string>
+    <string name="k_favorite_apps_title">Избранное</string>
+    <string name="k_favorites_empty">Пока нет избранных карточек. Нажмите звезду (☆) в углу карточки, чтобы добавить её сюда.</string>
+    <string name="k_favorites_empty_hint">Вы ещё не выбрали избранные приложения. Нажмите \"⭐ Управлять избранным\" выше, чтобы добавить первые — они появляются здесь при касании экрана 5 пальцами.</string>
+    <string name="k_feature_enabled_title">Функция включена</string>
+    <string name="k_file_corrupted_invalid">"Файл повреждён или недействителен.
+Скачайте заново и попробуйте ещё раз."</string>
+    <string name="k_file_received">Получено: %1$s (%2$d байт)</string>
+    <string name="k_file_transfer_failed">"Ошибка передачи файла.
+Проверьте наличие места и попробуйте снова."</string>
+    <string name="k_floating_side_menu_desc">Показывает выдвижную ручку сбоку экрана с быстрым доступом к основным функциям авто.</string>
+    <string name="k_floating_side_menu_header">🎛️ Плавающее боковое меню</string>
+    <string name="k_forced_restart_message">"При последнем запуске система перезагрузилась неожиданно.
+
+Чтобы избежать цикла, приостановлено всё, что приложение применяет само: беспроводной CarPlay, беспроводной Android Auto, цифровой климат, AVAS, AEB, жесты на руле и режим движения.
+
+Пока пауза активна, эти функции НЕ вернутся при запуске автомобиля.
+
+Снова применять их при загрузке?"</string>
+    <string name="k_forced_restart_title">Обнаружена принудительная перезагрузка</string>
+    <string name="k_freeform_setup_message">Чтобы завершить настройку, нужно перезагрузить центральный блок один раз, удерживая кнопку возврата музыки на руле 15 секунд.</string>
+    <string name="k_generic_error">Ошибка: %1$s</string>
+    <string name="k_gerenciar">Управление</string>
+    <string name="k_got_it">Понятно</string>
+    <string name="k_handle_dim_hint">Настраивает высоту и ширину кнопки (вкладки \"›\"), открывающей Быстрый доступ — не размер значков.</string>
+    <string name="k_handle_height_label">↕️ Высота вкладки</string>
+    <string name="k_handle_transparency_label">👁️ Прозрачность вкладки (в свёрнутом виде): %1$d%%</string>
+    <string name="k_handle_transparency_short_label">👁️ Прозрачность</string>
+    <string name="k_handle_width_label">↔️ Ширина вкладки</string>
+    <string name="k_help_question_mark">?</string>
+    <string name="k_hold_to_restore_adb">Удерживайте, чтобы восстановить ADB (%1$d)</string>
+    <string name="k_hvac_baixando_msg">Это около 18 МБ. При медленном соединении может занять несколько минут — экран можно не закрывать.</string>
+    <string name="k_hvac_baixando_titulo">Загрузка цифрового климата</string>
+    <string name="k_hvac_digital_batt_title">% батареи на панели</string>
+    <string name="k_hvac_digital_common_desc">Выполняет временный bind mount (не изменяет /system) и перезапускает системную панель. Делайте это при остановленном автомобиле.</string>
+    <string name="k_hvac_digital_needs_download">При первом использовании нужно скачать приложение — не отключайте интернет. Продолжить?</string>
+    <string name="k_hvac_digital_temp_desc">Заменяет колесо температуры на панели числом.</string>
+    <string name="k_hvac_digital_temp_title">Цифровая температура кондиционера</string>
+    <string name="k_hvac_temp_toast">Температура: %1$.0f°</string>
+    <string name="k_icon_desc_aa_activate">Включает беспроводное подключение Android Auto/CarPlay.</string>
+    <string name="k_icon_desc_aa_reset">Перезапускает подключение Android Auto/CarPlay при зависании.</string>
+    <string name="k_icon_desc_app_pip">Открывает приложение в плавающем окне (PiP); +/−/⟲ настройка, ✕ закрыть.</string>
+    <string name="k_icon_desc_avas">Включает или отключает звук предупреждения для пешеходов.</string>
+    <string name="k_icon_desc_close_apps">Закрывает запущенные пользовательские приложения, освобождая память и решая проблему зависших PiP-окон. Никогда не затрагивает системные приложения.</string>
+    <string name="k_icon_desc_drive_regen">Переключает режим движения (Eco/Comfort/Sport) и силу рекуперации.</string>
+    <string name="k_icon_desc_power_off">Полностью выключает авто. Нужна передача P.</string>
+    <string name="k_icon_desc_screen_rest">Сразу снижает яркость и показывает неброские часы. В отличие от \"Погасить экран\" (гаснет на 100%%): здесь предупреждение в первый раз не показывается.</string>
+    <string name="k_icon_desc_split_screen">Открывает разделение экрана в плавающих окнах; повторное нажатие закрывает.</string>
+    <string name="k_icon_desc_telemetry">Отправляет данные авто (заряд, скорость и т.д.) в другие приложения.</string>
+    <string name="k_icon_hidden">Скрыт</string>
+    <string name="k_icon_reorder_hint">↑↓ перемещает значок в списке · переключатель показывает/скрывает в меню</string>
+    <string name="k_icon_size_label">🔍 Размер значков: %1$d%%</string>
+    <string name="k_icon_size_short_label">🔍 Значки</string>
+    <string name="k_icon_visible">Виден</string>
+    <string name="k_icons_visibility_order_header">🔀 Значки — видимость и порядок</string>
+    <string name="k_info_hvac_digital_batt_message">Показывает % батареи на панели автомобиля. Независимо от цифровой температуры (можно включить только одно из двух, или оба). Применяется через bind mount (временно: не изменяет /system, применяется снова при запуске); перезапускает панель при применении. При первом использовании скачивает приложение, поэтому нужен интернет.</string>
+    <string name="k_info_hvac_digital_temp_message">Показывает температуру системной панели числом вместо колеса. Независимо от % батареи на панели (можно включить только одно из двух, или оба). Применяется через bind mount (временно: не изменяет /system, применяется снова при запуске); перезапускает панель при применении. При первом использовании скачивает приложение, поэтому нужен интернет.</string>
+    <string name="k_info_pill_message">Показывает температуру снаружи и/или % заряда батареи в плавающем пузыре поверх любого экрана, включая Android Auto/CarPlay. Можно выбрать, что показывать, прозрачность фона, размер и цвет текста. Удерживайте и перетаскивайте, чтобы изменить позицию — центральная система запомнит, где вы её оставили. Быстрое касание (без перетаскивания) открывает список сохранённых расписаний кондиционера; касание одного запускает его (текст становится зелёным), повторное касание пузыря останавливает его.</string>
+    <string name="k_info_pill_title">Пузырь темп./батареи</string>
+    <string name="k_info_remember_brightness_message">Хранит ДВЕ яркости — фары выключены (день) и включены (ночь) — и переключает сама при смене фар. Запоминает то, что вы оставили в каждой ситуации, из приложения или из штатной панели. Выключенный экран не запоминается.</string>
+    <string name="k_info_remember_brightness_title">Запоминать яркость экрана</string>
+    <string name="k_info_rvc_black_bg_message">Делает фон камеры заднего вида чёрным через bind mount (временно: не изменяет /system, исчезает при перезагрузке и применяется снова автоматически при запуске). Функция версии Pro.</string>
+    <string name="k_info_rvc_black_bg_title">Чёрный фон при заднем ходе</string>
+    <string name="k_info_status_temp_message" formatted="false">Два независимых значка на панели уведомлений (SystemUI Geely, ненавязчиво) — можно включить только один, другой или оба. Батарея: зелёный выше 80%, белый между 20% и 80%, оранжевый ниже 20%. Обновляется каждые 15 с. Нажатие на % открывает приложение энергии.</string>
+    <string name="k_info_status_temp_title">Температура и % батареи на панели</string>
+    <string name="k_info_window_door_message">Каждая дверь опускает/поднимает только своё окно: открытие задней двери опускает заднее стекло, открытие пассажирской двери опускает её стекло тоже (независимо); закрытие каждой поднимает только своё. Напрямую в автомобиль через CarPropertyManager, без bind mount.</string>
+    <string name="k_info_window_door_title">Окно следует за дверью</string>
+    <string name="k_install_cancelled_by_system">Установка отменена системой.</string>
+    <string name="k_install_error_title">Ошибка установки</string>
+    <string name="k_install_failed_try_again">Ошибка установки. Попробуйте снова.</string>
+    <string name="k_install_failure_detail">"Ошибка установки.
+%1$s"</string>
+    <string name="k_install_success_named">"Успешно установлено:
+%1$s"</string>
+    <string name="k_install_with_icon">⬇️ Установить</string>
+    <string name="k_installation_complete">Установка завершена</string>
+    <string name="k_installed_version">✅ Установлено v%1$s</string>
+    <string name="k_installed_version_newer">"Установленная версия новее.
+Сначала удалите её, чтобы выполнить откат."</string>
+    <string name="k_installed_version_plain">Установлено v%1$s</string>
+    <string name="k_installer_already_running">Установка уже выполняется. Дождитесь её завершения.</string>
+    <string name="k_installer_cancelled">Установка отменена.</string>
+    <string name="k_installer_confirm_install">Установить</string>
+    <string name="k_installer_confirm_msg">%1$s Пакет: %2$s Версия: %3$s %4$s</string>
+    <string name="k_installer_confirm_new">Это приложение ещё не установлено.</string>
+    <string name="k_installer_confirm_title">Установить приложение?</string>
+    <string name="k_installer_confirm_update">Это заменит установленную версию (%1$s).</string>
+    <string name="k_installer_copying">Копирование APK…</string>
+    <string name="k_installer_done_title">Установка завершена</string>
+    <string name="k_installer_error_title">Ошибка</string>
+    <string name="k_installer_failure">"Ошибка установки:
+%1$s"</string>
+    <string name="k_installer_installing">Установка %1$s…</string>
+    <string name="k_installer_invalid_apk">Файл не является допустимым APK.</string>
+    <string name="k_installer_preparing">Подготовка…</string>
+    <string name="k_installer_success">Успешно установлено!</string>
+    <string name="k_installer_title">Установщик</string>
+    <string name="k_installer_unknown_error">Неизвестная ошибка</string>
+    <string name="k_installing_cafix">Установка ConnAdaptor… (подождите)</string>
+    <string name="k_installing_carplaymonitor">Установка CarplayMonitor… (подождите)</string>
+    <string name="k_installing_named">Установка %1$s…</string>
+    <string name="k_installing_version">Установка %1$s…</string>
+    <string name="k_installing_version_wait">Установка v%1$s… (подождите)</string>
+    <string name="k_installing_xapk_named">Установка XAPK %1$s…</string>
+    <string name="k_insufficient_storage">Недостаточно места на устройстве.</string>
+    <string name="k_internet_com_root">Интернет через маршруты (root)</string>
+    <string name="k_internet_com_root_desc">Направляет интернет телефона в машину (карты/музыка Android Auto грузятся). Нужен телефон С root. Создать маршруты — сейчас; Авто — заново при подключении.</string>
+    <string name="k_internet_sem_root">Интернет через прокси (без root)</string>
+    <string name="k_internet_sem_root_desc">Использует прокси приложения Central EX Celular — root на телефоне НЕ нужен. Нужно приложение с включённым прокси.</string>
+    <string name="k_keepalive_manage_subtitle">Отметьте приложения, которые должны продолжать работать в фоне, не закрываясь системой.</string>
+    <string name="k_keepalive_manage_title">Всегда активные приложения</string>
+    <string name="k_keyserver_activated">Управление с руля активировано!</string>
+    <string name="k_keyserver_activated_service_down">Файл заменён и подключён, но служба KeyServer не запустилась заново. Управление может не работать до перезапуска автомобиля (служба сама запустится при загрузке, уже с патчем).</string>
+    <string name="k_keyserver_checking">Проверка патча...</string>
+    <string name="k_keyserver_deactivated">Управление с руля деактивировано — восстановлен исходный KeyServer</string>
+    <string name="k_keyserver_deactivating">Деактивация управления с руля...</string>
+    <string name="k_keyserver_download_failed">Не удалось загрузить/применить патч: %1$s</string>
+    <string name="k_keyserver_error_activating">Ошибка активации — см. журнал</string>
+    <string name="k_keyserver_file_missing_after_download">Файл патча не найден после загрузки — активация отменена</string>
+    <string name="k_keyserver_first_activate_message">При первой активации эта функция загружает модуль (~10 МБ) из интернета. Убедитесь, что есть подключение, прежде чем продолжить.</string>
+    <string name="k_keyserver_first_activate_title">Требуется подключение к интернету</string>
+    <string name="k_keyserver_mounting">Применение...</string>
+    <string name="k_keyserver_no_internet_first_download">Нет подключения к интернету — при первой активации нужно загрузить модуль (~10 МБ)</string>
+    <string name="k_keyserver_swapping">Загрузка и замена патча...</string>
+    <string name="k_lado_direito">Справа</string>
+    <string name="k_lado_esquerdo">Слева</string>
+    <string name="k_language_desc">Выберите язык приложения. Для применения нужно перезапустить текущий экран.</string>
+    <string name="k_language_en">English</string>
+    <string name="k_language_es_cl">Español (Chile)</string>
+    <string name="k_language_header">🌐 Язык</string>
+    <string name="k_language_pt_br">Português (Brasil)</string>
+    <string name="k_language_ru">Русский</string>
+    <string name="k_language_vi">Tiếng Việt</string>
+    <string name="k_linha_carplaymonitor">CarplayMonitor — %1$s</string>
+    <string name="k_linha_connadaptor">ConnAdaptor — %1$s</string>
+    <string name="k_linha_versao_central">Обнаружена версия %1$s</string>
+    <string name="k_linha_versao_central_desconhecida">Версия магнитолы не определена</string>
+    <string name="k_local_md5">Локальный MD5: %1$s…</string>
+    <string name="k_log_cleared">Журнал очищен.</string>
+    <string name="k_lyrics_config_btn">⚙ Настроить вид (размер, цвет, прозрачность)</string>
+    <string name="k_lyrics_floater_desc">Показывает синхронный текст играющей песни (Spotify/YT Music) строкой над панелью; нажмите, чтобы открыть панель караоке. Текст загружается из интернета.</string>
+    <string name="k_lyrics_floater_title">Текст песни на экране (караоке)</string>
+    <string name="k_mbh_back">Назад</string>
+    <string name="k_mbh_connecting">Подключение…</string>
+    <string name="k_mbh_empty">Здесь пусто.</string>
+    <string name="k_mbh_load_error">Не удалось загрузить список (возможно, нужно войти в приложение).</string>
+    <string name="k_mbh_login">Войти</string>
+    <string name="k_mbh_no_sources">Совместимые музыкальные приложения не установлены.</string>
+    <string name="k_mbh_nothing_playing">Ничего не играет</string>
+    <string name="k_mbh_open">Открыть</string>
+    <string name="k_mbh_pick_source">Выберите источник слева.</string>
+    <string name="k_mbh_refused">Приложение отклонило подключение.</string>
+    <string name="k_mbh_title">Музыкальные плееры</string>
+    <string name="k_md5_mismatch">md5 ≠ (ожид. %1$s… получено %2$s…)</string>
+    <string name="k_md5_mismatch_manifest">MD5 загрузки ≠ манифест (ожид. %1$s… получено %2$s…).</string>
+    <string name="k_media_bar_floater_desc">Показывает обложку, трек и воспроизведение/паузу Spotify или YouTube Music на нижней панели, рядом с «домой» — как в Android Auto.</string>
+    <string name="k_media_bar_floater_title">Spotify и YT Music на панели</string>
+    <string name="k_missing_connadaptor_offline">Для %1$s магнитоле нужен ConnAdaptor, а он ещё не загружен. Подключите магнитолу к интернету и снова нажмите «Включить»: загрузка происходит во время включения.</string>
+    <string name="k_missing_connadaptor_online">Для %1$s магнитоле нужно загрузить ConnAdaptor (около 19 МБ). Загрузить и включить сейчас?</string>
+    <string name="k_missing_connadaptor_title">Отсутствует ConnAdaptor</string>
+    <string name="k_mode_comfort">COMFORT</string>
+    <string name="k_mode_comfort_abbr">COM</string>
+    <string name="k_mode_eco">ECO</string>
+    <string name="k_mode_eco_abbr">ECO</string>
+    <string name="k_mode_medium">СРЕДНЯЯ</string>
+    <string name="k_mode_medium_abbr">СРД</string>
+    <string name="k_mode_sport">SPORT</string>
+    <string name="k_mode_sport_abbr">SPT</string>
+    <string name="k_mode_strong">СИЛЬНАЯ</string>
+    <string name="k_mode_strong_abbr">СИЛ</string>
+    <string name="k_mode_weak">СЛАБАЯ</string>
+    <string name="k_mode_weak_abbr">СЛБ</string>
+    <string name="k_modo_aa">Android Auto</string>
+    <string name="k_modo_aa_msg">"Приложение включит только беспроводной Android Auto. Беспроводной CarPlay останется выключенным: патч CarplayMonitor не применяется, объявление для iPhone отключается.
+
+Установленный ConnAdaptor тот же — можно вернуться к «Оба» в любой момент."</string>
+    <string name="k_modo_ambos">Android Auto + CarPlay</string>
+    <string name="k_modo_ambos_msg">Приложение включит беспроводные Android Auto и CarPlay. Это рекомендуемый и наиболее проверенный вариант.</string>
+    <string name="k_modo_aplicado">Режим: %1$s</string>
+    <string name="k_modo_aplicando">Применяется режим %1$s…</string>
+    <string name="k_modo_carplay">CarPlay</string>
+    <string name="k_modo_carplay_msg">"Приложение включит только беспроводной CarPlay: патч CarplayMonitor и объявление для iPhone включены. Автоподключение Android Auto отключается.
+
+Установленный ConnAdaptor тот же — можно вернуться к «Оба» в любой момент."</string>
+    <string name="k_modo_confirm_title">Использовать только %1$s?</string>
+    <string name="k_modo_oficina_ajuda_msg">Установленные приложения исчезли с главного экрана вместе с виджетами и самим приложением Central. Беспроводной Android Auto вернулся к исходному. Чтобы вернуть всё обратно, используйте любой из способов: • 5 быстрых касаний в левом нижнем углу экрана, чуть выше нижней панели; • кнопку в EX Sapo Móvel на телефоне.</string>
+    <string name="k_modo_oficina_ajuda_titulo">Режим сервиса включён</string>
+    <string name="k_modo_oficina_ativar">Подготовить к сервису</string>
+    <string name="k_modo_oficina_ativo_status">Включён. Чтобы вернуть: 5 касаний в левом нижнем углу, кнопка в телефоне или срок.</string>
+    <string name="k_modo_oficina_confirmar_msg">Всё незаводское исчезает с рабочего стола, виджеты пропадают, а беспроводной Android Auto возвращается к исходному. Чтобы вернуть: 5 касаний в левом нижнем углу экрана, чуть выше нижней панели, или кнопка в телефоне.</string>
+    <string name="k_modo_oficina_confirmar_titulo">Подготовить к сервису?</string>
+    <string name="k_modo_oficina_desativar">Выйти из режима сервиса</string>
+    <string name="k_modo_oficina_encerrado_msg">Приложения, виджеты и настройки панели восстановлены. Головное устройство готово к использованию.</string>
+    <string name="k_modo_oficina_encerrado_titulo">Режим мастерской выключен</string>
+    <string name="k_modo_oficina_erro">Не получилось — смотрите журнал приложения.</string>
+    <string name="k_modo_oficina_ocultou">Готово: скрыто приложений — %1$d. Чтобы вернуть, 5 касаний в левом нижнем углу.</string>
+    <string name="k_modo_oficina_restaurando">Восстановление магнитолы…</string>
+    <string name="k_modo_oficina_restaurou">Магнитола восстановлена (%1$d прил.).</string>
+    <string name="k_modo_oficina_restaurou_parcial">Восстановлено %1$d из %2$d приложений. Проверьте оставшиеся.</string>
+    <string name="k_modo_oficina_sem_snapshot">Запись о скрытом не найдена — приложения придётся включить вручную.</string>
+    <string name="k_modo_oficina_trabalhando">Подготовка…</string>
+    <string name="k_modo_trocar_msg">Пакет ConnAdaptor различается в каждом режиме. Переход на %1$s загрузит нужный пакет и переустановит его. После установки магнитолу нужно перезагрузить.</string>
+    <string name="k_modo_trocar_ok">Сменить и загрузить</string>
+    <string name="k_modo_trocar_titulo">Сменить режим?</string>
+    <string name="k_monitor_bind_erro_msg">"Android Auto перезапущен, но CarplayMonitor включить не удалось — беспроводной CarPlay не будет работать, пока это не решено.
+
+Причина: %1$s"</string>
+    <string name="k_monitor_bind_erro_titulo">Не удалось включить CarplayMonitor</string>
+    <string name="k_monitor_erro_bind">система отклонила bind поверх /system/bin/CarplayMonitor</string>
+    <string name="k_monitor_erro_md5_firmware">заводской CarplayMonitor отличается от ожидаемого (новая прошивка?) — он не был изменён, ради безопасности</string>
+    <string name="k_monitor_erro_patch">исправленный файл получился неверным и не был использован</string>
+    <string name="k_monitor_erro_selinux">не удалось назначить метку безопасности (SELinux) файлу</string>
+    <string name="k_monitor_erro_sem_binario">файла CarplayMonitor нет на этой магнитоле</string>
+    <string name="k_monitor_erro_sem_resposta">локальный канал не ответил — попробуйте ещё раз</string>
+    <string name="k_nav_applications">Приложения</string>
+    <string name="k_nav_favorites">Избранное</string>
+    <string name="k_nav_network_connection">Сеть и Auto</string>
+    <string name="k_nav_settings">Настройки</string>
+    <string name="k_nav_widgets">Виджеты</string>
+    <string name="k_nenhum">Нет</string>
+    <string name="k_new_version_available">Доступна новая версия: v%1$s (установлена: v%2$s)</string>
+    <string name="k_new_version_available_generic">Доступна новая версия. %1$s</string>
+    <string name="k_no_apk_files">— нет APK/XAPK/APKM —</string>
+    <string name="k_no_app_found">Приложение не найдено</string>
+    <string name="k_no_favorite_apps_toast">Избранные приложения не выбраны. Нажмите «Управление избранным» (вкладка Приложения).</string>
+    <string name="k_no_internet_message">Этой функции нужно скачать приложение при первом использовании. Подключите интернет и попробуйте снова.</string>
+    <string name="k_no_internet_or_check_failed">Нет интернета или ошибка проверки. Подключите интернет и попробуйте снова.</string>
+    <string name="k_no_internet_title">Нет интернета</string>
+    <string name="k_no_overlay_permission">Нет разрешения на наложение</string>
+    <string name="k_no_recent_app_toast">Недавние приложения не найдены</string>
+    <string name="k_no_sound_selected">Звук не выбран</string>
+    <string name="k_no_user_apps">— нет пользовательских приложений —</string>
+    <string name="k_no_wav_loaded">— WAV не загружен —</string>
+    <string name="k_not_completed_see_log">Не завершено — нажмите \"Показать журнал\", чтобы увидеть подробности.</string>
+    <string name="k_not_installed">Не установлено</string>
+    <string name="k_notice_default_title">Уведомление</string>
+    <string name="k_open_in_pip">Открыть в PiP</string>
+    <string name="k_open_on_right">Открыть справа</string>
+    <string name="k_opening">Открытие…</string>
+    <string name="k_overlay_failure">Ошибка наложения: %1$s</string>
+    <string name="k_overlay_granted">Наложение разрешено.</string>
+    <string name="k_overlay_pending">Наложение ожидает разрешения.</string>
+    <string name="k_pacotes_contagem">Пакеты %1$d/%2$d</string>
+    <string name="k_pacotes_vazio">Пакеты — не синхронизированы</string>
+    <string name="k_pause_audio_on_door_desc">Автоматически ставит музыку/медиа на паузу при открытии двери водителя. Не возобновляет воспроизведение при закрытии.</string>
+    <string name="k_pause_audio_on_door_title">Пауза при открытии двери</string>
+    <string name="k_percent_label">%1$s: %2$d%%</string>
+    <string name="k_phone_receiver_accept_failed">Приёмник телефона: ошибка accept.</string>
+    <string name="k_phone_receiver_active">Приёмник телефона активен на 0.0.0.0:%1$d</string>
+    <string name="k_phone_receiver_start_failed">Ошибка запуска приёмника: %1$s</string>
+    <string name="k_phone_receiver_stopped">Приёмник телефона остановлен.</string>
+    <string name="k_phone_sync_off">Синхронизация с телефоном выключена</string>
+    <string name="k_phone_sync_on">Синхронизация с телефоном включена (порт %1$d + BT)</string>
+    <string name="k_phonesync_channel">Sync телефона</string>
+    <string name="k_phonesync_notif_text">Синхронизация с телефоном активна (порт %1$d + BT)</string>
+    <string name="k_phonesync_notif_title">Central EX · Sync телефона</string>
+    <string name="k_pill_ac_no_programs">Пока нет сохранённых расписаний. Создайте одно в Инструменты › Расписание кондиционера.</string>
+    <string name="k_pill_ac_picker_title">Выбрать расписание</string>
+    <string name="k_pill_ac_program_stopped">Расписание остановлено.</string>
+    <string name="k_pill_channel_active">Пузырь температуры/батареи активен</string>
+    <string name="k_pill_channel_name">Пузырь темп/батарея</string>
+    <string name="k_pip_active_hint">PiP активен — используйте ✕, чтобы закрыть, или +/−/⟲, чтобы настроить</string>
+    <string name="k_pip_app_closed_itself">Приложение PiP закрылось само</string>
+    <string name="k_pip_apps_desc">До 5 приложений в быстром доступе PiP. Стрелки меняют порядок.</string>
+    <string name="k_pip_apps_titulo">Приложения PiP</string>
+    <string name="k_pip_channel_active">PiP приложения активен</string>
+    <string name="k_pip_channel_name">PiP приложения</string>
+    <string name="k_pip_close_failed">Не удалось закрыть PiP</string>
+    <string name="k_pip_closed">PiP закрыт</string>
+    <string name="k_pip_falhou_outra">Не удалось применить. ADB и интернет работают — причина другая; смотрите журнал.</string>
+    <string name="k_pip_falhou_sem_adb">Не выполнено: ошибка канала ADB. Повторите попытку через несколько секунд или после перезагрузки системы.</string>
+    <string name="k_pip_fixado_aberto">Закреплённый PiP: поверх всех окон</string>
+    <string name="k_pip_incompativel">Эта магнитола не та, на которой проверен встроенный PiP</string>
+    <string name="k_pip_notif_text">Нажмите PIP, чтобы выбрать приложение</string>
+    <string name="k_pip_opened_hint">PiP открыт — +/− настраивает, ⟲ вращает, ✕ закрывает</string>
+    <string name="k_pip_opening">Открытие в PiP…</string>
+    <string name="k_pip_sem_suporte_fixado">Это приложение не поддерживает встроенный PiP — открыто плавающее</string>
+    <string name="k_power_off_confirm">Выключить</string>
+    <string name="k_power_off_message">Центральный блок действительно выключится. После подтверждения отменить нельзя.</string>
+    <string name="k_power_off_needs_park">Включите передачу P (парковка), чтобы выключить автомобиль.</string>
+    <string name="k_power_off_title">Выключить автомобиль?</string>
+    <string name="k_prepare_receive_files">Подготовиться к приёму файлов</string>
+    <string name="k_preview_failed">Не удалось воспроизвести предпросмотр: %1$s</string>
+    <string name="k_preview_file_not_found">Не нашёл звук этого типа в системе</string>
+    <string name="k_pronto_pode_conectar">Загрузка завершена, можно подключать телефон.</string>
+    <string name="k_proxy_active">Прокси активен: %1$s:8080</string>
+    <string name="k_proxy_auto_activated">Прокси активирован автоматически: %1$s:8080</string>
+    <string name="k_qa_activate_aa">Активировать AA/CarPlay</string>
+    <string name="k_qa_channel_active">Central EX — Быстрый доступ</string>
+    <string name="k_qa_close_apps">Закрыть приложения</string>
+    <string name="k_qa_close_apps_chip">ОЧИСТИТЬ</string>
+    <string name="k_qa_cronometro">Секундомер</string>
+    <string name="k_qa_driving_label">Движение</string>
+    <string name="k_qa_fullscreen">Полный экран</string>
+    <string name="k_qa_fullscreen_sem_adb">Локальный ADB недоступен — не удалось переключить полный экран</string>
+    <string name="k_qa_manage_favorites">Избранные приложения</string>
+    <string name="k_qa_notif_text">Боковое меню активно</string>
+    <string name="k_qa_pip_app">PiP приложения</string>
+    <string name="k_qa_power_off">Выключить автомобиль</string>
+    <string name="k_qa_preview_header">👁️ Предпросмотр панели</string>
+    <string name="k_qa_preview_hint">Перетащите значки для изменения порядка. Тусклый цвет = скрыт в меню.</string>
+    <string name="k_qa_regen_label">Рекуперация</string>
+    <string name="k_qa_regressiva">Таймер</string>
+    <string name="k_qa_restart_aa">Перезапустить AA/CarPlay</string>
+    <string name="k_qa_screen_chip">Экран</string>
+    <string name="k_qa_screen_off">Выключить экран</string>
+    <string name="k_qa_screen_rest">Отдых экрана</string>
+    <string name="k_qa_split_screen">Разделить экран</string>
+    <string name="k_qa_telemetry">Телеметрия</string>
+    <string name="k_rear_cam_pip_desc">При включении поворотника (левого или правого) открывает PiP с камерой заднего вида в месте, где вы его оставили. Закрывается сам, когда поворотник гаснет (или по X на PiP). Требуется установленный DualDashcam. Значок \"5s\" в углу: держит PiP открытым ещё 5 секунд после выключения поворотника.</string>
+    <string name="k_rear_cam_pip_hold_5s_off">PiP снова закрывается сразу после выключения поворотника.</string>
+    <string name="k_rear_cam_pip_hold_5s_on">PiP будет оставаться открытым на 5с дольше после выключения поворотника.</string>
+    <string name="k_rear_cam_pip_no_dualdashcam">DualDashcam не установлен — установите его, чтобы функция работала.</string>
+    <string name="k_rear_cam_pip_outdated_dualdashcam">Ваша версия DualDashcam слишком старая для PiP камеры заднего вида — обновите DualDashcam (в Приложениях), чтобы функция работала.</string>
+    <string name="k_rear_cam_pip_title">PiP задней камеры по поворотнику</string>
+    <string name="k_reboot_message">Это перезагрузит центральный блок, динамик издаст звук — это нормально. Продолжить?</string>
+    <string name="k_reboot_title">Перезагрузка</string>
+    <string name="k_recent_apps_title">Вернуться к…</string>
+    <string name="k_recent_close_failed">Не удалось закрыть %1$s.</string>
+    <string name="k_recirc_guard_desc">При выключении кондиционера или включении обогрева стекла машина сама отключает рециркуляцию (открывает наружный воздух). С этой опцией, если рециркуляция была включена, она включается обратно сама.</string>
+    <string name="k_recirc_guard_icon_desc">Рециркуляция сама включается обратно, если отключилась при выключении кондиционера или включении обогрева стекла.</string>
+    <string name="k_recirc_guard_title">🌀 Не открывать наружный воздух</string>
+    <string name="k_recirc_guard_title_card">Не открывать наружный воздух</string>
+    <string name="k_refresh_list_choose_audio">Обновите список и выберите аудио.</string>
+    <string name="k_refresh_list_choose_wav">Обновите список и выберите WAV.</string>
+    <string name="k_regen_recusado_pelo_carro">Машина не приняла выбранную рекуперацию.</string>
+    <string name="k_regen_toast">Рекуперация: %1$s</string>
+    <string name="k_reiniciar_ap0_em_uso">Идёт сеанс проекции — перезапуск сейчас оборвёт активный CarPlay/Android Auto. Нажмите ещё раз, чтобы всё равно перезапустить.</string>
+    <string name="k_reiniciar_sem_canal">Локальный канал ADB не ответил. Ничего не изменено. Включите ADB кнопкой в приложении и повторите попытку.</string>
+    <string name="k_reiniciar_sem_canal_titulo">Локальный ADB не ответил</string>
+    <string name="k_remember_brightness_howto_msg">"Магнитола хранит две яркости: одну для выключенных фар и одну для включённых.
+
+Как задать обе:
+1. При ВЫКЛЮЧЕННЫХ фарах установите яркость, которую хотите днём.
+2. ВКЛЮЧИТЕ фары и установите яркость, которую хотите ночью.
+
+Дальше яркость будет меняться сама при каждом включении и выключении фар. Менять можно как здесь, в приложении, так и в штатной панели — учитывается и то, и другое."</string>
+    <string name="k_remember_brightness_howto_title">Запоминать яркость по фарам</string>
+    <string name="k_remove_phone_internet">🚫 Убрать интернет телефона</string>
+    <string name="k_remove_routes">Удалить маршруты</string>
+    <string name="k_removed">Удалено.</string>
+    <string name="k_removing">Удаление...</string>
+    <string name="k_removing_proxy">Удаление прокси...</string>
+    <string name="k_removing_routes">Удаление маршрутов...</string>
+    <string name="k_removing_sound_bind">Удаление bind звука...</string>
+    <string name="k_restart_car_for_oem">Перезапустите автомобиль, чтобы вернуться к OEM.</string>
+    <string name="k_restarted">Перезапущено</string>
+    <string name="k_restarting">Перезапуск</string>
+    <string name="k_restarting_aa_carplay">Перезапуск AA/CarPlay...</string>
+    <string name="k_route_auto_label">Авто</string>
+    <string name="k_routes_created">Маршруты интернета созданы</string>
+    <string name="k_routes_creation_failed">Не удалось создать маршруты</string>
+    <string name="k_routes_not_confirmed">Не подтверждено — нажмите Создать маршруты снова</string>
+    <string name="k_rvc_back_to_normal">Фон заднего вида вернулся в норму.</string>
+    <string name="k_rvc_black_bg_applied">Чёрный фон применён.</string>
+    <string name="k_rvc_black_bg_applying">Применение чёрного фона...</string>
+    <string name="k_rvc_black_bg_disabling">Отключение чёрного фона...</string>
+    <string name="k_rvc_black_bg_message">"Внимание: эта функция доступна только в версии Pro.
+
+Будет выполнен временный mount --bind (не изменяет /system) чёрного фона поверх изображения камеры заднего вида. Продолжить?"</string>
+    <string name="k_rvc_black_bg_title">Чёрный фон при движении задним ходом</string>
+    <string name="k_rvc_disabled_restart_if_needed">Отключено — перезапустите автомобиль, если фон не вернётся.</string>
+    <string name="k_same_version_already_installed">Эта же версия уже установлена.</string>
+    <string name="k_save_error">Ошибка сохранения: %1$s</string>
+    <string name="k_saved_as">Сохранено: %1$s</string>
+    <string name="k_screen_off_message">Яркость экрана вернётся при нажатии громкости на руле.</string>
+    <string name="k_screen_off_title">💡 Выключить экран</string>
+    <string name="k_screen_rest_10s">10с</string>
+    <string name="k_screen_rest_1m">1м</string>
+    <string name="k_screen_rest_2m">2м</string>
+    <string name="k_screen_rest_30s">30с</string>
+    <string name="k_screen_rest_desc">Автоматически приглушает экран после периода без физического касания, показывая скромные часы. Любое касание разбудит экран. Включает Быстрый доступ, если он ещё выключен (механизм находится там).</string>
+    <string name="k_screen_rest_enabled_quick_access">Быстрый доступ включён — Отдых экрана от него зависит.</string>
+    <string name="k_screen_rest_header">Отдых экрана</string>
+    <string name="k_screen_rest_off">Выкл</string>
+    <string name="k_second_line_in_cycle">2-я строка входит в цикл значка</string>
+    <string name="k_second_line_out_cycle">2-я строка вне цикла (только 1-е нажатие)</string>
+    <string name="k_select_type_to_preview">Выберите тип, чтобы прослушать предпросмотр</string>
+    <string name="k_sem_canal_adb">"Локальный канал команд не отвечает, поэтому ничего не сделано.
+
+Включите ADB устройства (кнопка ADB на этом экране) и повторите."</string>
+    <string name="k_send_btn">Отправить</string>
+    <string name="k_sending_error_report">Отправка отчёта об ошибке…</string>
+    <string name="k_server_started_on_port">Сервер запущен на порту %1$d</string>
+    <string name="k_server_stopped">Сервер остановлен</string>
+    <string name="k_sha256_mismatch">sha256 ≠ (ожид. %1$s… получено %2$s…)</string>
+    <string name="k_signal_icon_channel">Сигнал сотовой сети</string>
+    <string name="k_signal_icon_no_service">Нет сети</string>
+    <string name="k_signal_icon_off">Значок сигнала выключен.</string>
+    <string name="k_signal_icon_on">Значок сигнала включён.</string>
+    <string name="k_signal_icon_text">Сигнал: %1$d/4</string>
+    <string name="k_signal_icon_title">Сигнал сотовой сети</string>
+    <string name="k_signature_incompatible">"Несовместимость подписи.
+Удалите текущую версию перед установкой."</string>
+    <string name="k_silence_avm_title">Заглушить лог камеры 360</string>
+    <string name="k_silence_tbox_title">Заглушить лог TBox</string>
+    <string name="k_sound_applied_message">Первый звук блокировки заменён до следующей перезагрузки.</string>
+    <string name="k_sound_applied_persist_message">Звук блокировки заменён — останется так, пока вы не нажмёте \"Восстановить оригинал\" или не сделаете сброс машины к заводским настройкам.</string>
+    <string name="k_sound_applied_title">Звук применён</string>
+    <string name="k_sound_apply_error_title">Ошибка применения звука</string>
+    <string name="k_speed_lock_desc">Автоматически блокирует двери, когда авто трогается. Включено по умолчанию.</string>
+    <string name="k_speed_lock_disable_confirm">Ваши двери больше не будут блокироваться по скорости — их нужно будет блокировать вручную. Вы уверены, что хотите отключить эту функцию?</string>
+    <string name="k_speed_lock_err">Не удалось изменить блокировку по скорости</string>
+    <string name="k_speed_lock_off">Блокировка по скорости выключена</string>
+    <string name="k_speed_lock_on">Блокировка по скорости включена</string>
+    <string name="k_speed_lock_title">Блокировка дверей по скорости</string>
+    <string name="k_split_adjust_failed">Ошибка настройки (%1$s) — нажмите ⧉, чтобы закрыть и попробовать новое разделение</string>
+    <string name="k_split_app_crashed">Это приложение сломало всё разделение (похоже, не поддерживает окна) — всё отменено, попробуйте другое приложение</string>
+    <string name="k_split_channel_active">Разделение экрана активно</string>
+    <string name="k_split_channel_name">Разделение экрана</string>
+    <string name="k_split_closed">Разделение закрыто</string>
+    <string name="k_split_done_hint">Разделено — ◀/▶ настраивает размер, ⧉ закрывает</string>
+    <string name="k_split_grupos_desc">До 5 пар для открытия рядом из быстрого доступа.</string>
+    <string name="k_split_grupos_titulo">Группы разделённого экрана</string>
+    <string name="k_split_notif_text">Нажмите ⧉, чтобы разделить экран</string>
+    <string name="k_split_preparing">Подготовка разделения (текущее приложение перезапустится)…</string>
+    <string name="k_split_screen_disabled">Разделение экрана выключено</string>
+    <string name="k_split_screen_enabled_hint">Разделение экрана включено — значок ◫ в Быстром доступе</string>
+    <string name="k_split_screen_info_text">Значок ◫ в Быстром доступе: 1-е нажатие открывает floater (нажмите ⧉ на экране, чтобы разделить); повторное нажатие ◫ закрывает всё. Требуется включённый freeform на устройстве (единственная настройка: development_settings_enabled + enable_freeform_support + force_resizable_activities, затем перезагрузка) — проверка…</string>
+    <string name="k_status_brightness_info" formatted="false">Значок на панели переключается с каждым нажатием: 1-е нажатие применяет строку \"1-й\"; 2-е нажатие применяет строку \"2-й\" (только если включена); следующее нажатие возвращает к стандартной яркости (той же, что была до нажатия значка). 0% = экран выключен. Громкость на руле восстанавливает автоматически только когда экран выключен или ниже 2% — при обычной яркости изменение громкости не отменяет настройку.</string>
+    <string name="k_status_km_desc">Показывает пробег поездки и/или общий пробег (одометр) в строке состояния.</string>
+    <string name="k_status_km_diag_lendo">Чтение из автомобиля…</string>
+    <string name="k_status_km_info">Поездка считается с последнего «Сбросить поездку» (или с момента включения). Общий — это одометр авто. Значки появляются в строке состояния и обновляются примерно каждые 15 с.</string>
+    <string name="k_status_km_reset">Сбросить поездку</string>
+    <string name="k_status_km_reset_done">Поездка сброшена</string>
+    <string name="k_status_km_reset_falhou">Не удалось обнулить — одометр недоступен</string>
+    <string name="k_status_km_title">Пробег в строке</string>
+    <string name="k_status_km_total">Всего</string>
+    <string name="k_status_km_total_off">Общий пробег в строке выключен</string>
+    <string name="k_status_km_total_on">Общий пробег в строке включён</string>
+    <string name="k_status_km_trip">Поездка</string>
+    <string name="k_status_km_trip_off">Пробег поездки в строке выключен</string>
+    <string name="k_status_km_trip_on">Пробег поездки в строке включён</string>
+    <string name="k_status_unavailable">Недоступно</string>
+    <string name="k_stop_receiving">Остановить приём</string>
+    <string name="k_subtab_aa_carplay">AA и CarPlay</string>
+    <string name="k_swc_media_control_desc">Использует кнопки вперёд/назад на руле для переключения треков в медиа-приложениях (Spotify, YouTube Music и др.) — как Bluetooth-гарнитура.</string>
+    <string name="k_swc_media_control_title">🎵 Управление медиа с руля</string>
+    <string name="k_swc_mode_ac">Режим климата</string>
+    <string name="k_swc_mode_driving">Режим вождения</string>
+    <string name="k_swc_mode_music">Режим звука</string>
+    <string name="k_swc_modes_desc">Переназначает правый блок руля по режимам. Двойное нажатие микрофона = климат (10с); удержание 3с = вождение. Сам возвращается к звуку.</string>
+    <string name="k_swc_modes_info">"Смена режима кнопкой микрофона: два быстрых нажатия (менее 1с) = режим климата на 10с; удержание 3с = режим вождения на 10с. Через 10с без действий возвращается к режиму звука.
+
+Режим климата: следующий/предыдущий трек = вентилятор +/−; вверх/вниз = температура +/−.
+Режим вождения: громкость +/− = рекуперация; следующий/предыдущий трек = профиль (Eco→Comfort→Sport).
+
+Прим.: руль всё равно выполняет и родное действие (громкость тоже меняется; микрофон может открыть ассистента) — заблокировать нельзя без изменения системы."</string>
+    <string name="k_swc_modes_title">Режимы руля</string>
+    <string name="k_tap_list_to_read_pendrive">Нажмите \"🔍 Список\", чтобы прочитать флешку</string>
+    <string name="k_tbox_apply_failed">Не удалось изменить журнал TBox. Предыдущий выбор сохранён.</string>
+    <string name="k_tbox_normal">Лог TBox обычный</string>
+    <string name="k_tbox_silenced">Лог TBox заглушён</string>
+    <string name="k_temp_icon_channel">Внешняя температура (панель)</string>
+    <string name="k_temp_icon_text">Снаружи: %1$d °C</string>
+    <string name="k_temp_icon_title">Внешняя температура</string>
+    <string name="k_timer_h">ч</string>
+    <string name="k_timer_iniciar">Старт</string>
+    <string name="k_timer_m">мин</string>
+    <string name="k_timer_pausar">Пауза</string>
+    <string name="k_timer_reiniciar">Сброс</string>
+    <string name="k_timer_s">с</string>
+    <string name="k_timer_terminou">Отсчёт завершён</string>
+    <string name="k_tmp_content_mismatch">Содержимое в tmp ≠ скачанный APK после cp (sha staging=%1$s… tmp=%2$s…).</string>
+    <string name="k_toast_wait_processing">Подождите, идёт обработка…</string>
+    <string name="k_toggle_on">● Включено</string>
+    <string name="k_total_km_icon_text">Всего: %1$d км</string>
+    <string name="k_total_km_icon_title">Общий пробег</string>
+    <string name="k_trip_km_icon_text">Поездка: %1$s км</string>
+    <string name="k_trip_km_icon_title">Пробег поездки</string>
+    <string name="k_ttl65_desc">Фиксирует исходящий TTL на 65: после пересылки телефоном пакет приходит к оператору с 64, как будто он возник на самом телефоне. Работает для IPv4 и IPv6.</string>
+    <string name="k_ttl65_falhou">Не удалось изменить TTL — смотрите журнал</string>
+    <string name="k_ttl65_off">TTL 65 выключен — возврат к значению по умолчанию</string>
+    <string name="k_ttl65_on">TTL 65 включён</string>
+    <string name="k_ttl65_titulo">TTL 65</string>
+    <string name="k_turn_off_avas">🔇 Отключить AVAS</string>
+    <string name="k_turn_on_avas">🔊 Включить AVAS</string>
+    <string name="k_type_n">Тип %1$d</string>
+    <string name="k_unavailable_bug_investigation">Недоступно (баг в изучении)</string>
+    <string name="k_unavailable_freezes_central">Недоступно (зависает центральный блок)</string>
+    <string name="k_uninstall_app_message">"Удалить \"%1$s\"?
+
+%2$s"</string>
+    <string name="k_uninstall_app_title">Удалить приложение</string>
+    <string name="k_uninstall_btn">Удалить</string>
+    <string name="k_uninstall_with_icon">🗑️ Удалить</string>
+    <string name="k_update_apk_unreadable">Загруженный APK нечитаем или имеет недействительную подпись — установка отклонена.</string>
+    <string name="k_update_apk_wrong_cert">Загруженный APK не подписан нашим ключом — установка отклонена.</string>
+    <string name="k_update_apk_wrong_pkg">Загруженный APK принадлежит другому приложению (%1$s) — установка отклонена.</string>
+    <string name="k_update_apk_wrong_vc">Загруженный APK не является обещанной версией (ожидалось %1$d, получено %2$d) — установка отклонена.</string>
+    <string name="k_update_available_carplaymonitor_title">Доступно обновление — CarplayMonitor</string>
+    <string name="k_update_available_message">"Новая версия: v%1$s
+Установлена: v%2$s
+
+Установить?"</string>
+    <string name="k_update_available_title">Доступно обновление</string>
+    <string name="k_update_channel_desc">Стабильный: меньше обновлений, уже проверенных. Экспериментальный: новинки раньше и чаще.</string>
+    <string name="k_update_channel_experimental">Экспериментальный</string>
+    <string name="k_update_channel_stable">Стабильный</string>
+    <string name="k_update_channel_title">Канал обновлений</string>
+    <string name="k_update_failed">Ошибка обновления: %1$s</string>
+    <string name="k_update_http_403">Это устройство не авторизовано для получения обновлений.</string>
+    <string name="k_update_http_429">Достигнут дневной лимит загрузок. Попробуйте завтра.</string>
+    <string name="k_update_http_outro">Сервер обновления не ответил (ошибка %1$d).</string>
+    <string name="k_update_json_no_sha256">update.json без sha256 — небезопасно устанавливать без проверки APK.</string>
+    <string name="k_update_now_btn">Обновить сейчас</string>
+    <string name="k_update_required_message">Срок действия этой версии приложения истёк. Обновите, чтобы продолжить использование.</string>
+    <string name="k_update_required_title">Требуется обновление</string>
+    <string name="k_update_result_summary">"Обновление %1$s (vc=%2$d, tmp sha256 %3$s…, %4$d Б)
+%5$s"</string>
+    <string name="k_usb_auto_fixed">USB исправлен автоматически</string>
+    <string name="k_use_responsibly_message">Используйте ответственно. Любые последствия использования этой опции — исключительно на вашей ответственности.</string>
+    <string name="k_version_footer">Версия %1$s (%2$d)</string>
+    <string name="k_watchdog_active">Watchdog активен</string>
+    <string name="k_watchdog_channel">Central Watchdog</string>
+    <string name="k_whats_new_title">Что нового — v%1$s</string>
+    <string name="k_widget_alpha_short_label">👁 Прозр.</string>
+    <string name="k_widget_apps_choose">Выбрать приложения</string>
+    <string name="k_widget_apps_cols">Столбцы</string>
+    <string name="k_widget_apps_desc">Плавающая сетка с выбранными вами приложениями. Нажмите замок (🔒), чтобы держать поверх всего; без замка показывается только на главном экране.</string>
+    <string name="k_widget_apps_empty">Выберите приложения в меню виджетов</string>
+    <string name="k_widget_apps_rows">Строки</string>
+    <string name="k_widget_apps_title">Избранные приложения</string>
+    <string name="k_widget_bg_opacity_desc">Прозрачность фона (карточки) виджетов главного экрана (Режим движения, Вентилятор, Температура, Направление воздуха). Значки и текст остаются на 100% видимыми, даже если фон почти прозрачный.</string>
+    <string name="k_widget_bg_opacity_label">🏠 Фон виджетов</string>
+    <string name="k_widget_drive_mode_vertical_desc">EX Sapo — Режим движения (вертикальный): переключение между Eco/Comfort/Sport с помощью + и − в столбик, в более узком месте.</string>
+    <string name="k_widget_drive_regen_desc">EX Sapo — Режим движения и рекуперация: переключите режим движения и уровень рекуперации прямо с главного экрана.</string>
+    <string name="k_widget_fan_desc">EX Sapo — Вентилятор: регулируйте скорость вентилятора прямо с главного экрана.</string>
+    <string name="k_widget_fan_vertical_desc">EX Sapo — Вентилятор (вертикальный): то же самое, что и виджет «Вентилятор», только в столбик (+ сверху, − снизу) для более узкого места.</string>
+    <string name="k_widget_float_drive_regen_desc">Режим движения (Эко/Комфорт/Спорт) и уровень рекуперации энергии.</string>
+    <string name="k_widget_float_drive_regen_title">Режим движения + Рекуперация</string>
+    <string name="k_widget_float_fan_desc">Скорость вентилятора кондиционера (0-7).</string>
+    <string name="k_widget_float_fan_title">Скорость вентилятора</string>
+    <string name="k_widget_float_heating_desc">Руль, заднее стекло, переднее стекло и сиденья (водитель/пассажир).</string>
+    <string name="k_widget_float_heating_title">Обогрев</string>
+    <string name="k_widget_float_sysinfo_desc">Показывает температуру и загрузку ЦП в плавающем виджете.</string>
+    <string name="k_widget_float_sysinfo_title">Система (ЦП)</string>
+    <string name="k_widget_float_temp_desc">Целевая температура кондиционера.</string>
+    <string name="k_widget_float_temp_title">Температура</string>
+    <string name="k_widget_float_vent_desc">Куда дует воздух (лицо/ноги/стекло) и рециркуляция (только внутренний воздух).</string>
+    <string name="k_widget_float_vent_fan_desc">Как виджет выше, но со скоростью вентилятора (0–3) внизу — выбор скорости также включает/выключает кондиционер.</string>
+    <string name="k_widget_float_vent_fan_title">Направление воздуха + Вентилятор</string>
+    <string name="k_widget_float_vent_title">Направление воздуха + Рециркуляция</string>
+    <string name="k_widget_heating_pick_need_one">Выберите хотя бы один значок.</string>
+    <string name="k_widget_heating_pick_title">Значки обогрева</string>
+    <string name="k_widget_heating_test_desc">EX Sapo — Обогрев: руль, лобовое стекло (макс. и элемент обогрева), заднее стекло и сиденья (водитель/пассажир), прямо с главного экрана.</string>
+    <string name="k_widget_hvac_direction_desc">EX Sapo — Направление воздуха: выберите лицо/пол/лобовое стекло (и комбинации) и включите обогрев заднего стекла прямо с главного экрана.</string>
+    <string name="k_widget_hvac_direction_fan_desc">EX Sapo — Направление воздуха + Вентилятор: выбор лицо/ноги/стекло и скорость вентилятора (0–3); выбор скорости также включает/выключает кондиционер.</string>
+    <string name="k_widget_hvac_direction_vertical_desc">EX Sapo — Направление воздуха (вертикальное): переключение режима вентиляции с помощью + и − в столбик, с переключателем обогрева заднего стекла снизу.</string>
+    <string name="k_widget_lbl_drive_comfort">Комфорт</string>
+    <string name="k_widget_lbl_drive_eco">Эко</string>
+    <string name="k_widget_lbl_drive_header">РЕЖИМ ДВИЖЕНИЯ</string>
+    <string name="k_widget_lbl_drive_sport">Спорт</string>
+    <string name="k_widget_lbl_fan">Вентилятор</string>
+    <string name="k_widget_lbl_heat_auto">Авто</string>
+    <string name="k_widget_lbl_heat_front_max">Стекло Макс</string>
+    <string name="k_widget_lbl_heat_header">ОБОГРЕВ</string>
+    <string name="k_widget_lbl_heat_seat_driver">Сиденье Вод.</string>
+    <string name="k_widget_lbl_heat_seat_passenger">Сиденье Пасс.</string>
+    <string name="k_widget_lbl_heat_wheel">Руль</string>
+    <string name="k_widget_lbl_heat_windshield">Лобовое</string>
+    <string name="k_widget_lbl_rear_defrost">Заднее</string>
+    <string name="k_widget_lbl_recirc">Рециркуляция</string>
+    <string name="k_widget_lbl_regen_header">РЕКУПЕРАЦИЯ ЭНЕРГИИ</string>
+    <string name="k_widget_lbl_regen_high">Сильная</string>
+    <string name="k_widget_lbl_regen_low">Слабая</string>
+    <string name="k_widget_lbl_regen_mid">Средняя</string>
+    <string name="k_widget_lbl_temp">Температура</string>
+    <string name="k_widget_lbl_vent_face">Лицо</string>
+    <string name="k_widget_lbl_vent_face_floor">Лицо+Пол</string>
+    <string name="k_widget_lbl_vent_floor">Пол</string>
+    <string name="k_widget_lbl_vent_floor_windshield">Пол+Стекло</string>
+    <string name="k_widget_lbl_vent_header">ВОЗДУХ</string>
+    <string name="k_widget_lbl_vent_short">Направление воздуха</string>
+    <string name="k_widget_lbl_vent_windshield">Стекло</string>
+    <string name="k_widget_regen_vertical_desc">EX Sapo — Рекуперация (вертикальная): переключение между слабой/средней/сильной с помощью + и − в столбик, в более узком месте.</string>
+    <string name="k_widget_size_short_label">🔍 Размер</string>
+    <string name="k_widget_temp_desc">EX Sapo — Температура: регулируйте температуру кондиционера прямо с главного экрана.</string>
+    <string name="k_widget_temp_vertical_desc">EX Sapo — Температура (вертикальная): то же самое, что и виджет «Температура», только в столбик (+ сверху, − снизу) для более узкого места.</string>
+    <string name="k_widget_volume_desc">Плавающая полоса громкости медиа. Выберите горизонтально или вертикально; замок (🔒) = поверх всего.</string>
+    <string name="k_widget_volume_horizontal">Горизонтально</string>
+    <string name="k_widget_volume_signs">+/-</string>
+    <string name="k_widget_volume_slider">Слайдер</string>
+    <string name="k_widget_volume_title">Громкость</string>
+    <string name="k_widget_volume_vertical">Вертикально</string>
+    <string name="k_widgets_desc">Так как Flyme Auto не поддерживает настоящие виджеты на главном экране, эти — плавающие: перетаскиваемые, показываются поверх всего, но исчезают при открытии любого приложения и появляются снова сами при возврате на главный экран. Включите те, что хотите использовать.</string>
+    <string name="k_widgets_float_active">Плавающие виджеты активны</string>
+    <string name="k_widgets_float_channel">Плавающие виджеты</string>
+    <string name="k_widgets_header">🧩 Плавающие виджеты</string>
+    <string name="k_widgets_poslock_all_label">🔒 Закрепить виджеты на месте</string>
+    <string name="k_widgets_poslock_all_off">Виджеты откреплены: можно перетаскивать.</string>
+    <string name="k_widgets_poslock_all_on">Виджеты закреплены: перетаскивание отключено.</string>
+    <string name="k_wifi_ap0_em_uso">К точке доступа автомобиля подключён телефон — включение Wi-Fi сейчас может оборвать сеанс CarPlay/Android Auto. Нажмите ещё раз, чтобы всё равно включить.</string>
+    <string name="k_wifi_auto_enable_off">Автовключение WiFi отключено</string>
+    <string name="k_wifi_auto_enable_on">WiFi включится сам при запуске автомобиля</string>
+    <string name="k_wifi_floater_channel">WiFi Floater</string>
+    <string name="k_wifi_icon_channel">WiFi (панель)</string>
+    <string name="k_wifi_icon_info">Значок WiFi на панели: нажатие включает WiFi (если выключен) и открывает меню WiFi.</string>
+    <string name="k_wifi_icon_off">Значок WiFi на панели выключен</string>
+    <string name="k_wifi_icon_on">Значок WiFi на панели включён</string>
+    <string name="k_wifi_icon_text_off">Выключено — нажмите, чтобы включить и открыть меню</string>
+    <string name="k_wifi_icon_text_on">Включено — нажмите, чтобы открыть меню</string>
+    <string name="k_wifi_icon_text_searching">Включено, нет соединения — нажмите, чтобы открыть меню</string>
+    <string name="k_wifi_icon_title">WiFi</string>
+    <string name="k_will_remember_brightness">Будет запоминать яркость (фары вкл/выкл)</string>
+    <string name="k_window_driver_switch">Следует за дверью</string>
+    <string name="k_window_follows_door_off">Окна больше не следуют за дверями</string>
+    <string name="k_window_follows_door_on">Каждое окно будет открываться/закрываться со своей дверью</string>
+    <string name="k_window_opposite">Противоположная</string>
+    <string name="k_window_opposite_off">Снова открывается стекло своей двери.</string>
+    <string name="k_window_opposite_on">Теперь открывается противоположное стекло (своё остаётся закрытым).</string>
+    <string name="k_window_opposite_switch">Следует за противоположной дверью</string>
+    <string name="k_wont_remember_brightness">Больше не запоминает яркость</string>
+    <string name="k_xapk_decompress_failed">Ошибка распаковки XAPK. Файл может быть повреждён.</string>
+    <string name="k_xapk_no_apk_found">XAPK: внутри файла не найден APK.</string>
+    <string name="master_aa_carplay">Android Auto и CarPlay</string>
+    <string name="master_aa_na_rede">В сети, без сеанса</string>
+    <string name="master_aa_off_msg">CarPlay работает только при включённом Android Auto. Отключение Android Auto отключит оба. Продолжить?</string>
+    <string name="master_aa_off_title">Отключить Android Auto?</string>
+    <string name="master_aa_so_bt">Только Bluetooth</string>
+    <string name="master_about_app_development">Разработка приложения</string>
+    <string name="master_about_description">Познакомьтесь с людьми, благодаря которым этот проект стал возможен.</string>
+    <string name="master_about_interface_design">Дизайн интерфейса</string>
+    <string name="master_about_nav">О приложении</string>
+    <string name="master_about_project_credits">Участники проекта</string>
+    <string name="master_about_responsibility_body">"Установка, настройка и использование SapoCentral осуществляются исключительно по решению и под ответственность пользователя. Используя приложение, пользователь подтверждает, что осознаёт возможные риски и принимает последствия своих решений и действий.
+
+Участники проекта не несут ответственности за ущерб, сбои, потери или нарушения, возникшие из-за неправильной установки, несанкционированных изменений, ненадлежащего использования либо использования с нарушением правил безопасности и применимого законодательства.
+
+Используйте приложение ответственно и не управляйте его функциями во время движения, если это может отвлечь от дороги."</string>
+    <string name="master_about_responsibility_title">Ответственность за использование</string>
+    <string name="master_about_special_thanks">Особая благодарность</string>
+    <string name="master_about_thanks_body"><b>Marco Antônio</b>" — первый, кто попробовал разблокировку, и тот, кто придал смелости экспериментировать.
+
+"<b>Duda</b>" — за участие в первых тестах приложения.
+
+"<b>Giulio</b>" — за предоставленный для тестирования iPhone.
+
+"<b>Guilherme</b>" — за код, который помог реализовать беспроводной CarPlay.
+
+Также благодарим всех, кто поддержал проект финансово, участвовал в тестировании и помогал его развитию."</string>
+    <string name="master_about_title">О SapoCentral</string>
+    <string name="master_ac_single_step">Быстрые жесты: один шаг за свайп</string>
+    <string name="master_actions">Действия</string>
+    <string name="master_active_safety">Активная безопасность</string>
+    <string name="master_adb_contagem_desligar">Выключаю ADB через %d…</string>
+    <string name="master_adb_contagem_ligar">Включаю ADB через %d…</string>
+    <string name="master_adb_desligando">Выключаю ADB…</string>
+    <string name="master_adb_ligando">Включаю ADB…</string>
+    <string name="master_aeb_active">AEB ВКЛЮЧЕНА</string>
+    <string name="master_aeb_emergency_braking">Автоматическое экстренное торможение (AEB)</string>
+    <string name="master_aeb_inactive">AEB ВЫКЛЮЧЕНА</string>
+    <string name="master_aeb_reapply_on_start">Восстанавливать состояние AEB при запуске</string>
+    <string name="master_air_direction">Направление воздуха</string>
+    <string name="master_air_intake">Забор воздуха</string>
+    <string name="master_air_programming">Расписание климат-контроля</string>
+    <string name="master_air_ventilation">Воздух + вентиляция</string>
+    <string name="master_any_phone">Любой телефон</string>
+    <string name="master_app_catalog">Каталог приложений</string>
+    <string name="master_appearance">Оформление</string>
+    <string name="master_application_mode">Режим применения</string>
+    <string name="master_apps_description">Установка и управление приложениями.</string>
+    <string name="master_audio_description">Настройте звуки автомобиля.</string>
+    <string name="master_available">Доступно</string>
+    <string name="master_available_widgets">Доступные виджеты</string>
+    <string name="master_avoid_external_air">Не использовать наружный воздух</string>
+    <string name="master_bar_shortcuts">Кнопки панели</string>
+    <string name="master_battery_percentage">Процент заряда</string>
+    <string name="master_both">Оба</string>
+    <string name="master_brightness">Яркость</string>
+    <string name="master_brightness_control">Управление яркостью</string>
+    <string name="master_brightness_levels">Уровни яркости</string>
+    <string name="master_car">Автомобиль</string>
+    <string name="master_car_battery">Батарея автомобиля</string>
+    <string name="master_car_color_gray">Серый</string>
+    <string name="master_car_color_green">Зелёный</string>
+    <string name="master_car_color_silver">Серебристый</string>
+    <string name="master_car_color_white">Белый</string>
+    <string name="master_catalog_desc_chromium">Лёгкий браузер на основе Chromium.</string>
+    <string name="master_catalog_desc_disney">Фильмы и сериалы Disney+ на головном устройстве.</string>
+    <string name="master_catalog_desc_dual_dashcam">Просмотр и управление передней и задней камерами автомобиля.</string>
+    <string name="master_catalog_desc_ei_sapo">Помощник для быстрых действий и информации головного устройства. Скажите «Ei Sapo», чтобы начать.</string>
+    <string name="master_catalog_desc_equalizer">Настройка звука с эквалайзером и аудиоэффектами.</string>
+    <string name="master_catalog_desc_file_manager">Просмотр, копирование и управление файлами головного устройства и USB.</string>
+    <string name="master_catalog_desc_firefox">Полноценный браузер для доступа в интернет на головном устройстве.</string>
+    <string name="master_catalog_desc_geely_battery">Данные об аккумуляторе, запасе хода и энергии автомобиля.</string>
+    <string name="master_catalog_desc_logger">Записывает данные подключения для диагностики и поддержки.</string>
+    <string name="master_catalog_desc_microg">Службы совместимости, необходимые некоторым приложениям.</string>
+    <string name="master_catalog_desc_prime_video">Фильмы и сериалы. Установка заблокирована для стабильной работы.</string>
+    <string name="master_catalog_desc_vlc">Проигрыватель аудио и видео с поддержкой разных форматов.</string>
+    <string name="master_catalog_desc_waze">GPS-навигация с пробками, предупреждениями и маршрутами.</string>
+    <string name="master_catalog_remove">Удалить</string>
+    <string name="master_check_new_version">Проверьте наличие новой версии</string>
+    <string name="master_classic">Классический</string>
+    <string name="master_close_apps">Закрыть приложения</string>
+    <string name="master_conexao_wifi">Подключение Wi‑Fi</string>
+    <string name="master_config_description">Настройте систему и параметры.</string>
+    <string name="master_configure">Настроить</string>
+    <string name="master_connect_phone">Подключить телефон</string>
+    <string name="master_connected">Подключено</string>
+    <string name="master_connected_car">Подключено к автомобилю</string>
+    <string name="master_content">Содержимое</string>
+    <string name="master_copy_apps_usb">Копировать приложения с USB в память</string>
+    <string name="master_copy_audio_usb">Копировать аудио с USB-накопителя</string>
+    <string name="master_custom_sound">Пользовательский</string>
+    <string name="master_dark">Тёмная</string>
+    <string name="master_digital_ac">Цифровой климат-контроль</string>
+    <string name="master_digital_external_temperature">Цифровая наружная температура</string>
+    <string name="master_disable_external_speaker">Отключить внешний динамик</string>
+    <string name="master_disconnected">Не подключено</string>
+    <string name="master_disconnected_car">Нет подключения к автомобилю</string>
+    <string name="master_drive">Режим движения</string>
+    <string name="master_drive_comfort">Comfort</string>
+    <string name="master_drive_regeneration">Движение и рекуперация</string>
+    <string name="master_drive_sport">Sport</string>
+    <string name="master_enable_quick_bar">Включить панель быстрого доступа</string>
+    <string name="master_enable_widgets">Включить виджеты</string>
+    <string name="master_equalizer">Эквалайзер</string>
+    <string name="master_external_speaker">Внешний динамик</string>
+    <string name="master_file">Файл</string>
+    <string name="master_file_manager">Файловый менеджер</string>
+    <string name="master_first_tap">Первое нажатие</string>
+    <string name="master_floating_app">Плавающее приложение</string>
+    <string name="master_floating_panel">Плавающая панель</string>
+    <string name="master_handle_height">Высота области вызова</string>
+    <string name="master_handle_width">Ширина области вызова</string>
+    <string name="master_heating">Обогрев</string>
+    <string name="master_help">Справка</string>
+    <string name="master_help_android_items">"Android Auto Wi‑Fi|Включает беспроводное подключение.
+ConnAdaptor|Управляет компонентом подключения.
+Предпочтительный телефон|Выбирает приоритетное устройство.
+Не закрывать Android Auto|Пытается открыть снова после прерывания.
+Интернет через маршруты|Раздаёт интернет через настройку маршрутов.
+Интернет через прокси|Раздаёт интернет через прокси."</string>
+    <string name="master_help_android_title">Об Android Auto</string>
+    <string name="master_help_avas_items">"Внешний динамик|Включает внешний предупреждающий динамик.
+Звук AVAS|Выбирает звук на малой скорости.
+Предпросмотр|Воспроизводит звук до применения.
+Применить|Отправляет выбранный звук автомобилю."</string>
+    <string name="master_help_avas_title">Об AVAS</string>
+    <string name="master_help_car_items">"Кнопки на руле|Включает физические кнопки рулевого колеса.
+Управление мультимедиа с руля|Управляет воспроизведением и громкостью с руля."</string>
+    <string name="master_help_car_title">Об автомобиле</string>
+    <string name="master_help_carplay_items">"CarPlay Wi‑Fi|Включает беспроводное подключение.
+CarPlay Monitor|Контролирует и восстанавливает подключение.
+Предпочтительный телефон|Выбирает приоритетный iPhone.
+Не закрывать CarPlay|Пытается открыть снова после прерывания.
+Интернет через маршруты|Раздаёт интернет через настройку маршрутов.
+Интернет через прокси|Раздаёт интернет через прокси."</string>
+    <string name="master_help_carplay_title">О CarPlay</string>
+    <string name="master_help_catalog_items">"Состояние приложения|Показывает, установлено и обновлено ли приложение.
+Установить|Загружает и устанавливает приложение.
+Обновить|Устанавливает последнюю версию.
+Удалить|Удаляет приложение с устройства."</string>
+    <string name="master_help_catalog_title">О каталоге</string>
+    <string name="master_help_climate_items">"Расписание климат-контроля|Создаёт автоматические климатические сценарии.
+Не использовать наружный воздух|Автоматически возвращает рециркуляцию.
+Окно следует за дверью|Двигает окно при открытии или закрытии двери.
+Противоположное окно|Также применяет движение к другой стороне.
+Включить|Показывает панель поверх других приложений.
+Содержимое|Выбирает температуру, батарею или оба значения.
+Цвет текста|Выбирает светлый или тёмный текст.
+Размер|Настраивает размер панели.
+Прозрачность|Настраивает видимость фона."</string>
+    <string name="master_help_climate_title">О климате</string>
+    <string name="master_help_floating_items">"Включить|Показывает панель поверх других приложений.
+Содержимое|Выбирает температуру, батарею или оба значения.
+Цвет текста|Выбирает светлый или тёмный текст.
+Размер|Настраивает размер панели.
+Прозрачность|Настраивает видимость фона."</string>
+    <string name="master_help_floating_title">О плавающей панели</string>
+    <string name="master_help_installer_items">"Источник файлов|Выбирает место поиска пакетов.
+Выбранный файл|Показывает используемый пакет.
+Установить или удалить|Устанавливает пакет или удаляет приложение.
+Копировать с USB|Копирует пакеты на устройство.
+Всегда активные приложения|Не позволяет закрывать выбранные приложения."</string>
+    <string name="master_help_installer_title">Об установщике</string>
+    <string name="master_help_keepalive_items">Управление|Выбирает приложения, которые нельзя закрывать.</string>
+    <string name="master_help_keepalive_title">О всегда активных приложениях</string>
+    <string name="master_help_lock_sound_items">"Выбранный аудиофайл|Выбирает и позволяет прослушать файл.
+До перезапуска|Применяет только до следующего перезапуска.
+Постоянно|Сохраняет звук после перезапуска.
+Копировать аудио с USB|Копирует совместимые файлы на устройство.
+Восстановить исходный|Возвращает заводской звук.
+Удалить|Удаляет выбранный файл."</string>
+    <string name="master_help_lock_sound_title">О звуке блокировки</string>
+    <string name="master_help_media_items">Пауза при открытии двери|Ставит воспроизведение на паузу при открытии двери.</string>
+    <string name="master_help_media_title">О мультимедиа</string>
+    <string name="master_help_notifications_items">"Батарея автомобиля|Показывает заряд тяговой батареи.
+Наружная температура|Показывает измеренную автомобилем температуру.
+Wi‑Fi|Показывает состояние подключения Wi‑Fi."</string>
+    <string name="master_help_notifications_title">О панели уведомлений</string>
+    <string name="master_help_perf_items">"Оптимизация видео|Заменяет декодер видео на равнозначный, который не упирается в 15 кадров. В систему ничего не пишется: действует до следующей перезагрузки и возвращается сама при запуске.
+Учиться и оптимизировать самостоятельно|Магнитола запоминает, как вы пользуетесь приложениями, и через несколько минут после каждого запуска сама оптимизирует те, что не работают, — она никогда не трогает приложение, которым вы пользуетесь. Включение перезапускает интерфейс, и включать нужно заново после каждой перезагрузки.
+Как прийти к лучшему состоянию|Включите обучение, воспользуйтесь приложением несколько раз, затем вернитесь сюда и нажмите «Оптимизировать»: оно будет оптимизировано под ваше использование — это лучшее состояние. При обновлении этого приложения магнитола стирает накопленные данные и оптимизация теряется — просто повторите: воспользуйтесь несколько раз и оптимизируйте.
+Оптимизировано — скомпилировано по вашему использованию|Лучшее состояние: магнитола скомпилировала только то, чем вы пользуетесь. Открывается быстрее и занимает гораздо меньше места, чем компиляция всего приложения.
+Оптимизировано — скомпилировано целиком|Магнитола скомпилировала всё приложение, не зная, чем вы пользуетесь. Так бывает, когда ещё ничего не накоплено: открывается быстро, но занимает намного больше места.
+Не оптимизировано|Приложение работает в интерпретаторе, как с завода, и открывается медленнее.
+Оптимизировать|Компилирует приложение сейчас. Занимает несколько секунд.
+Удалить|Удаляет приложение из магнитолы.
+Благодарность|Путь к обеим находкам подсказало сообщество из Беларуси. Измерения и способ применения здесь наши; отправная точка — их, и спасибо им за то, что поделились и помогли сделать нашу работу лучше. Спасибо."</string>
+    <string name="master_help_perf_title">О быстродействии</string>
+    <string name="master_help_preferences_items">"Оформление|Выбирает светлую, тёмную или автоматическую тему.
+Язык|Задаёт язык приложения.
+Ожидание экрана|Задаёт время перехода экрана в режим ожидания."</string>
+    <string name="master_help_preferences_title">О настройках</string>
+    <string name="master_help_quickbar_items">"Включить панель|Показывает область открытия быстрых команд.
+Предпросмотр|Показывает значки и позволяет менять их порядок.
+Кнопки панели|Выбирает функции панели.
+Размер значков|Настраивает размер кнопок.
+Ширина области вызова|Настраивает ширину области открытия.
+Высота области вызова|Настраивает высоту области открытия.
+Прозрачность|Настраивает видимость язычка."</string>
+    <string name="master_help_quickbar_title">О панели быстрого доступа</string>
+    <string name="master_help_screen_items">"Быстрые жесты|Включает жесты непосредственно на экране.
+Избранное быстрых жестов|Выбирает приложения для жеста пятью пальцами.
+Яркость|Настраивает яркость экрана.
+Запоминать яркость по фарам|Хранит отдельный уровень для выключенных и включённых фар и восстанавливает нужный при запуске.
+Ожидание экрана|Задаёт время перехода экрана в режим ожидания.
+Разделение экрана|Позволяет использовать два приложения одновременно.
+Плавающее приложение|Открывает приложение в окне поверх экрана."</string>
+    <string name="master_help_screen_title">О разделе «Экран»</string>
+    <string name="master_help_security_items">"Чёрный фон при движении назад|Затемняет фон для выделения камеры.
+Показывать с поворотником|Открывает боковую камеру с поворотником.
+Оставлять ещё 5 секунд|Оставляет камеру после выключения поворотника.
+Автоматическое экстренное торможение (AEB)|Включает или выключает AEB.
+Восстановить AEB при запуске|Восстанавливает выбор при запуске.
+Блокировка дверей по скорости|Блокирует двери при движении."</string>
+    <string name="master_help_security_title">О безопасности</string>
+    <string name="master_help_status_items">"Процент заряда|Показывает заряд в процентах.
+Цифровой климат-контроль|Позволяет управлять климатом с нижней панели.
+Цифровая наружная температура|Показывает температуру на нижней панели.
+Управление яркостью|Позволяет менять яркость с нижней панели.
+Уровни яркости|Задаёт уровни быстрого управления.
+Пробег|Выбирает пробег поездки или общий."</string>
+    <string name="master_help_status_title">О строке состояния</string>
+    <string name="master_help_system_items">"Режим мастерской|Включает инструменты обслуживания.
+Журнал сеанса|Записывает данные для диагностики.
+Установленная версия|Показывает текущую версию приложения.
+Перезапустить устройство|Перезапускает мультимедийную систему. Во время процесса динамик может издать короткий звук — это нормально."</string>
+    <string name="master_help_system_title">О системе</string>
+    <string name="master_help_updates_items">"Тип обновления|Выбирает стабильные или экспериментальные версии.
+Автоматическое обновление|Разрешает автоматическую установку новых версий.
+Проверить обновление|Проверяет наличие новой версии."</string>
+    <string name="master_help_updates_title">Об обновлениях</string>
+    <string name="master_help_widgets_items">"Включить виджеты|Позволяет показывать плавающие виджеты.
+Фон виджетов|Показывает или скрывает фон.
+Размер|Настраивает каждый виджет отдельно.
+Прозрачность|Настраивает каждый виджет отдельно."</string>
+    <string name="master_help_widgets_title">О виджетах</string>
+    <string name="master_help_wifi_items">"Включать Wi‑Fi при открытии автомобиля|Автоматически включает Wi‑Fi.
+Запускать телеметрию с автомобилем|Начинает передачу данных автомобиля.
+Синхронизация с телефоном|Синхронизирует устройство с телефоном."</string>
+    <string name="master_help_wifi_title">О Wi‑Fi</string>
+    <string name="master_home_description">Всё готово к поездке.</string>
+    <string name="master_icon_size">Размер значков</string>
+    <string name="master_indicators">Индикаторы</string>
+    <string name="master_installed">Установлено</string>
+    <string name="master_installed_version">Установленная версия</string>
+    <string name="master_interface">Интерфейс</string>
+    <string name="master_internet">Интернет</string>
+    <string name="master_keep_android_auto_open">Не закрывать Android Auto</string>
+    <string name="master_keep_apps_active">Всегда активные приложения</string>
+    <string name="master_keep_apps_active_description">Выберите приложения, которые система не должна закрывать</string>
+    <string name="master_keep_apps_description">Выберите приложения, которые должны оставаться активными.</string>
+    <string name="master_keep_apps_title">Всегда активные приложения</string>
+    <string name="master_keep_carplay_open">Не закрывать CarPlay</string>
+    <string name="master_keep_open_five_seconds">Оставлять открытой ещё 5 секунд</string>
+    <string name="master_language">Язык</string>
+    <string name="master_language_english">English</string>
+    <string name="master_language_portuguese">Português (Brasil)</string>
+    <string name="master_language_russian">Русский</string>
+    <string name="master_language_spanish">Español (Chile)</string>
+    <string name="master_language_thai">ไทย</string>
+    <string name="master_language_vietnamese">Tiếng Việt</string>
+    <string name="master_light">Светлая</string>
+    <string name="master_list">Показать</string>
+    <string name="master_manage">Управление</string>
+    <string name="master_media_browser_row">Музыкальные плееры (Spotify, Deezer, JOOX…)</string>
+    <string name="master_mileage">Пробег</string>
+    <string name="master_mode_off">Отключено в этом режиме</string>
+    <string name="master_network_description">Все подключения автомобиля в одном месте.</string>
+    <string name="master_no_apps_available">Нет доступных приложений.</string>
+    <string name="master_no_ip">Нет IP</string>
+    <string name="master_none_active">Нет активных</string>
+    <string name="master_notification_bar">Панель уведомлений</string>
+    <string name="master_origin">Источник</string>
+    <string name="master_original_sound">Оригинальный звук</string>
+    <string name="master_perf_already">%1$s уже оптимизировано.</string>
+    <string name="master_perf_busy_msg">"Оптимизирую %1$s.
+
+Это может занять до минуты. Подождите и не выключайте машину."</string>
+    <string name="master_perf_busy_title">Оптимизация</string>
+    <string name="master_perf_det_apk">работает прямо из APK</string>
+    <string name="master_perf_det_discarded">система отбросила скомпилированный код</string>
+    <string name="master_perf_det_empty">работает в интерпретаторе, никогда не компилировалось</string>
+    <string name="master_perf_det_full">скомпилировано целиком</string>
+    <string name="master_perf_det_none">нет данных</string>
+    <string name="master_perf_det_profile">скомпилировано по вашему использованию</string>
+    <string name="master_perf_det_verified">только проверено, без компиляции</string>
+    <string name="master_perf_done">%1$s оптимизировано.</string>
+    <string name="master_perf_empty">Вы не установили ни одного приложения.</string>
+    <string name="master_perf_failed">Не удалось оптимизировать %1$s.</string>
+    <string name="master_perf_jit_confirm_msg">"Интерфейс перезапустится сейчас, экран пропадёт примерно на 40 секунд. Это не перезагрузка магнитолы.
+
+Выключение и включение машины его не отменяет. Обучение выключается только перезагрузкой магнитолы, и тогда достаточно включить его здесь снова: всё, что уже оптимизировано в приложениях, остаётся.
+
+С этого момента магнитола учится на вашем использовании и через несколько минут после каждого запуска сама оптимизирует приложения, которые не работают."</string>
+    <string name="master_perf_jit_confirm_title">Включить обучение?</string>
+    <string name="master_perf_jit_desc">Магнитола запоминает, как вы пользуетесь приложениями, и через несколько минут после каждого запуска сама оптимизирует те, что не работают. После перезагрузки магнитолы обучение нужно включить заново — уже сделанная оптимизация приложений не теряется.</string>
+    <string name="master_perf_jit_not_applied">Не удалось включить обучение — интерфейс так и не перезапустился. Попробуйте ещё раз.</string>
+    <string name="master_perf_jit_off">Выключено (как с завода)</string>
+    <string name="master_perf_jit_off_msg">Для выключения интерфейс тоже перезапускается: около 40 секунд без экрана. Уже собранные данные не теряются.</string>
+    <string name="master_perf_jit_off_title">Выключить обучение?</string>
+    <string name="master_perf_jit_on">Включено — включите заново после перезагрузки магнитолы</string>
+    <string name="master_perf_jit_title">Учиться и оптимизировать самостоятельно</string>
+    <string name="master_perf_nav">Быстродействие</string>
+    <string name="master_perf_need_use_msg">"%1$s уже скомпилировано целиком, поэтому открывается быстро. Но я пока не знаю, чем вы в нём пользуетесь.
+
+При включённом обучении откройте приложение ещё несколько раз и вернитесь сюда: тогда я скомпилирую только то, чем вы пользуетесь, и это займёт намного меньше места."</string>
+    <string name="master_perf_need_use_title">Нужно ещё попользоваться, чтобы оптимизировать под вас</string>
+    <string name="master_perf_no_profile_msg">"Скомпилирую %1$s целиком. Это уже ускорит запуск, но займёт больше места.
+
+После того как несколько раз откроете приложение с включённым обучением, оптимизируйте снова: тогда оно будет скомпилировано именно под ваше использование."</string>
+    <string name="master_perf_no_profile_title">Пока не знаю, как вы пользуетесь этим приложением</string>
+    <string name="master_perf_note_update">Оптимизируйте после того, как несколько раз воспользуетесь приложением: тогда оно будет оптимизировано под ваше использование. При обновлении приложения оптимизация теряется — просто воспользуйтесь им несколько раз и оптимизируйте снова.</string>
+    <string name="master_perf_optimize">Оптимизировать</string>
+    <string name="master_perf_refresh">Проверить</string>
+    <string name="master_perf_refuse_disk">Не хватает места в магнитоле для оптимизации.</string>
+    <string name="master_perf_refuse_memory">Сейчас не хватает памяти. Попробуйте через минуту.</string>
+    <string name="master_perf_restarting">Перезапуск интерфейса. Подождите…</string>
+    <string name="master_perf_scanning">Проверяю приложения. Подождите…</string>
+    <string name="master_perf_state_bad">Не оптимизировано</string>
+    <string name="master_perf_state_ok">Оптимизировано</string>
+    <string name="master_perf_state_unknown">Не удалось определить</string>
+    <string name="master_perf_title">Быстродействие приложений</string>
+    <string name="master_perf_video_applying">Меняю декодер видео</string>
+    <string name="master_perf_video_confirm_msg">"Замена временная и ничего не пишет в систему: она действует до следующей перезагрузки магнитолы, а приложение само возвращает её при запуске, пока этот переключатель включён.
+
+Декодер перезапустится сейчас. Если идёт проекция CarPlay, она вернётся на начальный экран и переподключится сама."</string>
+    <string name="master_perf_video_confirm_title">Включить оптимизацию видео?</string>
+    <string name="master_perf_video_desc">Меняет декодер видео до следующей перезагрузки; после запуска возвращается сам. Заметно улучшает воспроизведение видео с YouTube в 1080p 60fps.</string>
+    <string name="master_perf_video_done">Видео на 60 кадрах включено.</string>
+    <string name="master_perf_video_failed">Не удалось заменить декодер видео.</string>
+    <string name="master_perf_video_off">Выключено (заводской декодер)</string>
+    <string name="master_perf_video_off_msg">Декодер перезапустится сейчас, и видео вернётся к прежнему поведению. Удалять ничего не нужно: замена никогда не была постоянной.</string>
+    <string name="master_perf_video_off_title">Вернуть заводской декодер?</string>
+    <string name="master_perf_video_on">Включено</string>
+    <string name="master_perf_video_removed">Заводской декодер возвращён.</string>
+    <string name="master_perf_video_title">Оптимизация видео</string>
+    <string name="master_perf_video_wait">Это занимает несколько секунд. Подождите и не выключайте машину.</string>
+    <string name="master_persistent">Постоянно</string>
+    <string name="master_pip_nativo">Встроенный PiP (плавающее окно)</string>
+    <string name="master_placeholder">—</string>
+    <string name="master_power_off_vehicle">Выключить автомобиль</string>
+    <string name="master_preview">Предпросмотр</string>
+    <string name="master_programs">Расписания</string>
+    <string name="master_quick_bar">Панель быстрого доступа</string>
+    <string name="master_quick_gesture_favorites">Избранное быстрых жестов</string>
+    <string name="master_quick_gestures">Быстрые жесты</string>
+    <string name="master_rear_camera">Камера заднего вида</string>
+    <string name="master_regen_high">Высокая</string>
+    <string name="master_regen_low">Низкая</string>
+    <string name="master_reiniciando">Перезапуск…</string>
+    <string name="master_remember_brightness">Запоминать яркость по фарам</string>
+    <string name="master_reset">Сбросить</string>
+    <string name="master_reset_trip_mileage">Сбросить пробег поездки</string>
+    <string name="master_rest_disabled">Выкл.</string>
+    <string name="master_restart_central">Перезапустить устройство</string>
+    <string name="master_restart_connection">Перезапустить соединение</string>
+    <string name="master_restore_original">Восстановить исходный</string>
+    <string name="master_reverse_volume">Громкость заднего хода</string>
+    <string name="master_screen_off">Выключить экран</string>
+    <string name="master_screen_rest">Ожидание экрана</string>
+    <string name="master_search_update">Проверить обновление</string>
+    <string name="master_second_tap">Второе нажатие</string>
+    <string name="master_select_apk">Выберите APK-файл</string>
+    <string name="master_select_color">Выбрать цвет</string>
+    <string name="master_selected_audio">Выбранный аудиофайл</string>
+    <string name="master_selected_file">Выбранный файл</string>
+    <string name="master_session_log">Журнал сеанса</string>
+    <string name="master_shortcuts_description">Настройте быстрый доступ.</string>
+    <string name="master_show_log">Показать журнал</string>
+    <string name="master_show_on_turn">Показывать при включении поворотника</string>
+    <string name="master_size">Размер</string>
+    <string name="master_soft">Мягкий</string>
+    <string name="master_sound">Звук</string>
+    <string name="master_split_screen">Разделить экран</string>
+    <string name="master_standard">Стандартный</string>
+    <string name="master_status_bar">Строка состояния</string>
+    <string name="master_sync_with_phone">Синхронизация с телефоном</string>
+    <string name="master_technological">Технологичный</string>
+    <string name="master_telemetry">Телеметрия</string>
+    <string name="master_telemetry_on_car_start">Запускать телеметрию с автомобилем</string>
+    <string name="master_temperature">Температура</string>
+    <string name="master_temperature_short">Темп.</string>
+    <string name="master_text_color">Цвет текста</string>
+    <string name="master_tools_description">Настройте головное устройство под себя.</string>
+    <string name="master_transparency">Прозрачность</string>
+    <string name="master_turn_camera">Камера при повороте</string>
+    <string name="master_until_restart">До перезапуска</string>
+    <string name="master_update_type">Тип обновления</string>
+    <string name="master_updates">Обновления</string>
+    <string name="master_ventilation">Вентиляция</string>
+    <string name="master_wheel_controls">Кнопки на руле</string>
+    <string name="master_wheel_media">Управление мультимедиа с руля</string>
+    <string name="master_widget_background">Фон виджетов</string>
+    <string name="master_widget_lock_positions">Закрепить положение виджетов</string>
+    <string name="master_widget_manage">Управление</string>
+    <string name="master_widget_pin">Закрепить</string>
+    <string name="master_widget_rows_columns">Сетка</string>
+    <string name="master_wifi_on_car_open">Включать Wi‑Fi при открытии автомобиля</string>
+    <string name="master_windows_doors">Окна и двери</string>
+    <string name="oficina_ativar">Включить</string>
+    <string name="oficina_recuperacao_explicacao">Без предыдущей записи нельзя определить, какие приложения скрыл сервисный режим. Выберите приложения для включения. В списке могут быть приложения, отключённые вами.</string>
+    <string name="oficina_recuperacao_falhas">Не удалось включить:</string>
+    <string name="oficina_recuperacao_resultado">Включено приложений: %1$d из %2$d.</string>
+    <string name="oficina_restaurar">Восстановить</string>
+    <string name="oficina_selecionar_todos">Выбрать все</string>
+    <string name="oficina_sem_apps_desativados">Нет отключённых сторонних приложений для восстановления.</string>
+    <string name="open_overlay_permission">Открыть разрешение на наложение</string>
+    <string name="permission_label">Разрешение на наложение поверх экрана:</string>
+    <string name="permission_missing">ОТСУТСТВУЕТ</string>
+    <string name="permission_ok">OK</string>
+    <string name="search_menu_title">Поиск</string>
+    <string name="start_floater">Включить floater</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="stop_floater">Выключить floater</string>
+    <string name="subtitle_control">Используйте это приложение, чтобы включать/выключать плавающий кружок. Чёрный экран появляется только при касании кружка.</string>
+    <string name="title_control">Управление Floater</string>
+    <string name="update_checking">Проверка обновления…</string>
+    <string name="update_declined">Обновление не установлено.</string>
+    <string name="update_dialog_message">Найдено обновление с версии %1$s до %2$s. Обновить сейчас?</string>
+    <string name="update_dialog_title">Доступно обновление</string>
+    <string name="update_downloading">Загрузка и установка…</string>
+    <string name="update_no">Нет</string>
+    <string name="update_none_available">Обновлений пока нет.</string>
+    <string name="update_yes">Да</string>
+    <string name="xml_a_opcao_ativa_usa_o_mesmo_azul_de_destaq">Активная опция использует системный синий акцент, без цветов по режимам.</string>
+    <string name="xml_a_verificar">Проверка…</string>
+    <string name="xml_ac_program_desc">Создавайте автоматические последовательности температуры и вентиляции — пузырь выполняет их при касании сохранённого расписания.</string>
+    <string name="xml_ac_program_titulo">Расписание кондиционера</string>
+    <string name="xml_acesso">Доступ</string>
+    <string name="xml_acesso_rapido">Быстрый доступ</string>
+    <string name="xml_adb_por_usb_off">🔌 ADB по USB: OFF</string>
+    <string name="xml_android_auto">Android Auto</string>
+    <string name="xml_android_auto_carplay">Android Auto Wi-Fi</string>
+    <string name="xml_android_auto_carplay_2">Android Auto Wi-Fi</string>
+    <string name="xml_android_auto_sem_fio_automatico">Автоматический беспроводной Android Auto</string>
+    <string name="xml_anunciar_carplay_ao_iphone">CarPlay без проводов</string>
+    <string name="xml_ao_conectar_o_celular_por_bluetooth_liga">При подключении телефона по Bluetooth Android Auto включается самостоятельно — без необходимости нажимать значок.</string>
+    <string name="xml_apagar">🗑️ Удалить</string>
+    <string name="xml_apagar_2">🗑️ Удалить</string>
+    <string name="xml_apagar_3">Удалить</string>
+    <string name="xml_aparencia">🌗 Внешний вид</string>
+    <string name="xml_aplicar">✅ Применить</string>
+    <string name="xml_aplicativos">📦 Приложения</string>
+    <string name="xml_apps">Приложения</string>
+    <string name="xml_ar">💨 Обдув</string>
+    <string name="xml_atalhos">Быстрые действия</string>
+    <string name="xml_atalhos_desc">Плавающие значки, виджеты, жесты и руль — нажмите здесь, чтобы включить и настроить</string>
+    <string name="xml_ativa_o_wifi_automaticamente_sempre_que">Автоматически включает WiFi каждый раз, когда автомобиль просыпается (напр.: разблокировка/запуск), даже если вы отключили его вручную ранее.</string>
+    <string name="xml_ativar">Активировать</string>
+    <string name="xml_ativar_2">Активировать</string>
+    <string name="xml_ativar_automaticamente_ao_conectar">Активировать автоматически при подключении</string>
+    <string name="xml_ativar_gestos_rapidos">Включить быстрые жесты</string>
+    <string name="xml_atualizacoes">🔄 Обновления</string>
+    <string name="xml_atualizar_rede">🔄 Обновить сеть</string>
+    <string name="xml_audio">Аудио</string>
+    <string name="xml_audio_do_sistema">🔊 Аудио системы</string>
+    <string name="xml_aumentar_temperatura">Увеличить температуру</string>
+    <string name="xml_auto">Авто</string>
+    <string name="xml_auto_2">АВТО</string>
+    <string name="xml_avas_alto_falante_externo">AVAS / Внешний динамик</string>
+    <string name="xml_bateria_12v">🔋 АККУМУЛЯТОР АВТО</string>
+    <string name="xml_bateria_na_barra">🔋 % батареи на панели</string>
+    <string name="xml_brilho_na_barra_0_desliga_volume_religa">Яркость на панели (0% выключает; громкость включает снова)</string>
+    <string name="xml_cada_porta_desce_sobe_so_a_sua_janela_ao">Каждая дверь опускает/поднимает только своё стекло при открытии/закрытии. С «Противоположное» — стекло с ДРУГОЙ стороны того же ряда. Если какое-то стекло уже открыто, второе не открывается — давление уже выходит через него.</string>
+    <string name="xml_camera_dupla_frontal_traseira">Двойная камера, передняя + задняя.</string>
+    <string name="xml_captura_e_envia_logs_do_connadaptor">Собирает и отправляет журналы ConnAdaptor.</string>
+    <string name="xml_car_api_iniciando">Car API: запуск</string>
+    <string name="xml_carplay">CarPlay</string>
+    <string name="xml_carplaymonitor">CarplayMonitor</string>
+    <string name="xml_chromium">🌐 Chromium</string>
+    <string name="xml_climatizacao">❄️ Климат-контроль</string>
+    <string name="xml_com_gestos_ativados_use_5_dedos_para_ace">При включённых жестах используйте 5 пальцев, чтобы открыть избранное.</string>
+    <string name="xml_comfort">🚗 Comfort</string>
+    <string name="xml_config">Настройки</string>
+    <string name="xml_configuracoes">⚙️ Настройки</string>
+    <string name="xml_confort">COMFORT</string>
+    <string name="xml_connadaptor_ca_fix">ConnAdaptor</string>
+    <string name="xml_controles_rapidos">Быстрые элементы управления</string>
+    <string name="xml_copiar_apps_do_pen_drive_p_a_memoria">📥 Скопировать приложения с флешки в память</string>
+    <string name="xml_copiar_audios_do_pen_drive">📥 Скопировать аудио с флешки</string>
+    <string name="xml_criar_rotas_automaticamente">Создавать маршруты автоматически</string>
+    <string name="xml_criar_rotas_de_internet">Создать маршруты интернета</string>
+    <string name="xml_da_bateria">% батареи</string>
+    <string name="xml_deixa_o_fundo_da_camera_de_re_preto_pro">Делает фон камеры заднего вида чёрным (Pro)</string>
+    <string name="xml_desativar">Деактивировать</string>
+    <string name="xml_desligar_avas">🔇 Отключить AVAS</string>
+    <string name="xml_desligar_o_avas_silencia_o_alto_falante">Отключение AVAS отключает звук внешнего динамика автомобиля. Состояние запоминается и применяется снова автоматически при запуске автомобиля.</string>
+    <string name="xml_detecta_o_celular_conectado_e_libera_a_i">Определяет подключённый телефон и освобождает интернет самостоятельно, без необходимости что-либо нажимать.</string>
+    <string name="xml_detecta_quando_o_android_auto_conecta_po">Определяет, когда Android Auto подключается по WiFi, и создаёт маршруты самостоятельно (требуется root). Внимание: работает только с телефонами с root.</string>
+    <string name="xml_diagnostico">🩺 Диагностика</string>
+    <string name="xml_diminuir_temperatura">Уменьшить температуру</string>
+    <string name="xml_disney">🏰 Disney+</string>
+    <string name="xml_dividir_tela">◫ Разделить экран</string>
+    <string name="xml_drive_confort">РЕЖИМ: COMFORT</string>
+    <string name="xml_dualdashcam">🎥 DualDashcam</string>
+    <string name="xml_eco">🌿 Eco</string>
+    <string name="xml_eco_2">ECO</string>
+    <string name="xml_eisapo">🐸 Ei Sapo</string>
+    <string name="xml_eisapo_desc">Голосовой ассистент авто — скажите Ei Sapo, чтобы управлять без касания экрана.</string>
+    <string name="xml_endereco_p_conectar_o_app_do_celular_por">Адрес для подключения приложения телефона по WiFi</string>
+    <string name="xml_envia_os_dados_do_carro_bateria_velocida">Отправляет данные автомобиля (батарея, скорость и т.д.) в другие приложения автоматически при запуске. При включении сразу активируется.</string>
+    <string name="xml_equalizador">🎚️ Эквалайзер</string>
+    <string name="xml_experimental_depende_do_veiculo_pode_nao">Экспериментально: зависит от автомобиля, может не работать на всех моделях.</string>
+    <string name="xml_explicacao_usar_internet_do_celular">Работает вместе с приложением Central EX Celular на вашем телефоне — использует то же WiFi-соединение Android Auto, чтобы дать интернет автомобилю. Нужно установленное приложение и включённая в нём опция прокси.</string>
+    <string name="xml_favoritos_card_titulo">⭐ Избранное</string>
+    <string name="xml_ferramentas">Инструменты</string>
+    <string name="xml_firefox">🦊 Firefox</string>
+    <string name="xml_forte">▆ Сильная</string>
+    <string name="xml_forte_2">СИЛЬНАЯ</string>
+    <string name="xml_fraca">СЛАБАЯ</string>
+    <string name="xml_fraco">▂ Слабая</string>
+    <string name="xml_fundo_preto_na_re">Чёрный фон при движении задним ходом</string>
+    <string name="xml_geely_battery">🔋 Capy (Battery)</string>
+    <string name="xml_geely_battery_desc">Телеметрия батареи/зарядки для автомобилей Geely (стороннее приложение, Timoteohss).</string>
+    <string name="xml_gerenciador_de_arquivos">📁 Файловый менеджер</string>
+    <string name="xml_gerenciamento_de_conexao_e_servicos">Управление подключением и службами.</string>
+    <string name="xml_gerenciar_apps_ativos">Управление активными приложениями</string>
+    <string name="xml_gerenciar_favoritos">Управление избранным</string>
+    <string name="xml_gestos_download_grande">При первом включении нужно будет скачать пакет размером около 100 МБ. Продолжить?</string>
+    <string name="xml_gestos_explanation">Мультитач-жесты (вентилятор, температура, недавние приложения, камера, избранное) через патч системного лаунчера.</string>
+    <string name="xml_gestos_help_texto">"Проведите 2 пальцами в сторону, чтобы изменить скорость вентилятора.
+Проведите 2 пальцами вертикально, чтобы изменить температуру.
+Коснитесь 3 пальцами, чтобы открыть недавние приложения.
+Коснитесь 4 пальцами, чтобы открыть камеру.
+Коснитесь 5 пальцами, чтобы открыть избранные приложения.
+Добавьте избранные приложения, нажав «Управление избранным»."</string>
+    <string name="xml_gestos_rapidos_desc">Мультитач-жесты в любом месте экрана: скорость вентилятора, температура, недавние приложения, камера и избранное.</string>
+    <string name="xml_gestos_rapidos_titulo">✋ Быстрые жесты</string>
+    <string name="xml_gestos_rapidos_titulo_curto">Быстрые жесты</string>
+    <string name="xml_gestos_reapply_question">⚠️ Переприменить патч жестов при следующем включении машины?</string>
+    <string name="xml_gestos_restore_title">🔄 Включать жесты при загрузке</string>
+    <string name="xml_gestos_status_aplicando">Применение поверх лаунчера…</string>
+    <string name="xml_gestos_status_baixando">Загрузка пакета жестов… %1$d%%</string>
+    <string name="xml_gestos_status_concluido">✅ Готово! Коснитесь 5 пальцами, чтобы проверить избранное.</string>
+    <string name="xml_gestos_status_copiando">Копирование в систему…</string>
+    <string name="xml_gestos_status_falha">❌ Не удалось применить. Проверьте интернет и попробуйте снова.</string>
+    <string name="xml_gestos_status_verificando">Проверка целостности файла…</string>
+    <string name="xml_guardar">Сохранить</string>
+    <string name="xml_hvac_batt_temp_desc">Показывает % заряда на панели автомобиля. Наружная температура появляется рядом, если включить обе.</string>
+    <string name="xml_hvac_exttemp_desc" formatted="false">Показывает внешнюю температуру над % заряда батареи, в том же месте (текст чуть меньше, чтобы поместились оба). Включение этого также включает «% батареи на панели» автоматически, если он ещё не включён.</string>
+    <string name="xml_hvac_exttemp_titulo">Вместе с внешней темп.</string>
+    <string name="xml_hvac_rotulo_bateria">% заряда</string>
+    <string name="xml_hvac_rotulo_temp">Температура</string>
+    <string name="xml_i">ⓘ</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_aj">Значок ▢ в Быстром доступе открывает floater; +/−/⟲ настраивают, ✕ закрывает</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_to">Значок ◫ в Быстром доступе открывает floater; повторное нажатие закрывает всё</string>
+    <string name="xml_icones_independentes_na_barra_de_notific">Независимые значки на панели уведомлений</string>
+    <string name="xml_implementacao_do_youtube_com_interface_a">Клиент YouTube с интерфейсом, адаптированным для авто.</string>
+    <string name="xml_inicio">Главная</string>
+    <string name="xml_instagram_credit">@appsdecarro</string>
+    <string name="xml_instalados">Установленные</string>
+    <string name="xml_instalar">⬇️ Установить</string>
+    <string name="xml_instalar_2">Установить</string>
+    <string name="xml_instalar_ou_remover_apps_do_veiculo">Устанавливать или удалять приложения автомобиля.</string>
+    <string name="xml_instalar_um_arquivo_apk_xapk_apkm">Установить файл (APK / XAPK / APKM)</string>
+    <string name="xml_instrucoes">Инструкции</string>
+    <string name="xml_internet_do_android_auto_via_celular">🌐 Интернет для Android Auto через телефон</string>
+    <string name="xml_ip_da_central">IP ЦЕНТРАЛЬНОГО БЛОКА</string>
+    <string name="xml_janela_acompanha_a_porta">Окно следует за дверью</string>
+    <string name="xml_keep_alive_desc">Не даёт системе закрывать отмеченные приложения в фоне при потере фокуса (например, Spotify во время воспроизведения музыки).</string>
+    <string name="xml_keep_alive_titulo">📌 Всегда активные приложения</string>
+    <string name="xml_keyserver_gestos_volante">Управление на руле</string>
+    <string name="xml_keyserver_status_default">Двойное быстрое нажатие микрофона = Кондиционер (вверх/вниз = температура, влево/вправо = вентилятор), через кнопки медиа. Удерживайте 2 с = Движение/Рекуперация (вверх/вниз = рекуперация, влево/вправо = режим).</string>
+    <string name="xml_lembrar_brilho_da_tela">🔆 Запоминать яркость экрана</string>
+    <string name="xml_ligar">Включить</string>
+    <string name="xml_ligar_wifi_ao_abrir_o_carro">Включать WiFi при открытии авто</string>
+    <string name="xml_limpar">🗑️ Очистить</string>
+    <string name="xml_listar">🔍 Список</string>
+    <string name="xml_log_tecnico_da_sessao">📋 Технический журнал сессии</string>
+    <string name="xml_logger">📝 Logger</string>
+    <string name="xml_media">СРЕДНЯЯ</string>
+    <string name="xml_medio">▄ Средняя</string>
+    <string name="xml_memoria_interna">Внутренняя память</string>
+    <string name="xml_menu_lateral_flutuante_toque_aqui_p_ativ">Плавающее боковое меню — нажмите здесь, чтобы включить и настроить</string>
+    <string name="xml_microg">🔧 microG</string>
+    <string name="xml_minutos">Минуты</string>
+    <string name="xml_modo_automatico_ventoinha">Автоматический режим вентилятора</string>
+    <string name="xml_modo_claro_cores_claras_mais_facil_de_ve">Светлый режим: светлые цвета, легче видно днём.</string>
+    <string name="xml_modo_de_direcao_e_regeneracao">Режим движения и рекуперации</string>
+    <string name="xml_modo_oficina">Режим сервиса</string>
+    <string name="xml_modo_oficina_desc">Делает вид магнитолы заводским перед сдачей автомобиля в сервис.</string>
+    <string name="xml_mostra_o_de_bateria_na_barra_do_carro">Показывает % заряда батареи на панели автомобиля</string>
+    <string name="xml_mostrar_log">📋 Показать журнал</string>
+    <string name="xml_n_0">0</string>
+    <string name="xml_n_1o">1-й</string>
+    <string name="xml_n_50">50%</string>
+    <string name="xml_navegacao_com_transito_em_tempo_real_ver">Навигация с трафиком в реальном времени (версия Android Automotive).</string>
+    <string name="xml_navegacao_e_gerenciamento_de_arquivos">Навигация и управление файлами.</string>
+    <string name="xml_navegador_oficial_da_mozilla_arm64">Официальный браузер Mozilla (arm64).</string>
+    <string name="xml_navegador_web_baseado_em_chromium">Веб-браузер на основе Chromium.</string>
+    <string name="xml_numero_no_lugar_da_roleta_na_barra_do_ca">Число вместо колеса на панели автомобиля</string>
+    <string name="xml_o_app_le_os_audios_da_pasta_data_local_t">Приложение читает аудиофайлы из папки /data/local/tmp/sons на устройстве. Если копируете с флешки, оставьте звуковой файл в корне флешки (не в подпапках), чтобы он был найден.</string>
+    <string name="xml_o_iphone_nao_anuncia_o_carplay_sozinho">Включает всё для CarPlay без проводов: оповещение iPhone, автоподключение и патч при загрузке. Выключено — CarPlay не запускается.</string>
+    <string name="xml_o_som_selecionado_substituira_temporaria">Выбранный звук временно заменит первый звук блокировки автомобиля.</string>
+    <string name="xml_off">OFF</string>
+    <string name="xml_online">ОНЛАЙН</string>
+    <string name="xml_origem_da_lista">Источник списка:</string>
+    <string name="xml_painel_separado_por_funcao">Панель, разделённая по функциям.</string>
+    <string name="xml_pen_drive">Флешка</string>
+    <string name="xml_permite_controlar_a_central_remotamente">Позволяет управлять центральным блоком удалённо через приложение CentralPhoneApp, по WiFi или Bluetooth.</string>
+    <string name="xml_pill_branco">Белый</string>
+    <string name="xml_pill_cor_letra">Цвет текста</string>
+    <string name="xml_pill_desc">Плавающий пузырь с внешней температурой и/или % заряда батареи — удерживайте и перетаскивайте, чтобы переместить в любое место экрана (даже поверх Android Auto).</string>
+    <string name="xml_pill_hint">Удерживайте пузырь и перетаскивайте, чтобы переместить. Быстрое касание открывает сохранённые расписания кондиционера (в разделе Инструменты) — коснитесь одного, чтобы запустить; пока оно выполняется, текст становится зелёным. Коснитесь пузыря ещё раз, чтобы остановить.</string>
+    <string name="xml_pill_mostrar">Показывать</string>
+    <string name="xml_pill_os_dois">Оба</string>
+    <string name="xml_pill_preto">Чёрный</string>
+    <string name="xml_pill_so_bateria">Только батарея</string>
+    <string name="xml_pill_so_temp">Только темп.</string>
+    <string name="xml_pill_tamanho">Размер</string>
+    <string name="xml_pill_titulo">Пузырь темп./батареи</string>
+    <string name="xml_pill_transparencia">Прозрачность фона</string>
+    <string name="xml_pip_de_app">▢ PiP приложения</string>
+    <string name="xml_pip_nativo_help">"Включает встроенный режим «картинка в картинке», отключённый с завода: в SystemUI классы уже есть, но компонент, регистрирующий касания, не запускается — поэтому окно появлялось и не реагировало на палец.
+
+После включения видео из совместимых приложений открывается в окне, которое можно перетаскивать и нажимать. НЕ добавляет PiP приложениям, которые его не поддерживают.
+
+В /system ничего не записывается: это оверлей ресурсов в /data, и выключение здесь всё возвращает. Строка состояния перезапускается на несколько секунд.
+
+Эта функция — оригинальная работа Magno Lima (geely-ex2-pip-overlay), используется с его разрешения."</string>
+    <string name="xml_player_de_video_audio_universal_toca_qua">Универсальный видео/аудио плеер, воспроизводит почти любой формат.</string>
+    <string name="xml_poweramp_equalizer_eq_e_efeitos_de_audio">Poweramp Equalizer — эквалайзер и аудиоэффекты.</string>
+    <string name="xml_prime_video">🎥 Prime Video</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_carplaym">Ищет более новую версию CarplayMonitor и обновляет при необходимости.</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_connadap">Ищет более новую версию ConnAdaptor и спрашивает, установить ли её.</string>
+    <string name="xml_receber_arquivos_do_celular">📂 Получить файлы с телефона</string>
+    <string name="xml_recursos">Функции</string>
+    <string name="xml_rede">Сеть и Auto</string>
+    <string name="xml_rede_conexao">📶 Сеть и подключение</string>
+    <string name="xml_regen_media">РЕКУПЕР.: СРЕДНЯЯ</string>
+    <string name="xml_registro_detalhado_do_que_o_app_fez_desd">Подробная запись действий приложения с момента открытия — полезно для диагностики проблем со службой поддержки.</string>
+    <string name="xml_reinicia_a_central_por_completo">Полностью перезагружает центральный блок (тот же эффект, что выключить и включить).</string>
+    <string name="xml_reinicia_o_android_auto_carplay_poucos_s">Перезапускает Android Auto через несколько секунд после запуска автомобиля, чтобы избежать зависаний.</string>
+    <string name="xml_reiniciar">Перезапустить</string>
+    <string name="xml_reiniciar_2">🔁 Перезапустить</string>
+    <string name="xml_reiniciar_3">Перезапустить</string>
+    <string name="xml_reiniciar_ao_ligar_o_carro">Перезапускать при запуске авто</string>
+    <string name="xml_reiniciar_central">🔁 Перезагрузить центральный блок</string>
+    <string name="xml_remover">🗑️ Удалить</string>
+    <string name="xml_restaura_o_brilho_ao_acordar_dia_noite">Восстанавливает яркость при пробуждении (день/ночь)</string>
+    <string name="xml_restaurar_original">↩️ Восстановить оригинал</string>
+    <string name="xml_salvar_em_downloads">💾 Сохранить в Загрузки</string>
+    <string name="xml_segundos">Секунды</string>
+    <string name="xml_segurar_e_arrastar_para_mover_o_floater">Удерживайте и перетаскивайте, чтобы переместить floater</string>
+    <string name="xml_servicos_do_google_versao_livre_necessar">Сервисы Google (свободная версия), нужны для работы некоторых приложений.</string>
+    <string name="xml_sinal_na_barra">Сигнал на панели</string>
+    <string name="xml_sinal_na_barra_desc">Показывает уровень сигнала модема автомобиля в строке состояния.</string>
+    <string name="xml_sincronizar_com_o_celular">📱 Синхронизация с телефоном</string>
+    <string name="xml_smarttube">📺 SmartTube</string>
+    <string name="xml_som_de_travamento">🔒 Звук блокировки</string>
+    <string name="xml_som_de_travamento_e_volumes_do_carro">Звук блокировки и уровни громкости автомобиля.</string>
+    <string name="xml_sport">🏁 Sport</string>
+    <string name="xml_sport_2">SPORT</string>
+    <string name="xml_status_de_rede_e_depuracao_adb">Состояние сети и отладка ADB.</string>
+    <string name="xml_status_do_carro_e_atalhos_principais_da">Состояние автомобиля и основные ярлыки CentralEXAuto.</string>
+    <string name="xml_str">—</string>
+    <string name="xml_str_2">🎛️</string>
+    <string name="xml_str_3">›</string>
+    <string name="xml_str_4">−</string>
+    <string name="xml_str_5">--°</string>
+    <string name="xml_str_6">+</string>
+    <string name="xml_str_7">--</string>
+    <string name="xml_str_8">...</string>
+    <string name="xml_str_9">⋮</string>
+    <string name="xml_streaming_amazon_prime_video_versao_andr">Стриминг Amazon Prime Video (версия Android Automotive).</string>
+    <string name="xml_streaming_disney_pixar_marvel_star_wars">Стриминг Disney/Pixar/Marvel/Star Wars (версия Android Automotive).</string>
+    <string name="xml_telemetria_ao_ligar_o_carro">📊 Телеметрия при запуске автомобиля</string>
+    <string name="xml_temp">🌡️ Темп.</string>
+    <string name="xml_temp_bateria_hv">💾 СВОБОДНО МЕСТА</string>
+    <string name="xml_temp_e_bateria_na_barra">🌡️ Темп. и батарея на панели</string>
+    <string name="xml_temp_externa">Внешняя темп.</string>
+    <string name="xml_temperatura_da_bateria_de_tracao_alta_vo">Свободное место в хранилище центрального блока</string>
+    <string name="xml_temperatura_digital">Цифровая температура кондиционера</string>
+    <string name="xml_temperatura_toque_abre_programas_de_vent">Температура; нажмите, чтобы открыть режимы вентилятора</string>
+    <string name="xml_tensao_da_bateria_comum_do_carro">Напряжение вспомогательной батареи 12В</string>
+    <string name="xml_tipo_de_som">🎵 Тип звука</string>
+    <string name="xml_toque_no_icone_liga_o_wifi_e_abre_o_menu">Нажатие на значок включает WiFi и открывает меню</string>
+    <string name="xml_usar_internet_do_celular">Использовать интернет телефона</string>
+    <string name="xml_use_quando_o_android_auto_conectar_mas_o">Используйте, когда Android Auto подключается, но приложения (карты, музыка) не загружают данные — это освобождает интернет телефона для работы приложения.</string>
+    <string name="xml_vent_final">Вент. кон.</string>
+    <string name="xml_vent_inicial">Вент. нач.</string>
+    <string name="xml_verifica_se_ha_uma_nova_versao_da_centra">Проверяет, есть ли новая версия CentralEXAuto для установки.</string>
+    <string name="xml_versao_centralexauto">Версия — · CentralEXAuto</string>
+    <string name="xml_visao_geral">Обзор</string>
+    <string name="xml_vlc">🎬 VLC</string>
+    <string name="xml_waze">🧭 Waze</string>
+    <string name="xml_wifi">WiFi</string>
+    <string name="xml_wifi_na_barra">WiFi на панели</string>
+    <string name="xml_wireless">Беспроводной</string>
+    <string name="xml_x2">x2</string>
+    <string name="xml_x4">x4</string>
+</resources>

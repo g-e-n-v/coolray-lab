@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MasterToolsPageRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MasterToolsPageHeader">
+        <TextView android:text="@string/k_eyebrow_seguranca" style="@style/MasterToolsPageTitle" />
+        <ImageView android:id="@id/masterToolsSecurityHelp" android:contentDescription="@string/master_help" style="@style/MasterToolsHelpIcon" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="8.0dp">
+            <TextView android:text="@string/master_rear_camera" style="@style/MasterToolsSectionHeader" />
+            <LinearLayout android:id="@id/masterToolsSecurityRvcRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_rvc_black_bg_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecurityRvcSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <TextView android:text="@string/master_turn_camera" style="@style/MasterToolsSectionHeader" />
+            <LinearLayout android:id="@id/masterToolsSecurityTurnCameraRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_show_on_turn" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecurityTurnCameraSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsSecurityTurnCameraHoldRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_keep_open_five_seconds" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecurityTurnCameraHoldSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <LinearLayout style="@style/MasterToolsPageHeader">
+                <TextView android:layout_width="0.0dp" android:text="@string/master_active_safety" android:layout_weight="1.0" style="@style/MasterToolsSectionHeader" />
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/master_text_muted" android:gravity="center" android:id="@id/masterToolsSecurityAebStatus" android:background="@drawable/bg_master_state_inactive" android:layout_width="132.0dp" android:layout_height="38.0dp" android:text="@string/master_aeb_inactive" android:layout_marginEnd="10.0dp" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterToolsSecurityAebRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_aeb_emergency_braking" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecurityAebSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsSecurityAebRestoreRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/master_aeb_reapply_on_start" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecurityAebRestoreSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterToolsSecuritySpeedLockRow" style="@style/MasterToolsOptionRow.Clickable">
+                <TextView android:text="@string/k_speed_lock_title" style="@style/MasterToolsOptionText" />
+                <com.ex.auto.MasterToggleView android:id="@id/masterToolsSecuritySpeedLockSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

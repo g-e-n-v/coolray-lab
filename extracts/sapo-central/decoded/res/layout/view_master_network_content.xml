@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/masterNetworkContent" style="@style/MasterContentRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/k_nav_network_connection" style="@style/MasterContentTitle" />
+    <TextView android:text="@string/master_network_description" style="@style/MasterContentDescription" />
+    <LinearLayout android:orientation="horizontal" android:baselineAligned="false" style="@style/MasterContentPanel">
+        <LinearLayout android:orientation="vertical" android:layout_width="340.0dp" android:layout_height="match_parent">
+            <LinearLayout android:id="@id/masterNetworkWifiNav" android:background="@drawable/bg_master_tools_selected" style="@style/MasterInnerNavRow">
+                <View android:background="@color/master_green" android:layout_width="4.0dp" android:layout_height="40.0dp" />
+                <TextView android:text="Wi‑Fi" style="@style/MasterInnerNavText" />
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+            <LinearLayout android:id="@id/masterNetworkAndroidNav" style="@style/MasterInnerNavRow">
+                <View android:background="@color/master_green" android:visibility="invisible" android:layout_width="4.0dp" android:layout_height="40.0dp" />
+                <TextView android:text="@string/master_aa_carplay" style="@style/MasterInnerNavText" />
+                <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" />
+            </LinearLayout>
+            <View style="@style/MasterToolsDivider" />
+        </LinearLayout>
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" />
+        <ViewFlipper android:id="@id/masterNetworkPageFlipper" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <LinearLayout style="@style/MasterToolsPageRoot">
+                <LinearLayout style="@style/MasterToolsPageHeader">
+                    <TextView android:id="@id/masterNetworkWifiTitle" android:text="Wi‑Fi" style="@style/MasterToolsPageTitle" />
+                    <ImageView android:id="@id/masterNetworkWifiHelp" style="@style/MasterToolsHelpIcon" />
+                </LinearLayout>
+                <TextView android:text="@string/k_eyebrow_conectividade" style="@style/MasterToolsSectionHeader" />
+                <LinearLayout android:id="@id/masterNetworkWifiAutoRow" style="@style/MasterToolsOptionRow.Clickable">
+                    <TextView android:text="@string/master_wifi_on_car_open" style="@style/MasterToolsOptionText" />
+                    <com.ex.auto.MasterToggleView android:id="@id/masterNetworkWifiAutoSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+                <View style="@style/MasterToolsDivider" />
+                <LinearLayout android:id="@id/masterNetworkTelemetryRow" style="@style/MasterToolsOptionRow.Clickable">
+                    <TextView android:text="@string/master_telemetry_on_car_start" style="@style/MasterToolsOptionText" />
+                    <com.ex.auto.MasterToggleView android:id="@id/masterNetworkTelemetrySwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+                <View style="@style/MasterToolsDivider" />
+                <LinearLayout android:id="@id/masterNetworkPhoneSyncRow" style="@style/MasterToolsOptionRow.Clickable">
+                    <TextView android:text="@string/master_sync_with_phone" style="@style/MasterToolsOptionText" />
+                    <com.ex.auto.MasterToggleView android:id="@id/masterNetworkPhoneSyncSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+                <LinearLayout android:paddingEnd="14.0dp" style="@style/MasterToolsPageRoot">
+                    <LinearLayout style="@style/MasterToolsPageHeader">
+                        <TextView android:text="@string/master_aa_carplay" style="@style/MasterToolsPageTitle" />
+                        <ImageView android:id="@id/masterNetworkAndroidHelp" style="@style/MasterToolsHelpIcon" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/MasterToolsOptionRow">
+                        <TextView android:text="@string/master_conexao_wifi" style="@style/MasterToolsOptionText" />
+                        <TextView android:id="@id/masterNetworkAndroidActivate" android:text="@string/xml_ativar" style="@style/MasterActionButton.Primary" />
+                        <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                        <TextView android:id="@id/masterNetworkAndroidRestart" android:text="@string/common_restart" style="@style/MasterActionButton" />
+                        <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                        <TextView android:id="@id/masterNetworkAndroidInstructions" android:text="@string/xml_instrucoes" style="@style/MasterActionButton" />
+                    </LinearLayout>
+                    <View style="@style/MasterToolsDivider" />
+                    <LinearLayout style="@style/MasterToolsOptionRow">
+                        <TextView android:text="@string/k_connadaptor_modo_titulo_master" style="@style/MasterToolsOptionText" />
+                        <TextView android:id="@id/masterNetworkModoAa" android:text="@string/k_modo_aa" style="@style/MasterActionButton" />
+                        <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                        <TextView android:id="@id/masterNetworkModoAmbos" android:minWidth="220.0dp" android:text="@string/k_modo_ambos" style="@style/MasterActionButton" />
+                    </LinearLayout>
+                    <View style="@style/MasterToolsDivider" />
+                    <LinearLayout style="@style/MasterToolsOptionRow">
+                        <TextView android:text="@string/k_connadaptor_versao_titulo" style="@style/MasterToolsOptionText" />
+                        <TextView android:id="@id/masterNetworkVersao1111" android:text="@string/k_connadaptor_versao_1111" style="@style/MasterActionButton" />
+                        <Space android:layout_width="12.0dp" android:layout_height="1.0dp" />
+                        <TextView android:id="@id/masterNetworkVersao1114" android:text="@string/k_connadaptor_versao_1114" style="@style/MasterActionButton" />
+                    </LinearLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterNetworkConnadaptorStatus" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:paddingStart="16.0dp" style="@style/MasterToolsOptionText" />
+                    <TextView android:text="@string/k_eyebrow_automacao" style="@style/MasterToolsSectionHeader" />
+                    <LinearLayout style="@style/MasterToolsOptionRow">
+                        <TextView android:text="@string/k_celular_preferido_titulo" style="@style/MasterToolsOptionText" />
+                        <TextView android:id="@id/masterNetworkAndroidPreferredPhone" android:minWidth="240.0dp" android:text="@string/master_any_phone" style="@style/MasterActionButton" />
+                    </LinearLayout>
+                    <View style="@style/MasterToolsDivider" />
+                    <LinearLayout android:id="@id/masterNetworkAndroidKeepOpenRow" style="@style/MasterToolsOptionRow.Clickable">
+                        <TextView android:text="@string/k_ap_aberto_titulo" style="@style/MasterToolsOptionText" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterNetworkAndroidKeepOpenSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <TextView android:text="@string/master_internet" style="@style/MasterToolsSectionHeader" />
+                    <View style="@style/MasterToolsDivider" />
+                    <LinearLayout android:id="@id/masterNetworkAndroidProxyRow" style="@style/MasterToolsOptionRow.Clickable">
+                        <TextView android:text="@string/k_internet_sem_root" style="@style/MasterToolsOptionText" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterNetworkAndroidProxySwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/MasterToolsOptionRow">
+                        <TextView android:text="@string/k_internet_com_root" style="@style/MasterToolsOptionText" />
+                        <TextView android:id="@id/masterNetworkAndroidCreateRoutes" android:text="@string/k_create_routes_short" style="@style/MasterActionButton.Primary" />
+                        <Space android:layout_width="18.0dp" android:layout_height="1.0dp" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterNetworkAndroidAutoRoutesSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </ViewFlipper>
+    </LinearLayout>
+</LinearLayout>

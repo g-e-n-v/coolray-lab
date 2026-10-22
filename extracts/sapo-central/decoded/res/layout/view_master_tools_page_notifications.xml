@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MasterToolsPageRoot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MasterToolsPageHeader">
+        <TextView android:text="@string/master_notification_bar" style="@style/MasterToolsPageTitle" />
+        <ImageView android:id="@id/masterToolsNotificationsHelp" android:contentDescription="@string/master_help" style="@style/MasterToolsHelpIcon" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/masterToolsNotificationBatteryRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/master_car_battery" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsNotificationBatterySwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout android:id="@id/masterToolsNotificationTempRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/k_temp_icon_title" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsNotificationTempSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout android:id="@id/masterToolsNotificationWifiRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="Wi-Fi" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsNotificationWifiSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+    <View style="@style/MasterToolsDivider" />
+    <LinearLayout android:id="@id/masterToolsNotificationSignalRow" style="@style/MasterToolsOptionRow.Clickable">
+        <TextView android:text="@string/xml_sinal_na_barra" style="@style/MasterToolsOptionText" />
+        <com.ex.auto.MasterToggleView android:id="@id/masterToolsNotificationSignalSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/collapsed_circle" android:background="@drawable/bg_pill_green" android:layout_width="64.0dp" android:layout_height="64.0dp" android:foreground="@drawable/fg_circle_stroke">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:id="@id/top_half" android:background="@color/cx_accent" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <View android:id="@id/bottom_half" android:background="@color/cx_accent" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/expanded_panel" android:background="@drawable/bg_panel" android:padding="12.0dp" android:visibility="gone" android:layout_width="220.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/cx_text_secondary" android:gravity="center_horizontal" android:id="@id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xml_str_8" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:id="@id/tv_regen_current" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/xml_regen_media" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_regen_high" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_forte_2" android:layout_weight="1.0" />
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_regen_mid" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_media" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_regen_low" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_fraca" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:id="@id/tv_drive_current" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:text="@string/xml_drive_confort" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp">
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_drive_eco" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_eco_2" android:layout_weight="1.0" />
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_drive_comfort" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_confort" android:layout_weight="1.0" android:layout_marginStart="6.0dp" android:layout_marginEnd="6.0dp" />
+            <TextView android:textStyle="bold" android:textColor="@color/cx_text_hi" android:gravity="center" android:id="@id/btn_drive_sport" android:background="@drawable/bg_preset_chip" android:layout_width="0.0dp" android:layout_height="40.0dp" android:text="@string/xml_sport_2" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

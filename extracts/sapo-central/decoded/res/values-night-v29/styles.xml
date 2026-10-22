@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TelaPretaCentral" parent="@style/Theme.MaterialComponents.NoActionBar">
+        <item name="android:colorBackground">@color/cx_bg_root</item>
+        <item name="android:windowBackground">@color/cx_bg_root</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:statusBarColor">@color/cx_bg_root</item>
+        <item name="android:navigationBarColor">@color/cx_bg_root</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorError">@color/cx_danger</item>
+        <item name="colorOnPrimary">@color/cx_on_accent</item>
+        <item name="colorOnSurface">@color/cx_text_primary</item>
+        <item name="colorPrimary">@color/cx_accent</item>
+        <item name="colorPrimaryVariant">@color/cx_accent_blue</item>
+        <item name="colorSecondary">@color/cx_accent_blue</item>
+        <item name="colorSurface">@color/cx_surface</item>
+        <item name="fontFamily">@font/inter</item>
+    </style>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/masterToolsContent" android:paddingTop="@dimen/master_content_padding_v" android:paddingBottom="36.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/master_content_padding_h" android:paddingEnd="@dimen/master_content_padding_h"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xml_ferramentas" />
+    <TextView android:textSize="22.0sp" android:textColor="@color/master_text_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/master_tools_description" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_card" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="30.0dp" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="340.0dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsInterfaceHeader" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="62.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="14.0dp" android:paddingEnd="12.0dp">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_card_screen" android:tint="@color/master_text" android:contentDescription="@null" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_interface" android:layout_weight="1.0" android:layout_marginStart="18.0dp" />
+                <ImageView android:id="@id/masterToolsInterfaceChevron" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_down" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/masterToolsInterfaceItems" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsTela" android:background="@drawable/bg_master_tools_selected" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="54.0dp" android:foreground="?android:selectableItemBackground">
+                    <View android:background="@color/master_green" android:layout_width="4.0dp" android:layout_height="40.0dp" android:layout_marginStart="14.0dp" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k_qa_screen_chip" android:layout_marginStart="28.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsNotifications" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="54.0dp" android:foreground="?android:selectableItemBackground">
+                    <View android:background="@color/master_green" android:visibility="invisible" android:layout_width="4.0dp" android:layout_height="40.0dp" android:layout_marginStart="14.0dp" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_notification_bar" android:layout_marginStart="28.0dp" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsStatus" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="54.0dp" android:foreground="?android:selectableItemBackground">
+                    <View android:background="@color/master_green" android:visibility="invisible" android:layout_width="4.0dp" android:layout_height="40.0dp" android:layout_marginStart="14.0dp" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_status_bar" android:layout_marginStart="28.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsCar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="14.0dp" android:paddingEnd="12.0dp">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_master_tools_car" android:tint="@color/master_text" android:contentDescription="@null" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_car" android:layout_weight="1.0" android:layout_marginStart="18.0dp" />
+                <ImageView android:id="@id/masterToolsCarChevron" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" />
+            </LinearLayout>
+            <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsClimate" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="14.0dp" android:paddingEnd="12.0dp">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_master_tools_climate" android:tint="@color/master_text" android:contentDescription="@null" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/k_eyebrow_clima" android:layout_weight="1.0" android:layout_marginStart="18.0dp" />
+                <ImageView android:id="@id/masterToolsClimateChevron" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" />
+            </LinearLayout>
+            <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsSecurity" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="14.0dp" android:paddingEnd="12.0dp">
+                <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_card_shield" android:tint="@color/master_text" android:contentDescription="@null" />
+                <TextView android:textSize="24.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/k_eyebrow_seguranca" android:layout_weight="1.0" android:layout_marginStart="18.0dp" />
+                <ImageView android:id="@id/masterToolsSecurityChevron" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginStart="32.0dp" android:layout_marginEnd="32.0dp" />
+        <ScrollView android:id="@id/masterToolsPageScroll" android:scrollbars="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:fillViewport="true" android:layout_weight="1.0">
+            <ViewFlipper android:id="@id/masterToolsPageFlipper" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/masterToolsPageScreen" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="62.0dp" android:paddingStart="2.0dp">
+                        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k_qa_screen_chip" />
+                        <ImageView android:id="@id/masterToolsHelp" android:padding="2.0dp" android:focusable="true" android:clickable="true" android:layout_width="34.0dp" android:layout_height="34.0dp" android:foreground="?android:selectableItemBackgroundBorderless" android:src="@drawable/ic_master_help" android:contentDescription="@string/master_help" android:layout_marginStart="18.0dp" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsPipNativoRow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_pip_nativo" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/masterToolsPipNativoHelp" android:contentDescription="@string/master_help" android:layout_marginEnd="16.0dp" style="@style/MasterToolsHelpIcon" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterToolsPipNativoSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsGesturesRow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_quick_gestures" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/masterToolsGesturesHelp" android:contentDescription="@string/master_help" android:layout_marginEnd="16.0dp" style="@style/MasterToolsHelpIcon" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterToolsGesturesSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:id="@id/masterToolsAcSingleStepRow" style="@style/MasterToolsOptionRow.Clickable">
+                        <TextView android:text="@string/master_ac_single_step" style="@style/MasterToolsOptionText" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterToolsAcSingleStepSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsManageGestures" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_quick_gesture_favorites" android:layout_weight="1.0" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_manage" />
+                        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" android:layout_marginStart="10.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72.0dp" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="210.0dp" android:layout_height="wrap_content" android:text="@string/master_brightness" />
+                        <SeekBar android:id="@id/masterToolsBrightness" android:layout_width="0.0dp" android:layout_height="wrap_content" android:max="100" android:progress="70" android:layout_weight="1.0" android:progressTint="@color/master_green" android:progressBackgroundTint="@color/master_divider" android:thumbTint="@color/master_green" android:min="5" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/master_text" android:gravity="end" android:id="@id/masterToolsBrightnessValue" android:layout_width="66.0dp" android:layout_height="wrap_content" android:text="70%" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsRememberBrightnessRow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_remember_brightness" android:layout_weight="1.0" />
+                        <com.ex.auto.MasterToggleView android:id="@id/masterToolsRememberBrightnessSwitch" android:layout_width="56.0dp" android:layout_height="32.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="72.0dp" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_screen_rest" android:layout_weight="1.0" />
+                        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_segment" android:padding="3.0dp" android:layout_width="400.0dp" android:layout_height="48.0dp">
+                            <TextView android:id="@id/masterToolsRestOff" android:text="@string/master_rest_disabled" style="@style/MasterToolsSegmentButton" />
+                            <TextView android:id="@id/masterToolsRest30" android:text="30 s" style="@style/MasterToolsSegmentButton" />
+                            <TextView android:id="@id/masterToolsRest60" android:text="1 min" style="@style/MasterToolsSegmentButton" />
+                            <TextView android:id="@id/masterToolsRest120" android:text="2 min" style="@style/MasterToolsSegmentButton" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsSplitRow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/k_qa_split_screen" android:layout_weight="1.0" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k_abrir" />
+                        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" android:layout_marginStart="10.0dp" />
+                    </LinearLayout>
+                    <View android:background="@color/master_divider" android:layout_width="match_parent" android:layout_height="1.0dp" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterToolsPipRow" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="72.0dp" android:foreground="?android:selectableItemBackground" android:paddingStart="2.0dp" android:paddingEnd="10.0dp">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_floating_app" android:layout_weight="1.0" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/k_abrir" />
+                        <ImageView android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_master_chevron_right" android:contentDescription="@null" android:layout_marginStart="10.0dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <include layout="@layout/view_master_tools_page_notifications" />
+                <include layout="@layout/view_master_tools_page_status" />
+                <include layout="@layout/view_master_tools_page_car" />
+                <include layout="@layout/view_master_tools_page_climate" />
+                <include layout="@layout/view_master_tools_page_security" />
+            </ViewFlipper>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">EX Sapo Central</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="blackout_floater_channel">Tela preta (floater)</string>
+    <string name="blackout_floater_notif">Bolinha da tela preta ativa</string>
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+    <string name="btn_search_central_update">Buscar Atualização do Central Auto</string>
+    <string name="button_desc_off">Ligar modo tela preta</string>
+    <string name="button_desc_on">Desligar modo tela preta</string>
+    <string name="camera_on_drive_description">A câmera do carro será aberta ao colocar em D, para auxiliar nas manobras em baixa velocidade. Desativado por padrão.</string>
+    <string name="camera_on_drive_section">Câmera</string>
+    <string name="camera_on_drive_title">Abrir aplicativo de câmera ao colocar em D</string>
+    <string name="carplaymonitor_update_checking">Verificando o CarplayMonitor…</string>
+    <string name="carplaymonitor_update_uptodate">CarplayMonitor já está atualizado (MD5 igual).</string>
+    <string name="carplaymonitor_updated_message">"O binário foi atualizado em /data/local/tmp/fixes/CarplayMonitor.
+
+Toque em Ativar CarPlay para aplicar o novo binário."</string>
+    <string name="carplaymonitor_updated_title">CarplayMonitor atualizado</string>
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="chip_text">Chip text</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="common_apply">Aplicar</string>
+    <string name="common_attention">Atenção</string>
+    <string name="common_cancel">Cancelar</string>
+    <string name="common_confirm">Confirmar</string>
+    <string name="common_continue">Continuar</string>
+    <string name="common_install">Instalar</string>
+    <string name="common_no">Não</string>
+    <string name="common_not_now">Agora não</string>
+    <string name="common_ok">OK</string>
+    <string name="common_restart">Reiniciar</string>
+    <string name="common_yes">Sim</string>
+    <string name="connadaptor_rebind_message">"O ConnAdaptor foi substituído, o bind foi removido (se existia) e o AAutoMonitor foi reiniciado.
+
+Volte à secção Android Auto Wi-Fi e toque em Ativar para voltar a aplicar o bind."</string>
+    <string name="connadaptor_rebind_title">ConnAdaptor atualizado</string>
+    <string name="connadaptor_update_cancel">Cancelar</string>
+    <string name="connadaptor_update_checking">Verificando o ConnAdaptor…</string>
+    <string name="connadaptor_update_continue">Continuar</string>
+    <string name="connadaptor_update_uptodate">O ConnAdaptor já está atualizado.</string>
+    <string name="connadaptor_update_warning_message">Esse update é para o aplicativo que corrigi o fluxo do Android Auto Wi-Fi, só atualize se estiver com problemas ou for avisado para atualizar.</string>
+    <string name="connadaptor_update_warning_title">Aviso — atualização ConnAdaptor</string>
+    <string name="cover_full_screen_toggle">Cobrir tela inteira quando ativar</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="floater_label">Floater:</string>
+    <string name="floater_off">DESLIGADO</string>
+    <string name="floater_on">LIGADO</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="hint_need_permission">Conceda a permissão de sobreposição para usar a bolinha flutuante.</string>
+    <string name="hint_ready">Floater ligado: toque na bolinha para ligar/desligar. Com opção ativa, cobre toda a tela; com opção desativada, mantém controles visíveis.</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="k_aa_wifi_detected_applying_routes">AA WiFi detectado — aplicando rotas…</string>
+    <string name="k_aa_wifi_help_message">"Se o Android Auto sem fio parar de conectar ou ficar instável, siga esta sequência na ordem:
+
+1. No celular, saia do programa beta do Android Auto (se estiver participando).
+2. No celular, limpe os dados do app Android Auto.
+3. Nas configurações de Bluetooth do celular, esqueça a central.
+4. Nas configurações de Bluetooth da central, esqueça o celular.
+5. Em Config, toque em Buscar atualização (ela verifica o ConnAdaptor junto).
+6. Quando terminar, volte à tela inicial e toque em Ativar aqui.
+7. Inicie o pareamento pelo Bluetooth da central e aceite a conexão no celular.
+8. Reinicie a central segurando Voltar + Música no volante por 15 segundos.
+9. Toque em Ativar novamente.
+
+Observação: se ao ligar o carro e tocar em Android Auto na tela ele não conectar em cerca de 1 minuto, toque em Reiniciar."</string>
+    <string name="k_aa_wifi_help_title">Android Auto Wi-Fi — ajuda</string>
+    <string name="k_aa_wireless_auto_off">AA sem fio automático desligado</string>
+    <string name="k_aa_wireless_auto_on">AA sem fio automático ligado (dispara no BT)</string>
+    <string name="k_abrir">Abrir</string>
+    <string name="k_ac_edit_add_fan">+ Velocidade</string>
+    <string name="k_ac_edit_add_recirc">+ Recirculação de Ar</string>
+    <string name="k_ac_edit_add_step_label">Adicionar passo</string>
+    <string name="k_ac_edit_add_temp">+ Temperatura</string>
+    <string name="k_ac_edit_add_wait">+ Tempo</string>
+    <string name="k_ac_edit_confirm_delete">Excluir esta programação? Essa ação não pode ser desfeita.</string>
+    <string name="k_ac_edit_delete">Excluir</string>
+    <string name="k_ac_edit_dialog_add">Adicionar</string>
+    <string name="k_ac_edit_dialog_fan_title">Velocidade do vento (0–7)</string>
+    <string name="k_ac_edit_dialog_recirc_title">Recirculação de Ar</string>
+    <string name="k_ac_edit_dialog_temp_title">Temperatura (°C)</string>
+    <string name="k_ac_edit_dialog_wait_min">Minutos</string>
+    <string name="k_ac_edit_dialog_wait_sec">Segundos</string>
+    <string name="k_ac_edit_dialog_wait_title">Tempo de espera</string>
+    <string name="k_ac_edit_empty_hint">Adicione passos usando os botões abaixo.</string>
+    <string name="k_ac_edit_need_step">Adicione ao menos um passo antes de salvar.</string>
+    <string name="k_ac_edit_recirc_external">🌬️ Ar externo (captar de fora)</string>
+    <string name="k_ac_edit_recirc_external_short">Ar externo</string>
+    <string name="k_ac_edit_recirc_internal">🔄 Ar interno (recircular)</string>
+    <string name="k_ac_edit_recirc_internal_short">Ar interno</string>
+    <string name="k_ac_edit_repeat">Repetir ao final</string>
+    <string name="k_ac_edit_restore">Retornar aos valores anteriores</string>
+    <string name="k_ac_edit_save">Salvar</string>
+    <string name="k_ac_edit_step_fan">Velocidade do vento: %d</string>
+    <string name="k_ac_edit_step_recirc">Recirculação: %s</string>
+    <string name="k_ac_edit_step_temp">Temperatura: %d°C</string>
+    <string name="k_ac_edit_step_wait">Aguardar: %s</string>
+    <string name="k_ac_edit_title_edit">Editar programação</string>
+    <string name="k_ac_edit_title_new">Nova programação</string>
+    <string name="k_ac_list_back">Voltar</string>
+    <string name="k_ac_list_create">Criar</string>
+    <string name="k_ac_list_edit">Editar</string>
+    <string name="k_ac_list_empty_slot">Vazio — nenhum passo definido</string>
+    <string name="k_ac_list_title">Programações de Ar</string>
+    <string name="k_ac_program_count">%1$d de %2$d programações salvas</string>
+    <string name="k_ac_program_count_zero">Nenhuma programação salva</string>
+    <string name="k_ac_program_manage_btn">Gerenciar programações</string>
+    <string name="k_ac_slot_label">Programação %d</string>
+    <string name="k_activate_side_menu">Ativar menu lateral</string>
+    <string name="k_activated_md5">Ativado (md5=%1$s…)</string>
+    <string name="k_activated_plain">Ativado</string>
+    <string name="k_activated_with_icon">Ativado</string>
+    <string name="k_activating">Ativando</string>
+    <string name="k_activating_carplay">Ativando CarPlay...</string>
+    <string name="k_activating_carplay_toast">Ativando CarPlay</string>
+    <string name="k_activating_connadaptor_bind">Ativando ConnAdaptor (bind + force-stop)…</string>
+    <string name="k_activating_proxy">Ativando Proxy...</string>
+    <string name="k_adb_service_error">Erro: ADB não respondeu</string>
+    <string name="k_adb_service_started">Serviço ADB iniciado</string>
+    <string name="k_adb_usb_on">🔌 ADB por USB: ON</string>
+    <string name="k_adjust_failed">Ajuste falhou: %1$s</string>
+    <string name="k_aeb_explanation">AEB = frenagem automática de emergência do carro.</string>
+    <string name="k_aeb_function_desc">Liga ou desliga o AEB (frenagem automática de emergência) no carro. A seta ↺ ao lado mantém sua escolha: reaplica sempre que você desligar e ligar o carro.</string>
+    <string name="k_aeb_function_title">Função AEB</string>
+    <string name="k_aeb_off_label">Desligado</string>
+    <string name="k_aeb_on_label">Ligado</string>
+    <string name="k_aeb_reapply_on_msg">O AEB voltará ao estado que você escolheu (ligado ou desligado) sempre que você desligar e ligar o carro, ou reiniciar a central.</string>
+    <string name="k_aeb_reapply_on_title">🔄 Reaplicar AEB no boot</string>
+    <string name="k_aeb_reapply_question">⚠️ Ativando isto, o AEB vai permanecer desligado sempre que você abrir o carro ou reiniciar a central.</string>
+    <string name="k_aeb_restore_persistent_desc">Ligando este botão, o AEB será desligado sempre que você abrir o carro ou reiniciar a central. Use com responsabilidade — qualquer consequência em razão desta opção é de inteira responsabilidade sua.</string>
+    <string name="k_aeb_restore_title">🛑 Desligar AEB no boot</string>
+    <string name="k_aeb_restore_title_card">Desligar AEB no boot</string>
+    <string name="k_aeb_sent_unconfirmed">Comando de AEB enviado, mas o carro não confirmou (normal fora do carro)</string>
+    <string name="k_aeb_turned_off">AEB desligado</string>
+    <string name="k_aeb_turned_on">AEB ligado</string>
+    <string name="k_aeb_write_failed">Não foi possível alterar o AEB no carro</string>
+    <string name="k_already_latest_version">Já na versão mais recente (v%1$s)</string>
+    <string name="k_android_auto_deactivated">Android Auto desativado</string>
+    <string name="k_ap_aberto_desc">Deixa a rede do carro no ar antes do celular chegar — o Android Auto conecta cerca de 10 s mais rápido. Em troca, a central não usa WiFi como cliente enquanto o AP estiver aberto (a rádio é uma só): sem internet por WiFi e sem ADB por WiFi.</string>
+    <string name="k_ap_aberto_switch">Abrir no boot e a cada conexão Bluetooth</string>
+    <string name="k_ap_aberto_titulo">AP sempre aberto</string>
+    <string name="k_apkm_corrupted">"Arquivo .apkm corrompido ou incompleto.
+Baixe ou copie novamente."</string>
+    <string name="k_app_abrindo_oficial">Abrindo a página oficial do app…</string>
+    <string name="k_app_pip_disabled">PiP de app desligado</string>
+    <string name="k_app_pip_enabled_hint">PiP de app ligado — ícone ▢ no Acesso Rápido</string>
+    <string name="k_app_pip_info_text">Ícone ▢ no Acesso Rápido: 1º toque abre o floater (toque no PIP pra escolher o app); +/− ajusta o tamanho em 20%, ⟲ gira 16:9 ↔ 9:16, ✕ fecha o app. Toque de novo no ▢ fecha tudo. Fica vigiando a cada 2s pra trazer a janela de volta se outro app cobrir. Precisa de freeform ativado no aparelho (mesmo ajuste do Dividir tela) — verificando…</string>
+    <string name="k_app_remove_failed">Não foi possível remover o aplicativo.</string>
+    <string name="k_app_removed_success">Aplicativo removido com sucesso.</string>
+    <string name="k_app_sem_navegador">Sem navegador para abrir: %1$s</string>
+    <string name="k_applied">Aplicado.</string>
+    <string name="k_apply_failed_check_internet">Falha ao aplicar (verifique a internet).</string>
+    <string name="k_applying">Aplicando...</string>
+    <string name="k_applying_bind_named">Aplicando bind: %1$s</string>
+    <string name="k_applying_persist_named">Aplicando som persistente: %1$s…</string>
+    <string name="k_atalhos_menu_falhou">Não deu para abrir o menu</string>
+    <string name="k_atalhos_menu_titulo">Abrir</string>
+    <string name="k_ativacao_carplay_desligado">O CarPlay sem fio está DESLIGADO. Para usá-lo, ligue o botão “CarPlay sem fio” aqui nesta tela — o Android Auto já funciona sem ele.</string>
+    <string name="k_ativacao_concluida">Instalação concluída. Os serviços de conexão foram iniciados; o CarPlay ainda aguarda a confirmação do monitor.</string>
+    <string name="k_ativar_precisa_reiniciar">O ConnAdaptor será instalado e os serviços de conexão serão reiniciados. A conexão com o celular pode ser interrompida durante a ativação.</string>
+    <string name="k_ativar_titulo">Android Auto + CarPlay Wi-Fi</string>
+    <string name="k_audio_delete_failed">Não foi possível apagar o áudio.</string>
+    <string name="k_audio_deleted">Áudio apagado.</string>
+    <string name="k_auto_proxy_applied">Proxy automático aplicado: %1$s:%2$d</string>
+    <string name="k_auto_update_desc">Baixa e instala sozinho quando encontra uma versão nova do canal escolhido. Desligado = só atualiza pelo botão Verificar atualização.</string>
+    <string name="k_auto_update_in_progress">Já existe uma atualização em andamento (%1$s). Aguarde a conclusão.</string>
+    <string name="k_auto_update_title">Atualizar automaticamente</string>
+    <string name="k_autoroute_applied_ok">AutoRota: rotas aplicadas OK</string>
+    <string name="k_autoroute_applied_sem_referencia">AutoRota: rotas aplicadas (sem o tbox0 para conferir a marca)</string>
+    <string name="k_autoroute_apply_error">AutoRota: erro ao aplicar rotas</string>
+    <string name="k_autoroute_fwmark_diverged">AutoRota: fwmark divergiu — execute Criar Rotas manualmente</string>
+    <string name="k_avas_sound_applied">Tipo de som do AVAS aplicado.</string>
+    <string name="k_avas_sound_rejected">Este veículo não aceitou a mudança de som do AVAS.</string>
+    <string name="k_avm_normal">Log da câmera 360 normal.</string>
+    <string name="k_avm_silenced">Log da câmera 360 silenciado.</string>
+    <string name="k_ban_blocked_message">A distribuição do Sapo é gratuita e não pode ser usada em vendas ou como propaganda de serviços de desbloqueios. Seu uso foi desativado. Se você pagou pelo desbloqueio, peça reembolso a quem te enganou e mostre o comprovante ao desenvolvedor para voltar a utilizar o aplicativo.</string>
+    <string name="k_ban_lifted_toast">Bloqueio removido — bem-vindo de volta!</string>
+    <string name="k_battery_icon_off">% de bateria na barra desligado</string>
+    <string name="k_battery_icon_on">% de bateria na barra ligado</string>
+    <string name="k_battery_icon_text">Bateria: %1$s %%</string>
+    <string name="k_battery_icon_title">Bateria</string>
+    <string name="k_binary_not_found_locally">Binário não encontrado localmente.</string>
+    <string name="k_bind_apply_failed">"Falha ao aplicar o bind.
+
+%1$s"</string>
+    <string name="k_bind_failed_silently">Bind FALHOU silenciosamente (alvo != src)</string>
+    <string name="k_brightness_icon_channel">Brilho da tela (barra)</string>
+    <string name="k_brightness_icon_off">Ícone de brilho na barra desligado</string>
+    <string name="k_brightness_icon_on">Ícone de brilho na barra ligado</string>
+    <string name="k_brightness_icon_text">Toque para aplicar o brilho definido em Ferramentas</string>
+    <string name="k_brightness_icon_title">Brilho da tela</string>
+    <string name="k_brightness_off_label">Desligada</string>
+    <string name="k_ca_estado_bind">bind temporário, sem instalação</string>
+    <string name="k_ca_estado_fabrica">de fábrica</string>
+    <string name="k_ca_estado_hibrido">instalado, limpando bind antigo</string>
+    <string name="k_ca_estado_instalado">instalado</string>
+    <string name="k_cafix_ausente">ConnAdaptor ainda não baixado — use Buscar atualização antes de Ativar.</string>
+    <string name="k_cafix_pronto">Pronto p/ instalar: %1$s · %2$s</string>
+    <string name="k_cafix_updated_monitor_restarted">ConnAdaptor atualizado. AAutoMonitor reiniciado. %1$s</string>
+    <string name="k_car_command_unconfirmed">O carro ainda não confirmou a alteração. Confira o estado na central.</string>
+    <string name="k_car_connected">🚗 Conectado ao carro</string>
+    <string name="k_car_connecting">🚗 Conectando…</string>
+    <string name="k_car_disconnected">🚗 Desconectado do carro</string>
+    <string name="k_car_not_connected_short">Central não conectada ao carro</string>
+    <string name="k_car_still_connecting">Carro ainda conectando, tente novamente.</string>
+    <string name="k_car_unavailable">🚗 Indisponível</string>
+    <string name="k_card_re_aeb_title">Ré &amp; AEB</string>
+    <string name="k_carlock_apply_persist">Aplicar persistente</string>
+    <string name="k_carlock_apply_reboot">Aplicar até reboot</string>
+    <string name="k_carplay_activated">CarPlay ativado</string>
+    <string name="k_carplay_activated_service_not_up">CarPlay ativado, mas serviço não subiu — verifique o dispositivo</string>
+    <string name="k_carplay_identity_off">Anúncio de CarPlay desligado.</string>
+    <string name="k_carplay_identity_on">Anúncio de CarPlay ligado — conecte o iPhone de novo pra valer.</string>
+    <string name="k_carplay_patch_falhou">Não consegui aplicar o patch do CarPlay agora. Se houver cabo USB ligado, desconecte e reinicie a central — o patch é refeito sozinho no próximo arranque.</string>
+    <string name="k_carplay_patch_ok">Patch do CarPlay aplicado.</string>
+    <string name="k_carplaymonitor_ativo">CarplayMonitor ativo</string>
+    <string name="k_carplaymonitor_error">CarplayMonitor: %1$s</string>
+    <string name="k_carplaymonitor_json_invalid_md5">carplaymonitor.json: md5 inválido</string>
+    <string name="k_carplaymonitor_motivo_fabrica">ConnAdaptor de fábrica — ative a projeção sem fio primeiro</string>
+    <string name="k_carplaymonitor_motivo_falhou">o patch não foi aplicado neste boot</string>
+    <string name="k_carplaymonitor_motivo_modo">modo %1$s (CarPlay desligado)</string>
+    <string name="k_carplaymonitor_motivo_toggle">CarPlay sem fio desligado</string>
+    <string name="k_carplaymonitor_motivo_trava">aplicação automática pausada</string>
+    <string name="k_carplaymonitor_padrao">CarplayMonitor padrão</string>
+    <string name="k_carplaymonitor_update_message">"MD5 remoto: %1$s…
+%2$s
+
+Deseja baixar e instalar?"</string>
+    <string name="k_carplaymonitor_updated_success">CarplayMonitor atualizado com sucesso.</string>
+    <string name="k_carservice_unavailable">CarService não disponível</string>
+    <string name="k_celular_preferido_bt_off">Ligue o Bluetooth para ver os aparelhos pareados.</string>
+    <string name="k_celular_preferido_desc">Qual telefone o carro tenta primeiro — Android ou iPhone. Útil para quem usa mais de um.</string>
+    <string name="k_celular_preferido_qualquer">Qualquer um (o primeiro que aparecer)</string>
+    <string name="k_celular_preferido_sem_pareado">Nenhum celular pareado por Bluetooth ainda. Pareie o aparelho primeiro.</string>
+    <string name="k_celular_preferido_titulo">Celular preferido</string>
+    <string name="k_celular_preferido_titulo_dialogo">Escolha o celular preferido</string>
+    <string name="k_changing_adb_gpio">Alterando ADB via GPIO 151...</string>
+    <string name="k_check_update_failed">Falha ao verificar atualização: %1$s</string>
+    <string name="k_check_update_with_icon">🔄 Checar Atualização</string>
+    <string name="k_checking_available_version">Verificando versão disponível…</string>
+    <string name="k_checking_version">Verificando v%1$s…</string>
+    <string name="k_close_apps_confirm">Fechar</string>
+    <string name="k_close_apps_done">%1$d app(s) fechado(s).</string>
+    <string name="k_close_apps_manage_whitelist">Gerenciar Proteção</string>
+    <string name="k_close_apps_none_running">Nenhum aplicativo de usuário está rodando agora.</string>
+    <string name="k_close_apps_none_selected">Nenhum app selecionado.</string>
+    <string name="k_close_apps_title">Fechar aplicativos (desmarque p/ manter aberto)</string>
+    <string name="k_close_apps_whitelist_manage_subtitle">Marque os apps que nunca devem ser fechados pela função Fechar aplicativos — eles já aparecem desmarcados na lista, mas ainda podem ser fechados manualmente se você marcar.</string>
+    <string name="k_close_apps_whitelist_manage_title">Apps Protegidos</string>
+    <string name="k_close_btn">Fechar</string>
+    <string name="k_cm_estado_ativo">ativo</string>
+    <string name="k_cm_estado_padrao">não montado neste boot</string>
+    <string name="k_cm_montado">montado</string>
+    <string name="k_cm_nao_montado">não montado</string>
+    <string name="k_command_sent_no_output">"Comando enviado sem saída.
+%1$s"</string>
+    <string name="k_completed">Concluído.</string>
+    <string name="k_confirm_network_routes_message">Isso libera a internet do celular para o Android Auto usar (útil quando o app não carrega dados). Requer acesso root/ADB interno ativo. Deseja continuar?</string>
+    <string name="k_confirm_network_routes_title">Confirmar rotas de rede</string>
+    <string name="k_connadaptor_arquivo_outra_versao">Baixado: %1$s. O certo para esta central é %2$s.</string>
+    <string name="k_connadaptor_arquivo_outro_modo">O ConnAdaptor baixado é o de %1$s, mas o modo escolhido é %2$s.</string>
+    <string name="k_connadaptor_available_message">O ConnAdaptor de %1$s ainda não foi baixado (cerca de 19 MB). Baixar agora?</string>
+    <string name="k_connadaptor_build_ausente">não instalado</string>
+    <string name="k_connadaptor_build_base">mesclado sem o fix do AP</string>
+    <string name="k_connadaptor_build_corrigido_para">corrigido · %1$s</string>
+    <string name="k_connadaptor_build_desconhecida">build não reconhecida</string>
+    <string name="k_connadaptor_build_fabrica">de fábrica</string>
+    <string name="k_connadaptor_build_so_aa">só Android Auto · %1$s</string>
+    <string name="k_connadaptor_build_so_carplay">só CarPlay (aposentado)</string>
+    <string name="k_connadaptor_confirm_install_msg">"Instala o ConnAdaptor corrigido como atualização do app de sistema. Habilita Android Auto e CarPlay sem fio.
+
+Em uso agora:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_install_title">Ativar ConnAdaptor?</string>
+    <string name="k_connadaptor_confirm_uninstall_msg">"Remove a atualização e volta o ConnAdaptor de fábrica. Android Auto e CarPlay sem fio param de funcionar.
+
+Em uso agora:
+%1$s"</string>
+    <string name="k_connadaptor_confirm_uninstall_title">Desativar ConnAdaptor?</string>
+    <string name="k_connadaptor_do_cache">ConnAdaptor já estava baixado — trocado sem usar internet.</string>
+    <string name="k_connadaptor_errado_msg">O modo escolhido é %1$s, mas o ConnAdaptor instalado é de outro modo. Posso baixar o pacote correto e instalar. A central precisa ser reiniciada depois da instalação.</string>
+    <string name="k_connadaptor_errado_titulo">ConnAdaptor não confere com o modo</string>
+    <string name="k_connadaptor_error">ConnAdaptor: %1$s</string>
+    <string name="k_connadaptor_install_downgrade">O ConnAdaptor já instalado é mais novo que o arquivo da %1$s — o sistema recusou a instalação. Provavelmente a sua central não é a %1$s: confira a seleção.</string>
+    <string name="k_connadaptor_install_failure">O sistema recusou a instalação (%1$s). Nada foi alterado no ConnAdaptor.</string>
+    <string name="k_connadaptor_json_invalid_md5">connadaptor.json: md5 inválido (esperado 32 hex)</string>
+    <string name="k_connadaptor_modo_bind">Bind legado montado, SEM instalação — toque em Ativar para corrigir</string>
+    <string name="k_connadaptor_modo_fabrica">De fábrica — Android Auto e CarPlay sem fio desligados</string>
+    <string name="k_connadaptor_modo_hibrido">Instalado (removendo um bind antigo que ficou por cima)</string>
+    <string name="k_connadaptor_modo_instalado">Ativo — instalado (sobrevive ao reboot)</string>
+    <string name="k_connadaptor_modo_titulo_master">Modo</string>
+    <string name="k_connadaptor_modo_verificando">Verificando como está ativo…</string>
+    <string name="k_connadaptor_nao_deu_para_conferir">Não consegui conferir a versão do ConnAdaptor — nem o arquivo ativo nem o do cache puderam ser lidos.</string>
+    <string name="k_connadaptor_newer_message">Há uma versão mais nova do ConnAdaptor de %1$s no servidor. Baixar agora?</string>
+    <string name="k_connadaptor_pm_error">Falha no pm install/uninstall — veja o log</string>
+    <string name="k_connadaptor_pm_installed">ConnAdaptor instalado como app (pm install)</string>
+    <string name="k_connadaptor_pm_installing">Instalando ConnAdaptor (pm install)…</string>
+    <string name="k_connadaptor_pm_is_stock">O arquivo baixado é igual ao ConnAdaptor de fábrica — não é o patch. Instalação cancelada</string>
+    <string name="k_connadaptor_pm_md5_mismatch">O arquivo do ConnAdaptor não confere (esperado %1$s…, achado %2$s…) — instalação cancelada</string>
+    <string name="k_connadaptor_pm_missing">O ConnAdaptor ainda não foi baixado — baixe primeiro</string>
+    <string name="k_connadaptor_pm_sem_canal">O canal local não respondeu — nada foi alterado. Tente de novo.</string>
+    <string name="k_connadaptor_pm_sem_efeito">O comando rodou mas o estado não mudou.</string>
+    <string name="k_connadaptor_pm_uninstalled">ConnAdaptor voltou ao stock</string>
+    <string name="k_connadaptor_pm_uninstalling">Removendo atualização do ConnAdaptor…</string>
+    <string name="k_connadaptor_update_title">Atualização do ConnAdaptor</string>
+    <string name="k_connadaptor_versao_1111">Central 1111</string>
+    <string name="k_connadaptor_versao_1114">Central 1114</string>
+    <string name="k_connadaptor_versao_baixando">Baixando a %1$s…</string>
+    <string name="k_connadaptor_versao_confirm_msg">"Você selecionou %1$s.
+
+Este arquivo destina-se à central na versão %1$s. Se a versão estiver errada, a instalação costuma ser recusada — mas confirme mesmo assim, porque só a versão certa garante o Android Auto e o CarPlay sem fio.
+
+Confirme que a sua central é a %1$s."</string>
+    <string name="k_connadaptor_versao_confirm_ok">Sim, é a %1$s</string>
+    <string name="k_connadaptor_versao_confirm_title">Confirme a versão da central</string>
+    <string name="k_connadaptor_versao_nao_baixada">A %1$s ainda não foi baixada — use Buscar atualização, em Config.</string>
+    <string name="k_connadaptor_versao_nao_publicada">A %1$s ainda não está publicada no servidor.</string>
+    <string name="k_connadaptor_versao_selecionada">Versão selecionada: %1$s.</string>
+    <string name="k_connadaptor_versao_sem_internet">Sem internet — a %1$s precisa ser baixada. Conecte-se e tente de novo.</string>
+    <string name="k_connadaptor_versao_titulo">Versão da central</string>
+    <string name="k_connecting_to_car">Conectando ao carro, tente novamente em instantes…</string>
+    <string name="k_continue_btn">Continuar</string>
+    <string name="k_continue_question">Continuar?</string>
+    <string name="k_copy_audios_message">Copiar os arquivos de áudio do pen-drive para a central?</string>
+    <string name="k_copy_audios_title">Copiar áudios</string>
+    <string name="k_copy_btn">Copiar</string>
+    <string name="k_copy_to_device_failed">"Falha ao copiar o arquivo para o dispositivo.
+Verifique espaço em /data/local/tmp e tente novamente."</string>
+    <string name="k_copy_to_path_failed">"%1$s: cópia para %2$s falhou (staging=%3$d dest=%4$d).
+%5$s"</string>
+    <string name="k_copying_apks_pendrive">Copiando APKs do pen-drive...</string>
+    <string name="k_copying_audios_pendrive">Copiando áudios do pen-drive...</string>
+    <string name="k_could_not_check_updates">Não foi possível verificar atualizações. Verifique a conexão.</string>
+    <string name="k_create_routes_short">Criar rotas</string>
+    <string name="k_creating_network_routes">Criando rotas de rede...</string>
+    <string name="k_creating_routes_toast">Criando rotas</string>
+    <string name="k_deactivating_android_auto">Desativando Android Auto…</string>
+    <string name="k_default_none">Padrão (nenhum)</string>
+    <string name="k_delete_audio_message">Apagar \"%1$s\"? Esta ação não pode ser desfeita.</string>
+    <string name="k_delete_audio_title">Apagar áudio</string>
+    <string name="k_delete_btn">Apagar</string>
+    <string name="k_deleting_audio_named">Apagando áudio: %1$s</string>
+    <string name="k_deleting_named">Apagando %1$s...</string>
+    <string name="k_dep_connadaptor">ConnAdaptor (Android Auto sem fio): há uma versão mais nova</string>
+    <string name="k_dep_connadaptor_curto">o ConnAdaptor</string>
+    <string name="k_dep_dualdashcam">DualDashcam (PiP da câmera traseira): instalado %1$s, disponível %2$s</string>
+    <string name="k_dep_falhou_msg">"Não consegui atualizar %1$s.
+
+Motivo: %2$s
+
+O aviso vai voltar na próxima abertura até dar certo."</string>
+    <string name="k_dep_gestures">Launcher com gestos: há uma versão mais nova do patch</string>
+    <string name="k_dep_gestures_update_failed">Não deu pra atualizar o launcher com gestos — veja o log.</string>
+    <string name="k_dep_gestures_updated">Launcher com gestos atualizado.</string>
+    <string name="k_dep_keyserver">Patch de controles no volante: há uma versão mais nova (%1$s)</string>
+    <string name="k_dep_update_go">Atualizar agora</string>
+    <string name="k_dep_update_message">"Recursos da central dependem destes apps — desatualizados, eles podem não funcionar:
+
+%1$s
+
+Recomendamos atualizar."</string>
+    <string name="k_dep_update_running">Atualizando %1$d item(ns) — acompanhe pelo status de cada card.</string>
+    <string name="k_dep_update_title">Atualização recomendada</string>
+    <string name="k_diagnosing_routes">Diagnosticando rotas...</string>
+    <string name="k_disable_all_btn">Desativar tudo</string>
+    <string name="k_disable_avas_message">O alto-falante externo alerta pedestres em baixa velocidade. Ao continuar, você reconhece que a desativação do AVAS é de total responsabilidade do condutor.</string>
+    <string name="k_disable_avas_title">Desativar alto-falante externo</string>
+    <string name="k_download_connadaptor_btn">Baixar ConnAdaptor</string>
+    <string name="k_download_empty">o download veio vazio — a conexão caiu antes de chegar qualquer byte</string>
+    <string name="k_download_failed_after_attempts">o download falhou nas %1$d tentativas. Se a internet da central vem do celular, arquivos grandes costumam não passar — atualize pelo app do celular</string>
+    <string name="k_download_folder_inaccessible">Pasta Download inacessível.</string>
+    <string name="k_download_retry_progress">Falha (%1$d/%2$d), tentando de novo…</string>
+    <string name="k_download_truncated">download incompleto (%1$d de %2$d bytes) — a conexão caiu no meio</string>
+    <string name="k_downloading_cafix">Baixando o ConnAdaptor…</string>
+    <string name="k_downloading_carplaymonitor">Baixando CarplayMonitor…</string>
+    <string name="k_downloading_manifest">Baixando manifesto…</string>
+    <string name="k_downloading_named">Baixando %1$s</string>
+    <string name="k_downloading_plain">Baixando</string>
+    <string name="k_drag_to_see_qa_resize_hint">Arraste pra ver o Acesso Rápido mudar de tamanho na hora. Precisa do menu lateral ativado (abaixo) pra funcionar.</string>
+    <string name="k_drive_mode_toast">Condução: %1$s</string>
+    <string name="k_drive_recusado_pelo_carro">O carro não aceitou o modo de condução escolhido.</string>
+    <string name="k_error_activating">Erro ao ativar</string>
+    <string name="k_error_activating_carplay">Erro ao ativar CarPlay</string>
+    <string name="k_error_adb_unavailable">Precisa de ADB root local — indisponível</string>
+    <string name="k_error_deactivating">Erro ao desativar</string>
+    <string name="k_error_installing_named">Erro ao instalar %1$s.</string>
+    <string name="k_error_no_foreground_app">Não achei o app em primeiro plano: %1$s</string>
+    <string name="k_error_occurred_title">Ocorreu um erro</string>
+    <string name="k_error_open_app">Não achei como abrir esse app</string>
+    <string name="k_error_open_other_app_first">Abra outro app antes de dividir (não pode ser o próprio Central)</string>
+    <string name="k_error_open_pip">Falha ao abrir em PiP: %1$s</string>
+    <string name="k_error_prepare_left">Falha ao preparar a esquerda: %1$s</string>
+    <string name="k_error_read_resolution">Não consegui ler a resolução: %1$s</string>
+    <string name="k_error_report_no_internet">Sem internet — o relatório será enviado automaticamente quando houver conexão.</string>
+    <string name="k_error_report_prompt">"%1$s.
+
+Deseja enviar um relatório de erro por e-mail para o suporte?"</string>
+    <string name="k_error_report_queued">Não deu para enviar agora — será enviado automaticamente quando houver internet.</string>
+    <string name="k_error_report_sent">Relatório de erro enviado. Obrigado!</string>
+    <string name="k_error_restarting">Erro ao reiniciar</string>
+    <string name="k_error_split_with_app">Falha ao dividir com esse app: %1$s</string>
+    <string name="k_escolher_app">Escolher aplicativo</string>
+    <string name="k_eyebrow_atalhos_gestos">Gestos</string>
+    <string name="k_eyebrow_atalhos_icones">Ícones</string>
+    <string name="k_eyebrow_automacao">Automação</string>
+    <string name="k_eyebrow_avas">AVAS</string>
+    <string name="k_eyebrow_barra_carro">Barra do carro</string>
+    <string name="k_eyebrow_camera">Câmera &amp; Segurança</string>
+    <string name="k_eyebrow_catalogo">Catálogo</string>
+    <string name="k_eyebrow_clima">Clima</string>
+    <string name="k_eyebrow_clima_seguranca">Clima &amp; segurança</string>
+    <string name="k_eyebrow_conectividade">Conectividade</string>
+    <string name="k_eyebrow_conexao">Conexão</string>
+    <string name="k_eyebrow_instalador">Instalador</string>
+    <string name="k_eyebrow_internet_aa">Internet pro Android Auto</string>
+    <string name="k_eyebrow_midia">Mídia</string>
+    <string name="k_eyebrow_preferencias">Preferências</string>
+    <string name="k_eyebrow_seguranca">Segurança</string>
+    <string name="k_eyebrow_sistema">Sistema</string>
+    <string name="k_eyebrow_som_travamento">Som de travamento</string>
+    <string name="k_eyebrow_tela">Tela</string>
+    <string name="k_eyebrow_volante">Volante</string>
+    <string name="k_fan_speed_toast">Ventoinha: %1$d</string>
+    <string name="k_favorite_apps_manage_subtitle">Marque os apps que devem aparecer na lista do gesto de 5 dedos.</string>
+    <string name="k_favorite_apps_manage_title">Apps favoritos</string>
+    <string name="k_favorite_apps_title">Favoritos</string>
+    <string name="k_favorites_empty">Nenhum card favorito ainda. Toque na estrela (☆) no canto de um card para adicioná-lo aqui.</string>
+    <string name="k_favorites_empty_hint">Você ainda não escolheu apps favoritos. Toque em ⭐ Gerenciar Favoritos acima pra adicionar os primeiros — eles aparecem aqui sempre que você tocar na tela com 5 dedos.</string>
+    <string name="k_feature_enabled_title">Recurso habilitado</string>
+    <string name="k_file_corrupted_invalid">"Arquivo corrompido ou inválido.
+Baixe novamente e tente outra vez."</string>
+    <string name="k_file_received">Recebido: %1$s (%2$d bytes)</string>
+    <string name="k_file_transfer_failed">"Falha na transferência do arquivo.
+Verifique se há espaço e tente novamente."</string>
+    <string name="k_floating_side_menu_desc">Exibe uma alça na lateral da tela com atalhos rápidos para os principais recursos do carro.</string>
+    <string name="k_floating_side_menu_header">🎛️ Menu lateral flutuante</string>
+    <string name="k_forced_restart_message">"O sistema reiniciou de forma inesperada no último boot.
+
+Para evitar um loop, foi pausado tudo que o app reaplica sozinho: o CarPlay sem fio, o Android Auto sem fio, o Ar Digital, o AVAS, o AEB, os gestos do volante e o modo de condução.
+
+Enquanto estiver pausado, esses recursos NÃO voltam ao ligar o carro.
+
+Deseja voltar a aplicá-los no boot?"</string>
+    <string name="k_forced_restart_title">Reinício forçado detectado</string>
+    <string name="k_freeform_setup_message">Para finalizar a configuração é preciso reiniciar a central uma única vez segurando voltar música no volante por 15 segundos.</string>
+    <string name="k_generic_error">Erro: %1$s</string>
+    <string name="k_gerenciar">Gerenciar</string>
+    <string name="k_got_it">Entendi</string>
+    <string name="k_handle_dim_hint">Ajusta a altura e a largura do botão (a alça \"›\") que abre o Acesso Rápido — não o tamanho dos ícones.</string>
+    <string name="k_handle_height_label">↕️ Altura da alça</string>
+    <string name="k_handle_transparency_label">👁️ Transparência da alça (quando recolhida): %1$d%%</string>
+    <string name="k_handle_transparency_short_label">👁️ Transparência</string>
+    <string name="k_handle_width_label">↔️ Largura da alça</string>
+    <string name="k_help_question_mark">?</string>
+    <string name="k_hold_to_restore_adb">Segurar para restaurar ADB (%1$d)</string>
+    <string name="k_hvac_baixando_msg">São uns 18 MB. Numa conexão lenta pode demorar alguns minutos — pode deixar a tela aberta.</string>
+    <string name="k_hvac_baixando_titulo">Baixando o Ar Digital</string>
+    <string name="k_hvac_digital_batt_title">% Bateria na barra</string>
+    <string name="k_hvac_digital_common_desc">Faz um bind mount temporário (não altera o /system) e reinicia a barra do sistema. Faça com o carro parado.</string>
+    <string name="k_hvac_digital_needs_download">Na primeira vez é preciso baixar uma aplicação — mantenha a internet ligada. Continuar?</string>
+    <string name="k_hvac_digital_temp_desc">Troca a roleta de temperatura da barra por um número.</string>
+    <string name="k_hvac_digital_temp_title">Temperatura digital do ar-condicionado</string>
+    <string name="k_hvac_temp_toast">Temperatura: %1$.0f°</string>
+    <string name="k_icon_desc_aa_activate">Ativa a conexão sem fio do Android Auto/CarPlay.</string>
+    <string name="k_icon_desc_aa_reset">Reinicia a conexão do Android Auto/CarPlay quando travar.</string>
+    <string name="k_icon_desc_app_pip">Abre um app em janela flutuante (PiP); +/−/⟲ ajustam, ✕ fecha.</string>
+    <string name="k_icon_desc_avas">Liga ou silencia o som de alerta para pedestres do carro.</string>
+    <string name="k_icon_desc_close_apps">Fecha os apps de usuário que estiverem rodando, liberando memória e resolvendo PiPs presos. Nunca mexe em apps do sistema.</string>
+    <string name="k_icon_desc_drive_regen">Troca o modo de condução (Eco/Comfort/Sport) e a força da regeneração.</string>
+    <string name="k_icon_desc_power_off">Desliga o veículo por completo. Precisa estar engatado em P.</string>
+    <string name="k_icon_desc_screen_rest">Baixa o brilho e mostra um relógio discreto na tela, imediatamente. Diferente do Apagar tela (que apaga 100%): aqui não mostra aviso na primeira vez.</string>
+    <string name="k_icon_desc_split_screen">Abre a divisão de tela em janelas flutuantes; toque de novo fecha.</string>
+    <string name="k_icon_desc_telemetry">Envia os dados do carro (bateria, velocidade etc.) para outros apps.</string>
+    <string name="k_icon_hidden">Oculto</string>
+    <string name="k_icon_reorder_hint">↑↓ move o ícone na lista · interruptor mostra/esconde no menu</string>
+    <string name="k_icon_size_label">🔍 Tamanho dos ícones: %1$d%%</string>
+    <string name="k_icon_size_short_label">🔍 Ícones</string>
+    <string name="k_icon_visible">Visível</string>
+    <string name="k_icons_visibility_order_header">🔀 Ícones — visibilidade e ordem</string>
+    <string name="k_info_hvac_digital_batt_message">Mostra o % de bateria na barra do carro. Independente da temperatura digital (dá pra ligar só um dos dois, ou os dois). Aplicado via bind mount (efêmero: não altera o /system, é re-aplicado no boot); reinicia a barra ao aplicar. Na primeira vez baixa uma aplicação, então precisa de internet.</string>
+    <string name="k_info_hvac_digital_temp_message">Mostra a temperatura da barra do sistema em número, em vez da roleta. Independente do % de bateria na barra (dá pra ligar só um dos dois, ou os dois). Aplicado via bind mount (efêmero: não altera o /system, é re-aplicado no boot); reinicia a barra ao aplicar. Na primeira vez baixa uma aplicação, então precisa de internet.</string>
+    <string name="k_info_pill_message">Mostra a temperatura externa e/ou o % de bateria numa bolha flutuante que fica por cima de qualquer tela, inclusive Android Auto/CarPlay. Pode escolher o que mostrar, a transparência do fundo, o tamanho e a cor da letra. Segure e arraste pra mudar de posição — a central lembra onde você deixou. Um toque rápido (sem arrastar) abre a lista de programações de ar-condicionado salvas; tocar numa começa a executá-la (letra vira verde) e tocar no pill de novo para.</string>
+    <string name="k_info_pill_title">Pill de Temp./Bateria</string>
+    <string name="k_info_remember_brightness_message">Guarda DOIS brilhos — farol apagado (dia) e farol aceso (noite) — e troca sozinho quando o farol muda. Aprende o que você deixar em cada situação, ajustado pelo app ou pelo painel do carro. Não lembra a tela desligada.</string>
+    <string name="k_info_remember_brightness_title">Lembrar brilho de tela</string>
+    <string name="k_info_rvc_black_bg_message">Deixa o fundo da câmera de ré preto via bind mount (efêmero: não altera o /system, some no reboot e é re-aplicado automaticamente no boot). Recurso da versão Pro.</string>
+    <string name="k_info_rvc_black_bg_title">Fundo de ré preto</string>
+    <string name="k_info_status_temp_message" formatted="false">Dois ícones independentes na barra de notificações (SystemUI da Geely, não invasivo) — dá pra ligar só um, o outro, ou os dois. Bateria: verde acima de 80%, branca entre 20% e 80% e laranja abaixo de 20%. Atualiza a cada 15 s. Toque no % abre o app de energia.</string>
+    <string name="k_info_status_temp_title">Temperatura e % de bateria na barra</string>
+    <string name="k_info_window_door_message">Cada porta desce/sobe só a sua própria janela: abrir a traseira desce o vidro da traseira, abrir a do passageiro desce o dela também (independente); fechar cada uma sobe só a sua. Direto no carro via CarPropertyManager, sem bind mount.</string>
+    <string name="k_info_window_door_title">Janela acompanha a porta</string>
+    <string name="k_install_cancelled_by_system">Instalação cancelada pelo sistema.</string>
+    <string name="k_install_error_title">Erro na instalação</string>
+    <string name="k_install_failed_try_again">Falha na instalação. Tente novamente.</string>
+    <string name="k_install_failure_detail">"Falha na instalação.
+%1$s"</string>
+    <string name="k_install_success_named">"Instalado com sucesso:
+%1$s"</string>
+    <string name="k_install_with_icon">⬇️ Instalar</string>
+    <string name="k_installation_complete">Instalação concluída</string>
+    <string name="k_installed_version">✅ Instalado v%1$s</string>
+    <string name="k_installed_version_newer">"A versão instalada é mais recente.
+Desinstale primeiro para fazer downgrade."</string>
+    <string name="k_installed_version_plain">Instalado v%1$s</string>
+    <string name="k_installer_already_running">Já existe uma instalação em andamento. Aguarde a conclusão.</string>
+    <string name="k_installer_cancelled">Instalação cancelada.</string>
+    <string name="k_installer_confirm_install">Instalar</string>
+    <string name="k_installer_confirm_msg">%1$s Pacote: %2$s Versão: %3$s %4$s</string>
+    <string name="k_installer_confirm_new">Este aplicativo ainda não está instalado.</string>
+    <string name="k_installer_confirm_title">Instalar aplicativo?</string>
+    <string name="k_installer_confirm_update">Isto substitui a versão já instalada (%1$s).</string>
+    <string name="k_installer_copying">Copiando APK…</string>
+    <string name="k_installer_done_title">Instalação concluída</string>
+    <string name="k_installer_error_title">Erro</string>
+    <string name="k_installer_failure">"Falha na instalação:
+%1$s"</string>
+    <string name="k_installer_installing">Instalando %1$s…</string>
+    <string name="k_installer_invalid_apk">O arquivo não é um APK válido.</string>
+    <string name="k_installer_preparing">Preparando…</string>
+    <string name="k_installer_success">Instalado com sucesso!</string>
+    <string name="k_installer_title">Instalador</string>
+    <string name="k_installer_unknown_error">Erro desconhecido</string>
+    <string name="k_installing_cafix">Instalando o ConnAdaptor… (aguarde)</string>
+    <string name="k_installing_carplaymonitor">Instalando CarplayMonitor… (aguarde)</string>
+    <string name="k_installing_named">Instalando %1$s…</string>
+    <string name="k_installing_version">Instalando %1$s…</string>
+    <string name="k_installing_version_wait">Instalando v%1$s… (aguarde)</string>
+    <string name="k_installing_xapk_named">Instalando XAPK %1$s…</string>
+    <string name="k_insufficient_storage">Espaço insuficiente no dispositivo.</string>
+    <string name="k_internet_com_root">Internet via rotas (com root)</string>
+    <string name="k_internet_com_root_desc">Roteia a internet do celular pro carro (mapas/música do Android Auto carregam). Precisa de celular COM root. Criar rotas faz agora; Automático refaz sozinho ao conectar.</string>
+    <string name="k_internet_sem_root">Internet via proxy (sem root)</string>
+    <string name="k_internet_sem_root_desc">Usa o proxy do app Central EX Celular — NÃO precisa de root no celular. Precisa do app instalado e da opção de proxy ligada nele.</string>
+    <string name="k_keepalive_manage_subtitle">Marque os apps que devem continuar rodando em segundo plano sem serem encerrados pelo sistema.</string>
+    <string name="k_keepalive_manage_title">Apps Sempre Ativos</string>
+    <string name="k_keyserver_activated">Controles do volante ativados!</string>
+    <string name="k_keyserver_activated_service_down">Arquivo trocado e montado, mas o serviço do KeyServer não voltou a rodar. Os controles podem não funcionar até reiniciar o carro (o serviço sobe de novo sozinho no boot, já com o patch).</string>
+    <string name="k_keyserver_checking">Verificando patch...</string>
+    <string name="k_keyserver_deactivated">Controles do volante desativados — KeyServer original restaurado</string>
+    <string name="k_keyserver_deactivating">Desativando controles do volante...</string>
+    <string name="k_keyserver_download_failed">Não foi possível baixar/aplicar o patch: %1$s</string>
+    <string name="k_keyserver_error_activating">Erro ao ativar — veja o log</string>
+    <string name="k_keyserver_file_missing_after_download">Arquivo do patch não encontrado após o download — ativação cancelada</string>
+    <string name="k_keyserver_first_activate_message">Na primeira ativação este recurso baixa um módulo (~10 MB) pela Internet. Certifique-se de estar conectado antes de continuar.</string>
+    <string name="k_keyserver_first_activate_title">Conexão com a Internet necessária</string>
+    <string name="k_keyserver_mounting">Aplicando...</string>
+    <string name="k_keyserver_no_internet_first_download">Sem conexão com a Internet — é preciso baixar o módulo (~10 MB) na primeira ativação</string>
+    <string name="k_keyserver_swapping">Baixando e substituindo o patch...</string>
+    <string name="k_lado_direito">Direita</string>
+    <string name="k_lado_esquerdo">Esquerda</string>
+    <string name="k_language_desc">Escolha o idioma do aplicativo. É preciso reiniciar a tela atual para aplicar.</string>
+    <string name="k_language_en">English</string>
+    <string name="k_language_es_cl">Español (Chile)</string>
+    <string name="k_language_header">🌐 Idioma</string>
+    <string name="k_language_pt_br">Português (Brasil)</string>
+    <string name="k_language_ru">Русский</string>
+    <string name="k_language_vi">Tiếng Việt</string>
+    <string name="k_linha_carplaymonitor">CarplayMonitor — %1$s</string>
+    <string name="k_linha_connadaptor">ConnAdaptor — %1$s</string>
+    <string name="k_linha_versao_central">Versão %1$s detectada</string>
+    <string name="k_linha_versao_central_desconhecida">Versão da central não identificada</string>
+    <string name="k_local_md5">MD5 local: %1$s…</string>
+    <string name="k_log_cleared">Log limpo.</string>
+    <string name="k_lyrics_config_btn">⚙ Ajustar aparência (tamanho, cor, transparência)</string>
+    <string name="k_lyrics_floater_desc">Mostra a letra sincronizada da música tocando (Spotify/YT Music) numa linha sobre a barra; toque nela pra abrir o painel karaokê. Busca a letra na internet.</string>
+    <string name="k_lyrics_floater_title">Letra na tela (karaokê)</string>
+    <string name="k_mbh_back">Voltar</string>
+    <string name="k_mbh_connecting">Conectando…</string>
+    <string name="k_mbh_empty">Nada aqui.</string>
+    <string name="k_mbh_load_error">Não foi possível carregar esta lista (o app pode precisar de login).</string>
+    <string name="k_mbh_login">Entrar</string>
+    <string name="k_mbh_no_sources">Nenhum app de música compatível instalado.</string>
+    <string name="k_mbh_nothing_playing">Nada tocando</string>
+    <string name="k_mbh_open">Abrir</string>
+    <string name="k_mbh_pick_source">Escolha uma fonte à esquerda.</string>
+    <string name="k_mbh_refused">Este app recusou a conexão.</string>
+    <string name="k_mbh_title">Tocadores de música</string>
+    <string name="k_md5_mismatch">md5 ≠ (esp %1$s… obtido %2$s…)</string>
+    <string name="k_md5_mismatch_manifest">MD5 do download ≠ manifesto (esp. %1$s… obtido %2$s…).</string>
+    <string name="k_media_bar_floater_desc">Mostra capa, música e play/pausa do Spotify ou YouTube Music na barra de baixo, ao lado do início — como o Android Auto.</string>
+    <string name="k_media_bar_floater_title">Spotify e YT Music na barra</string>
+    <string name="k_missing_connadaptor_offline">Para usar %1$s a central precisa do ConnAdaptor, que ainda não foi baixado. Conecte a central à internet e toque em Ativar de novo: o download acontece durante a ativação.</string>
+    <string name="k_missing_connadaptor_online">Para usar %1$s a central precisa baixar o ConnAdaptor (cerca de 19 MB). Baixar e ativar agora?</string>
+    <string name="k_missing_connadaptor_title">Falta o ConnAdaptor</string>
+    <string name="k_mode_comfort">COMFORT</string>
+    <string name="k_mode_comfort_abbr">COM</string>
+    <string name="k_mode_eco">ECO</string>
+    <string name="k_mode_eco_abbr">ECO</string>
+    <string name="k_mode_medium">MÉDIA</string>
+    <string name="k_mode_medium_abbr">MED</string>
+    <string name="k_mode_sport">SPORT</string>
+    <string name="k_mode_sport_abbr">SPT</string>
+    <string name="k_mode_strong">FORTE</string>
+    <string name="k_mode_strong_abbr">FOR</string>
+    <string name="k_mode_weak">FRACA</string>
+    <string name="k_mode_weak_abbr">FRA</string>
+    <string name="k_modo_aa">Android Auto</string>
+    <string name="k_modo_aa_msg">"O app vai ativar só o Android Auto sem fio. O CarPlay sem fio fica desligado: o patch do CarplayMonitor não é aplicado e o anúncio ao iPhone é desligado.
+
+O ConnAdaptor instalado é o mesmo — dá pra voltar pra Ambos quando quiser."</string>
+    <string name="k_modo_ambos">Android Auto + CarPlay</string>
+    <string name="k_modo_ambos_msg">O app vai ativar Android Auto e CarPlay sem fio. É a opção recomendada e a mais testada.</string>
+    <string name="k_modo_aplicado">Modo: %1$s</string>
+    <string name="k_modo_aplicando">Aplicando o modo %1$s…</string>
+    <string name="k_modo_carplay">CarPlay</string>
+    <string name="k_modo_carplay_msg">"O app vai ativar só o CarPlay sem fio: patch do CarplayMonitor e anúncio ao iPhone ligados. A conexão automática do Android Auto fica desligada.
+
+O ConnAdaptor instalado é o mesmo — dá pra voltar pra Ambos quando quiser."</string>
+    <string name="k_modo_confirm_title">Usar só %1$s?</string>
+    <string name="k_modo_oficina_ajuda_msg">Os aplicativos instalados sumiram da tela inicial, junto com os widgets e a própria Central. O Android Auto sem fio voltou ao original. Para trazer tudo de volta, use uma destas: • 5 toques rápidos no canto inferior esquerdo da tela, logo acima da barra de baixo; • o botão no EX Sapo Móvel, no celular.</string>
+    <string name="k_modo_oficina_ajuda_titulo">Modo oficina ativo</string>
+    <string name="k_modo_oficina_ativar">Preparar pro serviço</string>
+    <string name="k_modo_oficina_ativo_status">Ativo. Pra voltar: 5 toques no canto inferior esquerdo, o botão no celular, ou o prazo.</string>
+    <string name="k_modo_oficina_confirmar_msg">Sai do launcher tudo que não é de fábrica, os widgets somem e o Android Auto sem fio volta ao original. Pra voltar: 5 toques no canto inferior esquerdo da tela, logo acima da barra de baixo, ou o botão no celular.</string>
+    <string name="k_modo_oficina_confirmar_titulo">Preparar pro serviço?</string>
+    <string name="k_modo_oficina_desativar">Sair do modo oficina</string>
+    <string name="k_modo_oficina_encerrado_msg">Seus aplicativos, widgets e alterações da barra foram restaurados. A central está pronta para uso.</string>
+    <string name="k_modo_oficina_encerrado_titulo">Modo oficina encerrado</string>
+    <string name="k_modo_oficina_erro">Não deu certo — veja o log do app.</string>
+    <string name="k_modo_oficina_ocultou">Pronto: %1$d apps ocultos. Pra voltar, 5 toques no canto inferior esquerdo.</string>
+    <string name="k_modo_oficina_restaurando">Restaurando a central…</string>
+    <string name="k_modo_oficina_restaurou">Central restaurada (%1$d apps).</string>
+    <string name="k_modo_oficina_restaurou_parcial">Restaurei %1$d de %2$d aplicativos. Confira os que faltam.</string>
+    <string name="k_modo_oficina_sem_snapshot">Não achei o registro do que foi escondido — os aplicativos precisam ser religados na mão.</string>
+    <string name="k_modo_oficina_trabalhando">Preparando…</string>
+    <string name="k_modo_trocar_msg">O pacote do ConnAdaptor é diferente em cada modo. Trocar para %1$s baixa o pacote certo e o reinstala. A central precisa ser reiniciada depois da instalação para o novo modo valer.</string>
+    <string name="k_modo_trocar_ok">Trocar e baixar</string>
+    <string name="k_modo_trocar_titulo">Trocar o modo?</string>
+    <string name="k_monitor_bind_erro_msg">"O Android Auto foi reiniciado, mas o CarplayMonitor não pôde ser ativado — o CarPlay sem fio não vai funcionar até isso ser resolvido.
+
+Motivo: %1$s"</string>
+    <string name="k_monitor_bind_erro_titulo">Não consegui ativar o CarplayMonitor</string>
+    <string name="k_monitor_erro_bind">o sistema recusou o bind sobre /system/bin/CarplayMonitor</string>
+    <string name="k_monitor_erro_md5_firmware">o CarplayMonitor de fábrica é diferente do esperado (firmware novo?) — não foi alterado, por segurança</string>
+    <string name="k_monitor_erro_patch">o arquivo corrigido saiu errado e não foi usado</string>
+    <string name="k_monitor_erro_selinux">não consegui aplicar o rótulo de segurança (SELinux) no arquivo</string>
+    <string name="k_monitor_erro_sem_binario">o arquivo do CarplayMonitor não existe nesta central</string>
+    <string name="k_monitor_erro_sem_resposta">o canal local não respondeu — tente de novo</string>
+    <string name="k_nav_applications">Aplicativos</string>
+    <string name="k_nav_favorites">Favoritos</string>
+    <string name="k_nav_network_connection">Rede &amp; Auto</string>
+    <string name="k_nav_settings">Configurações</string>
+    <string name="k_nav_widgets">Widgets</string>
+    <string name="k_nenhum">Nenhum</string>
+    <string name="k_new_version_available">Nova versão disponível: v%1$s (instalada: v%2$s)</string>
+    <string name="k_new_version_available_generic">Nova versão disponível. %1$s</string>
+    <string name="k_no_apk_files">— nenhum APK/XAPK/APKM —</string>
+    <string name="k_no_app_found">Nenhum app encontrado</string>
+    <string name="k_no_favorite_apps_toast">Nenhum app favorito escolhido. Toque em Gerenciar Favoritos (aba Aplicativos) pra configurar.</string>
+    <string name="k_no_internet_message">Esse recurso precisa baixar uma aplicação na primeira vez. Ligue a internet e tente de novo.</string>
+    <string name="k_no_internet_or_check_failed">Sem internet ou falha ao verificar. Ligue a internet e tente de novo.</string>
+    <string name="k_no_internet_title">Sem internet</string>
+    <string name="k_no_overlay_permission">Sem permissão de sobreposição</string>
+    <string name="k_no_recent_app_toast">Nenhum app recente encontrado</string>
+    <string name="k_no_sound_selected">Nenhum som selecionado</string>
+    <string name="k_no_user_apps">— nenhum app de usuário —</string>
+    <string name="k_no_wav_loaded">— nenhum WAV carregado —</string>
+    <string name="k_not_completed_see_log">Não concluído — toque em \"Mostrar log\" para ver os detalhes.</string>
+    <string name="k_not_installed">Não instalado</string>
+    <string name="k_notice_default_title">Aviso</string>
+    <string name="k_open_in_pip">Abrir em PiP</string>
+    <string name="k_open_on_right">Abrir na direita</string>
+    <string name="k_opening">Abrindo…</string>
+    <string name="k_overlay_failure">Falha no overlay: %1$s</string>
+    <string name="k_overlay_granted">Sobreposição liberada.</string>
+    <string name="k_overlay_pending">Sobreposição pendente.</string>
+    <string name="k_pacotes_contagem">Pacotes %1$d/%2$d</string>
+    <string name="k_pacotes_vazio">Pacotes — sem sincronizar</string>
+    <string name="k_pause_audio_on_door_desc">Pausa a música/mídia automaticamente quando a porta do motorista é aberta. Não retoma sozinho ao fechar.</string>
+    <string name="k_pause_audio_on_door_title">Pausar ao abrir a porta</string>
+    <string name="k_percent_label">%1$s: %2$d%%</string>
+    <string name="k_phone_receiver_accept_failed">Receptor celular: falha no accept.</string>
+    <string name="k_phone_receiver_active">Receptor celular ativo em 0.0.0.0:%1$d</string>
+    <string name="k_phone_receiver_start_failed">Falha ao iniciar receptor: %1$s</string>
+    <string name="k_phone_receiver_stopped">Receptor celular parado.</string>
+    <string name="k_phone_sync_off">Sincronização com celular desligada</string>
+    <string name="k_phone_sync_on">Sincronização com celular ligada (porta %1$d + BT)</string>
+    <string name="k_phonesync_channel">Sync celular</string>
+    <string name="k_phonesync_notif_text">Sincronização com o celular ativa (porta %1$d + BT)</string>
+    <string name="k_phonesync_notif_title">Central EX · Sync celular</string>
+    <string name="k_pill_ac_no_programs">Nenhuma programação salva ainda. Crie uma em Ferramentas › Programação de Ar.</string>
+    <string name="k_pill_ac_picker_title">Escolher programação</string>
+    <string name="k_pill_ac_program_stopped">Programação interrompida.</string>
+    <string name="k_pill_channel_active">Pill de temperatura/bateria ativo</string>
+    <string name="k_pill_channel_name">Pill Temp/Bateria</string>
+    <string name="k_pip_active_hint">PiP ativo — use ✕ pra fechar ou +/−/⟲ pra ajustar</string>
+    <string name="k_pip_app_closed_itself">O app do PiP fechou sozinho</string>
+    <string name="k_pip_apps_desc">Até 5 aplicativos no acesso rápido do PiP. As setas mudam a ordem.</string>
+    <string name="k_pip_apps_titulo">Aplicativos do PiP</string>
+    <string name="k_pip_channel_active">PiP de App ativo</string>
+    <string name="k_pip_channel_name">PiP de App</string>
+    <string name="k_pip_close_failed">Nao consegui fechar o PiP</string>
+    <string name="k_pip_closed">PiP fechado</string>
+    <string name="k_pip_falhou_outra">Não consegui aplicar. O ADB e a internet estão de pé — o problema é outro; veja o log.</string>
+    <string name="k_pip_falhou_sem_adb">Aplicação não realizada, erro no canal ADB. Tente novamente em alguns instantes ou tente após reiniciar a central.</string>
+    <string name="k_pip_fixado_aberto">PiP fixado: fica sempre por cima</string>
+    <string name="k_pip_incompativel">Esta central não é a validada para o PiP nativo</string>
+    <string name="k_pip_notif_text">Toque no PIP pra escolher o app</string>
+    <string name="k_pip_opened_hint">PiP aberto — +/− ajusta, ⟲ gira, ✕ fecha</string>
+    <string name="k_pip_opening">Abrindo em PiP…</string>
+    <string name="k_pip_sem_suporte_fixado">Este app nao suporta PiP nativo — abri flutuante</string>
+    <string name="k_power_off_confirm">Desligar</string>
+    <string name="k_power_off_message">A central vai desligar de verdade. Não dá pra cancelar depois de confirmar.</string>
+    <string name="k_power_off_needs_park">Engate a marcha P (estacionamento) pra poder desligar o veículo.</string>
+    <string name="k_power_off_title">Desligar o veículo?</string>
+    <string name="k_prepare_receive_files">Preparar para receber arquivos</string>
+    <string name="k_preview_failed">Não consegui tocar o preview: %1$s</string>
+    <string name="k_preview_file_not_found">Não achei o som desse tipo no sistema</string>
+    <string name="k_pronto_pode_conectar">Boot completo, pode conectar o celular.</string>
+    <string name="k_proxy_active">Proxy ativo: %1$s:8080</string>
+    <string name="k_proxy_auto_activated">Proxy ativado automaticamente: %1$s:8080</string>
+    <string name="k_qa_activate_aa">Ativar AA/CarPlay</string>
+    <string name="k_qa_channel_active">Central EX — Acesso Rápido</string>
+    <string name="k_qa_close_apps">Fechar apps</string>
+    <string name="k_qa_close_apps_chip">LIMPAR</string>
+    <string name="k_qa_cronometro">Cronômetro</string>
+    <string name="k_qa_driving_label">Condução</string>
+    <string name="k_qa_fullscreen">Tela cheia</string>
+    <string name="k_qa_fullscreen_sem_adb">ADB local indisponível — não deu para alternar a tela cheia</string>
+    <string name="k_qa_manage_favorites">Apps favoritos</string>
+    <string name="k_qa_notif_text">Menu lateral ativo</string>
+    <string name="k_qa_pip_app">PiP de app</string>
+    <string name="k_qa_power_off">Desligar Veículo</string>
+    <string name="k_qa_preview_header">👁️ Pré-visualização da barra</string>
+    <string name="k_qa_preview_hint">Arraste os ícones pra reordenar. Cor apagada = oculto no menu.</string>
+    <string name="k_qa_regen_label">Regeneração</string>
+    <string name="k_qa_regressiva">Contagem regressiva</string>
+    <string name="k_qa_restart_aa">Reiniciar AA/CarPlay</string>
+    <string name="k_qa_screen_chip">Tela</string>
+    <string name="k_qa_screen_off">Apagar Tela</string>
+    <string name="k_qa_screen_rest">Descanso de Tela</string>
+    <string name="k_qa_split_screen">Dividir tela</string>
+    <string name="k_qa_telemetry">Telemetria</string>
+    <string name="k_rear_cam_pip_desc">Ao usar a seta (esquerda ou direita), abre um PiP com a câmera traseira, na posição onde você deixou da última vez. Fecha sozinho quando a seta desliga (ou pelo X do PiP). Requer o app DualDashcam instalado. Ícone \"5s\" no canto: mantém o PiP aberto por mais 5 segundos depois que a seta desliga.</string>
+    <string name="k_rear_cam_pip_hold_5s_off">PiP volta a fechar assim que a seta desligar.</string>
+    <string name="k_rear_cam_pip_hold_5s_on">PiP vai ficar aberto 5s a mais depois que a seta desligar.</string>
+    <string name="k_rear_cam_pip_no_dualdashcam">DualDashcam não está instalado — instale-o pra este recurso funcionar.</string>
+    <string name="k_rear_cam_pip_outdated_dualdashcam">Sua versão do DualDashcam é antiga demais pro PiP da câmera traseira — atualize o DualDashcam (em Apps) pra este recurso funcionar.</string>
+    <string name="k_rear_cam_pip_title">PiP da câmera traseira na seta</string>
+    <string name="k_reboot_message">Isso irá fazer um reboot na central, a caixa de som fará barulho e é normal. Deseja prosseguir?</string>
+    <string name="k_reboot_title">Reboot</string>
+    <string name="k_recent_apps_title">Voltar para…</string>
+    <string name="k_recent_close_failed">Não consegui fechar %1$s.</string>
+    <string name="k_recirc_guard_desc">Ao desligar o ar-condicionado ou ligar o desembaçador de vidro, o carro desliga a recirculação sozinho (abre ar externo). Ligando aqui, se a recirculação estava ligada, ela volta a ligar sozinha.</string>
+    <string name="k_recirc_guard_icon_desc">Recirculação volta a ligar sozinha se cair ao desligar o ar-condicionado ou ligar o desembaçador de vidro.</string>
+    <string name="k_recirc_guard_title">🌀 Evitar abertura do ar externo</string>
+    <string name="k_recirc_guard_title_card">Evitar abertura do ar externo</string>
+    <string name="k_refresh_list_choose_audio">Atualize a lista e escolha um áudio.</string>
+    <string name="k_refresh_list_choose_wav">Atualize a lista e escolha um WAV.</string>
+    <string name="k_regen_recusado_pelo_carro">O carro não aceitou a regeneração escolhida.</string>
+    <string name="k_regen_toast">Regeneração: %1$s</string>
+    <string name="k_reiniciar_ap0_em_uso">Há uma sessão de projeção em curso — reiniciar agora derruba o CarPlay/Android Auto que está no ar. Toque de novo para reiniciar assim mesmo.</string>
+    <string name="k_reiniciar_sem_canal">O canal ADB local não respondeu. Nada foi alterado. Ligue o ADB pelo botão do aplicativo e tente de novo.</string>
+    <string name="k_reiniciar_sem_canal_titulo">ADB local não respondeu</string>
+    <string name="k_remember_brightness_howto_msg">"A central guarda dois brilhos: um para o farol apagado e outro para o farol aceso.
+
+Para ensinar os dois:
+1. Com o farol APAGADO, deixe o brilho como você quer de dia.
+2. LIGUE o farol e deixe o brilho como você quer de noite.
+
+Daí em diante, cada vez que o farol acender ou apagar, o brilho muda sozinho. Pode ajustar aqui pelo app ou pelo painel do carro — os dois contam."</string>
+    <string name="k_remember_brightness_howto_title">Lembrar brilho de acordo com o farol</string>
+    <string name="k_remove_phone_internet">🚫 Remover Internet do Celular</string>
+    <string name="k_remove_routes">Remover Rotas</string>
+    <string name="k_removed">Removido.</string>
+    <string name="k_removing">Removendo...</string>
+    <string name="k_removing_proxy">Removendo proxy...</string>
+    <string name="k_removing_routes">Removendo rotas...</string>
+    <string name="k_removing_sound_bind">Removendo bind do som...</string>
+    <string name="k_restart_car_for_oem">Reinicie o carro p/ voltar ao OEM.</string>
+    <string name="k_restarted">Reiniciado</string>
+    <string name="k_restarting">Reiniciando</string>
+    <string name="k_restarting_aa_carplay">Reiniciando AA/CarPlay...</string>
+    <string name="k_route_auto_label">Automático</string>
+    <string name="k_routes_created">Rotas de internet criadas</string>
+    <string name="k_routes_creation_failed">Não foi possível criar as rotas</string>
+    <string name="k_routes_not_confirmed">Não confirmou — toque em Criar Rotas de novo</string>
+    <string name="k_rvc_back_to_normal">Fundo da ré voltou ao normal.</string>
+    <string name="k_rvc_black_bg_applied">Fundo preto na ré aplicado.</string>
+    <string name="k_rvc_black_bg_applying">Aplicando fundo preto na ré...</string>
+    <string name="k_rvc_black_bg_disabling">Desligando fundo preto na ré...</string>
+    <string name="k_rvc_black_bg_message">"Atenção: este recurso só se aplica à versão Pro.
+
+Será feito um mount --bind temporário (não altera o /system) do fundo preto sobre a imagem da câmera de ré. Continuar?"</string>
+    <string name="k_rvc_black_bg_title">Fundo preto na ré</string>
+    <string name="k_rvc_disabled_restart_if_needed">Desligado — reinicie o carro se o fundo não voltar.</string>
+    <string name="k_same_version_already_installed">Mesma versão já instalada.</string>
+    <string name="k_save_error">Erro ao guardar: %1$s</string>
+    <string name="k_saved_as">Guardado: %1$s</string>
+    <string name="k_screen_off_message">O brilho da tela volta ao apertar o volume no volante.</string>
+    <string name="k_screen_off_title">💡 Apagar tela</string>
+    <string name="k_screen_rest_10s">10s</string>
+    <string name="k_screen_rest_1m">1m</string>
+    <string name="k_screen_rest_2m">2m</string>
+    <string name="k_screen_rest_30s">30s</string>
+    <string name="k_screen_rest_desc">Apaga a tela automaticamente após um período sem toque físico, mostrando um relógio discreto. Qualquer toque acorda a tela. Ativa o Acesso Rápido se ainda estiver desligado (o mecanismo mora lá).</string>
+    <string name="k_screen_rest_enabled_quick_access">Acesso Rápido ativado — o Descanso de Tela depende dele.</string>
+    <string name="k_screen_rest_header">Descanso de Tela</string>
+    <string name="k_screen_rest_off">Desligado</string>
+    <string name="k_second_line_in_cycle">2ª linha entra no ciclo do ícone</string>
+    <string name="k_second_line_out_cycle">2ª linha fora do ciclo (só 1º toque)</string>
+    <string name="k_select_type_to_preview">Escolha um tipo pra ouvir o preview</string>
+    <string name="k_sem_canal_adb">"O canal local de comandos não está respondendo, então nada foi feito.
+
+Ligue o ADB da central (botão ADB nesta tela) e tente de novo. Sem ele não dá para instalar o ConnAdaptor nem aplicar o patch do CarPlay."</string>
+    <string name="k_send_btn">Enviar</string>
+    <string name="k_sending_error_report">Enviando relatório de erro…</string>
+    <string name="k_server_started_on_port">Servidor iniciado na porta %1$d</string>
+    <string name="k_server_stopped">Servidor parado</string>
+    <string name="k_sha256_mismatch">sha256 ≠ (esp %1$s… obtido %2$s…)</string>
+    <string name="k_signal_icon_channel">Sinal na barra</string>
+    <string name="k_signal_icon_no_service">Sem sinal / sem chip</string>
+    <string name="k_signal_icon_off">Ícone de sinal na barra desligado</string>
+    <string name="k_signal_icon_on">Ícone de sinal na barra ligado</string>
+    <string name="k_signal_icon_text">Sinal: %1$d/4</string>
+    <string name="k_signal_icon_title">Sinal de telefonia</string>
+    <string name="k_signature_incompatible">"Incompatibilidade de assinatura.
+Desinstale a versão atual antes de instalar."</string>
+    <string name="k_silence_avm_title">Silenciar log da câmera 360</string>
+    <string name="k_silence_tbox_title">Silenciar log do TBox</string>
+    <string name="k_sound_applied_message">Som de travamento aplicado — volta ao original quando a central reiniciar.</string>
+    <string name="k_sound_applied_persist_message">Som de travamento trocado — fica assim até você tocar em Restaurar original ou fazer redefinição de fábrica do carro.</string>
+    <string name="k_sound_applied_title">Som aplicado</string>
+    <string name="k_sound_apply_error_title">Erro ao aplicar som</string>
+    <string name="k_speed_lock_desc">Trava as portas automaticamente quando o carro começa a andar. Ligado por padrão.</string>
+    <string name="k_speed_lock_disable_confirm">Suas portas não serão mais travadas por velocidade e deverão ser travadas manualmente. Você tem certeza que quer desativar essa função?</string>
+    <string name="k_speed_lock_err">Não foi possível alterar o travamento por velocidade</string>
+    <string name="k_speed_lock_off">Travamento por velocidade desligado</string>
+    <string name="k_speed_lock_on">Travamento por velocidade ligado</string>
+    <string name="k_speed_lock_title">Travar portas com velocidade</string>
+    <string name="k_split_adjust_failed">Ajuste falhou (%1$s) — toque ⧉ pra fechar e tentar nova divisão</string>
+    <string name="k_split_app_crashed">Esse app derrubou a divisão inteira (não deve suportar janela) — desfiz tudo, tente outro app</string>
+    <string name="k_split_channel_active">Dividir Tela ativo</string>
+    <string name="k_split_channel_name">Dividir Tela</string>
+    <string name="k_split_closed">Divisão fechada</string>
+    <string name="k_split_done_hint">Dividido — ◀/▶ ajusta o tamanho, ⧉ fecha</string>
+    <string name="k_split_grupos_desc">Até 5 pares para abrir lado a lado pelo Acesso Rápido.</string>
+    <string name="k_split_grupos_titulo">Grupos de tela dividida</string>
+    <string name="k_split_notif_text">Toque no ⧉ pra dividir a tela</string>
+    <string name="k_split_preparing">Preparando divisão (o app atual vai reiniciar)…</string>
+    <string name="k_split_screen_disabled">Dividir tela desligado</string>
+    <string name="k_split_screen_enabled_hint">Dividir tela ligado — ícone ◫ no Acesso Rápido</string>
+    <string name="k_split_screen_info_text">Ícone ◫ no Acesso Rápido: 1º toque abre o floater (toque no ⧉ na tela pra dividir); toque de novo no ◫ fecha tudo. Precisa de freeform ativado no aparelho (ajuste único: development_settings_enabled + enable_freeform_support + force_resizable_activities, depois reiniciar) — verificando…</string>
+    <string name="k_status_brightness_info" formatted="false">O ícone na barra cicla a cada toque: 1º toque aplica a linha \"1º\"; 2º toque aplica a linha \"2º\" (só se estiver ligada); o toque seguinte volta ao brilho padrão (mesmo de antes de tocar o ícone). 0% = tela desligada. O volume no volante só restaura automaticamente quando a tela está desligada ou abaixo de 2% — em brilhos normais, mexer no volume não desfaz o ajuste.</string>
+    <string name="k_status_km_desc">Mostra a quilometragem da viagem e/ou o total do carro (odômetro) na barra de status.</string>
+    <string name="k_status_km_diag_lendo">Lendo do carro…</string>
+    <string name="k_status_km_info">A viagem conta a partir do último “Zerar viagem” (ou de quando você ligou). O total é o odômetro do carro. Os ícones aparecem na barra e atualizam a cada ~15s.</string>
+    <string name="k_status_km_reset">Zerar viagem</string>
+    <string name="k_status_km_reset_done">Viagem zerada</string>
+    <string name="k_status_km_reset_falhou">Não deu para zerar — odômetro indisponível</string>
+    <string name="k_status_km_title">Quilometragem na barra</string>
+    <string name="k_status_km_total">Total</string>
+    <string name="k_status_km_total_off">Km total na barra desligado</string>
+    <string name="k_status_km_total_on">Km total na barra ligado</string>
+    <string name="k_status_km_trip">Viagem</string>
+    <string name="k_status_km_trip_off">Km da viagem na barra desligado</string>
+    <string name="k_status_km_trip_on">Km da viagem na barra ligado</string>
+    <string name="k_status_unavailable">Indisponível</string>
+    <string name="k_stop_receiving">Parar recebimento</string>
+    <string name="k_subtab_aa_carplay">AA &amp; CarPlay</string>
+    <string name="k_swc_media_control_desc">Faz o botão de mídia do volante e a barra do sistema controlarem os apps de música (Spotify, YouTube Music, etc.): pular faixa, play/pause, e mostra a música tocando (título, artista e capa) na barra nativa.</string>
+    <string name="k_swc_media_control_title">🎵 Controlar mídia pelo volante</string>
+    <string name="k_swc_mode_ac">Modo Ar-condicionado</string>
+    <string name="k_swc_mode_driving">Modo Condução</string>
+    <string name="k_swc_mode_music">Modo Som</string>
+    <string name="k_swc_modes_desc">Reinterpreta o cluster direito do volante por modo. 2 toques no mic = Ar (10s); segurar o mic 3s = Condução. Sozinho volta ao Som.</string>
+    <string name="k_swc_modes_info">"Troca de modo pelo botão do microfone: 2 toques rápidos (menos de 1s) = Modo Ar por 10s; segurar 3s = Modo Condução por 10s. Sem uso por 10s volta ao Modo Som.
+
+Modo Ar: passar/voltar faixa = ventoinha +/−; cima/baixo = temperatura +/−.
+Modo Condução: volume +/− = regeneração; passar/voltar faixa = perfil (Eco→Comfort→Sport).
+
+Obs.: o volante também faz a ação nativa junto (o volume muda também; o mic pode abrir o assistente de voz) — não dá pra bloquear sem mexer no sistema."</string>
+    <string name="k_swc_modes_title">Modos do volante</string>
+    <string name="k_tap_list_to_read_pendrive">Toque em \"🔍 Listar\" para ler o pen-drive</string>
+    <string name="k_tbox_apply_failed">Não foi possível alterar o log do TBox. A seleção anterior foi mantida.</string>
+    <string name="k_tbox_normal">Log do TBox normal</string>
+    <string name="k_tbox_silenced">Log do TBox silenciado</string>
+    <string name="k_temp_icon_channel">Temperatura externa (barra)</string>
+    <string name="k_temp_icon_text">Externa: %1$d °C</string>
+    <string name="k_temp_icon_title">Temperatura externa</string>
+    <string name="k_timer_h">h</string>
+    <string name="k_timer_iniciar">Iniciar</string>
+    <string name="k_timer_m">min</string>
+    <string name="k_timer_pausar">Pausar</string>
+    <string name="k_timer_reiniciar">Reiniciar</string>
+    <string name="k_timer_s">s</string>
+    <string name="k_timer_terminou">A contagem terminou</string>
+    <string name="k_tmp_content_mismatch">Conteúdo em tmp ≠ APK baixado após cp (sha staging=%1$s… tmp=%2$s…).</string>
+    <string name="k_toast_wait_processing">Aguarde, ainda processando…</string>
+    <string name="k_toggle_on">● Ligado</string>
+    <string name="k_total_km_icon_text">Total: %1$d km</string>
+    <string name="k_total_km_icon_title">Quilometragem total</string>
+    <string name="k_trip_km_icon_text">Viagem: %1$s km</string>
+    <string name="k_trip_km_icon_title">Quilometragem da viagem</string>
+    <string name="k_ttl65_desc">Fixa o TTL de saída em 65: ao passar pelo celular o pacote chega à operadora com 64, como se tivesse nascido no próprio aparelho. Aplica em IPv4 e IPv6.</string>
+    <string name="k_ttl65_falhou">Não consegui alterar o TTL — veja o log</string>
+    <string name="k_ttl65_off">TTL 65 desativado — de volta ao padrão</string>
+    <string name="k_ttl65_on">TTL 65 ativado</string>
+    <string name="k_ttl65_titulo">TTL 65</string>
+    <string name="k_turn_off_avas">🔇 Desligar AVAS</string>
+    <string name="k_turn_on_avas">🔊 Ligar AVAS</string>
+    <string name="k_type_n">Tipo %1$d</string>
+    <string name="k_unavailable_bug_investigation">Indisponível (bug em investigação)</string>
+    <string name="k_unavailable_freezes_central">Indisponível (trava a central)</string>
+    <string name="k_uninstall_app_message">"Deseja desinstalar \"%1$s\"?
+
+%2$s"</string>
+    <string name="k_uninstall_app_title">Desinstalar aplicativo</string>
+    <string name="k_uninstall_btn">Desinstalar</string>
+    <string name="k_uninstall_with_icon">🗑️ Desinstalar</string>
+    <string name="k_update_apk_unreadable">APK baixado ilegível ou com assinatura inválida — instalação recusada.</string>
+    <string name="k_update_apk_wrong_cert">APK baixado não está assinado com a nossa chave — instalação recusada.</string>
+    <string name="k_update_apk_wrong_pkg">APK baixado é de outro app (%1$s) — instalação recusada.</string>
+    <string name="k_update_apk_wrong_vc">APK baixado não é a versão prometida (esperado %1$d, veio %2$d) — instalação recusada.</string>
+    <string name="k_update_available_carplaymonitor_title">Atualização disponível — CarplayMonitor</string>
+    <string name="k_update_available_message">"Nova versão: v%1$s
+Instalada: v%2$s
+
+Deseja instalar?"</string>
+    <string name="k_update_available_title">Atualização disponível</string>
+    <string name="k_update_channel_desc">Estável: recebe menos atualizações, já testadas. Experimental: recebe as novidades primeiro, com mais frequência.</string>
+    <string name="k_update_channel_experimental">Experimental</string>
+    <string name="k_update_channel_stable">Estável</string>
+    <string name="k_update_channel_title">Canal de atualização</string>
+    <string name="k_update_failed">Falha ao atualizar: %1$s</string>
+    <string name="k_update_http_403">Este aparelho não está autorizado a receber atualizações.</string>
+    <string name="k_update_http_429">Limite diário de downloads atingido. Tente de novo amanhã.</string>
+    <string name="k_update_http_outro">O servidor de atualização não respondeu (erro %1$d).</string>
+    <string name="k_update_json_no_sha256">update.json sem sha256 — não é seguro instalar sem verificar o APK.</string>
+    <string name="k_update_now_btn">Atualizar agora</string>
+    <string name="k_update_required_message">Esta versão do aplicativo expirou. Atualize para continuar usando.</string>
+    <string name="k_update_required_title">Atualização necessária</string>
+    <string name="k_update_result_summary">"Update %1$s (vc=%2$d, tmp sha256 %3$s…, %4$d B)
+%5$s"</string>
+    <string name="k_usb_auto_fixed">USB corrigido automaticamente</string>
+    <string name="k_use_responsibly_message">Use com responsabilidade. Qualquer consequência em razão desta opção é de inteira responsabilidade sua.</string>
+    <string name="k_version_footer">Versão %1$s (%2$d)</string>
+    <string name="k_watchdog_active">Watchdog ativo</string>
+    <string name="k_watchdog_channel">Central Watchdog</string>
+    <string name="k_whats_new_title">Novidades — v%1$s</string>
+    <string name="k_widget_alpha_short_label">👁 Transp.</string>
+    <string name="k_widget_apps_choose">Escolher apps</string>
+    <string name="k_widget_apps_cols">Colunas</string>
+    <string name="k_widget_apps_desc">Uma grade flutuante com os apps que você escolher. Toque no cadeado (🔒) pra deixar por cima de tudo; sem o cadeado, aparece só na tela inicial.</string>
+    <string name="k_widget_apps_empty">Escolha apps no menu Widgets</string>
+    <string name="k_widget_apps_rows">Linhas</string>
+    <string name="k_widget_apps_title">Apps favoritos</string>
+    <string name="k_widget_bg_opacity_desc">Opacidade do fundo (card) dos widgets de tela inicial (Condução, Ventoinha, Temperatura, Direção do Ar). Ícones e texto continuam 100% visíveis mesmo com o fundo bem transparente.</string>
+    <string name="k_widget_bg_opacity_label">🏠 Fundo dos widgets</string>
+    <string name="k_widget_drive_mode_vertical_desc">EX Sapo — Modo de Condução (vertical): troca entre Eco/Conforto/Sport com + e − empilhados, num espaço mais estreito.</string>
+    <string name="k_widget_drive_regen_desc">EX Sapo — Condução &amp; Regen: troca o modo de condução e o nível de regeneração direto da tela inicial.</string>
+    <string name="k_widget_fan_desc">EX Sapo — Ventoinha: ajusta a velocidade do ar direto da tela inicial.</string>
+    <string name="k_widget_fan_vertical_desc">EX Sapo — Ventoinha (vertical): igual ao widget de Ventoinha, só que empilhado (+ em cima, − embaixo) pra caber num espaço mais estreito.</string>
+    <string name="k_widget_float_drive_regen_desc">Modo de condução (Eco/Conforto/Sport) e nível de regeneração de energia.</string>
+    <string name="k_widget_float_drive_regen_title">Condução + Regeneração</string>
+    <string name="k_widget_float_fan_desc">Velocidade da ventoinha do ar-condicionado (0-7).</string>
+    <string name="k_widget_float_fan_title">Ventoinha</string>
+    <string name="k_widget_float_heating_desc">Volante, vidro traseiro, vidro dianteiro e bancos (motorista/passageiro).</string>
+    <string name="k_widget_float_heating_title">Aquecimentos</string>
+    <string name="k_widget_float_sysinfo_desc">Widget flutuante com a temperatura da CPU (°C) e o uso da CPU (%) da central. Atualiza a cada 2 s.</string>
+    <string name="k_widget_float_sysinfo_title">Sistema (CPU)</string>
+    <string name="k_widget_float_temp_desc">Temperatura alvo do ar-condicionado.</string>
+    <string name="k_widget_float_temp_title">Temperatura</string>
+    <string name="k_widget_float_vent_desc">Pra onde o ar sopra (rosto/pés/vidro) e recirculação (ar só interno).</string>
+    <string name="k_widget_float_vent_fan_desc">Igual o de cima, com a velocidade da ventoinha (0 a 3) embaixo — escolher a velocidade também liga/desliga o ar-condicionado.</string>
+    <string name="k_widget_float_vent_fan_title">Direção do Ar + Ventoinha</string>
+    <string name="k_widget_float_vent_title">Direção do Ar + Recirculação</string>
+    <string name="k_widget_heating_pick_need_one">Escolha pelo menos um ícone.</string>
+    <string name="k_widget_heating_pick_title">Ícones do aquecimento</string>
+    <string name="k_widget_heating_test_desc">EX Sapo — Aquecimento: volante, vidro dianteiro (máx. e parabrisa), vidro traseiro e bancos (motorista/passageiro), direto da tela inicial.</string>
+    <string name="k_widget_hvac_direction_desc">EX Sapo — Direção do Ar: escolhe rosto/pés/vidro (e combinações) e liga/desliga o desembaçador traseiro, direto da tela inicial.</string>
+    <string name="k_widget_hvac_direction_fan_desc">EX Sapo — Direção do Ar + Ventoinha: escolhe rosto/pés/vidro e a velocidade da ventoinha (0 a 3); escolher a velocidade também liga/desliga o ar-condicionado.</string>
+    <string name="k_widget_hvac_direction_vertical_desc">EX Sapo — Direção do Ar (vertical): troca o modo de ventilação com + e − empilhados, com toggle de desembaçador traseiro embaixo.</string>
+    <string name="k_widget_lbl_drive_comfort">Conforto</string>
+    <string name="k_widget_lbl_drive_eco">Eco</string>
+    <string name="k_widget_lbl_drive_header">MODO DE DIREÇÃO</string>
+    <string name="k_widget_lbl_drive_sport">Esporte</string>
+    <string name="k_widget_lbl_fan">Ventoinha</string>
+    <string name="k_widget_lbl_heat_auto">Auto</string>
+    <string name="k_widget_lbl_heat_front_max">Vidro Máx</string>
+    <string name="k_widget_lbl_heat_header">AQUECIMENTO</string>
+    <string name="k_widget_lbl_heat_seat_driver">Banco Mot.</string>
+    <string name="k_widget_lbl_heat_seat_passenger">Banco Pass.</string>
+    <string name="k_widget_lbl_heat_wheel">Volante</string>
+    <string name="k_widget_lbl_heat_windshield">Parabrisa</string>
+    <string name="k_widget_lbl_rear_defrost">Traseiro</string>
+    <string name="k_widget_lbl_recirc">Recircular</string>
+    <string name="k_widget_lbl_regen_header">REGENERAÇÃO DE ENERGIA</string>
+    <string name="k_widget_lbl_regen_high">Forte</string>
+    <string name="k_widget_lbl_regen_low">Fraca</string>
+    <string name="k_widget_lbl_regen_mid">Média</string>
+    <string name="k_widget_lbl_temp">Temperatura</string>
+    <string name="k_widget_lbl_vent_face">Rosto</string>
+    <string name="k_widget_lbl_vent_face_floor">Rosto+Pés</string>
+    <string name="k_widget_lbl_vent_floor">Pés</string>
+    <string name="k_widget_lbl_vent_floor_windshield">Pés+Vidro</string>
+    <string name="k_widget_lbl_vent_header">AR</string>
+    <string name="k_widget_lbl_vent_short">Direção do Ar</string>
+    <string name="k_widget_lbl_vent_windshield">Vidro</string>
+    <string name="k_widget_regen_vertical_desc">EX Sapo — Regeneração (vertical): troca entre Fraca/Média/Forte com + e − empilhados, num espaço mais estreito.</string>
+    <string name="k_widget_size_short_label">🔍 Tamanho</string>
+    <string name="k_widget_temp_desc">EX Sapo — Temperatura: ajusta a temperatura do ar-condicionado direto da tela inicial.</string>
+    <string name="k_widget_temp_vertical_desc">EX Sapo — Temperatura (vertical): igual ao widget de Temperatura, só que empilhado (+ em cima, − embaixo) pra caber num espaço mais estreito.</string>
+    <string name="k_widget_volume_desc">Barra de volume da mídia, flutuante. Escolha horizontal ou vertical; cadeado (🔒) = por cima de tudo.</string>
+    <string name="k_widget_volume_horizontal">Horizontal</string>
+    <string name="k_widget_volume_signs">Sinais</string>
+    <string name="k_widget_volume_slider">Slider</string>
+    <string name="k_widget_volume_title">Volume</string>
+    <string name="k_widget_volume_vertical">Vertical</string>
+    <string name="k_widgets_desc">Como o Flyme Auto não aceita widgets de verdade na tela inicial, estes são flutuantes — aparecem arrastáveis por cima de tudo, mas somem ao abrir qualquer aplicativo e voltam sozinhos quando você retorna pra tela inicial. Ligue os que quiser usar.</string>
+    <string name="k_widgets_float_active">Widgets flutuantes ativos</string>
+    <string name="k_widgets_float_channel">Widgets Flutuantes</string>
+    <string name="k_widgets_header">🧩 Widgets Flutuantes</string>
+    <string name="k_widgets_poslock_all_label">🔒 Travar widgets no lugar</string>
+    <string name="k_widgets_poslock_all_off">🔓 Travar widgets no lugar</string>
+    <string name="k_widgets_poslock_all_on">🔒 Widgets travados no lugar</string>
+    <string name="k_wifi_ap0_em_uso">Há um celular conectado ao hotspot do carro — ligar o Wi-Fi agora pode derrubar a sessão do CarPlay/Android Auto. Toque de novo para ligar assim mesmo.</string>
+    <string name="k_wifi_auto_enable_off">Auto-ligar WiFi desativado</string>
+    <string name="k_wifi_auto_enable_on">WiFi vai ligar sozinho ao abrir o carro</string>
+    <string name="k_wifi_floater_channel">WiFi Floater</string>
+    <string name="k_wifi_icon_channel">WiFi (barra)</string>
+    <string name="k_wifi_icon_info">Ícone de WiFi na barra: toque liga o WiFi (se estiver desligado) e abre o menu de WiFi.</string>
+    <string name="k_wifi_icon_off">Ícone de WiFi na barra desligado</string>
+    <string name="k_wifi_icon_on">Ícone de WiFi na barra ligado</string>
+    <string name="k_wifi_icon_text_off">Desligado — toque para ligar e abrir o menu</string>
+    <string name="k_wifi_icon_text_on">Ligado — toque para abrir o menu</string>
+    <string name="k_wifi_icon_text_searching">Ligado, sem conexão — toque para abrir o menu</string>
+    <string name="k_wifi_icon_title">WiFi</string>
+    <string name="k_will_remember_brightness">Vai lembrar o brilho (farol on/off)</string>
+    <string name="k_window_driver_switch">Acompanha a porta</string>
+    <string name="k_window_follows_door_off">Janelas não acompanham mais as portas</string>
+    <string name="k_window_follows_door_on">Cada janela vai abrir/fechar com a sua porta</string>
+    <string name="k_window_opposite">Oposta</string>
+    <string name="k_window_opposite_off">Voltou a abrir a janela da própria porta.</string>
+    <string name="k_window_opposite_on">Agora abre a janela oposta (a da própria porta não mexe).</string>
+    <string name="k_window_opposite_switch">Janela oposta</string>
+    <string name="k_wont_remember_brightness">Não lembra mais o brilho</string>
+    <string name="k_xapk_decompress_failed">Falha ao descomprimir o XAPK. Arquivo pode estar corrompido.</string>
+    <string name="k_xapk_no_apk_found">XAPK: nenhum APK encontrado dentro do arquivo.</string>
+    <string name="master_aa_carplay">Android Auto e CarPlay</string>
+    <string name="master_aa_na_rede">Na rede, sem sessão</string>
+    <string name="master_aa_off_msg">O CarPlay só funciona com o Android Auto ativo. Desativando o Android Auto, os dois serão desativados. Deseja continuar?</string>
+    <string name="master_aa_off_title">Desativar o Android Auto?</string>
+    <string name="master_aa_so_bt">Só Bluetooth</string>
+    <string name="master_about_app_development">Desenvolvimento do aplicativo</string>
+    <string name="master_about_description">Conheça as pessoas que tornaram este projeto possível.</string>
+    <string name="master_about_interface_design">Design da interface</string>
+    <string name="master_about_nav">Sobre</string>
+    <string name="master_about_project_credits">Créditos do projeto</string>
+    <string name="master_about_responsibility_body">"A instalação, configuração e utilização do SapoCentral são decisões de responsabilidade exclusiva do usuário. Ao utilizar o aplicativo, o usuário declara estar ciente dos possíveis riscos e assume as consequências decorrentes de suas escolhas e ações.
+
+Os responsáveis pelo projeto não se responsabilizam por danos, falhas, perdas ou infrações decorrentes de instalação incorreta, modificações não autorizadas, uso inadequado ou utilização em desacordo com as orientações de segurança e a legislação aplicável.
+
+Utilize o aplicativo com responsabilidade e nunca opere seus recursos enquanto dirige caso isso possa causar distração."</string>
+    <string name="master_about_responsibility_title">Responsabilidade pelo uso</string>
+    <string name="master_about_special_thanks">Agradecimentos especiais</string>
+    <string name="master_about_thanks_body"><b>Marco Antônio</b>", o primeiro a tentar o desbloqueio, e quem deu coragem para testar.
+
+"<b>Duda</b>", por participar dos primeiros testes do aplicativo.
+
+"<b>Giulio</b>", pela doação de um iPhone utilizado durante os testes.
+
+"<b>Guilherme</b>", por compartilhar o código que contribuiu para a implementação do CarPlay via Wi‑Fi.
+
+Agradecemos também a todas as pessoas que contribuíram financeiramente, participaram dos testes e ajudaram na evolução do projeto."</string>
+    <string name="master_about_title">Sobre o SapoCentral</string>
+    <string name="master_ac_single_step">Gestos rápidos: alterar um passo por deslize</string>
+    <string name="master_actions">Ações</string>
+    <string name="master_active_safety">Segurança ativa</string>
+    <string name="master_adb_contagem_desligar">Desativando ADB em %d…</string>
+    <string name="master_adb_contagem_ligar">Ativando ADB em %d…</string>
+    <string name="master_adb_desligando">Desligando o ADB…</string>
+    <string name="master_adb_ligando">Ligando o ADB…</string>
+    <string name="master_aeb_active">AEB ATIVO</string>
+    <string name="master_aeb_emergency_braking">Frenagem automática de emergência (AEB)</string>
+    <string name="master_aeb_inactive">AEB INATIVO</string>
+    <string name="master_aeb_reapply_on_start">Reaplicar o estado do AEB ao ligar</string>
+    <string name="master_air_direction">Direção do ar</string>
+    <string name="master_air_intake">Entrada de ar</string>
+    <string name="master_air_programming">Programação do ar</string>
+    <string name="master_air_ventilation">Ar + ventilação</string>
+    <string name="master_any_phone">Qualquer celular</string>
+    <string name="master_app_catalog">Catálogo de apps</string>
+    <string name="master_appearance">Aparência</string>
+    <string name="master_application_mode">Aplicação</string>
+    <string name="master_apps_description">Instale e gerencie aplicativos.</string>
+    <string name="master_audio_description">Personalize os sons do carro.</string>
+    <string name="master_available">Disponível</string>
+    <string name="master_available_widgets">Widgets disponíveis</string>
+    <string name="master_avoid_external_air">Evitar ar externo</string>
+    <string name="master_bar_shortcuts">Atalhos da barra</string>
+    <string name="master_battery_percentage">Percentual da bateria</string>
+    <string name="master_both">Ambos</string>
+    <string name="master_brightness">Brilho</string>
+    <string name="master_brightness_control">Controle de brilho</string>
+    <string name="master_brightness_levels">Níveis de brilho</string>
+    <string name="master_car">Carro</string>
+    <string name="master_car_battery">Bateria do carro</string>
+    <string name="master_car_color_gray">Cinza</string>
+    <string name="master_car_color_green">Verde</string>
+    <string name="master_car_color_silver">Prata</string>
+    <string name="master_car_color_white">Branco</string>
+    <string name="master_catalog_desc_chromium">Navegador leve baseado no Chromium.</string>
+    <string name="master_catalog_desc_disney">Filmes e séries do Disney+ na central.</string>
+    <string name="master_catalog_desc_dual_dashcam">Visualize e controle as câmeras dianteira e traseira do veículo.</string>
+    <string name="master_catalog_desc_ei_sapo">Assistente para facilitar ações e informações da central. Fale “Ei Sapo” para começar.</string>
+    <string name="master_catalog_desc_equalizer">Ajuste o som com equalização e efeitos de áudio.</string>
+    <string name="master_catalog_desc_file_manager">Explore, copie e organize arquivos da central e do pen-drive.</string>
+    <string name="master_catalog_desc_firefox">Navegador completo para acessar a internet pela central.</string>
+    <string name="master_catalog_desc_geely_battery">Acompanhe bateria, autonomia e informações de energia do veículo.</string>
+    <string name="master_catalog_desc_logger">Registra dados da conexão para diagnóstico e suporte.</string>
+    <string name="master_catalog_desc_microg">Serviços de compatibilidade necessários para alguns aplicativos.</string>
+    <string name="master_catalog_desc_prime_video">Filmes e séries. Instalação bloqueada para preservar a estabilidade.</string>
+    <string name="master_catalog_desc_vlc">Reprodutor de áudio e vídeo compatível com vários formatos.</string>
+    <string name="master_catalog_desc_waze">Navegação GPS com trânsito, alertas e rotas em tempo real.</string>
+    <string name="master_catalog_remove">Remover</string>
+    <string name="master_check_new_version">Verifique se há uma nova versão disponível</string>
+    <string name="master_classic">Clássico</string>
+    <string name="master_close_apps">Fechar apps</string>
+    <string name="master_conexao_wifi">Conexão Wi‑Fi</string>
+    <string name="master_config_description">Ajuste o sistema e suas preferências.</string>
+    <string name="master_configure">Configurar</string>
+    <string name="master_connect_phone">Conectar celular</string>
+    <string name="master_connected">Conectado</string>
+    <string name="master_connected_car">Conectado ao carro</string>
+    <string name="master_content">Conteúdo</string>
+    <string name="master_copy_apps_usb">Copiar apps do pen-drive para a memória</string>
+    <string name="master_copy_audio_usb">Copiar áudios do pen-drive</string>
+    <string name="master_custom_sound">Personalizado</string>
+    <string name="master_dark">Escuro</string>
+    <string name="master_digital_ac">Ar-condicionado digital</string>
+    <string name="master_digital_external_temperature">Temperatura externa digital</string>
+    <string name="master_disable_external_speaker">Desativar alto-falante externo</string>
+    <string name="master_disconnected">Desconectado</string>
+    <string name="master_disconnected_car">Desconectado do carro</string>
+    <string name="master_drive">Direção</string>
+    <string name="master_drive_comfort">Comfort</string>
+    <string name="master_drive_regeneration">Condução e regeneração</string>
+    <string name="master_drive_sport">Sport</string>
+    <string name="master_enable_quick_bar">Ativar barra rápida</string>
+    <string name="master_enable_widgets">Ativar widgets</string>
+    <string name="master_equalizer">Equalizador</string>
+    <string name="master_external_speaker">Alto-falante externo</string>
+    <string name="master_file">Arquivo</string>
+    <string name="master_file_manager">Gerenciador de Arquivos</string>
+    <string name="master_first_tap">Primeiro toque</string>
+    <string name="master_floating_app">App flutuante</string>
+    <string name="master_floating_panel">Painel flutuante</string>
+    <string name="master_handle_height">Altura da alça</string>
+    <string name="master_handle_width">Largura da alça</string>
+    <string name="master_heating">Aquecimento</string>
+    <string name="master_help">Ajuda</string>
+    <string name="master_help_android_items">"Android Auto Wi‑Fi|Ativa a conexão sem fio.
+ConnAdaptor|Gerencia o componente de conexão.
+Celular preferido|Escolhe o aparelho prioritário.
+Manter Android Auto aberto|Tenta reabrir após uma interrupção.
+Internet via rotas|Compartilha internet ajustando as rotas.
+Internet via proxy|Compartilha internet usando um proxy."</string>
+    <string name="master_help_android_title">Sobre Android Auto</string>
+    <string name="master_help_avas_items">"Alto-falante externo|Ativa o alto-falante de aviso externo.
+Som do AVAS|Escolhe o som de baixa velocidade.
+Pré-visualizar|Reproduz o som antes de aplicar.
+Aplicar|Envia o som escolhido ao carro."</string>
+    <string name="master_help_avas_title">Sobre o AVAS</string>
+    <string name="master_help_car_items">"Controles no volante|Ativa os comandos físicos do volante.
+Controlar mídia pelo volante|Usa o volante para controlar reprodução e volume."</string>
+    <string name="master_help_car_title">Sobre o carro</string>
+    <string name="master_help_carplay_items">"CarPlay Wi‑Fi|Ativa a conexão sem fio.
+CarPlay Monitor|Monitora e recupera a conexão.
+Celular preferido|Escolhe o iPhone prioritário.
+Manter CarPlay aberto|Tenta reabrir após uma interrupção.
+Internet via rotas|Compartilha internet ajustando as rotas.
+Internet via proxy|Compartilha internet usando um proxy."</string>
+    <string name="master_help_carplay_title">Sobre CarPlay</string>
+    <string name="master_help_catalog_items">"Status do aplicativo|Informa se o app está instalado e atualizado.
+Instalar|Baixa e instala o app.
+Atualizar|Instala a versão mais recente.
+Remover|Desinstala o app da central."</string>
+    <string name="master_help_catalog_title">Sobre o catálogo</string>
+    <string name="master_help_climate_items">"Programação do ar|Cria rotinas automáticas do ar-condicionado.
+Evitar ar externo|Retorna à recirculação interna automaticamente.
+Janela acompanha a porta|Movimenta a janela ao abrir ou fechar a porta.
+Janela oposta|Aplica o movimento também ao lado oposto.
+Ativar|Exibe o painel sobre outros apps.
+Conteúdo|Escolhe temperatura, bateria ou ambos.
+Cor do texto|Seleciona texto claro ou escuro.
+Tamanho|Ajusta o tamanho do painel.
+Transparência|Ajusta a visibilidade do fundo."</string>
+    <string name="master_help_climate_title">Sobre o clima</string>
+    <string name="master_help_floating_items">"Ativar|Exibe o painel sobre outros apps.
+Conteúdo|Escolhe temperatura, bateria ou ambos.
+Cor do texto|Seleciona texto claro ou escuro.
+Tamanho|Ajusta o tamanho do painel.
+Transparência|Ajusta a visibilidade do fundo."</string>
+    <string name="master_help_floating_title">Sobre o painel flutuante</string>
+    <string name="master_help_installer_items">"Origem dos arquivos|Escolhe onde procurar os pacotes.
+Arquivo selecionado|Mostra o pacote que será usado.
+Instalar ou remover|Instala o pacote ou remove o app.
+Copiar do pen-drive|Copia pacotes para a central.
+Apps sempre ativos|Evita que os apps escolhidos sejam encerrados."</string>
+    <string name="master_help_installer_title">Sobre o instalador</string>
+    <string name="master_help_keepalive_items">Gerenciar|Escolhe os apps que não devem ser encerrados.</string>
+    <string name="master_help_keepalive_title">Sobre apps sempre ativos</string>
+    <string name="master_help_lock_sound_items">"Áudio selecionado|Escolhe e permite ouvir o arquivo.
+Até reiniciar|Aplica somente até a próxima reinicialização.
+Persistente|Mantém o som após reiniciar.
+Copiar áudios do pen-drive|Copia áudios compatíveis para a central.
+Restaurar original|Volta ao som de fábrica.
+Apagar|Remove o arquivo selecionado."</string>
+    <string name="master_help_lock_sound_title">Sobre o som de travamento</string>
+    <string name="master_help_media_items">Pausar ao abrir a porta|Pausa a reprodução quando uma porta é aberta.</string>
+    <string name="master_help_media_title">Sobre mídia</string>
+    <string name="master_help_notifications_items">"Bateria do carro|Mostra a carga da bateria de tração.
+Temperatura externa|Mostra a temperatura medida pelo carro.
+Wi‑Fi|Mostra o estado da conexão Wi‑Fi."</string>
+    <string name="master_help_notifications_title">Sobre a barra de notificações</string>
+    <string name="master_help_perf_items">"Otimização de vídeo|Troca o decodificador de vídeo por um equivalente que não trava em 15 quadros. Nada é escrito no sistema: vale até o próximo reboot e volta sozinho no boot.
+Aprender o uso e otimizar sozinho|A central aprende como você usa os aplicativos e, alguns minutos depois de cada partida, otimiza sozinha os que estiverem parados — não mexe em aplicativo que você esteja usando. Ligar reinicia a interface, e precisa ser ligado de novo a cada reinício da central.
+Como chegar no melhor caso|Ligue o aprendizado, use o aplicativo algumas vezes e depois volte aqui e clique em Otimizar: ele fica otimizado para o seu uso, que é o melhor estado. Quando aquele aplicativo for atualizado a central apaga o que aprendeu e a otimização se perde — é só repetir, usar algumas vezes e otimizar.
+Otimizado — compilado pelo seu uso|O melhor estado: a central compilou só o que você usa. Abre mais rápido e ocupa bem menos espaço do que compilar o aplicativo inteiro.
+Otimizado — compilado inteiro|A central compilou o aplicativo todo, sem saber o que você usa. É o que acontece quando ainda não há nada aprendido: abre rápido, mas ocupa bem mais espaço.
+Não otimizado|O aplicativo roda interpretado, do jeito que vem de fábrica, e abre mais devagar.
+Otimizar|Compila o aplicativo agora. Leva alguns segundos.
+Remover|Desinstala o aplicativo da central.
+Agradecimento|O caminho para estes dois achados veio da comunidade de Belarus. As medições e a forma de aplicar aqui são nossas; o ponto de partida foi deles, agradecimentos por terem compartilhado e ajudado a melhorar nosso desenvolvimento. Obrigado."</string>
+    <string name="master_help_perf_title">Sobre o desempenho</string>
+    <string name="master_help_preferences_items">"Aparência|Escolhe o tema claro, escuro ou automático.
+Idioma|Define o idioma do aplicativo.
+Descanso de tela|Define quando a tela entra em repouso."</string>
+    <string name="master_help_preferences_title">Sobre preferências</string>
+    <string name="master_help_quickbar_items">"Ativar barra rápida|Exibe a alça que abre os atalhos.
+Pré-visualização|Mostra e permite ordenar os ícones.
+Atalhos da barra|Escolhe as funções da barra.
+Tamanho dos ícones|Ajusta o tamanho dos atalhos.
+Largura da alça|Ajusta a largura da área de abertura.
+Altura da alça|Ajusta a altura da área de abertura.
+Transparência|Ajusta a visibilidade da alça."</string>
+    <string name="master_help_quickbar_title">Sobre a barra rápida</string>
+    <string name="master_help_screen_items">"Gestos rápidos|Ativa gestos feitos diretamente na tela.
+Favoritos dos gestos rápidos|Escolhe os apps do gesto de cinco dedos.
+Brilho|Ajusta a luminosidade da tela.
+Lembrar brilho de acordo com o farol|Guarda um brilho para o farol apagado e outro para o farol aceso, e devolve o certo ao ligar.
+Descanso de tela|Define quando a tela entra em repouso.
+Dividir tela|Permite usar dois apps ao mesmo tempo.
+App flutuante|Abre apps em uma janela sobre a tela."</string>
+    <string name="master_help_screen_title">Sobre Tela</string>
+    <string name="master_help_security_items">"Fundo preto na ré|Escurece o fundo para destacar a câmera.
+Exibir ao dar seta|Abre a câmera lateral com a seta.
+Manter aberta por mais 5 segundos|Mantém a câmera após desligar a seta.
+Frenagem automática de emergência (AEB)|Ativa ou desativa o AEB.
+Reaplicar o estado do AEB ao ligar|Restaura a escolha ao iniciar.
+Travar portas com velocidade|Trava as portas quando o carro se move."</string>
+    <string name="master_help_security_title">Sobre a segurança</string>
+    <string name="master_help_status_items">"Percentual da bateria|Exibe a carga em porcentagem.
+Ar-condicionado digital|Permite ajustar o ar pela barra inferior.
+Temperatura externa digital|Exibe a temperatura externa na barra inferior.
+Controle de brilho|Permite ajustar o brilho pela barra inferior.
+Níveis de brilho|Define os níveis do controle rápido.
+Quilometragem|Escolhe entre viagem e total."</string>
+    <string name="master_help_status_title">Sobre a barra de status</string>
+    <string name="master_help_system_items">"Modo oficina|Libera ferramentas de manutenção.
+Log da sessão|Registra informações para diagnóstico.
+Versão instalada|Mostra a versão atual do app.
+Reiniciar central|Reinicia o sistema multimídia. Durante o processo, o alto-falante pode emitir um breve som; isso é normal."</string>
+    <string name="master_help_system_title">Sobre o sistema</string>
+    <string name="master_help_updates_items">"Tipo de atualização|Escolhe versões estáveis ou experimentais.
+Atualização automática|Permite instalar novas versões automaticamente.
+Buscar atualização|Verifica se há uma versão mais recente."</string>
+    <string name="master_help_updates_title">Sobre atualizações</string>
+    <string name="master_help_widgets_items">"Ativar widgets|Permite exibir widgets flutuantes.
+Fundo dos widgets|Mostra ou oculta o fundo.
+Tamanho|Ajusta cada widget individualmente.
+Transparência|Ajusta cada widget individualmente."</string>
+    <string name="master_help_widgets_title">Sobre widgets</string>
+    <string name="master_help_wifi_items">"Ligar Wi‑Fi ao abrir o carro|Ativa o Wi‑Fi automaticamente.
+Telemetria ao ligar o carro|Inicia o envio dos dados do carro.
+Sincronizar com o celular|Sincroniza a central com o telefone."</string>
+    <string name="master_help_wifi_title">Sobre Wi‑Fi</string>
+    <string name="master_home_description">Tudo pronto para dirigir.</string>
+    <string name="master_icon_size">Tamanho dos ícones</string>
+    <string name="master_indicators">Indicadores</string>
+    <string name="master_installed">Instalado</string>
+    <string name="master_installed_version">Versão instalada</string>
+    <string name="master_interface">Interface</string>
+    <string name="master_internet">Internet</string>
+    <string name="master_keep_android_auto_open">Manter Android Auto aberto</string>
+    <string name="master_keep_apps_active">Apps sempre ativos</string>
+    <string name="master_keep_apps_active_description">Escolha os apps que não devem ser encerrados pelo sistema</string>
+    <string name="master_keep_apps_description">Selecione os aplicativos que devem permanecer ativos.</string>
+    <string name="master_keep_apps_title">Apps sempre ativos</string>
+    <string name="master_keep_carplay_open">Manter CarPlay aberto</string>
+    <string name="master_keep_open_five_seconds">Manter aberta por mais 5 segundos</string>
+    <string name="master_language">Idioma</string>
+    <string name="master_language_english">English</string>
+    <string name="master_language_portuguese">Português (Brasil)</string>
+    <string name="master_language_russian">Русский</string>
+    <string name="master_language_spanish">Español (Chile)</string>
+    <string name="master_language_thai">ไทย</string>
+    <string name="master_language_vietnamese">Tiếng Việt</string>
+    <string name="master_light">Claro</string>
+    <string name="master_list">Listar</string>
+    <string name="master_manage">Gerenciar</string>
+    <string name="master_media_browser_row">Tocadores de música (Spotify, Deezer, JOOX…)</string>
+    <string name="master_mileage">Quilometragem</string>
+    <string name="master_mode_off">Desligado no modo</string>
+    <string name="master_network_description">Conectividade do carro em um só lugar.</string>
+    <string name="master_no_apps_available">Nenhum aplicativo disponível.</string>
+    <string name="master_no_ip">Sem IP</string>
+    <string name="master_none_active">Nenhuma ativa</string>
+    <string name="master_notification_bar">Barra de notificações</string>
+    <string name="master_origin">Origem</string>
+    <string name="master_original_sound">Som original</string>
+    <string name="master_perf_already">%1$s já está otimizado.</string>
+    <string name="master_perf_busy_msg">"Otimizando %1$s.
+
+Pode levar até um minuto. Aguarde sem desligar o carro."</string>
+    <string name="master_perf_busy_title">Otimizando</string>
+    <string name="master_perf_det_apk">roda direto do APK</string>
+    <string name="master_perf_det_discarded">a compilação foi descartada pelo sistema</string>
+    <string name="master_perf_det_empty">roda interpretado, nunca foi compilado</string>
+    <string name="master_perf_det_full">compilado inteiro</string>
+    <string name="master_perf_det_none">sem informação</string>
+    <string name="master_perf_det_profile">compilado pelo seu uso</string>
+    <string name="master_perf_det_verified">apenas verificado, sem compilar</string>
+    <string name="master_perf_done">%1$s otimizado.</string>
+    <string name="master_perf_empty">Nenhum aplicativo instalado por você.</string>
+    <string name="master_perf_failed">Não consegui otimizar %1$s.</string>
+    <string name="master_perf_jit_confirm_msg">"A interface vai reiniciar agora e a tela fica fora por cerca de 40 segundos. Não é um reboot da central.
+
+Desligar e ligar o carro não desfaz. Só um reboot da central desliga o aprendizado, e aí é só ligar de novo aqui: o que já foi otimizado nos aplicativos continua valendo.
+
+A partir de agora a central aprende com o uso e, alguns minutos depois de cada partida, otimiza sozinha os aplicativos que estiverem parados."</string>
+    <string name="master_perf_jit_confirm_title">Ligar o aprendizado?</string>
+    <string name="master_perf_jit_desc">A central aprende como você usa os aplicativos e, alguns minutos depois de cada partida, otimiza sozinha os que estiverem parados. Precisa ser ligado de novo depois que a central reinicia — a otimização já feita nos aplicativos não se perde.</string>
+    <string name="master_perf_jit_not_applied">Não consegui ligar o aprendizado — a interface não chegou a reiniciar. Tente de novo.</string>
+    <string name="master_perf_jit_off">Desligado (como vem de fábrica)</string>
+    <string name="master_perf_jit_off_msg">A interface também reinicia para desligar: cerca de 40 segundos de tela fora. O que já foi aprendido não se perde.</string>
+    <string name="master_perf_jit_off_title">Desligar o aprendizado?</string>
+    <string name="master_perf_jit_on">Ligado — religar depois de um reboot da central</string>
+    <string name="master_perf_jit_title">Aprender o uso e otimizar sozinho</string>
+    <string name="master_perf_nav">Desempenho</string>
+    <string name="master_perf_need_use_msg">"%1$s já está compilado inteiro, então abre rápido. Mas ainda não sei o que você usa dentro dele.
+
+Com o aprendizado ligado, abra o aplicativo mais algumas vezes e volte aqui: aí eu compilo só o que você usa, que ocupa bem menos espaço."</string>
+    <string name="master_perf_need_use_title">Falta usar mais para otimizar pelo seu uso</string>
+    <string name="master_perf_no_profile_msg">"Vou compilar %1$s inteiro. Já deixa ele mais rápido, mas ocupa mais espaço.
+
+Depois de abrir o aplicativo algumas vezes com o aprendizado ligado, otimize de novo: aí ele fica compilado só para o seu uso."</string>
+    <string name="master_perf_no_profile_title">Ainda não sei como você usa este aplicativo</string>
+    <string name="master_perf_note_update">Otimize depois de usar o aplicativo algumas vezes: assim ele fica otimizado para o seu uso. Quando o aplicativo é atualizado a otimização se perde — é só usar algumas vezes e otimizar de novo.</string>
+    <string name="master_perf_optimize">Otimizar</string>
+    <string name="master_perf_refresh">Conferir</string>
+    <string name="master_perf_refuse_disk">Espaço insuficiente na central para otimizar.</string>
+    <string name="master_perf_refuse_memory">Memória insuficiente agora. Tente de novo em instantes.</string>
+    <string name="master_perf_restarting">Reiniciando a interface. Aguarde…</string>
+    <string name="master_perf_scanning">Conferindo os aplicativos. Aguarde…</string>
+    <string name="master_perf_state_bad">Não otimizado</string>
+    <string name="master_perf_state_ok">Otimizado</string>
+    <string name="master_perf_state_unknown">Não sei dizer</string>
+    <string name="master_perf_title">Desempenho dos aplicativos</string>
+    <string name="master_perf_video_applying">Trocando o decodificador de vídeo</string>
+    <string name="master_perf_video_confirm_msg">"A troca é temporária e não escreve nada no sistema: vale até o próximo reboot da central, e o aplicativo religa sozinho no boot enquanto esta opção estiver ligada.
+
+O decodificador reinicia agora. Se houver uma projeção CarPlay no ar, ela volta para a tela inicial e reconecta sozinha."</string>
+    <string name="master_perf_video_confirm_title">Ligar a otimização de vídeo?</string>
+    <string name="master_perf_video_desc">Trocar o decodificador de vídeo até o próximo reboot; religa sozinho após o boot. Melhora consideravelmente o resultado de vídeos do YouTube em 1080p 60fps.</string>
+    <string name="master_perf_video_done">Vídeo a 60 quadros ligado.</string>
+    <string name="master_perf_video_failed">Não consegui trocar o decodificador de vídeo.</string>
+    <string name="master_perf_video_off">Desligado (decodificador de fábrica)</string>
+    <string name="master_perf_video_off_msg">O decodificador reinicia agora e o vídeo volta ao comportamento original. Nada precisa ser desinstalado: a troca nunca foi permanente.</string>
+    <string name="master_perf_video_off_title">Voltar ao decodificador de fábrica?</string>
+    <string name="master_perf_video_on">Ligado</string>
+    <string name="master_perf_video_removed">Decodificador de fábrica de volta.</string>
+    <string name="master_perf_video_title">Otimização de vídeo</string>
+    <string name="master_perf_video_wait">Leva alguns segundos. Aguarde sem desligar o carro.</string>
+    <string name="master_persistent">Persistente</string>
+    <string name="master_pip_nativo">PiP nativo (janela flutuante)</string>
+    <string name="master_placeholder">—</string>
+    <string name="master_power_off_vehicle">Desligar veículo</string>
+    <string name="master_preview">Pré-visualização</string>
+    <string name="master_programs">Programações</string>
+    <string name="master_quick_bar">Barra rápida</string>
+    <string name="master_quick_gesture_favorites">Favoritos dos gestos rápidos</string>
+    <string name="master_quick_gestures">Gestos rápidos</string>
+    <string name="master_rear_camera">Câmera de ré</string>
+    <string name="master_regen_high">Alta</string>
+    <string name="master_regen_low">Baixa</string>
+    <string name="master_reiniciando">Reiniciando…</string>
+    <string name="master_remember_brightness">Lembrar brilho de acordo com o farol</string>
+    <string name="master_reset">Zerar</string>
+    <string name="master_reset_trip_mileage">Zerar quilometragem da viagem</string>
+    <string name="master_rest_disabled">Desligado</string>
+    <string name="master_restart_central">Reiniciar central</string>
+    <string name="master_restart_connection">Reiniciar conexão</string>
+    <string name="master_restore_original">Restaurar original</string>
+    <string name="master_reverse_volume">Volume da ré</string>
+    <string name="master_screen_off">Apagar tela</string>
+    <string name="master_screen_rest">Descanso de tela</string>
+    <string name="master_search_update">Buscar atualização</string>
+    <string name="master_second_tap">Segundo toque</string>
+    <string name="master_select_apk">Selecione um arquivo APK</string>
+    <string name="master_select_color">Selecionar cor</string>
+    <string name="master_selected_audio">Áudio selecionado</string>
+    <string name="master_selected_file">Arquivo selecionado</string>
+    <string name="master_session_log">Log da sessão</string>
+    <string name="master_shortcuts_description">Organize os acessos rápidos da central.</string>
+    <string name="master_show_log">Mostrar log</string>
+    <string name="master_show_on_turn">Exibir ao dar seta</string>
+    <string name="master_size">Tamanho</string>
+    <string name="master_soft">Suave</string>
+    <string name="master_sound">Som</string>
+    <string name="master_split_screen">Dividir tela</string>
+    <string name="master_standard">Padrão</string>
+    <string name="master_status_bar">Barra de status</string>
+    <string name="master_sync_with_phone">Sincronizar com o celular</string>
+    <string name="master_technological">Tecnológico</string>
+    <string name="master_telemetry">Telemetria</string>
+    <string name="master_telemetry_on_car_start">Telemetria ao ligar o carro</string>
+    <string name="master_temperature">Temperatura</string>
+    <string name="master_temperature_short">Temp.</string>
+    <string name="master_text_color">Cor do texto</string>
+    <string name="master_tools_description">Personalize a central do seu jeito.</string>
+    <string name="master_transparency">Transparência</string>
+    <string name="master_turn_camera">Câmera na seta</string>
+    <string name="master_until_restart">Até reiniciar</string>
+    <string name="master_update_type">Tipo de atualização</string>
+    <string name="master_updates">Atualizações</string>
+    <string name="master_ventilation">Ventilação</string>
+    <string name="master_wheel_controls">Controles no volante</string>
+    <string name="master_wheel_media">Controlar mídia pelo volante</string>
+    <string name="master_widget_background">Fundo dos widgets</string>
+    <string name="master_widget_lock_positions">Travar posição dos widgets</string>
+    <string name="master_widget_manage">Gerenciar</string>
+    <string name="master_widget_pin">Fixar</string>
+    <string name="master_widget_rows_columns">Grade</string>
+    <string name="master_wifi_on_car_open">Ligar Wi‑Fi ao abrir o carro</string>
+    <string name="master_windows_doors">Janelas e portas</string>
+    <string name="material_slider_range_end">Range end,</string>
+    <string name="material_slider_range_start">Range start,</string>
+    <string name="mtrl_badge_numberless_content_description">New notification</string>
+    <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">More than %1$d new notifications</string>
+    <string name="mtrl_exceed_max_badge_number_suffix">%1$d%2$s</string>
+    <string name="mtrl_picker_a11y_next_month">Change to next month</string>
+    <string name="mtrl_picker_a11y_prev_month">Change to previous month</string>
+    <string name="mtrl_picker_announce_current_selection">Current selection: %1$s</string>
+    <string name="mtrl_picker_cancel">@android:string/cancel</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Select a Date</string>
+    <string name="mtrl_picker_date_header_unselected">Selected date</string>
+    <string name="mtrl_picker_day_of_week_column_header">Column of days: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Invalid format.</string>
+    <string name="mtrl_picker_invalid_format_example">Example: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Use: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Invalid range.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="mtrl_picker_out_of_range">Out of range: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Start date – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – End date</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Select a Date Range</string>
+    <string name="mtrl_picker_range_header_unselected">Start date – End date</string>
+    <string name="mtrl_picker_save">Save</string>
+    <string name="mtrl_picker_text_input_date_hint">Date</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">End date</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Start date</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Switch to calendar input mode</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tap to switch to selecting a day</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Switch to text input mode</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tap to switch to selecting a year</string>
+    <string name="oficina_ativar">Ativar</string>
+    <string name="oficina_recuperacao_explicacao">Sem registro anterior, não é possível saber quais aplicativos foram ocultados pelo modo oficina. Selecione os que deseja reativar. Aplicativos desativados por você também podem aparecer.</string>
+    <string name="oficina_recuperacao_falhas">Não foi possível reativar:</string>
+    <string name="oficina_recuperacao_resultado">%1$d de %2$d aplicativos reativados.</string>
+    <string name="oficina_restaurar">Restaurar</string>
+    <string name="oficina_selecionar_todos">Selecionar todos</string>
+    <string name="oficina_sem_apps_desativados">Não há aplicativos externos desativados para restaurar.</string>
+    <string name="open_overlay_permission">Abrir permissão de sobreposição</string>
+    <string name="password_toggle_content_description">Show password</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="permission_label">Permissão de sobreposição:</string>
+    <string name="permission_missing">FALTANDO</string>
+    <string name="permission_ok">OK</string>
+    <string name="search_menu_title">Search</string>
+    <string name="start_floater">Ligar floater</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stop_floater">Desligar floater</string>
+    <string name="subtitle_control">Use este app para ligar/desligar a bolinha flutuante. A tela preta só aparece quando tocar na bolinha.</string>
+    <string name="title_control">Controle do Floater</string>
+    <string name="update_checking">Buscando atualização…</string>
+    <string name="update_declined">Atualização não instalada.</string>
+    <string name="update_dialog_message">Encontrada atualização da versão %1$s para %2$s. Atualizar agora?</string>
+    <string name="update_dialog_title">Atualização disponível</string>
+    <string name="update_downloading">A transferir e instalar…</string>
+    <string name="update_no">Não</string>
+    <string name="update_none_available">Não há atualizações no momento.</string>
+    <string name="update_yes">Sim</string>
+    <string name="xml_a_opcao_ativa_usa_o_mesmo_azul_de_destaq">A opção ativa usa o mesmo azul de destaque do sistema, sem cores por modo.</string>
+    <string name="xml_a_verificar">A verificar…</string>
+    <string name="xml_ac_program_desc">Monte sequências automáticas de temperatura e ventilação — o pill executa ao tocar numa programação salva.</string>
+    <string name="xml_ac_program_titulo">Programação de Ar</string>
+    <string name="xml_acesso">Acesso</string>
+    <string name="xml_acesso_rapido">Acesso Rápido</string>
+    <string name="xml_adb_por_usb_off">🔌 ADB por USB: OFF</string>
+    <string name="xml_android_auto">Android Auto</string>
+    <string name="xml_android_auto_carplay">Android Auto + CarPlay Wi-Fi</string>
+    <string name="xml_android_auto_carplay_2">Android Auto + CarPlay Wi-Fi</string>
+    <string name="xml_android_auto_sem_fio_automatico">Android Auto sem fio automático</string>
+    <string name="xml_anunciar_carplay_ao_iphone">CarPlay sem fio</string>
+    <string name="xml_ao_conectar_o_celular_por_bluetooth_liga">Ao conectar o celular por Bluetooth, liga o Android Auto sozinho — sem precisar tocar no ícone.</string>
+    <string name="xml_apagar">🗑️ Apagar</string>
+    <string name="xml_apagar_2">🗑️ Apagar</string>
+    <string name="xml_apagar_3">Apagar</string>
+    <string name="xml_aparencia">🌗 Aparência</string>
+    <string name="xml_aplicar">✅ Aplicar</string>
+    <string name="xml_aplicativos">📦 Aplicativos</string>
+    <string name="xml_apps">Apps</string>
+    <string name="xml_ar">💨 Ar</string>
+    <string name="xml_atalhos">Atalhos</string>
+    <string name="xml_atalhos_desc">Ícones flutuantes, widgets, gestos e volante — toque aqui p/ ativar e ajustar</string>
+    <string name="xml_ativa_o_wifi_automaticamente_sempre_que">Ativa o WiFi automaticamente sempre que o carro acordar (ex: destrancar/ligar), mesmo se você tiver desligado manualmente antes.</string>
+    <string name="xml_ativar">Ativar</string>
+    <string name="xml_ativar_2">Ativar</string>
+    <string name="xml_ativar_automaticamente_ao_conectar">Ativar automaticamente ao conectar</string>
+    <string name="xml_ativar_gestos_rapidos">Ativar gestos rápidos</string>
+    <string name="xml_atualizacoes">🔄 Atualizações</string>
+    <string name="xml_atualizar_rede">🔄 Atualizar rede</string>
+    <string name="xml_audio">Áudio</string>
+    <string name="xml_audio_do_sistema">🔊 Áudio do Sistema</string>
+    <string name="xml_aumentar_temperatura">Aumentar temperatura</string>
+    <string name="xml_auto">Auto</string>
+    <string name="xml_auto_2">AUTO</string>
+    <string name="xml_avas_alto_falante_externo">AVAS / Alto-falante externo</string>
+    <string name="xml_bateria_12v">🔋 BATERIA DO CARRO</string>
+    <string name="xml_bateria_na_barra">% Bateria na barra</string>
+    <string name="xml_brilho_na_barra_0_desliga_volume_religa">Brilho na barra (0% desliga; volume religa)</string>
+    <string name="xml_cada_porta_desce_sobe_so_a_sua_janela_ao">Cada porta desce/sobe só a sua janela ao abrir/fechar. Com \"Oposta\", desce/sobe a janela do OUTRO lado da mesma fileira em vez da própria. Se já houver qualquer janela aberta, não abre outra — a pressão já sai por ela.</string>
+    <string name="xml_camera_dupla_frontal_traseira">Câmera dupla frontal + traseira.</string>
+    <string name="xml_captura_e_envia_logs_do_connadaptor">Captura e envia logs do ConnAdaptor.</string>
+    <string name="xml_car_api_iniciando">Car API: iniciando</string>
+    <string name="xml_carplay">CarPlay</string>
+    <string name="xml_carplaymonitor">CarplayMonitor</string>
+    <string name="xml_chromium">🌐 Chromium</string>
+    <string name="xml_climatizacao">❄️ Climatização</string>
+    <string name="xml_com_gestos_ativados_use_5_dedos_para_ace">Com gestos ativados, use 5 dedos para acessar os favoritos.</string>
+    <string name="xml_comfort">🚗 Comfort</string>
+    <string name="xml_config">Config</string>
+    <string name="xml_configuracoes">⚙️ Configurações</string>
+    <string name="xml_confort">COMFORT</string>
+    <string name="xml_connadaptor_ca_fix">ConnAdaptor</string>
+    <string name="xml_controles_rapidos">Controles rápidos</string>
+    <string name="xml_copiar_apps_do_pen_drive_p_a_memoria">📥 Copiar apps do pen-drive p/ a memória</string>
+    <string name="xml_copiar_audios_do_pen_drive">📥 Copiar áudios do pen-drive</string>
+    <string name="xml_criar_rotas_automaticamente">Criar rotas automaticamente</string>
+    <string name="xml_criar_rotas_de_internet">Criar Rotas de Internet</string>
+    <string name="xml_da_bateria">% da Bateria</string>
+    <string name="xml_deixa_o_fundo_da_camera_de_re_preto_pro">Deixa o fundo da câmera de ré preto (Pro)</string>
+    <string name="xml_desativar">Desativar</string>
+    <string name="xml_desligar_avas">🔇 Desligar AVAS</string>
+    <string name="xml_desligar_o_avas_silencia_o_alto_falante">Desligar o AVAS silencia o alto-falante externo do veículo. O estado é lembrado e reaplicado sozinho ao ligar o carro.</string>
+    <string name="xml_detecta_o_celular_conectado_e_libera_a_i">Detecta o celular conectado e libera a internet sozinho, sem precisar tocar em nada.</string>
+    <string name="xml_detecta_quando_o_android_auto_conecta_po">Detecta quando o Android Auto conecta por WiFi e cria as rotas sozinho (requer root). Aviso: só funciona com celulares com root.</string>
+    <string name="xml_diagnostico">🩺 Diagnóstico</string>
+    <string name="xml_diminuir_temperatura">Diminuir temperatura</string>
+    <string name="xml_disney">🏰 Disney+</string>
+    <string name="xml_dividir_tela">◫ Dividir tela</string>
+    <string name="xml_drive_confort">DRIVE: COMFORT</string>
+    <string name="xml_dualdashcam">🎥 DualDashcam</string>
+    <string name="xml_eco">🌿 Eco</string>
+    <string name="xml_eco_2">ECO</string>
+    <string name="xml_eisapo">🐸 Ei Sapo</string>
+    <string name="xml_eisapo_desc">Assistente de voz do carro — chame por Ei Sapo pra comandar sem tocar na tela.</string>
+    <string name="xml_endereco_p_conectar_o_app_do_celular_por">Endereço p/ conectar o app do celular por WiFi</string>
+    <string name="xml_envia_os_dados_do_carro_bateria_velocida">Envia os dados do carro (bateria, velocidade, etc.) para outros apps automaticamente ao ligar. Ao ativar, já liga agora.</string>
+    <string name="xml_equalizador">🎚️ Equalizador</string>
+    <string name="xml_experimental_depende_do_veiculo_pode_nao">Experimental: depende do veículo, pode não ter efeito em todas as unidades.</string>
+    <string name="xml_explicacao_usar_internet_do_celular">Funciona junto com o app Central EX Celular no seu celular — usa a mesma conexão WiFi do Android Auto para dar internet ao carro. Precisa do app instalado e da opção de proxy ligada nele.</string>
+    <string name="xml_favoritos_card_titulo">⭐ Favoritos</string>
+    <string name="xml_ferramentas">Ferramentas</string>
+    <string name="xml_firefox">🦊 Firefox</string>
+    <string name="xml_forte">▆ Forte</string>
+    <string name="xml_forte_2">FORTE</string>
+    <string name="xml_fraca">FRACA</string>
+    <string name="xml_fraco">▂ Fraco</string>
+    <string name="xml_fundo_preto_na_re">Fundo preto na ré</string>
+    <string name="xml_geely_battery">🔋 Capy (Battery)</string>
+    <string name="xml_geely_battery_desc">Telemetria de bateria/carregamento pra veículos Geely (app de terceiro, Timoteohss).</string>
+    <string name="xml_gerenciador_de_arquivos">📁 Gerenciador de Arquivos</string>
+    <string name="xml_gerenciamento_de_conexao_e_servicos">Gerenciamento de conexão e serviços.</string>
+    <string name="xml_gerenciar_apps_ativos">Gerenciar Apps Ativos</string>
+    <string name="xml_gerenciar_favoritos">Gerenciar Favoritos</string>
+    <string name="xml_gestos_download_grande">Na primeira ativação será necessário baixar um pacote de aproximadamente 100 megas, deseja continuar?</string>
+    <string name="xml_gestos_explanation">Gestos multitoque (ventoinha, temperatura, apps recentes, câmera, favoritos) via patch no launcher do sistema.</string>
+    <string name="xml_gestos_help_texto">"Deslize 2 dedos lateralmente para alterar velocidade da ventoinha.
+Deslize 2 dedos verticalmente para alterar temperatura.
+Toque com 3 dedos para acessar aplicativos recentes.
+Toque com 4 dedos para acessar câmera.
+Toque com 5 dedos para acessar aplicativos favoritos.
+Adicione aplicativos favoritos clicando em gerenciar favoritos."</string>
+    <string name="xml_gestos_rapidos_desc">Gestos multitoque em qualquer tela: ventoinha, temperatura, apps recentes, câmera e favoritos.</string>
+    <string name="xml_gestos_rapidos_titulo">✋ Gestos Rápidos</string>
+    <string name="xml_gestos_rapidos_titulo_curto">Gestos Rápidos</string>
+    <string name="xml_gestos_reapply_question">⚠️ Reaplicar o patch de gestos ao religar o carro?</string>
+    <string name="xml_gestos_restore_title">🔄 Reativar gestos no boot</string>
+    <string name="xml_gestos_status_aplicando">Aplicando sobre o launcher…</string>
+    <string name="xml_gestos_status_baixando">Baixando pacote de gestos… %1$d%%</string>
+    <string name="xml_gestos_status_concluido">✅ Concluído! Toque com 5 dedos para testar os favoritos.</string>
+    <string name="xml_gestos_status_copiando">Copiando para o sistema…</string>
+    <string name="xml_gestos_status_falha">❌ Falha ao aplicar. Verifique a internet e tente novamente.</string>
+    <string name="xml_gestos_status_verificando">Verificando integridade do arquivo…</string>
+    <string name="xml_guardar">Guardar</string>
+    <string name="xml_hvac_batt_temp_desc">Mostra o % da bateria na barra do carro. A temperatura externa aparece junto, se você ligar as duas.</string>
+    <string name="xml_hvac_exttemp_desc" formatted="false">Mostra a temperatura externa em cima do % de bateria, no mesmo lugar (letra um pouco menor pra caber as duas). Ativar aqui já liga o % Bateria na barra automaticamente, se ainda não estiver.</string>
+    <string name="xml_hvac_exttemp_titulo">Junto com temp. externa</string>
+    <string name="xml_hvac_rotulo_bateria">% de bateria</string>
+    <string name="xml_hvac_rotulo_temp">Temperatura</string>
+    <string name="xml_i">ⓘ</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_aj">Ícone ▢ no Acesso Rápido abre o floater; +/−/⟲ ajustam, ✕ fecha</string>
+    <string name="xml_icone_no_acesso_rapido_abre_o_floater_to">Ícone ◫ no Acesso Rápido abre o floater; toque de novo fecha tudo</string>
+    <string name="xml_icones_independentes_na_barra_de_notific">Ícones independentes na barra de notificações</string>
+    <string name="xml_implementacao_do_youtube_com_interface_a">Implementação do YouTube com interface adaptada para carros.</string>
+    <string name="xml_inicio">Início</string>
+    <string name="xml_instagram_credit">@appsdecarro</string>
+    <string name="xml_instalados">Instalados</string>
+    <string name="xml_instalar">⬇️ Instalar</string>
+    <string name="xml_instalar_2">Instalar</string>
+    <string name="xml_instalar_ou_remover_apps_do_veiculo">Instalar ou remover apps do veículo.</string>
+    <string name="xml_instalar_um_arquivo_apk_xapk_apkm">Instalar um arquivo (APK / XAPK / APKM)</string>
+    <string name="xml_instrucoes">Instruções</string>
+    <string name="xml_internet_do_android_auto_via_celular">🌐 Internet do Android Auto via celular</string>
+    <string name="xml_ip_da_central">IP DA CENTRAL</string>
+    <string name="xml_janela_acompanha_a_porta">Janela acompanha a porta</string>
+    <string name="xml_keep_alive_desc">Mantém os apps marcados rodando em segundo plano, sem serem encerrados pela central quando saem de foco (ex: Spotify tocando música).</string>
+    <string name="xml_keep_alive_titulo">📌 Apps Sempre Ativos</string>
+    <string name="xml_keyserver_gestos_volante">Controles no Volante</string>
+    <string name="xml_keyserver_status_default">Toque 2x rápido no microfone = Ar-condicionado (cima/baixo = temperatura, esq/dir = ventoinha), usando os controles de mídia. Segure 2s = Condução/Regeneração (cima/baixo = regen, esq/dir = modo).</string>
+    <string name="xml_lembrar_brilho_da_tela">🔆 Lembrar brilho da tela</string>
+    <string name="xml_ligar">Ligar</string>
+    <string name="xml_ligar_wifi_ao_abrir_o_carro">Ligar WiFi ao abrir o carro</string>
+    <string name="xml_limpar">🗑️ Limpar</string>
+    <string name="xml_listar">🔍 Listar</string>
+    <string name="xml_log_tecnico_da_sessao">📋 Log técnico da sessão</string>
+    <string name="xml_logger">📝 Logger</string>
+    <string name="xml_media">MEDIA</string>
+    <string name="xml_medio">▄ Médio</string>
+    <string name="xml_memoria_interna">Memória interna</string>
+    <string name="xml_menu_lateral_flutuante_toque_aqui_p_ativ">Menu lateral flutuante — toque aqui p/ ativar e ajustar</string>
+    <string name="xml_microg">🔧 microG</string>
+    <string name="xml_minutos">Minutos</string>
+    <string name="xml_modo_automatico_ventoinha">Modo automático ventoinha</string>
+    <string name="xml_modo_claro_cores_claras_mais_facil_de_ve">Modo claro: cores claras, mais fácil de ver durante o dia.</string>
+    <string name="xml_modo_de_direcao_e_regeneracao">Modo de direção e regeneração</string>
+    <string name="xml_modo_oficina">Modo oficina</string>
+    <string name="xml_modo_oficina_desc">Deixa a central com cara de fábrica antes de entregar o carro pra um serviço.</string>
+    <string name="xml_mostra_o_de_bateria_na_barra_do_carro">Mostra o % de bateria na barra do carro</string>
+    <string name="xml_mostrar_log">📋 Mostrar log</string>
+    <string name="xml_n_0">0</string>
+    <string name="xml_n_1o">1º</string>
+    <string name="xml_n_50">50%</string>
+    <string name="xml_navegacao_com_transito_em_tempo_real_ver">Navegação com trânsito em tempo real (versão Android Automotive).</string>
+    <string name="xml_navegacao_e_gerenciamento_de_arquivos">Navegação e gerenciamento de arquivos.</string>
+    <string name="xml_navegador_oficial_da_mozilla_arm64">Navegador oficial da Mozilla (arm64).</string>
+    <string name="xml_navegador_web_baseado_em_chromium">Navegador web baseado em Chromium.</string>
+    <string name="xml_numero_no_lugar_da_roleta_na_barra_do_ca">Número no lugar da roleta, na barra do carro</string>
+    <string name="xml_o_app_le_os_audios_da_pasta_data_local_t">O app lê os áudios da pasta /data/local/tmp/sons no aparelho. Se estiver copiando do pen-drive, deixe o arquivo de som na raiz do pen-drive (não dentro de subpastas) para garantir que ele seja encontrado.</string>
+    <string name="xml_o_iphone_nao_anuncia_o_carplay_sozinho">Liga tudo do CarPlay sem fio: anúncio ao iPhone, conexão automática e o patch no boot. Desligado, nada de CarPlay é tentado.</string>
+    <string name="xml_o_som_selecionado_substituira_temporaria">O som selecionado substituirá temporariamente o primeiro som de travamento do carro.</string>
+    <string name="xml_off">OFF</string>
+    <string name="xml_online">ONLINE</string>
+    <string name="xml_origem_da_lista">Origem da lista:</string>
+    <string name="xml_painel_separado_por_funcao">Painel separado por função.</string>
+    <string name="xml_pen_drive">Pen-drive</string>
+    <string name="xml_permite_controlar_a_central_remotamente">Permite controlar a central remotamente pelo app CentralPhoneApp, por WiFi ou Bluetooth.</string>
+    <string name="xml_pill_branco">Branco</string>
+    <string name="xml_pill_cor_letra">Cor da letra</string>
+    <string name="xml_pill_desc">Bolha flutuante com a temperatura externa e/ou % de bateria — arraste segurando pra mover pra qualquer lugar da tela (inclusive sobre o Android Auto).</string>
+    <string name="xml_pill_hint">Segure e arraste a bolha pra mover. Toque rápido abre as programações de ar-condicionado salvas (em Ferramentas) — toque numa pra executar; a letra fica verde enquanto roda. Toque de novo no pill pra parar.</string>
+    <string name="xml_pill_mostrar">Mostrar</string>
+    <string name="xml_pill_os_dois">Os Dois</string>
+    <string name="xml_pill_preto">Preto</string>
+    <string name="xml_pill_so_bateria">Só Bateria</string>
+    <string name="xml_pill_so_temp">Só Temp.</string>
+    <string name="xml_pill_tamanho">Tamanho</string>
+    <string name="xml_pill_titulo">Pill de Temp./Bateria</string>
+    <string name="xml_pill_transparencia">Transparência do fundo</string>
+    <string name="xml_pip_de_app">▢ PiP de app</string>
+    <string name="xml_pip_nativo_help">"Acende o Picture-in-Picture nativo da central, que vem desligado de fábrica: a SystemUI já tem as classes, mas o componente que registra o toque não é iniciado — por isso a janelinha aparecia e não respondia ao dedo.
+
+Com ele ligado, vídeos de apps compatíveis abrem numa janela que você arrasta e toca. NÃO adiciona PiP a aplicativos que não o implementam.
+
+Nada é escrito em /system: é um overlay de recursos instalado em /data, e desligar aqui volta tudo ao normal. A barra de status reinicia por alguns segundos ao ligar ou desligar.
+
+Este recurso é trabalho original de Magno Lima (geely-ex2-pip-overlay), usado com a autorização dele."</string>
+    <string name="xml_player_de_video_audio_universal_toca_qua">Player de vídeo/áudio universal, toca quase qualquer formato.</string>
+    <string name="xml_poweramp_equalizer_eq_e_efeitos_de_audio">Poweramp Equalizer — EQ e efeitos de áudio.</string>
+    <string name="xml_prime_video">🎥 Prime Video</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_carplaym">Procura uma versão mais nova do CarplayMonitor e atualiza se necessário.</string>
+    <string name="xml_procura_uma_versao_mais_nova_do_connadap">Procura uma versão mais nova do ConnAdaptor e pergunta se quer instalar.</string>
+    <string name="xml_receber_arquivos_do_celular">📂 Receber Arquivos do Celular</string>
+    <string name="xml_recursos">Recursos</string>
+    <string name="xml_rede">Rede &amp; Auto</string>
+    <string name="xml_rede_conexao">📶 Rede &amp; Conexão</string>
+    <string name="xml_regen_media">REGEN: MEDIA</string>
+    <string name="xml_registro_detalhado_do_que_o_app_fez_desd">Registro detalhado do que o app fez desde que foi aberto — útil para diagnosticar problemas com o suporte.</string>
+    <string name="xml_reinicia_a_central_por_completo">Reinicia a central por completo (mesmo efeito de desligar e ligar).</string>
+    <string name="xml_reinicia_o_android_auto_carplay_poucos_s">Reinicia o Android Auto poucos segundos depois de ligar o carro, para evitar travamentos.</string>
+    <string name="xml_reiniciar">Reiniciar</string>
+    <string name="xml_reiniciar_2">🔁 Reiniciar</string>
+    <string name="xml_reiniciar_3">Reiniciar</string>
+    <string name="xml_reiniciar_ao_ligar_o_carro">Reiniciar ao ligar o carro</string>
+    <string name="xml_reiniciar_central">🔁 Reiniciar central</string>
+    <string name="xml_remover">🗑️ Remover</string>
+    <string name="xml_restaura_o_brilho_ao_acordar_dia_noite">Restaura o brilho ao acordar (dia/noite)</string>
+    <string name="xml_restaurar_original">↩️ Restaurar original</string>
+    <string name="xml_salvar_em_downloads">💾 Salvar em Downloads</string>
+    <string name="xml_segundos">Segundos</string>
+    <string name="xml_segurar_e_arrastar_para_mover_o_floater">Segurar e arrastar para mover o floater</string>
+    <string name="xml_servicos_do_google_versao_livre_necessar">Serviços do Google (versão livre), necessário p/ alguns apps funcionarem.</string>
+    <string name="xml_sinal_na_barra">Sinal na barra</string>
+    <string name="xml_sinal_na_barra_desc">Mostra o sinal do chip do próprio head unit na barra de status (barras).</string>
+    <string name="xml_sincronizar_com_o_celular">📱 Sincronizar com o celular</string>
+    <string name="xml_smarttube">📺 SmartTube</string>
+    <string name="xml_som_de_travamento">🔒 Som de travamento</string>
+    <string name="xml_som_de_travamento_e_volumes_do_carro">Som de travamento e volumes do carro.</string>
+    <string name="xml_sport">🏁 Sport</string>
+    <string name="xml_sport_2">SPORT</string>
+    <string name="xml_status_de_rede_e_depuracao_adb">Status de rede e depuração ADB.</string>
+    <string name="xml_status_do_carro_e_atalhos_principais_da">Status do carro e atalhos principais da CentralEXAuto.</string>
+    <string name="xml_str">—</string>
+    <string name="xml_str_2">🎛️</string>
+    <string name="xml_str_3">›</string>
+    <string name="xml_str_4">−</string>
+    <string name="xml_str_5">--°</string>
+    <string name="xml_str_6">+</string>
+    <string name="xml_str_7">--</string>
+    <string name="xml_str_8">...</string>
+    <string name="xml_str_9">⋮</string>
+    <string name="xml_streaming_amazon_prime_video_versao_andr">Streaming Amazon Prime Video (versão Android Automotive).</string>
+    <string name="xml_streaming_disney_pixar_marvel_star_wars">Streaming Disney/Pixar/Marvel/Star Wars (versão Android Automotive).</string>
+    <string name="xml_telemetria_ao_ligar_o_carro">📊 Telemetria ao ligar o carro</string>
+    <string name="xml_temp">🌡️ Temp.</string>
+    <string name="xml_temp_bateria_hv">💾 ESPAÇO LIVRE</string>
+    <string name="xml_temp_e_bateria_na_barra">Temp. e bateria na barra</string>
+    <string name="xml_temp_externa">Temp. Externa</string>
+    <string name="xml_temperatura_da_bateria_de_tracao_alta_vo">Armazenamento livre na central</string>
+    <string name="xml_temperatura_digital">Temperatura digital do ar-condicionado</string>
+    <string name="xml_temperatura_toque_abre_programas_de_vent">Temperatura; toque abre programas de ventoinha</string>
+    <string name="xml_tensao_da_bateria_comum_do_carro">Tensão da bateria auxiliar 12V</string>
+    <string name="xml_tipo_de_som">🎵 Tipo de som</string>
+    <string name="xml_toque_no_icone_liga_o_wifi_e_abre_o_menu">Toque no ícone liga o WiFi e abre o menu</string>
+    <string name="xml_usar_internet_do_celular">Usar Internet do Celular</string>
+    <string name="xml_use_quando_o_android_auto_conectar_mas_o">Use quando o Android Auto conectar mas os apps (mapas, música) não carregarem dados — libera a internet do celular para o app funcionar.</string>
+    <string name="xml_vent_final">Vent. final</string>
+    <string name="xml_vent_inicial">Vent. inicial</string>
+    <string name="xml_verifica_se_ha_uma_nova_versao_da_centra">Verifica se há uma nova versão da CentralEXAuto para instalar.</string>
+    <string name="xml_versao_centralexauto">Versão — · CentralEXAuto</string>
+    <string name="xml_visao_geral">Visão Geral</string>
+    <string name="xml_vlc">🎬 VLC</string>
+    <string name="xml_waze">🧭 Waze</string>
+    <string name="xml_wifi">WiFi</string>
+    <string name="xml_wifi_na_barra">WiFi na barra</string>
+    <string name="xml_wireless">Wireless</string>
+    <string name="xml_x2">x2</string>
+    <string name="xml_x4">x4</string>
+</resources>

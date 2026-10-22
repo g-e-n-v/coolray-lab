@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/masterHomeOverlay" android:background="@color/master_bg" android:padding="@dimen/master_outer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterTopBar" android:background="@drawable/bg_master_top" android:layout_width="0.0dp" android:layout_height="@dimen/master_top_height" android:paddingStart="32.0dp" android:paddingEnd="32.0dp" android:elevation="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_master_storage" android:contentDescription="@null" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterTopStorage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="24,9 GB" android:layout_marginStart="16.0dp" />
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="42.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+        <ImageView android:id="@id/masterTopBatteryIcon" android:layout_width="48.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_master_battery_level" android:contentDescription="@null" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterTopBattery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="54%" android:layout_marginStart="14.0dp" />
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="42.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+        <ImageView android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_card_battery" android:tint="@color/master_text" android:contentDescription="@null" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterTop12v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_placeholder" android:layout_marginStart="14.0dp" />
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="42.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterTopWifi" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:foreground="?android:selectableItemBackground">
+            <ImageView android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_wifi_clean" android:tint="@color/master_text" android:contentDescription="@null" />
+            <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wi‑Fi" android:layout_marginStart="14.0dp" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterTopSerialBox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="42.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+            <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:id="@id/masterTopSerial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:letterSpacing="0.06" />
+        </LinearLayout>
+        <Space android:layout_width="0.0dp" android:layout_height="1.0dp" android:layout_weight="1.0" />
+        <ImageView android:layout_width="30.0dp" android:layout_height="30.0dp" android:src="@drawable/ic_card_signal" android:tint="@color/master_text" android:contentDescription="@null" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterTopIp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_no_ip" android:layout_marginStart="12.0dp" />
+        <View android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="42.0dp" android:layout_marginStart="30.0dp" android:layout_marginEnd="30.0dp" />
+        <View android:id="@id/masterTopCarDot" android:background="@drawable/bg_master_status_dot" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterTopCarStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/master_disconnected_car" android:layout_marginStart="16.0dp" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/masterMainShell" android:background="@drawable/bg_master_shell" android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="@dimen/master_gap" android:elevation="0.0dp" android:clipToOutline="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/masterTopBar">
+        <LinearLayout android:orientation="vertical" android:background="@color/master_sidebar" android:paddingTop="36.0dp" android:paddingBottom="20.0dp" android:layout_width="@dimen/master_sidebar_width" android:layout_height="match_parent" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+            <LinearLayout android:id="@id/masterNavInicio" style="@style/MasterNavRow">
+                <View android:background="@color/master_text" android:layout_width="5.0dp" android:layout_height="44.0dp" />
+                <ImageView android:src="@drawable/ic_nav_home" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_inicio" style="@style/MasterNavText.Selected" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavFerramentas" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_tools" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_ferramentas" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavRede" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_wifi_clean" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_rede" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavAudio" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_audio" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_audio" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavApps" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_apps" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_apps" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavAtalhos" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_quick" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_atalhos" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavConfig" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_config" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/xml_config" style="@style/MasterNavText" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/masterNavAbout" style="@style/MasterNavRow">
+                <View style="@style/MasterNavMarkerHidden" />
+                <ImageView android:src="@drawable/ic_nav_about" style="@style/MasterNavIcon" />
+                <TextView android:text="@string/master_about_nav" style="@style/MasterNavText" />
+            </LinearLayout>
+            <Space android:layout_width="1.0dp" android:layout_height="0.0dp" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/master_text_muted" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/masterVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dp" android:text="v2.19.23 (620)" />
+        </LinearLayout>
+        <ViewFlipper android:id="@id/masterContentFlipper" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/masterHomeContent" android:paddingTop="@dimen/master_content_padding_v" android:paddingBottom="36.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/master_content_padding_h" android:paddingEnd="@dimen/master_content_padding_h">
+                <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xml_inicio" />
+                <TextView android:textSize="22.0sp" android:textColor="@color/master_text_secondary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/master_home_description" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="30.0dp" android:baselineAligned="false" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_master_card" android:padding="@dimen/master_card_padding" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44.0dp">
+                            <TextView android:textSize="28.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/k_qa_driving_label" android:layout_weight="1.0" />
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/masterCarColorDropdown" android:background="@drawable/bg_master_segment" android:focusable="true" android:clickable="true" android:layout_width="190.0dp" android:layout_height="44.0dp" android:paddingStart="16.0dp" android:paddingEnd="12.0dp">
+                                <TextView android:textSize="17.0sp" android:textColor="@color/master_text" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/master_select_color" android:layout_weight="1.0" />
+                                <ImageView android:layout_width="18.0dp" android:layout_height="18.0dp" android:src="@drawable/ic_master_chevron_down" android:contentDescription="@null" android:layout_marginStart="8.0dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@id/masterHomeCar" android:layout_width="match_parent" android:layout_height="0.0dp" android:src="@drawable/geely_ex2_verde_pistachio" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@null" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="116.0dp" android:baselineAligned="false">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                                <TextView android:textSize="19.0sp" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/master_drive" />
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_inner_card" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="66.0dp" android:layout_marginTop="12.0dp">
+                                    <TextView android:id="@id/masterDriveEco" android:text="@string/k_widget_lbl_drive_eco" style="@style/MasterModeButton" />
+                                    <TextView android:id="@id/masterDriveComfort" android:text="@string/master_drive_comfort" style="@style/MasterModeButton" />
+                                    <TextView android:id="@id/masterDriveSport" android:text="@string/master_drive_sport" style="@style/MasterModeButton" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <View android:layout_gravity="bottom" android:background="@color/master_divider" android:layout_width="1.0dp" android:layout_height="92.0dp" android:layout_marginStart="26.0dp" android:layout_marginEnd="26.0dp" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                                <TextView android:textSize="19.0sp" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/k_qa_regen_label" />
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_master_inner_card" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="66.0dp" android:layout_marginTop="12.0dp">
+                                    <TextView android:id="@id/masterRegenLow" android:text="@string/master_regen_low" style="@style/MasterModeButton" />
+                                    <TextView android:id="@id/masterRegenMedium" android:text="@string/k_widget_lbl_regen_mid" style="@style/MasterModeButton" />
+                                    <TextView android:id="@id/masterRegenHigh" android:text="@string/master_regen_high" style="@style/MasterModeButton" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Space android:layout_width="32.0dp" android:layout_height="1.0dp" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_master_card" android:padding="@dimen/master_card_padding" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="28.0sp" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/master_connect_phone" />
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_master_inner_card" android:padding="26.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="24.0dp" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                                <ImageView android:layout_width="82.0dp" android:layout_height="82.0dp" android:src="@drawable/ic_android_auto_brand" android:contentDescription="@null" />
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="28.0dp">
+                                    <TextView android:textSize="25.0sp" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xml_android_auto" />
+                                    <TextView android:textSize="19.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterAndroidStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/master_disconnected" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="62.0dp" android:layout_marginTop="12.0dp">
+                                <TextView android:id="@id/masterAndroidActivate" android:text="@string/xml_ativar" style="@style/MasterActivateButton" />
+                                <Space android:layout_width="28.0dp" android:layout_height="1.0dp" />
+                                <TextView android:id="@id/masterAndroidRestart" android:text="@string/common_restart" style="@style/MasterRestartButton" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_master_inner_card" android:padding="26.0dp" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="20.0dp" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+                                <ImageView android:layout_width="82.0dp" android:layout_height="82.0dp" android:src="@drawable/ic_carplay_brand" android:contentDescription="@null" />
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="28.0dp">
+                                    <TextView android:textSize="25.0sp" android:textColor="@color/master_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/xml_carplay" />
+                                    <TextView android:textSize="19.0sp" android:textColor="@color/master_text_secondary" android:id="@id/masterCarplayStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/master_disconnected" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="62.0dp" android:layout_marginTop="12.0dp">
+                                <TextView android:id="@id/masterCarplayActivate" android:text="@string/xml_ativar" style="@style/MasterActivateButton" />
+                                <Space android:layout_width="28.0dp" android:layout_height="1.0dp" />
+                                <TextView android:id="@id/masterCarplayRestart" android:text="@string/common_restart" style="@style/MasterRestartButton" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ViewStub android:id="@id/stubTools" android:layout="@layout/view_master_tools_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubNetwork" android:layout="@layout/view_master_network_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubAudio" android:layout="@layout/view_master_audio_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubApps" android:layout="@layout/view_master_apps_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubShortcuts" android:layout="@layout/view_master_shortcuts_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubConfig" android:layout="@layout/view_master_config_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ViewStub android:id="@id/stubAbout" android:layout="@layout/view_master_about_content" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </ViewFlipper>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

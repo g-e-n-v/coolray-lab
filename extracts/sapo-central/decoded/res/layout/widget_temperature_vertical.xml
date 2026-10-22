@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/widget_bg_layer" android:background="@drawable/widget_card_bg_100" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/btn_temp_plus" android:background="@drawable/btn_circle" android:layout_width="62.0dp" android:layout_height="62.0dp" android:text="+" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+            <ImageView android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginBottom="2.0dp" android:src="@drawable/ic_widget_thermometer" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:id="@id/tv_temp_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/cx_text_secondary" android:id="@id/tv_temp_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dp" android:text="°C" android:layout_marginStart="2.0dp" />
+            </LinearLayout>
+            <TextView android:textSize="10.0sp" android:textColor="@color/cx_text_secondary" android:id="@id/tv_temp_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Temperatura" />
+        </LinearLayout>
+        <TextView android:textSize="31.0sp" android:textStyle="bold" android:textColor="@color/cx_text_primary" android:gravity="center" android:id="@id/btn_temp_minus" android:background="@drawable/btn_circle" android:layout_width="62.0dp" android:layout_height="62.0dp" android:text="–" />
+    </LinearLayout>
+</FrameLayout>

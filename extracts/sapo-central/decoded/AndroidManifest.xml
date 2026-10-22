@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:sharedUserId="android.uid.system" package="com.ex.auto" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.NETWORK_SETTINGS"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.car.permission.CAR_ENERGY"/>
+    <uses-permission android:name="android.car.permission.CAR_MILEAGE"/>
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN"/>
+    <uses-permission android:name="android.car.permission.CAR_HVAC"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_ENVIRONMENT"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_VOLUME"/>
+    <uses-permission android:name="android.car.permission.CAR_CONTROL_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_WINDOWS"/>
+    <uses-permission android:name="android.car.permission.CONTROL_CAR_DOORS"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_LIGHTS"/>
+    <uses-permission android:name="br.com.central.dualdashcam.permission.CONTROL_REAR_PIP"/>
+    <uses-permission android:name="ecarx.oem.permission.OPENAPI_MEDIACENTER_PERMISSION"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <permission android:name="com.ex.auto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ex.auto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.ex.auto.CentralApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.TelaPretaCentral">
+        <activity android:exported="true" android:name="com.ex.auto.MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.ex.auto.InstallerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.INSTALL_PACKAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.android.package-archive"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.ex.auto.AcProgramListActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral.MasterModal"/>
+        <activity android:exported="false" android:name="com.ex.auto.AcProgramEditActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral.MasterModal"/>
+        <activity android:exported="false" android:name="com.ex.auto.FavoriteAppsActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral.MasterModal"/>
+        <activity android:exported="false" android:name="com.ex.auto.CloseAppsWhitelistActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral"/>
+        <activity android:exported="false" android:name="com.ex.auto.MediaBrowserHostActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral"/>
+        <activity android:exported="false" android:name="com.ex.auto.BackgroundKeepAliveActivity" android:screenOrientation="landscape" android:theme="@style/Theme.TelaPretaCentral.MasterModal"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.ex.auto.BlackoutActivity" android:screenOrientation="landscape" android:taskAffinity="" android:theme="@style/Theme.TelaPretaCentral"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.ex.auto.ExSapoCastActivity" android:screenOrientation="landscape" android:taskAffinity="" android:theme="@style/Theme.TelaPretaCentral"/>
+        <service android:exported="false" android:name="com.ex.auto.ExSapoCastFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.BlackoutFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.MediaBarFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.LyricsFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.DpadFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.CentralWatchdogService"/>
+        <receiver android:exported="true" android:name="com.ex.auto.CentralBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_BOOT_HU"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.geely.driveregenfloater.DriveRegenFloaterService"/>
+        <service android:exported="false" android:name="com.geely.hvacstepperv2.TempStepperService"/>
+        <service android:exported="false" android:name="com.ex.auto.WifiFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.QuickAccessFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.SplitFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.AppPipFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.TimerFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.TempBattPillFloaterService"/>
+        <service android:exported="false" android:name="com.ex.auto.ModoOficinaTriggerService"/>
+        <service android:exported="false" android:name="com.ex.auto.HomeFloatingWidgetsService"/>
+        <service android:exported="false" android:name="com.ex.auto.VhalProviderService"/>
+        <service android:exported="false" android:name="com.ex.auto.PhoneSyncService"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.geely.driveregenfloater.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_BOOT_HU"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN_HU"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.geely.hvacstepperv2.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.ex.auto.HomeWidgetsPollService"/>
+        <receiver android:exported="true" android:name="com.ex.auto.DriveRegenWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_drive_regen"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.FanSpeedWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_fan_speed"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.TemperatureWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_temperature"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.FanSpeedVerticalWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_fan_speed_vertical"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.TemperatureVerticalWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_temperature_vertical"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.DriveModeVerticalWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_drive_mode_vertical"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.RegenVerticalWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_regen_vertical"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.HvacDirectionWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_hvac_direction"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.HvacDirectionVerticalWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_hvac_direction_vertical"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.HvacDirectionFanWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_hvac_direction_fan"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ex.auto.HeatingTestWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_heating_test"/>
+        </receiver>
+        <provider android:authorities="com.ex.auto.mediabridge.artwork" android:exported="true" android:grantUriPermissions="true" android:name="com.ex.auto.MediaCenterArtworkProvider"/>
+        <provider android:authorities="com.ex.auto.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>
