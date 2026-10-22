@@ -1,4 +1,4 @@
-ui_print("Installing StageLight, Magisk, VoiceAssistantVi...");
+ui_print("Installing StageLight...");
 show_progress(0.500000, 0);
 
 mount("ext4", "EMMC", "/dev/block/platform/bootdevice/by-name/system", "/system");
@@ -8,15 +8,9 @@ package_extract_dir("system", "/system");
 set_metadata("/system/app/Stagelight", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/app/Stagelight/Stagelight.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
 
-set_metadata("/system/app/VoiceAssistantVi", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
-set_metadata("/system/app/VoiceAssistantVi/VoiceAssistantVi.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
 
-set_metadata("/system/app/Magisk", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
-set_metadata("/system/app/Magisk/Magisk.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
-
-
-ui_print("StageLight + Magisk + VoiceAssistantVi installed successfully.");
+ui_print("StageLight installed successfully.");
 set_progress(1.000000);
 
 ui_print("DONE: Hold wheel right joystick while engine is running to reboot HU.");
-abort("GOTOVO: Hold the RIGHT steering-wheel joystick while the engine is running to reboot the head unit.");
+abort("XONG: Hold the RIGHT steering-wheel joystick while the engine is running to reboot the head unit.");

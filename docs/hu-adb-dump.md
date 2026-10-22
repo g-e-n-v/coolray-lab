@@ -5,7 +5,7 @@ Kết quả dump toàn bộ thông tin head unit qua Wi-Fi ADB. Đã verify trê
 unlock). Tái tạo dump bằng:
 
 ```bash
-./scripts/hu-dump.sh <ip>:5555      # mặc định 10.98.197.218:5555
+./tools/dump-hu.sh <ip>:5555      # mặc định 10.98.197.218:5555
 ```
 
 Kết quả nằm ở `dumps/<ip>-<timestamp>/` (46 file, ~31 MB).

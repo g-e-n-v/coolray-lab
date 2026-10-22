@@ -2,7 +2,7 @@
 # Dump everything readable from the IHU689G head unit over adb into
 # dumps/<device>-<timestamp>/ . Works best when adbd runs as root (uid=0).
 #
-# Usage: ./scripts/hu-dump.sh [serial-or-ip]     # default 10.98.197.218:5555
+# Usage: ./tools/dump-hu.sh [serial-or-ip]     # default 10.98.197.218:5555
 set -uo pipefail
 
 SERIAL="${1:-10.98.197.218:5555}"
