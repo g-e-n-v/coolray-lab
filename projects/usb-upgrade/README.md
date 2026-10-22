@@ -18,6 +18,7 @@ projects/usb-upgrade/
 │   ├── build.sh              # build: zip → ký SignApk → verify → md5.txt
 │   ├── deploy.sh             # copy dist/3C6525_SW0A5LV/ ra USB (FAT32)
 │   ├── embed.sh              # thêm app vào payload/system/app/ (+ set_metadata)
+│   ├── embed-boot.sh         # (tùy chọn root) nhúng patched boot + block flash boot
 │   └── verify.sh             # kiểm tra chữ ký đúng thuật toán recovery Android 9
 ├── keys/                     # AOSP platform testkey (serial B3998086D056CFFA)
 ├── vendor/signapk/           # SignApk + BouncyCastle (toolchain ký, nhị phân)
@@ -52,6 +53,27 @@ vào updater-script (insert ngay sau block Stagelight). Gỡ app: xoá
 
 Lưu ý tương thích: Android 9 (minSdk ≤ 28), arm64-v8a, không cần Google Play
 Services (xe không có), UI landscape.
+
+## Root qua OTA (tùy chọn — nhúng patched boot)
+
+Root Magisk thật nằm ở **partition `boot`** (chi tiết:
+`docs/root-magisk-guide.md`). Gói can thiệp được partition đó bằng
+`run_program("/system/bin/dd", ...)` — updater của recovery không có builtin
+`write_raw_image` (đã soi chuỗi trong update-binary). Quy trình:
+
+```bash
+./scripts/embed.sh ~/Downloads/Magisk-30.7.apk Magisk   # manager (UI root)
+./scripts/embed-boot.sh boot-patched.img <sha1_boot_gốc>  # BOOTIMG.img + block flash
+./scripts/build.sh
+```
+
+`boot-patched.img` tạo 1 lần per firmware từ 1 xe mẫu cùng targetName
+(`dd` boot gốc → patch bằng Magisk 30.7). Guard trong gói khoá
+`ro.build.version.incremental == "20"` + so sha1 boot hiện tại của xe đích với
+boot gốc — sai build thì updater abort, **không ghi gì**. Gỡ phần root:
+`./scripts/embed-boot.sh --remove` rồi `./scripts/build.sh`.
+
+Rủi ro boot không khởi động được thì cứu bằng mtkclient (jumper, xem doc).
 
 ## Nâng cấp trên xe
 

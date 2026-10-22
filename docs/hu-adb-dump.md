@@ -1,8 +1,8 @@
 # Dump full ADB — IHU689G (Geely Coolray 2026 VN)
 
 Kết quả dump toàn bộ thông tin head unit qua Wi-Fi ADB. Đã verify trên xe
-(22/10/2026), sau khi flash/unlock ADB (xem `flash-adb-unlock.md` để biết route
-unlock). Tái tạo dump bằng:
+(22/10/2026), sau khi flash kit mở ADB (quy trình menu kỹ thuật trong
+`root-magisk-guide.md`, bước A). Tái tạo dump bằng:
 
 ```bash
 ./tools/dump-hu.sh <ip>:5555      # mặc định 10.98.197.218:5555
@@ -13,8 +13,10 @@ Kết quả nằm ở `dumps/<ip>-<timestamp>/` (46 file, ~31 MB).
 ## 1. Kết nối
 
 - ADB qua Wi-Fi: `adb connect <ip>:5555` (đi qua route StageLight/ADB Wi-Fi).
-- `adbd` chạy **root sẵn** — `uid=0(root)`, context SELinux `u:r:su:s0`, nhờ
-  Magisk trên máy. Mọi lệnh không cần `su` prefix.
+- `adbd` chạy **root sẵn** — `uid=0(root)`, context SELinux `u:r:su:s0`. Nguồn
+  root là **firmware** (`ro.secure=0` + `ro.debuggable=1` trong ramdisk, chuẩn
+  AOSP non-secure), không phải Magisk — chỉ cần *bật ADB* là shell root.
+  Mọi lệnh không cần `su` prefix. Chi tiết: `root-magisk-guide.md`.
 - SELinux đang **Permissive**. Không có dm-verity trên /system.
 - Kernel 4.4.146+ (aarch64), build ngày 26/11/2025.
 

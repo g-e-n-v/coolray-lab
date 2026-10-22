@@ -42,11 +42,10 @@ mkdir -p "$OUT_DIR"
 echo "[2/5] Zipping (unsigned)"
 cd "$SRC"
 rm -f "$OUT_DIR/unsigned.zip"
-if [ -d system ]; then
-  zip -r -X "$OUT_DIR/unsigned.zip" META-INF system > /dev/null
-else
-  zip -r -X "$OUT_DIR/unsigned.zip" META-INF > /dev/null
-fi
+PKG_PARTS=(META-INF)
+[ -d system ] && PKG_PARTS+=("system")
+[ -f BOOTIMG.img ] && PKG_PARTS+=("BOOTIMG.img")
+zip -r -X "$OUT_DIR/unsigned.zip" "${PKG_PARTS[@]}" > /dev/null
 
 echo "[3/5] Signing (JAR + whole-file) with key serial $CERT_SERIAL_EXPECT"
 java -cp "$CP" SignApk -w "$KEY_PEM" "$KEY_PK8" \

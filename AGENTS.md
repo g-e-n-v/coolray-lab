@@ -12,12 +12,13 @@ nguyên convention này khi sửa tài liệu.
 
 | Đường dẫn | Vai trò |
 | --- | --- |
-| `projects/usb-upgrade/` | Source of truth để build gói USB OTA. Sửa trong `payload/`, output ở `dist/3C6525_SW0A5LV/` |
+| `projects/usb-upgrade/scripts/` | Chuỗi build USB OTA: `build.sh` (zip + ký + verify + md5), `deploy.sh` (USB), `embed.sh` (app), `embed-boot.sh` (root qua OTA: patched boot), `verify.sh` |
 | `projects/usb-upgrade/README.md` | Chi tiết đầy đủ chuỗi OTA: cấu trúc, embed app, verify chữ ký, quy trình flash trên xe |
 | `tools/dump-hu.sh` | Dump toàn bộ head unit qua ADB Wi-Fi → `dumps/<ip>-<timestamp>/` |
 | `docs/ihu689g.md` | Baseline phần cứng/firmware đã verify trên xe, mọi fact đều cite file dump dạng `[props.txt]` |
 | `docs/hu-adb-dump.md` | Nội dung dump ADB + cách tái tạo |
 | `docs/split-screen-recipe.md` | Công thức true split-screen đã xác minh qua ADB |
+| `docs/root-magisk-guide.md` | Root Magisk: phân biệt root ADB sẵn của firmware vs Magisk daemon, quy trình patch boot cho HU từ nhà máy + nhánh root qua OTA (mục 7) |
 | `dumps/` | Kết quả dump (raw output, **gitignored** — không commit) |
 | `extracts/sapo-central/` | APK tool-decoded (`com.ex.auto` v3.3.10, `sharedUserId="android.uid.system"`) giữ làm tham khảo |
 | `.agents/` | Dữ liệu session của công cụ agent cục bộ (crush.db…) — không thuộc về project, đừng đụng |
@@ -65,6 +66,14 @@ thật trên xe.
    biến thể (padded + plain), dùng `date +%l` (giờ 12). Ví dụ viết tay trong
    README **không khớp** công thức script → luôn dùng giá trị deploy.sh in ra,
    đừng tự tính tay.
+6. **Root qua OTA (tùy chọn)**: `embed-boot.sh` nhúng `payload/BOOTIMG.img`
+   (boot gốc đã patch Magisk) và chèn block flash vào updater-script trước
+   dòng `DONE:`/`abort()`; `build.sh` tự thêm `BOOTIMG.img` vào zip khi có.
+   Guard: `ro.build.version.incremental == "20"` + sha1 boot hiện tại của xe
+   đích phải khớp boot gốc đã backup — sai = abort, không ghi gì. Updater
+   không có builtin `write_raw_image` → flash qua
+   `run_program("/system/bin/dd", ...)`. Payload mặc định KHÔNG có
+   BOOTIMG.img — để sạch.
 
 ## updater-script (payload/META-INF/com/google/android/)
 
@@ -91,9 +100,12 @@ thật trên xe.
   SIM/4G (modem init stopped), FM tuner bị tắt ở mức cấu hình.
 - Wi-Fi & Bluetooth REACH **tự tắt/bật theo chu kỳ nguồn xe, do
   `com.android.car` điều phối** — app đừng giành quyền điều khiển theo nguồn.
-- ADB Wi-Fi (`adb connect <ip>:5555`): `adbd` đã là **root (uid 0, Magisk)**
-  và SELinux **Permissive** → mọi lệnh không cần `su`. Wi-Fi ADB hay rớt khi xe
-  đổi trạng thái nguồn → `adb disconnect` rồi connect lại.
+- ADB Wi-Fi (`adb connect <ip>:5555`): `adbd` đã là **root (uid 0)** — root là
+  thuộc tính của firmware (`ro.secure=0`), không phải của Magisk; trên máy này
+  Magisk 30.7 chạy như daemon bổ sung do boot đã patch. Chi tiết:
+  `docs/root-magisk-guide.md`. SELinux **Permissive** → mọi lệnh không cần
+  `su`. Wi-Fi ADB hay rớt khi xe đổi trạng thái nguồn → `adb disconnect` rồi
+  connect lại.
 
 ## Quirks của build HU khi thao tác qua ADB
 
