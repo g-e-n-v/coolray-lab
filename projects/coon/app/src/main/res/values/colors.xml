@@ -1,4 +1,28 @@
 <resources>
-    <color name="screen_bg">#101014</color>
-    <color name="screen_text">#F2F2F2</color>
+    <color name="screen_bg">#000000</color>
+
+    <color name="content_gradient_start">#1A1D26</color>
+    <color name="content_gradient_center">#101218</color>
+    <color name="content_gradient_end">#0B0D12</color>
+
+    <color name="sidebar_icon_active">#FFFFFF</color>
+    <color name="sidebar_icon_inactive">#7D8595</color>
+    <color name="sidebar_item_activated">#1FFFFFFF</color>
+    <color name="sidebar_item_pressed">#0FFFFFFF</color>
+
+    <color name="clock_minute">#8B93A5</color>
+    <color name="status_text">#DFE3EA</color>
+    <color name="status_ip">#AAB1C0</color>
+    <color name="wifi_chip_ripple">#1FFFFFFF</color>
+
+    <color name="placeholder_title">#8B93A5</color>
+    <color name="placeholder_subtitle">#6F7686</color>
+
+    <color name="swatch_border">#2EFFFFFF</color>
+    <color name="swatch_white">#E9ECEF</color>
+    <color name="swatch_red">#C0272D</color>
+    <color name="swatch_gray">#4A4D52</color>
+    <color name="swatch_green">#0E6F6B</color>
+    <color name="swatch_silver">#C3C9D2</color>
+    <color name="swatch_ring_gap_bg">#10131B</color>
 </resources>

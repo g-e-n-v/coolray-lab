@@ -5,14 +5,14 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import vn.coon.app.data.wifi.WifiAddressRepository
+import vn.coon.app.data.wifi.WifiStatusRepository
 
 class MainStateHolder(
-    private val wifiAddressRepository: WifiAddressRepository,
+    private val wifiStatusRepository: WifiStatusRepository,
     scope: CoroutineScope,
 ) {
-    val uiState: StateFlow<MainUiState> = wifiAddressRepository.wifiAddress
-        .map { MainUiState(wifiAddress = it) }
+    val uiState: StateFlow<MainUiState> = wifiStatusRepository.status
+        .map { MainUiState(wifi = it) }
         .stateIn(
             scope = scope,
             started = SharingStarted.Eagerly,
@@ -20,10 +20,10 @@ class MainStateHolder(
         )
 
     fun start() {
-        wifiAddressRepository.start()
+        wifiStatusRepository.start()
     }
 
     fun stop() {
-        wifiAddressRepository.stop()
+        wifiStatusRepository.stop()
     }
 }

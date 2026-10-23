@@ -2,12 +2,14 @@ package vn.coon.app
 
 import android.content.Context
 import android.net.ConnectivityManager
+import android.net.wifi.WifiManager
 import vn.coon.app.data.adb.AdbRepository
 import vn.coon.app.data.adb.DefaultAdbRepository
 import vn.coon.app.data.adb.source.DefaultSystemPropertiesDataSource
-import vn.coon.app.data.wifi.DefaultWifiAddressRepository
-import vn.coon.app.data.wifi.WifiAddressRepository
-import vn.coon.app.data.wifi.source.DefaultWifiAddressDataSource
+import vn.coon.app.data.wifi.DefaultWifiStatusRepository
+import vn.coon.app.data.wifi.WifiStatusRepository
+import vn.coon.app.data.wifi.source.DefaultWifiNetworkDataSource
+import vn.coon.app.data.wifi.source.DefaultWifiSsidDataSource
 
 class AppContainer(context: Context) {
 
@@ -17,10 +19,13 @@ class AppContainer(context: Context) {
         DefaultAdbRepository(DefaultSystemPropertiesDataSource())
     }
 
-    val wifiAddressRepository: WifiAddressRepository by lazy {
-        DefaultWifiAddressRepository(
-            DefaultWifiAddressDataSource(
+    val wifiStatusRepository: WifiStatusRepository by lazy {
+        DefaultWifiStatusRepository(
+            DefaultWifiNetworkDataSource(
                 appContext.getSystemService(ConnectivityManager::class.java),
+            ),
+            DefaultWifiSsidDataSource(
+                appContext.getSystemService(WifiManager::class.java),
             ),
         )
     }

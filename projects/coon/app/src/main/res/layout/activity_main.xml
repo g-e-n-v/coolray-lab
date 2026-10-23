@@ -1,14 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:baselineAligned="false"
+    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/screen_text"
-        android:textSize="32sp" />
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/sidebar"
+        android:layout_width="@dimen/sidebar_width"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="28dp">
+
+        <LinearLayout
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clock_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:fontFeatureSettings="tnum"
+                android:includeFontPadding="false"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clock_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:fontFeatureSettings="tnum"
+                android:includeFontPadding="false"
+                android:textColor="@color/clock_minute"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/nav_home"
+            android:layout_width="@dimen/sidebar_item_size"
+            android:layout_height="@dimen/sidebar_item_size"
+            android:background="@drawable/sidebar_item_bg"
+            android:contentDescription="@string/nav_home"
+            android:padding="16dp"
+            android:src="@drawable/ic_home_outline"
+            android:tint="@color/sidebar_icon" />
+
+        <ImageView
+            android:id="@+id/nav_apps"
+            android:layout_width="@dimen/sidebar_item_size"
+            android:layout_height="@dimen/sidebar_item_size"
+            android:layout_marginTop="@dimen/sidebar_item_gap"
+            android:background="@drawable/sidebar_item_bg"
+            android:contentDescription="@string/nav_apps"
+            android:padding="16dp"
+            android:src="@drawable/ic_apps_outline"
+            android:tint="@color/sidebar_icon" />
+
+        <ImageView
+            android:id="@+id/nav_about"
+            android:layout_width="@dimen/sidebar_item_size"
+            android:layout_height="@dimen/sidebar_item_size"
+            android:layout_marginTop="@dimen/sidebar_item_gap"
+            android:background="@drawable/sidebar_item_bg"
+            android:contentDescription="@string/nav_about"
+            android:padding="16dp"
+            android:src="@drawable/ic_info_outline"
+            android:tint="@color/sidebar_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/statusbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp">
+
+            <LinearLayout
+            android:id="@+id/wifi_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wifi_chip_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/wifi_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_wifi"
+                    android:tint="@color/status_text" />
+
+                <TextView
+                    android:id="@+id/wifi_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:letterSpacing="0.02"
+                    android:text="@string/no_connection"
+                    android:textColor="@color/status_text"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ip_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFeatureSettings="tnum"
+                android:letterSpacing="0.02"
+                android:textColor="@color/status_ip"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/screen_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

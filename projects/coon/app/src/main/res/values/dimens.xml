@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="sidebar_width">120dp</dimen>
+    <dimen name="sidebar_item_size">72dp</dimen>
+    <dimen name="sidebar_item_gap">12dp</dimen>
+    <dimen name="statusbar_height">64dp</dimen>
+    <dimen name="content_radius">24dp</dimen>
+    <dimen name="swatch_size">54dp</dimen>
+    <dimen name="swatch_square_size">44dp</dimen>
+    <dimen name="swatch_gap_size">48dp</dimen>
+    <dimen name="swatch_corner_radius">10dp</dimen>
+    <dimen name="swatch_border_width">2dp</dimen>
+    <dimen name="swatch_row_gap">20dp</dimen>
+</resources>

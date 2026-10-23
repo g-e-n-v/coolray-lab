@@ -2,8 +2,8 @@ package vn.coon.app.data.wifi
 
 import kotlinx.coroutines.flow.StateFlow
 
-interface WifiAddressRepository {
-    val wifiAddress: StateFlow<String?>
+interface WifiStatusRepository {
+    val status: StateFlow<WifiStatus>
 
     fun start()
 

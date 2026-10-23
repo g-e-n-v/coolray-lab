@@ -9,36 +9,38 @@ import kotlinx.coroutines.test.UnconfinedTestDispatcher
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import vn.coon.app.data.wifi.WifiAddressRepository
+import vn.coon.app.data.wifi.WifiStatus
+import vn.coon.app.data.wifi.WifiStatusRepository
 
 @OptIn(ExperimentalCoroutinesApi::class)
 class MainStateHolderTest {
 
-    private class FakeWifiAddressRepository : WifiAddressRepository {
-        private val _wifiAddress = MutableStateFlow<String?>(null)
-        override val wifiAddress: StateFlow<String?> = _wifiAddress.asStateFlow()
+    private class FakeWifiStatusRepository : WifiStatusRepository {
+        private val _status = MutableStateFlow(WifiStatus())
+        override val status: StateFlow<WifiStatus> = _status.asStateFlow()
 
         override fun start() = Unit
 
         override fun stop() = Unit
 
-        fun emit(address: String?) {
-            _wifiAddress.value = address
+        fun emit(status: WifiStatus) {
+            _status.value = status
         }
     }
 
     @Test
-    fun uiStateExposesLatestWifiAddress() = runTest {
-        val repository = FakeWifiAddressRepository()
+    fun uiStateExposesLatestWifiStatus() = runTest {
+        val repository = FakeWifiStatusRepository()
         val holder = MainStateHolder(
             repository,
             backgroundScope + UnconfinedTestDispatcher(testScheduler),
         )
 
         assertEquals(MainUiState(), holder.uiState.value)
-        repository.emit("192.168.1.10")
-        assertEquals(MainUiState("192.168.1.10"), holder.uiState.value)
-        repository.emit(null)
+        val connected = WifiStatus(connected = true, ssid = "Coolray-5G", ipAddress = "192.168.1.10")
+        repository.emit(connected)
+        assertEquals(MainUiState(connected), holder.uiState.value)
+        repository.emit(WifiStatus())
         assertEquals(MainUiState(), holder.uiState.value)
     }
 }

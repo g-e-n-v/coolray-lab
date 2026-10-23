@@ -10,35 +10,35 @@ import android.os.Looper
 import android.util.Log
 import vn.coon.app.util.preferredHostAddress
 
-class DefaultWifiAddressDataSource(
+class DefaultWifiNetworkDataSource(
     private val connectivityManager: ConnectivityManager,
-) : WifiAddressDataSource {
+) : WifiNetworkDataSource {
 
     private val mainHandler = Handler(Looper.getMainLooper())
     private var wifiNetwork: Network? = null
     private var registered = false
-    private var onAddressChanged: ((String?) -> Unit)? = null
+    private var onChanged: (() -> Unit)? = null
 
     private val callback = object : ConnectivityManager.NetworkCallback() {
         override fun onAvailable(network: Network) {
             wifiNetwork = network
-            notifyLatest()
+            notifyChanged()
         }
 
         override fun onLinkPropertiesChanged(network: Network, lp: LinkProperties) {
-            notifyLatest()
+            notifyChanged()
         }
 
         override fun onLost(network: Network) {
             if (wifiNetwork === network) {
                 wifiNetwork = null
             }
-            notifyLatest()
+            notifyChanged()
         }
     }
 
-    override fun start(onAddressChanged: (String?) -> Unit) {
-        this.onAddressChanged = onAddressChanged
+    override fun start(onChanged: () -> Unit) {
+        this.onChanged = onChanged
         if (!registered) {
             registered = try {
                 connectivityManager.registerNetworkCallback(wifiRequest, callback, mainHandler)
@@ -48,7 +48,7 @@ class DefaultWifiAddressDataSource(
                 false
             }
         }
-        notifyLatest()
+        notifyChanged()
     }
 
     override fun stop() {
@@ -60,18 +60,23 @@ class DefaultWifiAddressDataSource(
         }
         registered = false
         wifiNetwork = null
-        this.onAddressChanged = null
+        this.onChanged = null
     }
 
-    private fun notifyLatest() {
-        val listener = onAddressChanged ?: return
+    override fun current(): WifiNetworkState {
         val linkProperties = wifiNetwork?.let { connectivityManager.getLinkProperties(it) }
-        listener(
-            linkProperties?.linkAddresses
-                .orEmpty()
-                .mapNotNull { it.address }
-                .preferredHostAddress(),
+        val ipAddress = linkProperties?.linkAddresses
+            .orEmpty()
+            .mapNotNull { it.address }
+            .preferredHostAddress()
+        return WifiNetworkState(
+            connected = wifiNetwork != null,
+            ipAddress = ipAddress,
         )
+    }
+
+    private fun notifyChanged() {
+        onChanged?.invoke()
     }
 
     private companion object {

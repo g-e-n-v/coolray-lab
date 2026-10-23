@@ -6,9 +6,9 @@ Android 9, Flyme Auto 1.8.0), mô hình tham chiếu: Sapo Drive / EX Sapo Centr
 xe. Coon **không chỉ là bản thay StageLight**: app chạy uid 1000
 (`android.uid.system`), ký bằng platform testkey của firmware — nền tảng đặc
 quyền cho mọi tính năng. Bật/giữ ADB Wi-Fi (`BootCompleteReceiver` set
-`persist.adb.tcp.port=5555` mỗi lần boot) và màn hình `MainActivity` hiển thị
-IP Wi-Fi hiện tại hoặc `No connection` (nền tối, chữ sáng) chỉ là tính năng
-nền tảng đầu tiên.
+`persist.adb.tcp.port=5555` mỗi lần boot) và UI theo `docs/prototype.html`
+(sidebar Home/Ứng dụng/Về chúng tôi, màn Home đổi màu xe, status bar Wi-Fi)
+chỉ là tính năng nền tảng đầu tiên.
 
 ## Tài liệu
 
@@ -47,9 +47,10 @@ app/src/
 │   │   ├── CoonApplication.kt  Application, giữ AppContainer
 │   │   ├── AppContainer.kt            DI thủ công: repository singletons
 │   │   ├── main/                      UI layer — package màn hình
-│   │   │   ├── MainActivity.kt        UI element: render UiState, forward event
+│   │   │   ├── MainActivity.kt        shell: sidebar + clock + status bar + điều hướng 3 tab
+│   │   │   ├── HomeView.kt            màn Home: ảnh xe + bộ đổi màu
 │   │   │   ├── MainStateHolder.kt     plain state holder (không AndroidX)
-│   │   │   └── MainUIState.kt         data class trạng thái
+│   │   │   └── MainUiState.kt         data class trạng thái
 │   │   ├── data/
 │   │   │   ├── adb/
 │   │   │   │   ├── AdbRepository.kt           interface, SSOT
@@ -58,22 +59,26 @@ app/src/
 │   │   │   │       ├── SystemPropertiesDataSource.kt
 │   │   │   │       └── DefaultSystemPropertiesDataSource.kt   reflection
 │   │   │   └── wifi/
-│   │   │       ├── WifiAddressRepository.kt
-│   │   │       ├── DefaultWifiAddressRepository.kt    StateFlow<String?>
+│   │   │       ├── WifiStatus.kt              model: connected + ssid + ipAddress
+│   │   │       ├── WifiStatusRepository.kt    StateFlow<WifiStatus>
+│   │   │       ├── DefaultWifiStatusRepository.kt   gộp 2 nguồn
 │   │   │       └── source/
-│   │   │           ├── WifiAddressDataSource.kt
-│   │   │           └── DefaultWifiAddressDataSource.kt  ConnectivityManager
+│   │   │           ├── WifiNetworkDataSource.kt
+│   │   │           ├── DefaultWifiNetworkDataSource.kt  ConnectivityManager
+│   │   │           ├── WifiSsidDataSource.kt
+│   │   │           └── DefaultWifiSsidDataSource.kt     WifiManager (SSID)
 │   │   ├── receiver/
 │   │   │   └── BootCompleteReceiver.kt   entry point → AdbRepository
 │   │   └── util/
-│   │       └── InetAddresses.kt       hàm thuần chọn/format IP
-│   └── res/                           layout/theme tối, icon launcher
+│   │       ├── InetAddresses.kt     hàm thuần chọn/format IP
+│   │       └── Ssid.kt              hàm thuần clean SSID
+│   └── res/                          layout/prototype UI, drawable-nodpi ảnh xe
 └── test/kotlin/vn/coon/app/    unit test JVM, mirror package
     ├── main/MainStateHolderTest.kt
     ├── data/adb/DefaultAdbRepositoryTest.kt
     ├── data/adb/source/DefaultSystemPropertiesDataSourceTest.kt
-    ├── data/wifi/DefaultWifiAddressRepositoryTest.kt
-    └── util/InetAddressesTest.kt
+    ├── data/wifi/DefaultWifiStatusRepositoryTest.kt
+    └── util/ (InetAddressesTest, SsidTest)
 ```
 
 Luồng phụ thuộc một chiều: `DataSource → Repository → MainStateHolder →
@@ -90,6 +95,42 @@ database nên khoảng trống này chưa chặn gì.
 - `scripts/sign.sh` — ký lại bằng `../usb-upgrade/keys/` (v2 scheme,
   `--v4-signing-enabled false`, không sinh file `.idsig`)
 - `dist/` — APK đã ký (gitignored)
+
+## Test UI trên emulator (không cần xe)
+
+Chạy được vì firmware dùng đúng AOSP platform testkey (CN=Android) — image
+AOSP `default` của SDK cũng ký bằng key đó nên APK join được
+`android.uid.system` trên emulator. **Chỉ dùng image `default`**: image
+`google_apis`/`google_apis_playstore` ký release key của Google → cài bị
+`INSTALL_FAILED_SHARED_USER_INCOMPATIBLE`.
+
+Setup một lần:
+
+```bash
+sdkmanager "system-images;android-28;default;arm64-v8a"
+avdmanager create avd -n coon-hu \
+  -k "system-images;android-28;default;arm64-v8a" -d pixel --force
+# sửa ~/.android/avd/coon-hu.avd/config.ini cho khớp IHU689G:
+#   hw.lcd.width=1920  hw.lcd.height=1080  hw.lcd.density=160
+$ANDROID_HOME/emulator/emulator -avd coon-hu -no-snapshot -no-boot-anim
+```
+
+Mỗi lần test UI:
+
+```bash
+./gradlew assembleDebug && ./scripts/sign.sh debug
+adb install -r dist/Coon.apk                # phải Success, không phải SHARED_USER_INCOMPATIBLE
+adb shell dumpsys package vn.coon.app | grep userId   # kỳ vọng 1000
+adb shell am start -n vn.coon.app/.main.MainActivity
+adb exec-out screencap -p > ui.png
+```
+
+Giới hạn: emulator không có UI Wi-Fi của Flyme — bấm vùng Wi-Fi trên status
+bar mở `android.settings.WIFI_SETTINGS` sẽ resolve sang AOSP
+`Settings$WifiSettingsActivity`; trên xe intent này resolve sang
+`com.flyme.auto.connectivitysettings/.ui.ConnectSettingsActivity` (preferred
+activity, đúng cách `com.ex.auto` đã gọi thật trên xe). `BOOT_COMPLETED`,
+hiệu lực `persist.adb.tcp.port` và T1-T7 vẫn chỉ verify được trên xe.
 
 ## Các bước tiếp theo
 

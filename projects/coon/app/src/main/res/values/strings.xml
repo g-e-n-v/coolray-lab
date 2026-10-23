@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Coon</string>
     <string name="no_connection">No connection</string>
+    <string name="wifi_connected_no_ssid">Wi-Fi</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_apps">Ứng dụng</string>
+    <string name="nav_about">Về chúng tôi</string>
+    <string name="placeholder_title_apps">Ứng dụng</string>
+    <string name="placeholder_title_about">Về chúng tôi</string>
+    <string name="placeholder_subtitle">Sắp ra mắt</string>
+    <string name="car_image">Coolray</string>
 </resources>
