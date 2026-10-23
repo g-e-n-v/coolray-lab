@@ -7,6 +7,7 @@ Workspace cho xe **Geely New Coolray 2026 VN** (head unit IHU689G, Android 9).
 | Thư mục                 | Nội dung                                                                                           |
 | ----------------------- | -------------------------------------------------------------------------------------------------- |
 | `projects/usb-upgrade/` | Source of truth để build gói USB OTA → `dist/3C6525_SW0A5LV/` (copy root USB, nhấn nâng cấp từ xe) |
+| `projects/coon/`        | App quản lý xe Coolray trên HU (uid 1000, platform testkey; nền tảng: ADB Wi-Fi thay StageLight + hiển thị IP) — tầm nhìn mở rộng theo mô hình Sapo Drive (sapodrive.com) |
 | `tools/`                | Tiện ích nghiên cứu xe (dump qua adb), kết quả ở `dumps/`                                          |
 | `docs/`                 | Tài liệu: baseline phần cứng IHU689G, hu-adb-dump, split-screen recipe                             |
 | `extracts/`             | (tạm giữ) extract apk sapo-central                                                                 |

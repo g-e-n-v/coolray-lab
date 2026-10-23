@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.Coon" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:navigationBarColor">@color/screen_bg</item>
+    </style>
+</resources>

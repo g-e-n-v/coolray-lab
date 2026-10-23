@@ -14,6 +14,7 @@ nguyên convention này khi sửa tài liệu.
 | --- | --- |
 | `projects/usb-upgrade/scripts/` | Chuỗi build USB OTA: `build.sh` (zip + ký + verify + md5), `deploy.sh` (USB), `embed.sh` (app), `embed-boot.sh` (root qua OTA: patched boot), `verify.sh` |
 | `projects/usb-upgrade/README.md` | Chi tiết đầy đủ chuỗi OTA: cấu trúc, embed app, verify chữ ký, quy trình flash trên xe |
+| `projects/coon/` | App quản lý xe Coolray trên HU (`vn.coon.app`, uid 1000, platform testkey): nền tảng ADB Wi-Fi + màn hình IP; tầm nhìn mở rộng thành app quản lý xe theo mô hình Sapo Drive (sapodrive.com). Chi tiết: `projects/coon/AGENTS.md` |
 | `tools/dump-hu.sh` | Dump toàn bộ head unit qua ADB Wi-Fi → `dumps/<ip>-<timestamp>/` |
 | `docs/ihu689g.md` | Baseline phần cứng/firmware đã verify trên xe, mọi fact đều cite file dump dạng `[props.txt]` |
 | `docs/hu-adb-dump.md` | Nội dung dump ADB + cách tái tạo |
