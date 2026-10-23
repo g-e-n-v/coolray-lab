@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coon — Car UI Prototype (IHU689G 1920×1080)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dock-h: 132px;
+      /* Flyme Auto system dock */
+      --sidebar-w: 120px;
+      --status-h: 64px;
+      --radius: 24px;
+      /* bo tròn cạnh trái content */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: #2b2f3a;
+      /* nền ngoài tường minh — tách khỏi màn hình đen */
+      color: #e8eaee;
+      font-family: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* ── Thanh công cụ zoom ─────────────────────────────── */
+    .toolbar {
+      height: 52px;
+      flex: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 20px;
+    }
+
+    .toolbar .title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-right: 8px;
+    }
+
+    .toolbar .spec {
+      font-size: 12px;
+      color: #6f7686;
+      font-family: ui-monospace, Menlo, monospace;
+    }
+
+    .toolbar .spacer {
+      flex: 1;
+    }
+
+    .toolbar button {
+      background: #171a21;
+      color: #e8eaee;
+      border: 1px solid #2a2f3a;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .toolbar button:hover {
+      background: #1f2430;
+    }
+
+    #zoomValue {
+      min-width: 52px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      font-size: 13px;
+      color: #aab1c0;
+    }
+
+    /* ── Canvas zoom được (scroll khi vượt viewport) ────── */
+    .canvas {
+      flex: 1;
+      overflow: auto;
+      display: flex;
+      padding: 32px;
+      background-image: radial-gradient(rgba(255, 255, 255, .06) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    .holder {
+      margin: auto;
+    }
+
+    /* auto-margin: center khi nhỏ, scroll khi lớn */
+
+    /* ── Sân khấu 1:1, chỉ scale bằng transform ─────────── */
+    .stage {
+      transform-origin: top left;
+    }
+
+    /* ── Màn hình: đúng phần cứng 1920×1080 ─────────────── */
+    .screen {
+      width: 1920px;
+      height: 1080px;
+      background: #000;
+      border: 2px solid #596176;
+      /* viền màn hình — ranh giới thấy được trên nền xám */
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Vùng app — CHỈ phía trên dock */
+    .app {
+      height: calc(1080px - var(--dock-h));
+      display: flex;
+    }
+
+    /* 1. Sidebar trái — nav rail: home, đa nhiệm, info */
+    .sidebar {
+      width: var(--sidebar-w);
+      flex: none;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding-top: 28px;
+    }
+    .clock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      font-variant-numeric: tabular-nums;
+    }
+    .clock .h { font-size: 40px; font-weight: 600; line-height: 1.15; color: #fff; }
+    .clock .m { font-size: 40px; font-weight: 500; color: #8b93a5; }
+    .sidebar button {
+      width: 72px;
+      height: 72px;
+      border: none;
+      border-radius: 22px;
+      background: transparent;
+      color: #7d8595;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .sidebar button:hover { background: rgba(255, 255, 255, .06); }
+    .sidebar button.active {
+      background: rgba(255, 255, 255, .12);
+      color: #fff;
+    }
+    .sidebar svg { width: 40px; height: 40px; }
+    .sidebar button .fill { display: none; }
+    .sidebar button.active .fill { display: block; }
+    .sidebar button.active .outline { display: none; }
+
+    /* 2. Content phải — bo tròn cạnh trái */
+    .content {
+      flex: 1;
+      min-width: 0;
+      background: linear-gradient(165deg, #1a1d26 0%, #101218 45%, #0b0d12 100%);
+      border: 1px solid rgba(255, 255, 255, .05);
+      border-right: none;
+      border-radius: var(--radius) 0 0 var(--radius);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Status bar — nằm BÊN TRONG content, sát mép trên */
+    .statusbar {
+      height: var(--status-h);
+      flex: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 44px;
+      color: #dfe3ea;
+      font-weight: 500;
+      letter-spacing: .5px;
+    }
+    .net {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      opacity: .55;
+      transition: opacity .2s;
+    }
+    .net.connected { opacity: 1; }
+    .net svg { width: 30px; height: 30px; }
+    .status-right {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .status-right .ip { color: #aab1c0; }
+
+    /* Main giữa — ảnh xe + swatches chọn màu */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      color: #6f7686;
+      font-size: 30px;
+    }
+    .main img {
+      display: block;
+      width: 720px;
+      height: auto;
+      user-select: none;
+    }
+    .swatches {
+      display: flex;
+      gap: 20px;
+    }
+    .swatches button {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, .18);
+      cursor: pointer;
+      padding: 0;
+    }
+    .swatches button.selected {
+      box-shadow: 0 0 0 3px #10131b, 0 0 0 5px #fff;
+    }
+
+    /* 3. Dock hệ thống Flyme Auto — full width, đánh dấu sọc */
+    .dock {
+      height: var(--dock-h);
+      flex: none;
+      background:
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, .055) 0 12px, transparent 12px 24px) #0b0c10;
+      border-top: 1px dashed rgba(255, 255, 255, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dock .label {
+      color: rgba(255, 255, 255, .45);
+      font-size: 22px;
+    }
+
+    .caption {
+      padding-top: 10px;
+      text-align: center;
+      color: #aab2c2;
+      font-size: 14px;
+      font-family: ui-monospace, Menlo, monospace;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="toolbar">
+    <span class="title">Coon — Car UI Prototype</span>
+    <span class="spec">IHU689G · 14.6&quot; · 1920×1080 · ~151 PPI · density 160 (1px = 1dp)</span>
+    <span class="spacer"></span>
+    <button id="zoomOut" title="Thu nhỏ">−</button>
+    <span id="zoomValue">100%</span>
+    <button id="zoomIn" title="Phóng to">+</button>
+    <button id="zoomFit" title="Vừa màn hình">Fit</button>
+    <button id="zoom100" title="Zoom 100%">100%</button>
+  </div>
+
+  <div class="canvas" id="canvas">
+    <div class="holder" id="holder">
+      <div class="stage" id="stage">
+        <div class="screen">
+          <div class="app">
+            <aside class="sidebar">
+              <div class="clock" id="clock"><span class="h">--</span><span class="m">--</span></div>
+              <button class="active" title="Trang chủ">
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/></svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-3q-.425 0-.712-.288T14 20v-5q0-.425-.288-.712T13 14h-2q-.425 0-.712.288T10 15v5q0 .425-.288.713T9 21H6q-.825 0-1.412-.587T4 19"/></svg>
+              </button>
+              <button title="Đa nhiệm">
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M8 10H4q-.825 0-1.412-.587T2 8V4q0-.825.588-1.412T4 2h4q.825 0 1.413.588T10 4v4q0 .825-.587 1.413T8 10M4 8h4V4H4zm4 14H4q-.825 0-1.412-.587T2 20v-4q0-.825.588-1.412T4 14h4q.825 0 1.413.588T10 16v4q0 .825-.587 1.413T8 22m-4-2h4v-4H4zm16-10h-4q-.825 0-1.412-.587T14 8V4q0-.825.588-1.412T16 2h4q.825 0 1.413.588T22 4v4q0 .825-.587 1.413T20 10m-4-2h4V4h-4zm4 14h-4q-.825 0-1.412-.587T14 20v-4q0-.825.588-1.412T16 14h4q.825 0 1.413.588T22 16v4q0 .825-.587 1.413T20 22m-4-2h4v-4h-4zm0-4"/></svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M8 10H4q-.825 0-1.412-.587T2 8V4q0-.825.588-1.412T4 2h4q.825 0 1.413.588T10 4v4q0 .825-.587 1.413T8 10m0 12H4q-.825 0-1.412-.587T2 20v-4q0-.825.588-1.412T4 14h4q.825 0 1.413.588T10 16v4q0 .825-.587 1.413T8 22m12-12h-4q-.825 0-1.412-.587T14 8V4q0-.825.588-1.412T16 2h4q.825 0 1.413.588T22 4v4q0 .825-.587 1.413T20 10m0 12h-4q-.825 0-1.412-.587T14 20v-4q0-.825.588-1.412T16 14h4q.825 0 1.413.588T22 16v4q0 .825-.587 1.413T20 22"/></svg>
+              </button>
+              <button title="Thông tin">
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.713 16.713Q13 16.425 13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17t.713-.288m0-8Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.713 16.713Q13 16.425 13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17t.713-.288m0-8Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+              </button>
+            </aside>
+            <main class="content">
+              <header class="statusbar">
+                <div class="net" id="netStatus" title="Bấm để giả lập kết nối Wi-Fi">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2.725 10.725L.6 8.6q2.3-2.225 5.25-3.412T12 4t6.15 1.188T23.4 8.6l-2.125 2.125Q19.4 8.925 17 7.963T12 7t-5 .963t-4.275 2.762M6.95 14.95l-2.1-2.1q1.475-1.375 3.313-2.112T12 10t3.838.738t3.312 2.112l-2.1 2.1Q16 14 14.713 13.5T12 13t-2.713.5t-2.337 1.45m3.637 4.463Q10 18.825 10 18t.588-1.412T12 16t1.413.588T14 18t-.587 1.413T12 20t-1.412-.587"/></svg>
+                  <span id="netLabel">No connection</span>
+                </div>
+                <div class="status-right">
+                  <span class="ip" id="ipAddr" hidden>10.98.197.218</span>
+                </div>
+              </header>
+              <section class="main">
+                <img id="car" src="assets/coolray-white.png" alt="Coolray" draggable="false">
+                <div class="swatches" id="swatches">
+                  <button data-color="white"  style="background:#e9ecef" class="selected" title="Trắng"></button>
+                  <button data-color="red"    style="background:#c0272d" title="Đỏ"></button>
+                  <button data-color="gray"   style="background:#4a4d52" title="Xám"></button>
+                  <button data-color="green"  style="background:#0e6f6b" title="Xanh biển"></button>
+                  <button data-color="silver" style="background:#c3c9d2" title="Bạc"></button>
+                </div>
+              </section>
+            </main>
+          </div>
+          <div class="dock">
+            <span class="label">Flyme Auto system dock — app chỉ render phía trên</span>
+          </div>
+        </div>
+        <div class="caption">màn hình 1:1: 1920 × 1080 px · dock 132 px · sidebar 120 px · status bar 64 px · bo góc
+          trái 12 px</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const W = 1920, H = 1080, CAP = 34;
+    const canvas = document.getElementById('canvas');
+    const holder = document.getElementById('holder');
+    const stage = document.getElementById('stage');
+    const zoomOut = document.getElementById('zoomOut');
+    const zoomIn = document.getElementById('zoomIn');
+    const zoomFit = document.getElementById('zoomFit');
+    const zoom100 = document.getElementById('zoom100');
+    const zoomVal = document.getElementById('zoomValue');
+
+    let z = 1, fitMode = true;
+
+    function apply() {
+      stage.style.transform = `scale(${z})`;
+      holder.style.width = W * z + 'px';
+      holder.style.height = (H + CAP) * z + 'px';
+      zoomVal.textContent = Math.round(z * 100) + '%';
+    }
+    function fitZoom() {
+      const r = canvas.getBoundingClientRect();
+      return Math.max(0.05, Math.min((r.width - 64) / W, (r.height - 64 - CAP) / H));
+    }
+    zoomOut.onclick = () => {fitMode = false; z = Math.max(0.1, z / 1.2); apply();};
+    zoomIn.onclick = () => {fitMode = false; z = Math.min(4, z * 1.2); apply();};
+    zoomFit.onclick = () => {fitMode = true; z = fitZoom(); apply();};
+    zoom100.onclick = () => {fitMode = false; z = 1; apply();};
+    window.addEventListener('resize', () => {if (fitMode) {z = fitZoom(); apply();} });
+
+    z = fitZoom();
+    apply();
+
+    const COLORS = ['white', 'red', 'gray', 'green', 'silver'];
+    COLORS.forEach(c => { const i = new Image(); i.src = `assets/coolray-${c}.png`; });
+    const car = document.getElementById('car');
+    const swatches = document.getElementById('swatches');
+    swatches.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-color]');
+      if (!btn) return;
+      car.src = `assets/coolray-${btn.dataset.color}.png`;
+      swatches.querySelector('.selected')?.classList.remove('selected');
+      btn.classList.add('selected');
+    });
+
+    const net = { connected: false, ssid: 'Coolray-5G', ip: '10.98.197.218' };
+    const netStatus = document.getElementById('netStatus');
+    const netLabel = document.getElementById('netLabel');
+    const ipAddr = document.getElementById('ipAddr');
+    function renderNet() {
+      netStatus.classList.toggle('connected', net.connected);
+      netLabel.textContent = net.connected ? net.ssid : 'No connection';
+      ipAddr.hidden = !net.connected;
+    }
+    netStatus.onclick = () => { net.connected = !net.connected; renderNet(); };
+    renderNet();
+
+    const clock = document.querySelector('.clock');
+    function renderClock() {
+      const d = new Date();
+      clock.querySelector('.h').textContent = String(d.getHours()).padStart(2, '0');
+      clock.querySelector('.m').textContent = String(d.getMinutes()).padStart(2, '0');
+    }
+    renderClock();
+    setInterval(renderClock, 1000);
+
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      sidebar.querySelector('.active')?.classList.remove('active');
+      btn.classList.add('active');
+    });
+  </script>
+</body>
+
+</html>
