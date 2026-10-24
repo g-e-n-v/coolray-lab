@@ -32,6 +32,7 @@ class MainActivity : Activity() {
     private lateinit var tabs: List<Tab>
     private lateinit var wifiChip: View
     private lateinit var wifiLabel: TextView
+    private lateinit var ipGroup: View
     private lateinit var ipAddress: TextView
     private lateinit var clockHour: TextView
     private lateinit var clockMinute: TextView
@@ -75,6 +76,7 @@ class MainActivity : Activity() {
         clockMinute = findViewById(R.id.clock_minute)
         wifiChip = findViewById(R.id.wifi_chip)
         wifiLabel = findViewById(R.id.wifi_label)
+        ipGroup = findViewById(R.id.ip_group)
         ipAddress = findViewById(R.id.ip_address)
         val content = findViewById<View>(R.id.content)
         content.clipToOutline = true
@@ -130,18 +132,24 @@ class MainActivity : Activity() {
     }
 
     private fun renderWifi(wifi: WifiStatus) {
-        wifiChip.alpha = if (wifi.connected) CONNECTED_ALPHA else DISCONNECTED_ALPHA
         wifiLabel.text = when {
             !wifi.connected -> getString(R.string.no_connection)
             wifi.ssid != null -> wifi.ssid
             else -> getString(R.string.wifi_connected_no_ssid)
         }
+        wifiLabel.setTextColor(
+            if (wifi.connected) {
+                getColor(R.color.status_text)
+            } else {
+                getColor(R.color.status_text_muted)
+            },
+        )
         val address = wifi.ipAddress
         if (address == null) {
-            ipAddress.visibility = View.GONE
+            ipGroup.visibility = View.GONE
         } else {
             ipAddress.text = address
-            ipAddress.visibility = View.VISIBLE
+            ipGroup.visibility = View.VISIBLE
         }
     }
 
@@ -159,7 +167,5 @@ class MainActivity : Activity() {
 
     private companion object {
         const val CLOCK_TICK_MS = 1_000L
-        const val CONNECTED_ALPHA = 1f
-        const val DISCONNECTED_ALPHA = 0.55f
     }
 }

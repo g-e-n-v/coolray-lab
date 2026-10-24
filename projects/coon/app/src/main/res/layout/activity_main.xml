@@ -80,6 +80,9 @@
         android:id="@+id/content"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/content_inset_vertical"
+        android:layout_marginBottom="@dimen/content_inset_vertical"
+        android:layout_marginEnd="@dimen/content_inset_vertical"
         android:layout_weight="1"
         android:background="@drawable/content_bg"
         android:orientation="vertical">
@@ -90,8 +93,8 @@
             android:layout_height="@dimen/statusbar_height"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingLeft="44dp"
-            android:paddingRight="44dp">
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
 
             <LinearLayout
             android:id="@+id/wifi_chip"
@@ -131,15 +134,32 @@
                 android:layout_height="1dp"
                 android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/ip_address"
+            <LinearLayout
+                android:id="@+id/ip_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFeatureSettings="tnum"
-                android:letterSpacing="0.02"
-                android:textColor="@color/status_ip"
-                android:textSize="24sp"
-                android:visibility="gone" />
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ip_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_ip"
+                    android:tint="@color/status_ip" />
+
+                <TextView
+                    android:id="@+id/ip_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:fontFeatureSettings="tnum"
+                    android:letterSpacing="0.02"
+                    android:textColor="@color/status_ip"
+                    android:textSize="24sp" />
+            </LinearLayout>
         </LinearLayout>
 
         <FrameLayout

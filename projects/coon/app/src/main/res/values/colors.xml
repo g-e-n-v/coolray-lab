@@ -12,6 +12,7 @@
 
     <color name="clock_minute">#8B93A5</color>
     <color name="status_text">#DFE3EA</color>
+    <color name="status_text_muted">#8B93A5</color>
     <color name="status_ip">#AAB1C0</color>
     <color name="wifi_chip_ripple">#1FFFFFFF</color>
 

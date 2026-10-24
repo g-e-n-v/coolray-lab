@@ -5,7 +5,5 @@
         android:centerColor="@color/content_gradient_center"
         android:endColor="@color/content_gradient_end"
         android:startColor="@color/content_gradient_start" />
-    <corners
-        android:bottomLeftRadius="@dimen/content_radius"
-        android:topLeftRadius="@dimen/content_radius" />
+    <corners android:radius="@dimen/content_radius" />
 </shape>

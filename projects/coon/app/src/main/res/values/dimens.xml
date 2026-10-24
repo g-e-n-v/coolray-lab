@@ -3,6 +3,7 @@
     <dimen name="sidebar_item_size">72dp</dimen>
     <dimen name="sidebar_item_gap">12dp</dimen>
     <dimen name="statusbar_height">64dp</dimen>
+    <dimen name="content_inset_vertical">16dp</dimen>
     <dimen name="content_radius">24dp</dimen>
     <dimen name="swatch_size">54dp</dimen>
     <dimen name="swatch_square_size">44dp</dimen>
