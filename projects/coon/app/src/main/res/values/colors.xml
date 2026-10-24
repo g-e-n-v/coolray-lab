@@ -1,9 +1,10 @@
 <resources>
     <color name="screen_bg">#000000</color>
 
-    <color name="content_gradient_start">#1A1D26</color>
-    <color name="content_gradient_center">#101218</color>
-    <color name="content_gradient_end">#0B0D12</color>
+    <color name="content_gradient_start">#1C1F27</color>
+    <color name="content_gradient_center">#12151B</color>
+    <color name="content_gradient_end">#101318</color>
+    <color name="content_border">#14FFFFFF</color>
 
     <color name="sidebar_icon_active">#FFFFFF</color>
     <color name="sidebar_icon_inactive">#7D8595</color>

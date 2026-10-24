@@ -54,6 +54,17 @@
             android:tint="@color/sidebar_icon" />
 
         <ImageView
+            android:id="@+id/nav_profiles"
+            android:layout_width="@dimen/sidebar_item_size"
+            android:layout_height="@dimen/sidebar_item_size"
+            android:layout_marginTop="@dimen/sidebar_item_gap"
+            android:background="@drawable/sidebar_item_bg"
+            android:contentDescription="@string/nav_profiles"
+            android:padding="16dp"
+            android:src="@drawable/ic_profiles_outline"
+            android:tint="@color/sidebar_icon" />
+
+        <ImageView
             android:id="@+id/nav_apps"
             android:layout_width="@dimen/sidebar_item_size"
             android:layout_height="@dimen/sidebar_item_size"
