@@ -7,7 +7,7 @@
   <title>Coon — Car UI Prototype (IHU689G 1920×1080)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --dock-h: 132px;
@@ -33,7 +33,7 @@
       background: #2b2f3a;
       /* nền ngoài tường minh — tách khỏi màn hình đen */
       color: #e8eaee;
-      font-family: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-family: "Roboto", "Noto Sans", -apple-system, "Segoe UI", sans-serif;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -143,10 +143,11 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
+      font-family: "Roboto Mono", monospace;
       font-variant-numeric: tabular-nums;
     }
-    .clock .h { font-size: 40px; font-weight: 600; line-height: 1.15; color: #fff; }
-    .clock .m { font-size: 40px; font-weight: 500; color: #8b93a5; }
+    .clock .h { font-size: 40px; font-weight: 700; line-height: 1.17; color: #fff; }
+    .clock .m { font-size: 40px; font-weight: 400; line-height: 1.17; color: #8b93a5; }
     .sidebar button {
       width: 72px;
       height: 72px;
@@ -194,8 +195,8 @@
       justify-content: space-between;
       padding: 0 24px;
       color: #dfe3ea;
-      font-weight: 500;
-      letter-spacing: .5px;
+      font-weight: 400;
+      letter-spacing: .02em;
     }
     .net {
       display: flex;
@@ -219,6 +220,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      font-variant-numeric: tabular-nums;
     }
     .status-right .ip[hidden] { display: none; }
     .status-right .ip svg { width: 30px; height: 30px; }
@@ -237,12 +239,11 @@
     .main.active { display: flex; }
 
     .ph-title {
-      font-size: 44px;
-      font-weight: 600;
-      color: #aab1c0;
-      letter-spacing: .5px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #8b93a5;
     }
-    .ph-sub { font-size: 26px; color: #6f7686; }
+    .ph-sub { font-size: 24px; color: #6f7686; }
     .main img {
       display: block;
       width: 720px;
