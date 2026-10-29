@@ -7,13 +7,12 @@ package_extract_dir("system", "/system");
 
 set_metadata("/system/app/Stagelight", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/app/Stagelight/Stagelight.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
+
 set_metadata("/system/app/GeelyAutoSettings", "uid", 0, "gid", 0, "mode", 0755, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/app/GeelyAutoSettings/GeelyAutoSettings.apk", "uid", 0, "gid", 0, "mode", 0644, "selabel", "u:object_r:system_file:s0");
 
 run_program("/system/bin/rm", "-rf", "/system/app/GeelyAutoSettings/oat");
 
-ui_print("StageLight installed successfully.");
 set_progress(1.000000);
 
-ui_print("DONE: Hold wheel right joystick while engine is running to reboot HU.");
 abort("XONG: Hold the RIGHT steering-wheel joystick while the engine is running to reboot the head unit.");

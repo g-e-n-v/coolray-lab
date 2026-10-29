@@ -126,22 +126,69 @@ lại phương án patch KeyServer hoặc Coon app (mục 5).
 
 ## 5. Muốn MODE mở 360 — các phương án
 
-1. **Không cần code (khuyên dùng):** giữ MODE nguyên vị, gán nút **CUSTOM** =
-   "Mở hình ảnh toàn cảnh" trong Settings xe (mục 3). 360 mở bằng nút vật lý,
-   không mất chức năng đổi nguồn nhạc.
-2. **Patch `GeelyAutoKeyServer.apk`:** sửa smali `ModeKeyHandler` đổi call
-   `switchAudioSource()` → `AVMManager.INSTANCE.controlAVM()` (AVMManager đã
-   được init ở startup). Build lại, ký platform testkey (firmware là
-   test-keys, chữ ký khớp), đưa qua pipeline OTA hiện có — updater
-   `package_extract_dir` sẽ ghi đè
-   `system/app/GeelyAutoKeyServer/GeelyAutoKeyServer.apk`, cần 2 dòng
-   `set_metadata` chuẩn (dir 0755 + apk 0644, selabel system_file) như
-   embed.sh làm. Mất hẳn đổi nguồn nhạc trên MODE (mode mất chức năng cũ).
-3. **Coon app song song:** `vn.coon.app` (uid 1000) đăng ký
-   `CarPropertyManager.registerCallback` cho property 0x41031000 — nhận cùng
-   sự kiện như keyserver, nhấn MODE thì mở 360 qua EAS openapi. Nhược điểm:
-   keyserver vẫn đổi nguồn nhạc song song (double action) trừ khi kết hợp
-   phương án 2.
-4. **Ghi property `MCU_KEY_CODE_*`** (0x2140a640–a653, access 0x3 R/W): chưa
-   verify ý nghĩa ghi — khả năng là bảng code MCU侧; thử trên xe có rủi ro đổi
-   hành vi phím ở tầng MCU, cần capture `HW_KEY_INPUT` trước khi đụng tới.
+### 5a. Verify bằng phím thật (29/10/2026, capture logcat trực tiếp)
+
+Bảng phím vật lý đã map qua capture `dumps/mode-capture/keymap-capture.log`:
+
+| Phím vật lý | propertyId | Handler | Hành động mặc định |
+| --- | --- | --- | --- |
+| ▲ (vol +) | 0x41020100 | TopKeyHandler | tăng volume |
+| ▼ (vol −) | 0x41020300 | BottomKeyHandler | giảm volume |
+| OK | 0x41020800 | ConfirmKeyHandler | short: nhận cuộc gọi khi đang gọi; long-press: voice (theo model flags) |
+| Home | 0x41030e00 | HomeKeyHandler | |
+| Mute | 0x41030100 | MuteKeyHandler | toggle mute |
+| MODE | 0x41031000 | ModeKeyHandler | switchMediaSource(0) |
+
+Không phát sinh property cho: BACK, VOICE, TEL, LEFT/RIGHT, ROLL, **CUSTOM
+(0x41020600)** — vô lăng VN nhiều khả năng không có các nút này (hoặc đi kênh
+khác, chưa thấy evidence).
+
+Phát hiện quan trọng: **phím vô lăng KHÔNG sinh Android KeyEvent** — nhấn ~15
+lần mà `HW_KEY_INPUT` (0x21414505 → `InputHalService`) không nhận event nào
+(không có dòng `hal event code` trong logcat dù `DBG=true` log INFO). Phím chỉ
+đi qua lớp adapt (EAS/FAS) tới KeyServer bằng logical CarPropertyValue. Hệ quả:
+`AccessibilityService.onKeyEvent` và mọi cách bắt KeyEvent đều **vô dụng** với
+phím vô lăng; app thường (kể cả Coon uid 1000) không có đường nhận MODE dễ dàng.
+Bonus: MODE press còn gửi AVRCP passthrough (keyCode 68 = 0x44 PLAY) qua BT tới
+điện thoại khi đổi sang nguồn Bluetooth music (`AvrcpControllerService
+sendPassThroughCmd` trong log).
+
+### 5b. Patch KeyServer — ĐÃ LÀM VÀ TEST (29/10/2026)
+
+Chuỗi thực hiện:
+
+1. Patch smali: `ModeKeyHandler$switchAudioSource$1.smali` — thay invoke
+   `IMediaCenterManager->switchMediaSource(I)V` bằng
+   `AVMManager->INSTANCE.controlAVM()V`, giữ nguyên logic debounce 300 ms và
+   đường coraline; log tag đổi thành `"MODE->controlAVM (patched by coon lab)"`
+   để verify bằng logcat.
+2. `apktool b` + ký bằng SignApk platform testkey
+   (`projects/usb-upgrade/vendor/signapk` + `keys/`). Cert khớp APK gốc
+   (serial `B3998086D056CFFA` — Android platform testkey, giống firmware
+   test-keys).
+3. Deploy **Magisk module systemless** (không cần flash OTA, revert bằng cách
+   xoá thư mục + reboot):
+   - `/data/adb/modules/coon_mode360/{module.prop, system/app/GeelyAutoKeyServer/GeelyAutoKeyServer.apk}`
+   - magic mount thay `/system/app/GeelyAutoKeyServer/GeelyAutoKeyServer.apk`
+     — verify bằng md5: checksum trên `/system` khớp bản patch
+     (`a52d2935091b59f3f423134fa127ec39`).
+   - KeyServer khởi động lại bình thường, uid system, đăng ký media callback OK.
+4. File lưu: `extracts/hu-apks/keyserver-pull/GeelyAutoKeyServer-patched.apk`
+   (unsigned: `...-unsigned.apk`; source đã patch:
+   `apktool-keyserver/`).
+
+Revert: `adb shell "rm -rf /data/adb/modules/coon_mode360 && reboot"`.
+
+Bước tiếp theo là nhấn MODE kiểm chứng 360 mở/đóng; nếu OK thì đóng gói APK
+patched vào payload OTA (`payload/system/app/GeelyAutoKeyServer/`) + 2 dòng
+`set_metadata` như embed.sh để flash chính thức không phụ thuộc Magisk.
+
+### 5c. Phương án khác (không khả thi trên xe này)
+
+1. ~~Nút CUSTOM có sẵn~~: feature bị cắt ở mức cấu hình xe (mục 3b) — property
+   nền không tồn tại, gán UI không lưu được.
+2. ~~Coon app lắng nghe property 0x41031000~~: property logic do lớp adapt sinh
+   ra, client phải dùng đúng stack adaptapi của ECARX + đăng ký như keyserver —
+   khả thi về nguyên tắc nhưng nặng; và vì phím không có KeyEvent nên không có
+   đường lách qua accessibility.
+3. ~~Ghi property `MCU_KEY_CODE_*`~~: chưa verify, rủi ro đổi hành vi tầng MCU.
