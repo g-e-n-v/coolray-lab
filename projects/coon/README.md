@@ -6,7 +6,9 @@ Android 9, Flyme Auto 1.8.0), mô hình tham chiếu: Sapo Drive / EX Sapo Centr
 xe. Coon **không chỉ là bản thay StageLight**: app chạy uid 1000
 (`android.uid.system`), ký bằng platform testkey của firmware — nền tảng đặc
 quyền cho mọi tính năng. Bật/giữ ADB Wi-Fi (`BootCompleteReceiver` set
-`persist.adb.tcp.port=5555` mỗi lần boot) và UI theo `docs/prototype.html`
+`persist.adb.tcp.port=5555` mỗi lần boot) và **tự mở app khi khởi động xe**
+(cùng receiver mở `MainActivity` sau 4s — đè UI Android Auto gốc cũng tự mở
+lúc boot, decision D10) và UI theo `docs/prototype.html`
 (sidebar Home/Ứng dụng/Về chúng tôi, màn Home đổi màu xe, status bar Wi-Fi)
 chỉ là tính năng nền tảng đầu tiên.
 
@@ -18,6 +20,8 @@ chỉ là tính năng nền tảng đầu tiên.
   Android (tham chiếu ổn định: layer, cấu trúc thư mục/package, quy tắc đặt
   tên, phụ thuộc, test)
 - [`docs/launcher-icon.md`](docs/launcher-icon.md) — cơ chế launcher Flyme
+- [`docs/android-auto-boot.md`](docs/android-auto-boot.md) — Android Auto gốc
+  (njda) tự mở lúc boot bằng cơ chế gì, chặn thế nào nếu cần
 
 ## Build
 
@@ -68,7 +72,7 @@ app/src/
 │   │   │           ├── WifiSsidDataSource.kt
 │   │   │           └── DefaultWifiSsidDataSource.kt     WifiManager (SSID)
 │   │   ├── receiver/
-│   │   │   └── BootCompleteReceiver.kt   entry point → AdbRepository
+│   │   │   └── BootCompleteReceiver.kt   entry point: set prop ADB + tự mở MainActivity lúc boot
 │   │   └── util/
 │   │       ├── InetAddresses.kt     hàm thuần chọn/format IP
 │   │       └── Ssid.kt              hàm thuần clean SSID
@@ -82,7 +86,7 @@ app/src/
 ```
 
 Luồng phụ thuộc một chiều: `DataSource → Repository → MainStateHolder →
-MainActivity`; receiver → `AdbRepository`. Chạy test:
+MainActivity`; receiver → `AdbRepository` + start `MainActivity` lúc boot. Chạy test:
 
 ```bash
 ./gradlew :app:testDebugUnitTest

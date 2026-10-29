@@ -1,18 +1,20 @@
 # Dump full ADB — IHU689G (Geely Coolray 2026 VN)
 
 Kết quả dump toàn bộ thông tin head unit qua Wi-Fi ADB. Đã verify trên xe
-(22/10/2026), sau khi flash kit mở ADB (quy trình menu kỹ thuật trong
+(24/10/2026), sau khi flash kit mở ADB (quy trình menu kỹ thuật trong
 `root-magisk-guide.md`, bước A). Tái tạo dump bằng:
 
 ```bash
 ./tools/dump-hu.sh <ip>:5555      # mặc định 10.98.197.218:5555
 ```
 
-Kết quả nằm ở `dumps/<ip>-<timestamp>/` (46 file, ~31 MB).
+Kết quả nằm ở `dumps/<ip>-<timestamp>/` (46 file, ~14 MB tuỳ log).
 
 ## 1. Kết nối
 
-- ADB qua Wi-Fi: `adb connect <ip>:5555` (đi qua route StageLight/ADB Wi-Fi).
+- ADB qua Wi-Fi: `adb connect <ip>:5555`. StageLight (helper bật ADB ban đầu)
+  đã bị gỡ khỏi máy — `adbd` vẫn root sẵn theo firmware nên ADB Wi-Fi hoạt
+  động độc lập.
 - `adbd` chạy **root sẵn** — `uid=0(root)`, context SELinux `u:r:su:s0`. Nguồn
   root là **firmware** (`ro.secure=0` + `ro.debuggable=1` trong ramdisk, chuẩn
   AOSP non-secure), không phải Magisk — chỉ cần *bật ADB* là shell root.
@@ -51,7 +53,7 @@ otp/flashinfo/expdb — layout MTK kinh điển, **không có slot A/B**.
 | `partitions-proc.txt`, `block-by-name.txt`, `disk.txt`, `mounts.txt`               | map partition, kích thước, df, mount                                                                                                                                          |
 | `usb.txt`, `network.txt`, `input-devices.txt`                                      | thiết bị USB, ip/route/arp, `getevent -pl`                                                                                                                                    |
 | `selinux.txt`, `kernel-cmdline.txt`                                                | trạng thái policy, boot cmdline                                                                                                                                               |
-| `pm-packages*.txt`, `pm-permissions.txt`, `pm-features.txt`, `pm-libraries.txt`    | 87 package (có path APK), nhóm quyền, features, libs                                                                                                                          |
+| `pm-packages*.txt`, `pm-permissions.txt`, `pm-features.txt`, `pm-libraries.txt`    | 84 package (có path APK), nhóm quyền, features, libs          |
 | `apk-inventory.txt`                                                                | `find` mọi APK trong /system/app, /system/priv-app, /vendor/app, /data/app kèm size                                                                                           |
 | `dumpsys-package.txt`                                                              | dump chi tiết từng package (quyền đã cấp, chữ ký)                                                                                                                             |
 | `settings-{global,secure,system}.txt`                                              | bảng settings provider                                                                                                                                                        |
@@ -60,18 +62,19 @@ otp/flashinfo/expdb — layout MTK kinh điển, **không có slot A/B**.
 | `init-rcs.txt`                                                                     | ghép mọi /init*.rc, /vendor/etc/init/_.rc, /system/etc/init/_.rc                                                                                                              |
 | `ecarx-services.txt`                                                               | dump gocsdk / gocsdk_auth / ecarx_core_server / fota_service / hal_mcuupdate_service                                                                                          |
 
-## 4. App inventory (87 package)
+## 4. App inventory (84 package, [pm-packages.txt])
 
-### Sideloaded /data (chỉ root nhìn thấy)
+### Sideloaded /data (chỉ root nhìn thấy, [apk-inventory.txt])
 
-| Package                                                     | Ghi chú                       |
-| ----------------------------------------------------------- | ----------------------------- |
-| `com.topjohnwu.magisk`                                      | Magisk manager — nguồn root   |
-| `app.revanced.android.youtube` + `app.revanced.android.gms` | ReVanced YouTube + microG     |
-| `com.alphainventor.filemanager`                             | Total Commander               |
-| `com.android.vending`                                       | Play Store (chạy qua microG)  |
-| `com.dmkcv.stagelight` (+ launcherplugin)                   | StageLight — helper ADB Wi-Fi |
-| `com.geekit.wifi`, `com.ex.auto`                            | tool ngoài                    |
+| Package                                                     | Ghi chú                                                                                       |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `vn.coon.app`                                               | app Coon (`projects/coon`) — uid 1000, sharedUser `android.uid.system`                        |
+| `com.android.settings`                                      | Settings HU build riêng sideloaded đè bản hệ thống — uid 1000, sharedUser `android.uid.system` |
+| `com.androidapp.settings`                                   | app settings ngoài (targetSdk 34, uid thường)                                                 |
+| `com.topjohnwu.magisk`                                      | Magisk manager — nguồn root daemon                                                            |
+| `app.revanced.android.youtube` + `app.revanced.android.gms` | ReVanced YouTube + microG                                                                     |
+| `com.android.vending`                                       | Play Store (chạy qua microG)                                                                  |
+| `com.ex.auto`                                               | tool ngoài                                                                                    |
 
 ### App hệ thống đáng chú ý (vendor/Geely/ECarX)
 

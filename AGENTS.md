@@ -19,6 +19,7 @@ nguyên convention này khi sửa tài liệu.
 | `docs/ihu689g.md` | Baseline phần cứng/firmware đã verify trên xe, mọi fact đều cite file dump dạng `[props.txt]` |
 | `docs/hu-adb-dump.md` | Nội dung dump ADB + cách tái tạo |
 | `docs/split-screen-recipe.md` | Công thức true split-screen đã xác minh qua ADB |
+| `docs/steering-keys.md` | Phím vô lăng: luồng MCU → KeyServer, nút MODE/CUSTOM, cách gán 360 |
 | `docs/root-magisk-guide.md` | Root Magisk: phân biệt root ADB sẵn của firmware vs Magisk daemon, quy trình patch boot cho HU từ nhà máy + nhánh root qua OTA (mục 7) |
 | `dumps/` | Kết quả dump (raw output, **gitignored** — không commit) |
 | `extracts/sapo-central/` | APK tool-decoded (`com.ex.auto` v3.3.10, `sharedUserId="android.uid.system"`) giữ làm tham khảo |

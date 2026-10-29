@@ -82,11 +82,11 @@ class MainActivity : Activity() {
         content.clipToOutline = true
         val screenContainer = findViewById<FrameLayout>(R.id.screen_container)
         val homeScreen = HomeView(this)
-        val profilesScreen = layoutInflater.inflate(R.layout.view_profiles, screenContainer, false)
+        val shortcutsScreen = layoutInflater.inflate(R.layout.view_shortcuts, screenContainer, false)
         val appsScreen = layoutInflater.inflate(R.layout.view_apps, screenContainer, false)
         val aboutScreen = layoutInflater.inflate(R.layout.view_about, screenContainer, false)
         screenContainer.addView(homeScreen)
-        screenContainer.addView(profilesScreen)
+        screenContainer.addView(shortcutsScreen)
         screenContainer.addView(appsScreen)
         screenContainer.addView(aboutScreen)
         tabs = listOf(
@@ -97,10 +97,10 @@ class MainActivity : Activity() {
                 R.drawable.ic_home_filled,
             ),
             Tab(
-                findViewById(R.id.nav_profiles),
-                profilesScreen,
-                R.drawable.ic_profiles_outline,
-                R.drawable.ic_profiles_filled,
+                findViewById(R.id.nav_shortcuts),
+                shortcutsScreen,
+                R.drawable.ic_shortcuts_outline,
+                R.drawable.ic_shortcuts_filled,
             ),
             Tab(
                 findViewById(R.id.nav_apps),

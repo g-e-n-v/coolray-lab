@@ -7,11 +7,14 @@
   <title>Coon — Car UI Prototype (IHU689G 1920×1080)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
   <style>
     :root {
-      --dock-h: 132px;
-      /* Flyme Auto system dock */
+      --dock-h: 112px;
+      /* Flyme Auto system dock — đo thật qua ADB screencap: y=968→1080,
+         112/1080 = 10.37% chiều cao màn */
       --sidebar-w: 120px;
       --status-h: 64px;
       --radius: 24px;
@@ -24,6 +27,11 @@
       box-sizing: border-box;
     }
 
+    button,
+    input {
+      font: inherit;
+    }
+
     html,
     body {
       height: 100%;
@@ -33,7 +41,7 @@
       background: #2b2f3a;
       /* nền ngoài tường minh — tách khỏi màn hình đen */
       color: #e8eaee;
-      font-family: "Roboto", "Noto Sans", -apple-system, "Segoe UI", sans-serif;
+      font-family: "Roboto", sans-serif;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -58,7 +66,7 @@
     .toolbar .spec {
       font-size: 12px;
       color: #6f7686;
-      font-family: ui-monospace, Menlo, monospace;
+      font-family: "Roboto Mono", monospace;
     }
 
     .toolbar .spacer {
@@ -110,6 +118,7 @@
 
     /* ── Màn hình: đúng phần cứng 1920×1080 ─────────────── */
     .screen {
+      position: relative;
       width: 1920px;
       height: 1080px;
       background: #000;
@@ -138,6 +147,7 @@
       gap: 12px;
       padding-top: 28px;
     }
+
     .clock {
       display: flex;
       flex-direction: column;
@@ -146,8 +156,21 @@
       font-family: "Roboto Mono", monospace;
       font-variant-numeric: tabular-nums;
     }
-    .clock .h { font-size: 40px; font-weight: 700; line-height: 1.17; color: #fff; }
-    .clock .m { font-size: 40px; font-weight: 400; line-height: 1.17; color: #8b93a5; }
+
+    .clock .h {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.17;
+      color: #fff;
+    }
+
+    .clock .m {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 1.17;
+      color: #8b93a5;
+    }
+
     .sidebar button {
       width: 72px;
       height: 72px;
@@ -161,15 +184,36 @@
       justify-content: center;
       padding: 0;
     }
-    .sidebar button:hover { background: rgba(255, 255, 255, .06); }
+
+    .sidebar button:hover {
+      background: rgba(255, 255, 255, .06);
+    }
+
+    .sidebar button[hidden] {
+      display: none;
+    }
+
     .sidebar button.active {
       background: rgba(255, 255, 255, .12);
       color: #fff;
     }
-    .sidebar svg { width: 40px; height: 40px; }
-    .sidebar button .fill { display: none; }
-    .sidebar button.active .fill { display: block; }
-    .sidebar button.active .outline { display: none; }
+
+    .sidebar svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .sidebar button .fill {
+      display: none;
+    }
+
+    .sidebar button.active .fill {
+      display: block;
+    }
+
+    .sidebar button.active .outline {
+      display: none;
+    }
 
     /* 2. Content phải — bo tròn cạnh trái */
     .content {
@@ -198,23 +242,34 @@
       font-weight: 400;
       letter-spacing: .02em;
     }
+
     .net {
       display: flex;
       align-items: center;
       gap: 12px;
       cursor: pointer;
     }
+
     .net span {
       color: #8b93a5;
       transition: color .2s;
     }
-    .net.connected span { color: #dfe3ea; }
-    .net svg { width: 30px; height: 30px; }
+
+    .net.connected span {
+      color: #dfe3ea;
+    }
+
+    .net svg {
+      width: 30px;
+      height: 30px;
+    }
+
     .status-right {
       display: flex;
       align-items: center;
       gap: 28px;
     }
+
     .status-right .ip {
       color: #aab1c0;
       display: flex;
@@ -222,8 +277,15 @@
       gap: 12px;
       font-variant-numeric: tabular-nums;
     }
-    .status-right .ip[hidden] { display: none; }
-    .status-right .ip svg { width: 30px; height: 30px; }
+
+    .status-right .ip[hidden] {
+      display: none;
+    }
+
+    .status-right .ip svg {
+      width: 30px;
+      height: 30px;
+    }
 
     /* Main giữa — mỗi tab một view, chỉ view active hiển thị */
     .main {
@@ -236,24 +298,34 @@
       color: #6f7686;
       font-size: 30px;
     }
-    .main.active { display: flex; }
+
+    .main.active {
+      display: flex;
+    }
 
     .ph-title {
       font-size: 30px;
       font-weight: 400;
       color: #8b93a5;
     }
-    .ph-sub { font-size: 24px; color: #6f7686; }
+
+    .ph-sub {
+      font-size: 24px;
+      color: #6f7686;
+    }
+
     .main img {
       display: block;
       width: 720px;
       height: auto;
       user-select: none;
     }
+
     .swatches {
       display: flex;
       gap: 20px;
     }
+
     .swatches button {
       width: 44px;
       height: 44px;
@@ -262,8 +334,509 @@
       cursor: pointer;
       padding: 0;
     }
+
     .swatches button.selected {
       box-shadow: 0 0 0 3px #10131b, 0 0 0 5px #fff;
+    }
+
+    /* ── Tab Hồ sơ ───────────────────────────────────────── */
+    .main.profiles {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 0;
+      color: #e8eaee;
+      font-size: 24px;
+      padding: 8px 24px 24px;
+      overflow: hidden;
+    }
+
+    .plist {
+      width: 460px;
+      flex: none;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+      margin-right: 32px;
+    }
+
+    .plist-footer {
+      flex: none;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .plist-add {
+      font: inherit;
+      font-size: 22px;
+      color: #fff;
+      background: rgba(255, 255, 255, .10);
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      padding: 16px 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    .plist-add:hover {
+      background: rgba(255, 255, 255, .18);
+    }
+
+    .plist-items {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding-right: 4px;
+    }
+
+    .pitem {
+      flex: none;
+      text-align: left;
+      font: inherit;
+      color: #e8eaee;
+      background: transparent;
+      border: none;
+      border-radius: 10px;
+      padding: 18px 24px;
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    .pitem.selected {
+      background: rgba(255, 255, 255, .08);
+    }
+
+    .pitem-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pitem-name {
+      font-size: 26px;
+      font-weight: 400;
+      color: #b9c0cc;
+      transition: color .15s;
+    }
+
+    .pitem-icon {
+      display: inline-flex;
+      flex: none;
+      color: #6f7686;
+    }
+
+    .pitem-icon.on { color: #5a83e0; }
+
+    .pitem-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .pitem.selected .pitem-name {
+      color: #fff;
+    }
+
+    .pdetail-wrap {
+      flex: 1;
+      min-width: 0;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pdetail {
+      flex: 1;
+      min-height: 0;
+      overflow-y: auto;
+      padding-right: 12px;
+    }
+
+    .pd-head {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .pd-edit-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-flex;
+      pointer-events: none;
+      color: #7d8595;
+      transition: color .15s;
+    }
+
+    .pd-edit-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .pd-head:focus-within .pd-edit-icon {
+      color: #fff;
+    }
+
+    .pd-name {
+      flex: 1;
+      min-width: 0;
+      font: inherit;
+      font-size: 44px;
+      font-weight: 600;
+      color: #fff;
+      background: transparent;
+      border: none;
+      border-radius: 6px;
+      padding: 6px 12px 6px 56px;
+      outline: none;
+      transition: background .15s;
+    }
+
+    .pd-name:focus {
+      background: rgba(255, 255, 255, .05);
+    }
+
+    .pd-panel {
+      margin-top: 20px;
+    }
+
+    .pd-card {
+      padding: 22px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pd-card:nth-child(2) {
+      border-top: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .pd-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .pd-lab {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .pd-labrow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .pd-k {
+      font-size: 24px;
+      font-weight: 400;
+      color: #a9b1c0;
+    }
+
+    .pd-hint {
+      font-size: 20px;
+      color: #6f7686;
+    }
+
+    .pd-val {
+      font-size: 28px;
+      color: #fff;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .pd-trig {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .pd-time {
+      font: inherit;
+      font-size: 26px;
+      color: #e8eaee;
+      background: rgba(255, 255, 255, .08);
+      border: none;
+      border-radius: 6px;
+      padding: 10px 16px;
+      width: 176px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .pd-time:disabled {
+      opacity: .35;
+      cursor: not-allowed;
+    }
+
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      background: rgba(0, 0, 0, .55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .time-modal {
+      width: 680px;
+      background: #1d212a;
+      border-radius: 20px;
+      padding: 36px 44px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .time-modal-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .wheels {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+    }
+
+    .wheel-col {
+      position: relative;
+      width: 190px;
+    }
+
+    .wheel {
+      height: 240px;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      scrollbar-width: none;
+      touch-action: none;
+      cursor: grab;
+      user-select: none;
+      -webkit-mask-image: linear-gradient(to bottom, transparent, #000 32%, #000 68%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, #000 32%, #000 68%, transparent);
+    }
+
+    .wheel.dragging {
+      scroll-snap-type: none;
+      cursor: grabbing;
+    }
+
+    .wheel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .wheel-item {
+      height: 80px;
+      scroll-snap-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      color: #6f7686;
+      font-variant-numeric: tabular-nums;
+      cursor: pointer;
+      transition: color .15s;
+    }
+
+    .wheel-item.sel {
+      font-size: 48px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .wheel-item:first-child { margin-top: 80px; }
+    .wheel-item:last-child { margin-bottom: 80px; }
+
+    .wheel-unit {
+      position: absolute;
+      left: calc(50% + 34px);
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      color: #9aa2b1;
+      pointer-events: none;
+    }
+
+    .time-modal-actions {
+      display: flex;
+      gap: 20px;
+    }
+
+    .tm-btn {
+      flex: 1;
+      font: inherit;
+      font-size: 26px;
+      padding: 18px 0;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    .tm-ok {
+      background: #3d7eff;
+      color: #fff;
+    }
+
+    .tm-ok:hover { background: #5a92ff; }
+
+    .tm-cancel {
+      background: rgba(255, 255, 255, .10);
+      color: #e8eaee;
+    }
+
+    .tm-cancel:hover { background: rgba(255, 255, 255, .16); }
+
+    .tgl {
+      position: relative;
+      width: 88px;
+      height: 48px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, .12);
+      cursor: pointer;
+      flex: none;
+      transition: background .2s;
+    }
+
+    .tgl::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 30px;
+      height: 36px;
+      border-radius: 4px;
+      background: #fff;
+      transition: left .2s;
+    }
+
+    .tgl.on {
+      background: #3d7eff;
+    }
+
+    .tgl.on::after {
+      left: 52px;
+    }
+
+    .pd-bright {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 44px;
+      margin: 0;
+      border-radius: 2px;
+      background: linear-gradient(to right, #3d7eff var(--p, 50%), rgba(255, 255, 255, .12) var(--p, 50%));
+      outline: none;
+      cursor: pointer;
+    }
+
+    .pd-bright::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 28px;
+      height: 44px;
+      background: transparent;
+      border: none;
+    }
+
+    .pd-bright::-moz-range-track {
+      height: 44px;
+      border-radius: 2px;
+      background: linear-gradient(to right, #3d7eff var(--p, 50%), rgba(255, 255, 255, .12) var(--p, 50%));
+    }
+
+    .pd-bright::-moz-range-thumb {
+      width: 28px;
+      height: 44px;
+      background: transparent;
+      border: none;
+    }
+
+    .seg {
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      background: rgba(255, 255, 255, .12);
+      border-radius: 6px;
+    }
+
+    .seg button {
+      flex: 1;
+      height: 60px;
+      font: inherit;
+      font-size: 24px;
+      color: #aab1c0;
+      background: transparent;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background .15s, color .15s;
+    }
+
+    .seg button:hover:not(.on) {
+      background: rgba(255, 255, 255, .06);
+    }
+
+    .seg button.on {
+      background: #3d7eff;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .pd-footer {
+      flex: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 28px;
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .pd-del {
+      font: inherit;
+      font-size: 24px;
+      color: #fff;
+      background: #e5484d;
+      border: none;
+      border-radius: 6px;
+      padding: 16px 36px;
+      cursor: pointer;
+      transition: background .15s;
+    }
+
+    .pd-del:hover {
+      background: #ef5a5f;
+    }
+
+    .pd-del.armed {
+      background: #ff5f64;
+    }
+
+    .plist-items::-webkit-scrollbar,
+    .pdetail::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .plist-items::-webkit-scrollbar-thumb,
+    .pdetail::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, .15);
+      border-radius: 5px;
     }
 
     /* 3. Dock hệ thống Flyme Auto — full width, đánh dấu sọc */
@@ -288,7 +861,7 @@
       text-align: center;
       color: #aab2c2;
       font-size: 14px;
-      font-family: ui-monospace, Menlo, monospace;
+      font-family: "Roboto Mono", monospace;
     }
   </style>
 </head>
@@ -314,45 +887,117 @@
             <aside class="sidebar">
               <div class="clock" id="clock"><span class="h">--</span><span class="m">--</span></div>
               <button class="active" title="Trang chủ" data-view="home">
-                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19h3v-5q0-.425.288-.712T10 13h4q.425 0 .713.288T15 14v5h3v-9l-6-4.5L6 10zm-2 0v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-4q-.425 0-.712-.288T13 20v-5h-2v5q0 .425-.288.713T10 21H6q-.825 0-1.412-.587T4 19m8-6.75"/></svg>
-                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-3q-.425 0-.712-.288T14 20v-5q0-.425-.288-.712T13 14h-2q-.425 0-.712.288T10 15v5q0 .425-.288.713T9 21H6q-.825 0-1.412-.587T4 19"/></svg>
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <g fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path
+                      d="M2 12.204c0-2.289 0-3.433.52-4.381c.518-.949 1.467-1.537 3.364-2.715l2-1.241C9.889 2.622 10.892 2 12 2s2.11.622 4.116 1.867l2 1.241c1.897 1.178 2.846 1.766 3.365 2.715S22 9.915 22 12.203v1.522c0 3.9 0 5.851-1.172 7.063S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.212S2 17.626 2 13.725z" />
+                    <path stroke-linecap="round" d="M12 15v3" />
+                  </g>
+                </svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.52 7.823C2 8.77 2 9.915 2 12.203v1.522c0 3.9 0 5.851 1.172 7.063S6.229 22 10 22h4c3.771 0 5.657 0 6.828-1.212S22 17.626 22 13.725v-1.521c0-2.289 0-3.433-.52-4.381c-.518-.949-1.467-1.537-3.364-2.715l-2-1.241C14.111 2.622 13.108 2 12 2s-2.11.622-4.116 1.867l-2 1.241C3.987 6.286 3.038 6.874 2.519 7.823M11.25 18a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0z" />
+                </svg>
               </button>
-              <button title="Hồ sơ" data-view="profiles">
-                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 23q-.625 0-1.062-.437T13 21.5v-7q0-.625.438-1.062T14.5 13h7q.625 0 1.063.438T23 14.5v7q0 .625-.437 1.063T21.5 23zM11 17.425V22h-.425q-.675 0-1.037-.45t-.463-1.1L8.85 18.8q-.325-.125-.612-.3t-.563-.375l-1.55.65q-.625.275-1.25.05t-.975-.8l-1.175-2.05q-.35-.575-.2-1.225t.675-1.075l1.325-1Q4.5 12.5 4.5 12.337v-.675q0-.162.025-.337l-1.325-1Q2.675 9.9 2.525 9.25t.2-1.225L3.9 5.975q.35-.575.975-.8t1.25.05l1.55.65q.275-.2.575-.375t.6-.3l.225-1.65q.1-.65.588-1.1T10.825 2h2.35q.675 0 1.163.45t.587 1.1l.225 1.65q.325.125.613.3t.562.375l1.55-.65q.625-.275 1.25-.05t.975.8l1.175 2.05q.35.575.2 1.238t-.675 1.062l-.6.45q-.35.25-.737.2T18.8 10.6t-.225-.725t.375-.675l.475-.35l-.975-1.7l-2.475 1.05q-.55-.575-1.213-.962t-1.437-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.6.625 1.363 1.038t1.612.587M12.05 8.5q-1.45 0-2.475 1.013T8.55 12q0 .525.15 1.025t.45.95q.275.375.713.475t.787-.175q.35-.25.413-.663t-.213-.712q-.15-.2-.225-.413T10.55 12q0-.625.438-1.062t1.062-.438q.25 0 .488.088t.437.237q.3.225.675.163t.625-.413t.163-.775T14 9.1q-.35-.3-.85-.45t-1.1-.15M18 19q-.625 0-1.225.163t-1.125.512q-.325.2-.488.425t-.162.475q0 .175.125.3t.3.125h5.25q.125 0 .225-.125t.1-.3q0-.25-.162-.475t-.488-.425q-.525-.35-1.125-.513T18 19m1.063-1.437q.437-.438.437-1.063t-.437-1.062T18 15t-1.062.438T16.5 16.5t.438 1.063T18 18t1.063-.437"/></svg>
-                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 23q-.625 0-1.062-.437T13 21.5v-7q0-.625.438-1.062T14.5 13h7q.625 0 1.063.438T23 14.5v7q0 .625-.437 1.063T21.5 23zm-4.425-1q-.375 0-.612-.213t-.288-.537l-.325-2.4q-.325-.125-.612-.3t-.563-.375l-1.55.65q-.625.275-1.25.05t-.975-.8l-1.175-2.05q-.35-.575-.2-1.225t.675-1.075l1.325-1q-.025-.175-.025-.337v-.676q0-.162.025-.337l-1.325-1Q2.675 9.95 2.525 9.3t.2-1.225L3.9 6.025q.35-.575.975-.8t1.25.05l1.55.65q.275-.2.575-.375t.6-.3l.225-1.65q.1-.65.588-1.1t1.162-.45h2.35q.675 0 1.163.45t.587 1.1l.225 1.65q.325.125.613.3t.562.375l1.55-.65q.625-.275 1.25-.05t.975.8l1.175 2.05q.35.575.2 1.225t-.675 1.075l-.625.45q-.125.1-.275.138t-.3.037h-3.875q-.15 0-.275-.1t-.175-.225q-.4-.95-1.263-1.562T12.05 8.5q-1.45 0-2.475 1.025T8.55 12q0 1.1.588 1.963t1.537 1.262q.125.05.225.175t.1.275v5.475q0 .35-.262.6t-.663.25M18 19q-.625 0-1.225.163t-1.125.512q-.325.2-.488.425t-.162.475q0 .175.125.3t.3.125h5.25q.125 0 .225-.125t.1-.3q0-.25-.162-.475t-.488-.425q-.525-.35-1.125-.513T18 19m1.063-1.437q.437-.438.437-1.063t-.437-1.062T18 15t-1.062.438T16.5 16.5t.438 1.063T18 18t1.063-.437"/></svg>
+              <button title="Phím tắt" data-view="shortcuts">
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <g fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path
+                      d="M2 11C2 8.17157 2 6.75736 2.87868 5.87868C3.75736 5 5.17157 5 8 5H16C18.8284 5 20.2426 5 21.1213 5.87868C22 6.75736 22 8.17157 22 11V13C22 15.8284 22 17.2426 21.1213 18.1213C20.2426 19 18.8284 19 16 19H8C5.17157 19 3.75736 19 2.87868 18.1213C2 17.2426 2 15.8284 2 13V11Z" />
+                    <path stroke-linecap="round" d="M7 16H17" />
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M6 9H6.0001M9 9H9.0001M12 9H12.0001M15 9H15.0001M18 9H18.0001M18 12H18.0001M15 12H15.0001M12 12H12.0001M9 12H9.0001M6 12H6.0001" />
+                  </g>
+                </svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M8 5H16C18.8284 5 20.2426 5 21.1213 5.87868C22 6.75736 22 8.17157 22 11V13C22 15.8284 22 17.2426 21.1213 18.1213C20.2426 19 18.8284 19 16 19H8C5.17157 19 3.75736 19 2.87868 18.1213C2 17.2426 2 15.8284 2 13V11C2 8.17157 2 6.75736 2.87868 5.87868C3.75736 5 5.17157 5 8 5ZM6 10C6.55228 10 7 9.55228 7 9C7 8.44772 6.55228 8 6 8C5.44772 8 5 8.44772 5 9C5 9.55228 5.44772 10 6 10ZM6 13C6.55228 13 7 12.5523 7 12C7 11.4477 6.55228 11 6 11C5.44772 11 5 11.4477 5 12C5 12.5523 5.44772 13 6 13ZM9 13C9.55228 13 10 12.5523 10 12C10 11.4477 9.55228 11 9 11C8.44772 11 8 11.4477 8 12C8 12.5523 8.44772 13 9 13ZM9 10C9.55228 10 10 9.55228 10 9C10 8.44772 9.55228 8 9 8C8.44772 8 8 8.44772 8 9C8 9.55228 8.44772 10 9 10ZM12 10C12.5523 10 13 9.55228 13 9C13 8.44772 12.5523 8 12 8C11.4477 8 11 8.44772 11 9C11 9.55228 11.4477 10 12 10ZM12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13ZM15 10C15.5523 10 16 9.55228 16 9C16 8.44772 15.5523 8 15 8C14.4477 8 14 8.44772 14 9C14 9.55228 14.4477 10 15 10ZM15 13C15.5523 13 16 12.5523 16 12C16 11.4477 15.5523 11 15 11C14.4477 11 14 11.4477 14 12C14 12.5523 14.4477 13 15 13ZM18 10C18.5523 10 19 9.55228 19 9C19 8.44772 18.5523 8 18 8C17.4477 8 17 8.44772 17 9C17 9.55228 17.4477 10 18 10ZM18 13C18.5523 13 19 12.5523 19 12C19 11.4477 18.5523 11 18 11C17.4477 11 17 11.4477 17 12C17 12.5523 17.4477 13 18 13ZM17.75 16C17.75 16.4142 17.4142 16.75 17 16.75H7C6.58579 16.75 6.25 16.4142 6.25 16C6.25 15.5858 6.58579 15.25 7 15.25H17C17.4142 15.25 17.75 15.5858 17.75 16Z" />
+                </svg>
+              </button>
+              <button title="Hồ sơ" data-view="profiles" hidden>
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M14.5 23q-.625 0-1.062-.437T13 21.5v-7q0-.625.438-1.062T14.5 13h7q.625 0 1.063.438T23 14.5v7q0 .625-.437 1.063T21.5 23zM11 17.425V22h-.425q-.675 0-1.037-.45t-.463-1.1L8.85 18.8q-.325-.125-.612-.3t-.563-.375l-1.55.65q-.625.275-1.25.05t-.975-.8l-1.175-2.05q-.35-.575-.2-1.225t.675-1.075l1.325-1Q4.5 12.5 4.5 12.337v-.675q0-.162.025-.337l-1.325-1Q2.675 9.9 2.525 9.25t.2-1.225L3.9 5.975q.35-.575.975-.8t1.25.05l1.55.65q.275-.2.575-.375t.6-.3l.225-1.65q.1-.65.588-1.1T10.825 2h2.35q.675 0 1.163.45t.587 1.1l.225 1.65q.325.125.613.3t.562.375l1.55-.65q.625-.275 1.25-.05t.975.8l1.175 2.05q.35.575.2 1.238t-.675 1.062l-.6.45q-.35.25-.737.2T18.8 10.6t-.225-.725t.375-.675l.475-.35l-.975-1.7l-2.475 1.05q-.55-.575-1.213-.962t-1.437-.588L13 4h-1.975l-.35 2.65q-.775.2-1.437.588t-1.213.937L5.55 7.15l-.975 1.7l2.15 1.6q-.125.375-.175.75t-.05.8q0 .4.05.775t.175.75l-2.15 1.625l.975 1.7l2.475-1.05q.6.625 1.363 1.038t1.612.587M12.05 8.5q-1.45 0-2.475 1.013T8.55 12q0 .525.15 1.025t.45.95q.275.375.713.475t.787-.175q.35-.25.413-.663t-.213-.712q-.15-.2-.225-.413T10.55 12q0-.625.438-1.062t1.062-.438q.25 0 .488.088t.437.237q.3.225.675.163t.625-.413t.163-.775T14 9.1q-.35-.3-.85-.45t-1.1-.15M18 19q-.625 0-1.225.163t-1.125.512q-.325.2-.488.425t-.162.475q0 .175.125.3t.3.125h5.25q.125 0 .225-.125t.1-.3q0-.25-.162-.475t-.488-.425q-.525-.35-1.125-.513T18 19m1.063-1.437q.437-.438.437-1.063t-.437-1.062T18 15t-1.062.438T16.5 16.5t.438 1.063T18 18t1.063-.437" />
+                </svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M14.5 23q-.625 0-1.062-.437T13 21.5v-7q0-.625.438-1.062T14.5 13h7q.625 0 1.063.438T23 14.5v7q0 .625-.437 1.063T21.5 23zm-4.425-1q-.375 0-.612-.213t-.288-.537l-.325-2.4q-.325-.125-.612-.3t-.563-.375l-1.55.65q-.625.275-1.25.05t-.975-.8l-1.175-2.05q-.35-.575-.2-1.225t.675-1.075l1.325-1q-.025-.175-.025-.337v-.676q0-.162.025-.337l-1.325-1Q2.675 9.95 2.525 9.3t.2-1.225L3.9 6.025q.35-.575.975-.8t1.25.05l1.55.65q.275-.2.575-.375t.6-.3l.225-1.65q.1-.65.588-1.1t1.162-.45h2.35q.675 0 1.163.45t.587 1.1l.225 1.65q.325.125.613.3t.562.375l1.55-.65q.625-.275 1.25-.05t.975.8l1.175 2.05q.35.575.2 1.225t-.675 1.075l-.625.45q-.125.1-.275.138t-.3.037h-3.875q-.15 0-.275-.1t-.175-.225q-.4-.95-1.263-1.562T12.05 8.5q-1.45 0-2.475 1.025T8.55 12q0 1.1.588 1.963t1.537 1.262q.125.05.225.175t.1.275v5.475q0 .35-.262.6t-.663.25M18 19q-.625 0-1.225.163t-1.125.512q-.325.2-.488.425t-.162.475q0 .175.125.3t.3.125h5.25q.125 0 .225-.125t.1-.3q0-.25-.162-.475t-.488-.425q-.525-.35-1.125-.513T18 19m1.063-1.437q.437-.438.437-1.063t-.437-1.062T18 15t-1.062.438T16.5 16.5t.438 1.063T18 18t1.063-.437" />
+                </svg>
               </button>
               <button title="Ứng dụng" data-view="apps">
-                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M8 10H4q-.825 0-1.412-.587T2 8V4q0-.825.588-1.412T4 2h4q.825 0 1.413.588T10 4v4q0 .825-.587 1.413T8 10M4 8h4V4H4zm4 14H4q-.825 0-1.412-.587T2 20v-4q0-.825.588-1.412T4 14h4q.825 0 1.413.588T10 16v4q0 .825-.587 1.413T8 22m-4-2h4v-4H4zm16-10h-4q-.825 0-1.412-.587T14 8V4q0-.825.588-1.412T16 2h4q.825 0 1.413.588T22 4v4q0 .825-.587 1.413T20 10m-4-2h4V4h-4zm4 14h-4q-.825 0-1.412-.587T14 20v-4q0-.825.588-1.412T16 14h4q.825 0 1.413.588T22 16v4q0 .825-.587 1.413T20 22m-4-2h4v-4h-4zm0-4"/></svg>
-                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M8 10H4q-.825 0-1.412-.587T2 8V4q0-.825.588-1.412T4 2h4q.825 0 1.413.588T10 4v4q0 .825-.587 1.413T8 10m0 12H4q-.825 0-1.412-.587T2 20v-4q0-.825.588-1.412T4 14h4q.825 0 1.413.588T10 16v4q0 .825-.587 1.413T8 22m12-12h-4q-.825 0-1.412-.587T14 8V4q0-.825.588-1.412T16 2h4q.825 0 1.413.588T22 4v4q0 .825-.587 1.413T20 10m0 12h-4q-.825 0-1.412-.587T14 20v-4q0-.825.588-1.412T16 14h4q.825 0 1.413.588T22 16v4q0 .825-.587 1.413T20 22"/></svg>
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <path fill="none" stroke="currentColor" stroke-width="1.75"
+                    d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Zm-11 0c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Zm11-11c0-1.886 0-2.828.586-3.414S15.614 2.5 17.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S13.5 8.386 13.5 6.5Z" />
+                </svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <path fill="currentColor"
+                    d="M2 6.5c0-2.121 0-3.182.659-3.841S4.379 2 6.5 2s3.182 0 3.841.659S11 4.379 11 6.5s0 3.182-.659 3.841S8.621 11 6.5 11s-3.182 0-3.841-.659S2 8.621 2 6.5m11 11c0-2.121 0-3.182.659-3.841S15.379 13 17.5 13s3.182 0 3.841.659S22 15.379 22 17.5s0 3.182-.659 3.841S19.621 22 17.5 22s-3.182 0-3.841-.659S13 19.621 13 17.5m-11 0c0-2.121 0-3.182.659-3.841S4.379 13 6.5 13s3.182 0 3.841.659S11 15.379 11 17.5s0 3.182-.659 3.841S8.621 22 6.5 22s-3.182 0-3.841-.659S2 19.621 2 17.5m11-11c0-2.121 0-3.182.659-3.841S15.379 2 17.5 2s3.182 0 3.841.659S22 4.379 22 6.5s0 3.182-.659 3.841S19.621 11 17.5 11s-3.182 0-3.841-.659S13 8.621 13 6.5" />
+                </svg>
               </button>
               <button title="Thông tin" data-view="info">
-                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.713 16.713Q13 16.425 13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17t.713-.288m0-8Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"/></svg>
-                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12.713 16.713Q13 16.425 13 16v-4q0-.425-.288-.712T12 11t-.712.288T11 12v4q0 .425.288.713T12 17t.713-.288m0-8Q13 8.425 13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9t.713-.288M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"/></svg>
+                <svg class="outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <g fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="1.75" d="M12 17v-6" />
+                    <circle cx="1" cy="1" r="1" fill="currentColor" transform="matrix(1 0 0 -1 11 9)" />
+                    <path stroke="currentColor" stroke-width="1.75"
+                      d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z" />
+                  </g>
+                </svg>
+                <svg class="fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ -->
+                  <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 22c-4.714 0-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12s0-7.071 1.464-8.536C4.93 2 7.286 2 12 2s7.071 0 8.535 1.464C22 4.93 22 7.286 22 12s0 7.071-1.465 8.535C19.072 22 16.714 22 12 22m0-4.25a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75M12 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                </svg>
               </button>
             </aside>
             <main class="content">
               <header class="statusbar">
                 <div class="net" id="netStatus" title="Bấm để giả lập kết nối Wi-Fi">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2.725 10.725L.6 8.6q2.3-2.225 5.25-3.412T12 4t6.15 1.188T23.4 8.6l-2.125 2.125Q19.4 8.925 17 7.963T12 7t-5 .963t-4.275 2.762M6.95 14.95l-2.1-2.1q1.475-1.375 3.313-2.112T12 10t3.838.738t3.312 2.112l-2.1 2.1Q16 14 14.713 13.5T12 13t-2.713.5t-2.337 1.45m3.637 4.463Q10 18.825 10 18t.588-1.412T12 16t1.413.588T14 18t-.587 1.413T12 20t-1.412-.587"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M2.725 10.725L.6 8.6q2.3-2.225 5.25-3.412T12 4t6.15 1.188T23.4 8.6l-2.125 2.125Q19.4 8.925 17 7.963T12 7t-5 .963t-4.275 2.762M6.95 14.95l-2.1-2.1q1.475-1.375 3.313-2.112T12 10t3.838.738t3.312 2.112l-2.1 2.1Q16 14 14.713 13.5T12 13t-2.713.5t-2.337 1.45m3.637 4.463Q10 18.825 10 18t.588-1.412T12 16t1.413.588T14 18t-.587 1.413T12 20t-1.412-.587" />
+                  </svg>
                   <span id="netLabel">No connection</span>
                 </div>
                 <div class="status-right">
-                  <span class="ip" id="ipAddr" hidden><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M8.1 21.213q-1.825-.788-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2q.25 0 .55.013t.55.037q.425.05.65.35t.225.75q0 .425-.275.688t-.7.212q-.25-.025-.5-.012t-.5.012q-.65.9-1.125 1.888T10.1 8H12q.425 0 .713.288T13 9t-.288.713T12 10H9.65q-.075.5-.112 1T9.5 12t.038 1t.112 1h4.7q.075-.5.113-1t.037-1v-.475q0-.225-.025-.475q-.05-.4.238-.725T15.4 10q.425 0 .725.25t.35.675q.025.25.025.538V12q0 .5-.038 1t-.112 1h3.4q.125-.5.188-1T20 12v-.45q0-.2-.05-.45q-.05-.4.225-.75t.675-.35q.45 0 .75.238t.35.662q.025.25.038.55T22 12q0 2.075-.787 3.9t-2.138 3.175t-3.175 2.138T12 22t-3.9-.788M4.25 14h3.4q-.075-.5-.112-1T7.5 12t.038-1t.112-1h-3.4q-.125.5-.187 1T4 12t.063 1t.187 1m.85-6h2.95q.225-.925.563-1.812T9.4 4.45q-1.375.45-2.475 1.363T5.1 8m12.4 0q-.625 0-1.062-.437T16 6.5v-3q0-.625.438-1.062T17.5 2h3q.625 0 1.063.438T22 3.5v3q0 .625-.437 1.063T20.5 8zm2-3h1q.2 0 .35-.15T21 4.5v-1q0-.2-.15-.35T20.5 3h-1q-.2 0-.35.15T19 3.5v1q0 .2.15.35t.35.15M9.4 19.55q-.45-.85-.788-1.737T8.05 16H5.1q.725 1.275 1.825 2.188T9.4 19.55m2.6.4q.65-.9 1.125-1.888T13.9 16h-3.8q.3 1.075.775 2.063T12 19.95m2.6-.4q1.375-.45 2.475-1.362T18.9 16h-2.95q-.225.925-.562 1.813T14.6 19.55"/></svg>10.98.197.218</span>
+                  <span class="ip" id="ipAddr" hidden><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M8.1 21.213q-1.825-.788-3.175-2.138T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2q.25 0 .55.013t.55.037q.425.05.65.35t.225.75q0 .425-.275.688t-.7.212q-.25-.025-.5-.012t-.5.012q-.65.9-1.125 1.888T10.1 8H12q.425 0 .713.288T13 9t-.288.713T12 10H9.65q-.075.5-.112 1T9.5 12t.038 1t.112 1h4.7q.075-.5.113-1t.037-1v-.475q0-.225-.025-.475q-.05-.4.238-.725T15.4 10q.425 0 .725.25t.35.675q.025.25.025.538V12q0 .5-.038 1t-.112 1h3.4q.125-.5.188-1T20 12v-.45q0-.2-.05-.45q-.05-.4.225-.75t.675-.35q.45 0 .75.238t.35.662q.025.25.038.55T22 12q0 2.075-.787 3.9t-2.138 3.175t-3.175 2.138T12 22t-3.9-.788M4.25 14h3.4q-.075-.5-.112-1T7.5 12t.038-1t.112-1h-3.4q-.125.5-.187 1T4 12t.063 1t.187 1m.85-6h2.95q.225-.925.563-1.812T9.4 4.45q-1.375.45-2.475 1.363T5.1 8m12.4 0q-.625 0-1.062-.437T16 6.5v-3q0-.625.438-1.062T17.5 2h3q.625 0 1.063.438T22 3.5v3q0 .625-.437 1.063T20.5 8zm2-3h1q.2 0 .35-.15T21 4.5v-1q0-.2-.15-.35T20.5 3h-1q-.2 0-.35.15T19 3.5v1q0 .2.15.35t.35.15M9.4 19.55q-.45-.85-.788-1.737T8.05 16H5.1q.725 1.275 1.825 2.188T9.4 19.55m2.6.4q.65-.9 1.125-1.888T13.9 16h-3.8q.3 1.075.775 2.063T12 19.95m2.6-.4q1.375-.45 2.475-1.362T18.9 16h-2.95q-.225.925-.562 1.813T14.6 19.55" />
+                    </svg>10.98.197.218</span>
                 </div>
               </header>
               <section class="main active" data-view="home">
                 <img id="car" src="assets/coolray-white.png" alt="Coolray" draggable="false">
                 <div class="swatches" id="swatches">
-                  <button data-color="white"  style="background:#e9ecef" class="selected" title="Trắng"></button>
-                  <button data-color="red"    style="background:#c0272d" title="Đỏ"></button>
-                  <button data-color="gray"   style="background:#4a4d52" title="Xám"></button>
-                  <button data-color="green"  style="background:#0e6f6b" title="Xanh biển"></button>
+                  <button data-color="white" style="background:#e9ecef" class="selected" title="Trắng"></button>
+                  <button data-color="red" style="background:#c0272d" title="Đỏ"></button>
+                  <button data-color="gray" style="background:#4a4d52" title="Xám"></button>
+                  <button data-color="green" style="background:#0e6f6b" title="Xanh biển"></button>
                   <button data-color="silver" style="background:#c3c9d2" title="Bạc"></button>
                 </div>
               </section>
-              <section class="main" data-view="profiles">
-                <div class="ph-title">Hồ sơ</div>
+              <section class="main" data-view="shortcuts">
+                <div class="ph-title">Phím tắt</div>
                 <div class="ph-sub">Placeholder — chờ mô tả nội dung</div>
+              </section>
+              <section class="main profiles" data-view="profiles">
+                <aside class="plist">
+                  <div class="plist-items" id="profileList"></div>
+                  <div class="plist-footer">
+                    <button class="plist-add" id="profileAdd" title="Thêm hồ sơ mới">Thêm hồ sơ</button>
+                  </div>
+                </aside>
+                <div class="pdetail-wrap">
+                  <div class="pdetail" id="profileDetail"></div>
+                  <div class="pd-footer" id="profileFooter"></div>
+                </div>
               </section>
               <section class="main" data-view="apps">
                 <div class="ph-title">Ứng dụng</div>
@@ -368,7 +1013,8 @@
             <span class="label">Flyme Auto system dock — app chỉ render phía trên</span>
           </div>
         </div>
-        <div class="caption">màn hình 1:1: 1920 × 1080 px · dock 132 px · sidebar 120 px · status bar 64 px · bo góc
+        <div class="caption">màn hình 1:1: 1920 × 1080 px · dock 112 px (10.37%) · sidebar 120 px · status bar 64 px ·
+          bo góc
           24 px · inset content 16 px</div>
       </div>
     </div>
@@ -407,7 +1053,7 @@
     apply();
 
     const COLORS = ['white', 'red', 'gray', 'green', 'silver'];
-    COLORS.forEach(c => { const i = new Image(); i.src = `assets/coolray-${c}.png`; });
+    COLORS.forEach(c => {const i = new Image(); i.src = `assets/coolray-${c}.png`;});
     const car = document.getElementById('car');
     const swatches = document.getElementById('swatches');
     swatches.addEventListener('click', (e) => {
@@ -418,7 +1064,7 @@
       btn.classList.add('selected');
     });
 
-    const net = { connected: false, ssid: 'Coolray-5G', ip: '10.98.197.218' };
+    const net = {connected: false, ssid: 'Coolray-5G', ip: '10.98.197.218'};
     const netStatus = document.getElementById('netStatus');
     const netLabel = document.getElementById('netLabel');
     const ipAddr = document.getElementById('ipAddr');
@@ -427,7 +1073,7 @@
       netLabel.textContent = net.connected ? net.ssid : 'No connection';
       ipAddr.hidden = !net.connected;
     }
-    netStatus.onclick = () => { net.connected = !net.connected; renderNet(); };
+    netStatus.onclick = () => {net.connected = !net.connected; renderNet();};
     renderNet();
 
     const clock = document.querySelector('.clock');
@@ -450,6 +1096,273 @@
       btn.classList.add('active');
       showView(btn.dataset.view);
     });
+
+    const DRIVE_MODES = ['Adaptive', 'Comfort', 'ECO', 'Sport'];
+    const STEERING_MODES = ['Sync', 'Comfort', 'Standard', 'Sport'];
+    let profileSeq = 0;
+    const profiles = [
+      {id: ++profileSeq, name: 'Dark', builtin: true, triggerOn: true, time: '19:00', bright: 30, drive: 'Adaptive', steer: 'Comfort'},
+      {id: ++profileSeq, name: 'Light', builtin: true, triggerOn: true, time: '07:00', bright: 80, drive: 'Adaptive', steer: 'Comfort'},
+    ];
+    let selectedProfileId = profiles[0].id;
+    const profileListEl = document.getElementById('profileList');
+    const profileDetailEl = document.getElementById('profileDetail');
+    const profileFooterEl = document.getElementById('profileFooter');
+    const escHtml = s => s.replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+    const profileById = id => profiles.find(p => p.id === id);
+
+    const ICON_BUILTIN = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M19.063 7.063Q19.5 6.625 19.5 6t-.437-1.062T18 4.5t-1.062.438T16.5 6t.438 1.063T18 7.5t1.063-.437M17.85 10q-.225 0-.4-.137t-.225-.363l-.175-.675q-.275-.1-.537-.25t-.488-.35l-.675.225q-.2.075-.412-.012T14.6 8.15l-.15-.275q-.125-.2-.087-.425t.212-.375l.5-.475q-.05-.3-.05-.6t.05-.6l-.5-.45q-.175-.15-.212-.375t.087-.425l.175-.275q.125-.2.325-.275t.4-.025l.65.2q.225-.2.488-.35t.562-.25l.175-.675q.05-.225.225-.362t.4-.138h.3q.225 0 .4.138t.225.362l.175.65q.3.125.563.275t.487.35l.65-.175q.2-.05.4.025t.325.275l.175.25q.125.2.088.425t-.213.375l-.475.45q.05.3.063.613t-.063.612l.475.45q.175.15.213.375t-.088.425l-.15.25q-.125.2-.337.275t-.413.025l-.65-.2q-.225.2-.5.35t-.55.25l-.175.675q-.05.225-.225.363t-.4.137zM4 21q-.425 0-.712-.288T3 20v-7.65q0-.175.025-.35t.075-.325L5.1 6q.15-.45.538-.725T6.5 5h4.575q.425 0 .713.288t.287.712t-.287.713t-.713.287H6.85L5.8 10h8.975q.425 0 .713.288t.287.712t-.288.713t-.712.287H5v5h14v-4.825q0-.425.288-.712t.712-.288t.713.288t.287.712V20q0 .425-.288.713T20 21h-1q-.425 0-.712-.288T18 20v-1H6v1q0 .425-.288.713T5 21zm1-9v5zm2.5 4q.625 0 1.063-.437T9 14.5t-.437-1.062T7.5 13t-1.062.438T6 14.5t.438 1.063T7.5 16m9 0q.625 0 1.063-.437T18 14.5t-.437-1.062T16.5 13t-1.062.438T15 14.5t.438 1.063T16.5 16"/></svg>';
+    const ICON_PERSON = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M9.175 10.825Q8 9.65 8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12t-2.825-1.175M4 18v-.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2v.8q0 .825-.587 1.413T18 20H6q-.825 0-1.412-.587T4 18m2 0h12v-.8q0-.275-.137-.5t-.363-.35q-1.35-.675-2.725-1.012T12 15t-2.775.338T6.5 16.35q-.225.125-.363.35T6 17.2zm7.413-8.587Q14 8.825 14 8t-.587-1.412T12 6t-1.412.588T10 8t.588 1.413T12 10t1.413-.587M12 18"/></svg>`;
+    const ICON_EDIT = '<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M5 19h1.425L16.2 9.225L14.775 7.8L5 17.575zm-1 2q-.425 0-.712-.288T3 20v-2.425q0-.4.15-.763t.425-.637L16.2 3.575q.3-.275.663-.425t.762-.15t.775.15t.65.45L20.425 5q.3.275.437.65T21 6.4q0 .4-.138.763t-.437.662l-12.6 12.6q-.275.275-.638.425t-.762.15zM19 6.4L17.6 5zm-3.525 2.125l-.7-.725L16.2 9.225z"/></svg>';
+
+    function renderProfileList() {
+      profileListEl.innerHTML = profiles.map(p => `
+        <button class="pitem${p.id === selectedProfileId ? ' selected' : ''}" data-id="${p.id}">
+          <span class="pitem-row">
+            <span class="pitem-icon${p.triggerOn ? ' on' : ''}">${p.builtin ? ICON_BUILTIN : ICON_PERSON}</span>
+            <span class="pitem-name">${escHtml(p.name)}</span>
+          </span>
+        </button>`).join('');
+    }
+
+    function openTimeModal(p) {
+      const [h, m] = p.time.split(':').map(Number);
+      const ROW = 80;
+      const pad = n => String(n).padStart(2, '0');
+      const backdrop = document.createElement('div');
+      backdrop.className = 'modal-backdrop';
+      backdrop.innerHTML = `
+        <div class="time-modal">
+          <div class="time-modal-title">Giờ kích hoạt</div>
+          <div class="wheels">
+            <div class="wheel-col">
+              <div class="wheel" id="wheelH"></div>
+              <span class="wheel-unit">h</span>
+            </div>
+            <div class="wheel-col">
+              <div class="wheel" id="wheelM"></div>
+              <span class="wheel-unit">min</span>
+            </div>
+          </div>
+          <div class="time-modal-actions">
+            <button class="tm-btn tm-ok" type="button">OK</button>
+            <button class="tm-btn tm-cancel" type="button">Huỷ</button>
+          </div>
+        </div>`;
+      document.querySelector('.screen').appendChild(backdrop);
+      const wh = backdrop.querySelector('#wheelH');
+      const wm = backdrop.querySelector('#wheelM');
+      const hSel = { v: h }, mSel = { v: m };
+      const COPIES = 3;
+      const setup = (wheel, n, init, sel) => {
+        let html = '';
+        for (let c = 0; c < COPIES; c++)
+          for (let i = 0; i < n; i++)
+            html += `<div class="wheel-item" data-v="${i}">${pad(i)}</div>`;
+        wheel.innerHTML = html;
+        const mark = val => [...wheel.children].forEach(el => el.classList.toggle('sel', +el.dataset.v === val));
+        sel.v = init;
+        mark(init);
+        wheel.scrollTop = (n + init) * ROW;
+        let raf = null, still = null;
+        wheel.addEventListener('scroll', () => {
+          if (raf) return;
+          raf = requestAnimationFrame(() => {
+            raf = null;
+            const idx = Math.round(wheel.scrollTop / ROW);
+            const val = ((idx % n) + n) % n;
+            if (val !== sel.v) { sel.v = val; mark(val); }
+            clearTimeout(still);
+            still = setTimeout(() => {
+              const i = Math.round(wheel.scrollTop / ROW);
+              if (i < n) wheel.scrollTop += n * ROW;
+              else if (i >= 2 * n) wheel.scrollTop -= n * ROW;
+            }, 120);
+          });
+        });
+        let dragging = false, dragStartY = 0, dragStartTop = 0, moved = 0, samples = [], momentum = null;
+        let captured = false;
+        wheel.addEventListener('pointerdown', e => {
+          if (e.button) return;
+          dragging = true; moved = 0; captured = false;
+          dragStartY = e.clientY; dragStartTop = wheel.scrollTop;
+          samples = [{ y: e.clientY, t: performance.now() }];
+          cancelAnimationFrame(momentum);
+        });
+        wheel.addEventListener('pointermove', e => {
+          if (!dragging) return;
+          const dy = e.clientY - dragStartY;
+          if (!captured && Math.abs(dy) > 5) {
+            captured = true;
+            wheel.classList.add('dragging');
+            try { wheel.setPointerCapture(e.pointerId); } catch {}
+          }
+          if (!captured) return;
+          moved = Math.max(moved, Math.abs(dy));
+          wheel.scrollTop = dragStartTop - dy;
+          samples.push({ y: e.clientY, t: performance.now() });
+          if (samples.length > 5) samples.shift();
+        });
+        wheel.addEventListener('pointerup', endDrag);
+        wheel.addEventListener('pointercancel', endDrag);
+        function endDrag() {
+          if (!dragging) return;
+          dragging = false;
+          let v = 0;
+          if (samples.length >= 2) {
+            const a = samples[0], b = samples[samples.length - 1];
+            if (b.t > a.t) v = (b.y - a.y) / (b.t - a.t);
+          }
+          const snapToNearest = () => {
+            wheel.scrollTo({ top: Math.round(wheel.scrollTop / ROW) * ROW, behavior: 'smooth' });
+            const done = () => wheel.classList.remove('dragging');
+            wheel.addEventListener('scrollend', done, { once: true });
+            setTimeout(done, 500);
+          };
+          if (moved <= 5 && Math.abs(v) <= 0.2) { wheel.classList.remove('dragging'); return; }
+          if (Math.abs(v) > 0.2) {
+            let step = -v * 16;
+            const glide = () => {
+              wheel.scrollTop += step;
+              step *= 0.92;
+              if (Math.abs(step) > 1) momentum = requestAnimationFrame(glide);
+              else snapToNearest();
+            };
+            momentum = requestAnimationFrame(glide);
+          } else snapToNearest();
+        }
+        wheel.addEventListener('click', e => {
+          if (moved > 5) { moved = 0; return; }
+          const it = e.target.closest('.wheel-item');
+          if (!it) return;
+          const cur = Math.round(wheel.scrollTop / ROW);
+          let d = ((+it.dataset.v - ((cur % n) + n) % n) % n + n) % n;
+          if (d > n / 2) d -= n;
+          wheel.scrollTo({ top: (cur + d) * ROW, behavior: 'smooth' });
+        });
+      };
+      setup(wh, 24, h, hSel);
+      setup(wm, 60, m, mSel);
+      const close = () => backdrop.remove();
+      backdrop.querySelector('.tm-cancel').addEventListener('click', close);
+      backdrop.addEventListener('click', e => { if (e.target === backdrop) close(); });
+      backdrop.querySelector('.tm-ok').addEventListener('click', () => {
+        p.time = `${pad(hSel.v)}:${pad(mSel.v)}`;
+        close();
+        renderProfileDetail(); renderProfileList();
+      });
+    }
+
+    function bindProfileDetail(p) {
+      const name = document.getElementById('pdName');
+      name.addEventListener('input', () => {
+        if (name.value.trim()) {p.name = name.value.trim(); renderProfileList();}
+      });
+      name.addEventListener('change', () => {if (!name.value.trim()) name.value = p.name;});
+      document.getElementById('pdTgl').addEventListener('click', () => {
+        p.triggerOn = !p.triggerOn;
+        renderProfileDetail(); renderProfileList();
+      });
+      document.getElementById('pdTime').addEventListener('click', () => openTimeModal(p));
+      const bright = document.getElementById('pdBright');
+      bright.addEventListener('input', () => {
+        p.bright = +bright.value;
+        bright.style.setProperty('--p', p.bright + '%');
+        document.getElementById('pdBrightVal').textContent = p.bright + '%';
+      });
+      bright.addEventListener('change', renderProfileList);
+      profileDetailEl.querySelectorAll('.seg').forEach(seg => {
+        seg.addEventListener('click', e => {
+          const btn = e.target.closest('button[data-v]');
+          if (!btn) return;
+          p[seg.dataset.key] = btn.dataset.v;
+          seg.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+          renderProfileList();
+        });
+      });
+      const del = document.getElementById('pdDel');
+      if (!del) return;
+      let armed = false, timer;
+      del.addEventListener('click', () => {
+        if (!armed) {
+          armed = true;
+          del.textContent = 'Chạm lần nữa để xoá';
+          del.classList.add('armed');
+          timer = setTimeout(() => {
+            armed = false;
+            del.textContent = 'Xoá hồ sơ';
+            del.classList.remove('armed');
+          }, 3000);
+          return;
+        }
+        clearTimeout(timer);
+        const i = profiles.indexOf(p);
+        profiles.splice(i, 1);
+        selectedProfileId = profiles[Math.min(i, profiles.length - 1)].id;
+        renderProfileList(); renderProfileDetail();
+      });
+    }
+
+    function renderProfileDetail() {
+      const p = profileById(selectedProfileId);
+      if (!p) return;
+      profileDetailEl.innerHTML = `
+        <div class="pd-head">
+          <span class="pd-edit-icon" title="Chạm để đổi tên">${ICON_EDIT}</span>
+          <input class="pd-name" id="pdName" value="${escHtml(p.name)}" maxlength="30" spellcheck="false" autocomplete="off" aria-label="Tên hồ sơ">
+        </div>
+        <div class="pd-panel">
+        <div class="pd-card">
+          <div class="pd-row">
+            <div class="pd-lab">
+              <span class="pd-k">Tự động kích hoạt</span>
+              <span class="pd-hint">Áp dụng hồ sơ này tự động khi đến giờ đã đặt</span>
+            </div>
+            <button class="tgl${p.triggerOn ? ' on' : ''}" id="pdTgl" title="Bật/tắt tự động kích hoạt" aria-pressed="${p.triggerOn}"></button>
+          </div>
+          <div class="pd-row">
+            <span class="pd-k">Thời gian</span>
+            <button type="button" class="pd-time" id="pdTime" ${p.triggerOn ? '' : 'disabled'} aria-label="Thời gian">${p.time}</button>
+          </div>
+        </div>
+        <div class="pd-card">
+          <div class="pd-labrow">
+            <span class="pd-k">Độ sáng</span>
+            <span class="pd-val" id="pdBrightVal">${p.bright}%</span>
+          </div>
+          <input type="range" class="pd-bright" id="pdBright" min="0" max="100" step="1" value="${p.bright}" style="--p:${p.bright}%" aria-label="Độ sáng">
+        </div>
+        <div class="pd-card">
+          <div class="pd-labrow"><span class="pd-k">Chế độ lái</span></div>
+          <div class="seg" data-key="drive">
+            ${DRIVE_MODES.map(m => `<button data-v="${m}"${m === p.drive ? ' class="on"' : ''}>${m}</button>`).join('')}
+          </div>
+        </div>
+        <div class="pd-card">
+          <div class="pd-labrow"><span class="pd-k">Chế độ vô lăng</span></div>
+          <div class="seg" data-key="steer">
+            ${STEERING_MODES.map(m => `<button data-v="${m}"${m === p.steer ? ' class="on"' : ''}>${m}</button>`).join('')}
+          </div>
+        </div>
+        </div>`;
+      profileFooterEl.innerHTML = p.builtin ? '' : '<button class="pd-del" id="pdDel">Xoá hồ sơ</button>';
+      profileFooterEl.style.display = p.builtin ? 'none' : 'flex';
+      bindProfileDetail(p);
+    }
+
+    profileListEl.addEventListener('click', e => {
+      const item = e.target.closest('.pitem');
+      if (!item) return;
+      selectedProfileId = +item.dataset.id;
+      renderProfileList(); renderProfileDetail();
+    });
+    document.getElementById('profileAdd').addEventListener('click', () => {
+      const np = {id: ++profileSeq, name: `Profile ${profiles.length + 1}`, builtin: false, triggerOn: false, time: '12:00', bright: 50, drive: 'Adaptive', steer: 'Comfort'};
+      profiles.push(np);
+      selectedProfileId = np.id;
+      renderProfileList(); renderProfileDetail();
+    });
+    renderProfileList(); renderProfileDetail();
   </script>
 </body>
 

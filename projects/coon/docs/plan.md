@@ -71,6 +71,7 @@ vì prop persist chỉ có hiệu lực với adbd khi adbd start lại.
 | D7  | **Path B dự phòng (no-app)**: `update-binary` của kit ghi trực tiếp `/data/property/persistent_properties` khi flash qua recovery | Chạy root trong recovery, không phụ thuộc chữ ký app; dùng khi D1 bị từ chối trên variant khác | Cần nắm format persistent_properties của Android 9; phải test trên xe thật |
 | D8  | **Package name**: `vn.coon.app` (chốt trước build đầu tiên, không đổi sau)      | Đổi package sau này phá state `UPDATED_SYSTEM_APP` của PM                                                |                                                                     |
 | D9  | **Khoá Android 9**: `compileSdk = minSdk = targetSdk = maxSdk = 28`, Java/Kotlin target 1.8 | App chỉ tồn tại trên nền đã verify: PM từ chối cài trên API ≠ 28, compiler không tham chiếu được API > 28 | Không port được sang firmware khác nếu không nâng SDK có chủ đích (gỡ D9, không phải sửa code vội) |
+| D10 | **Mở cùng xe**: `BOOT_COMPLETED` → mở `MainActivity` sau delay 4s (`goAsync` + `Handler.postDelayed`) | Sản phẩm là màn hình chính khi lên xe. Delay 4s là đo thật: UI Android Auto gốc (`com.njda.adapter/.view.AutoMainActivity`, mở tự động lúc boot) xuất hiện tại boot+7s; Coon mở tại boot+9s → focus đè lên AA. Mở ngay (0s) sẽ bị AA đè ngược | Coon luôn đè UI khác mở cùng lúc boot (kể cả Android Auto gốc — user sẽ tự xử AA sau). Phân tích chuỗi boot AA: `docs/android-auto-boot.md` |
 
 > **Cập nhật sau điều tra** (`docs/launcher-icon.md`): giả định trong D2
 > "Flyme Auto không hiển thị app thường, StageLight phải kèm plugin" là **sai** —
@@ -92,6 +93,7 @@ vì prop persist chỉ có hiệu lực với adbd khi adbd start lại.
 | T7  | Idempotent qua nhiều reboot, không double-set, không lỗi PM                     | reboot 3 lần, so dumpsys + getprop mỗi lần                          | TODO       |
 | T8  | (Phase 3) Icon trên launcher — chuẩn Android là đủ, không cần launcherplugin (`docs/launcher-icon.md`) | icon hiện trên màn hình chính                                       | Deferred   |
 | T9  | (Phase 3) Toggle tắt ADB trong app (xóa prop + restart adbd)          | prop rỗng, port 5555 đóng sau reboot                                | Deferred   |
+| T10 | `MainActivity` tự mở sau mỗi lần boot, đè UI mở cùng lúc (AA gốc)     | `adb reboot` → `dumpsys window` focus `vn.coon.app`; events log thấy `am_proc_start …broadcast…BootCompleteReceiver` rồi `am_create_activity …MainActivity` (+4s) | **PASS** 29/10/2026 trên xe đang chạy (boot từ trạng thái stopped sau `adb install -r` vẫn nhận broadcast) |
 
 ### Câu hỏi mở cần trả lời bằng thực nghiệm
 

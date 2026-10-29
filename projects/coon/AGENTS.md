@@ -3,8 +3,10 @@
 App quản lý xe **Geely New Coolray** trên head unit **IHU689G** (2026 VN,
 Android 9, Flyme Auto 1.8.0), mô hình tham chiếu: Sapo Drive / EX Sapo Central
 (sapodrive.com). Coon **không chỉ là bản thay StageLight**: bật/giữ ADB Wi-Fi
-(set `persist.adb.tcp.port=5555` trong `BOOT_COMPLETED` receiver) và
-`MainActivity` hiển thị IP Wi-Fi chỉ là tính năng nền tảng đầu tiên. App chạy
+(set `persist.adb.tcp.port=5555` trong `BOOT_COMPLETED` receiver), **tự mở app
+khi khởi động xe** (cùng receiver mở `MainActivity` sau delay 4s để đè UI
+Android Auto gốc, D10) và `MainActivity` hiển thị IP Wi-Fi chỉ là tính năng
+nền tảng đầu tiên. App chạy
 uid 1000 (`android.uid.system`), ký bằng AOSP platform testkey của firmware —
 nền tảng đặc quyền cho các tính năng quản lý xe về sau.
 

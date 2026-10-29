@@ -54,6 +54,27 @@ vào updater-script (insert ngay sau block Stagelight). Gỡ app: xoá
 Lưu ý tương thích: Android 9 (minSdk ≤ 28), arm64-v8a, không cần Google Play
 Services (xe không có), UI landscape.
 
+### App thay thế app hệ thống: GeelyAutoSettings (tiếng Việt)
+
+`payload/system/app/GeelyAutoSettings/` là bản vá app Cài đặt Flyme Auto
+(`com.flyme.auto.settings`, sharedUserId `android.uid.system`, ký platform
+testkey): thêm `LANGUAGE_VI` vào `a5lvLanguageList` trong `PlatformFeature`
+với model `IHU689G` (SX11 A5 LV) — vốn chỉ có 中文/English/Español. Code
+"Tiếng Việt" + `values-vi` (870 chuỗi) có sẵn trong APK, chỉ bị chặn ở danh
+sách trắng. Chọn ngôn ngữ trong **Hiển thị → Language Settings** gọi chuẩn
+`LocalePicker.updateLocales` → đổi locale toàn hệ thống, không cần reboot.
+
+Quy trình vá (nguồn: `extracts/hu-apks/GeelyAutoSettings.apk` = md5
+`3cda6f1bfdadf07e73de9392a995ae64`): `apktool d --no-res` → sửa
+`PlatformFeature.smali` (thêm `const-string v3, "Ti\u1ebfng Vi\u1ec7t"` +
+`filled-new-array {v1, v2, v0, v3}`) → `apktool b` → thay **chỉ
+`classes.dex`** vào APK gốc bằng `zip` (giữ nguyên resources.arsc/res/lib,
+tránh lệch resource ID) → ký SignApk testkey. Updater-script có thêm
+`run_program rm -rf` thư mục `oat/` để dọn odex cũ. Backup trên xe:
+`/data/local/tmp/GeelyAutoSettings.apk.orig`. Đã test thật 29/10/2026:
+picker hiện "Tiếng Việt", chọn xong Settings + launcher sang tiếng Việt
+(161 chuỗi ADAS gốc là tiếng Trung ở mọi locale — không phải regression).
+
 ## Root qua OTA (tùy chọn — nhúng patched boot)
 
 Root Magisk thật nằm ở **partition `boot`** (chi tiết:
