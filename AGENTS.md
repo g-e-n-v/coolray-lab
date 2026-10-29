@@ -140,4 +140,9 @@ thật trên xe.
   dist/ bị ignore).
 - Nếu mất `payload/`, khôi phục bằng git (chính là source of truth); SignApk sẽ
   recompute MANIFEST.MF/CERT.SF nên chỉ cần dữ liệu payload + keys.
+- APK payload ≥ 50 MB (`GeelyAutoSettings.apk`; `VoiceAssistantVi.apk` trong
+  history) nằm trong **Git LFS** (xem `.gitattributes` ở root, track 2 path
+  APK). Clone/copy repo phải `git lfs install` trước khi checkout/pull, nếu
+  không app dir chỉ chứa pointer và `build.sh` sẽ zip pointer thay vì APK.
+  `dist/` đã bị purge khỏi toàn bộ history — đừng commit lại.
 - Commit message style hiện tại: `type: mô tả` (refactor/feat/chore), tiếng Anh.
